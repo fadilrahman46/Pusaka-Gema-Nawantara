@@ -1,0 +1,1184 @@
+REVISI STRUKTURAL
+PUSAKA: GEMA NUSANTARA
+Kerangka Fiksionalisasi · Multi-Ending · Tata Kelola Project Owner
+Versi: 2.0-F Status: 🔴 MENGGANTIKAN bagian terkait di GDD v1.0-R dan World Bible v1.0 Tanggal: Agustus 2026
+
+
+BAGIAN 0 — RINGKASAN PERUBAHAN & KONSEKUENSINYA
+0.1 Apa yang Berubah
+#
+Perubahan
+Dampak
+1
+Seluruh nama entitas, tempat, dan tokoh berbasis kepercayaan hidup difiksionalisasi
+~120 nama diganti; ~18 entitas dibuang total
+2
+Geografi nyata diganti dunia fiktif "Nusa Laras"
+Tidak ada klaim representasi budaya nyata
+3
+Multi-ending: 3 ending di v1.0, 3 ending di finale
++5–7 minggu produksi
+4
+Project Owner sebagai penjaga scope dengan wewenang formal
+Butuh protokol, bukan sekadar jabatan
+5
+Konsultan budaya penuh → 1 sensitivity reader
+Biaya turun Rp 150jt → Rp 15jt; risiko tidak nol
+0.2 Yang Kamu Menangkan dan Yang Kamu Kehilangan
+✅ Menang
+Risiko backlash turun signifikan (bukan hilang)
+Kebebasan naratif penuh — tidak terikat akurasi mitologis
+Tidak butuh co-writer Dayak/Papua → dua region yang tadinya "batalkan" kini layak dibangun
+Anggaran konsultan turun ±Rp 135 juta
+Tidak ada risiko dituduh salah menggambarkan kepercayaan tertentu
+❌ Kalah
+Pilar "PENGENALAN" melemah. Ini diferensiasi utamamu. Pemain tidak lagi berkata "ini cerita nenek saya", melainkan "ini terasa seperti cerita nenek saya". Bedanya besar untuk pemasaran organik.
+Segmen "Peminat Budaya & Horor Lokal" (35% target) melemah. Mereka datang karena mengenali nama. Konten TikTok "Wentira ada di game!" tidak bisa dibuat kalau namanya Parigama.
+Masuk kompetisi yang lebih berat. "Fantasy RPG Asia Tenggara" adalah kategori tempat kamu bersaing tanpa keunggulan struktural.
+Muncul kritik baru: mengambil estetika tanpa mengakui sumbernya. Ini kritik yang nyata dan sering dilontarkan.
+0.3 Mitigasi Wajib
+Risiko baru
+Mitigasi
+Dituduh mengambil estetika tanpa mengakui sumber
+Halaman "Terinspirasi Oleh" wajib di dalam game — menyebut budaya sumber secara eksplisit + daftar bacaan + kredit peneliti
+Fiksionalisasi setengah jalan (rename tanpa reshape)
+Aturan Dua Penanda (lihat 1.2) diberlakukan tanpa pengecualian
+"Sudah fiksionalisasi = tidak perlu dicek"
+1 sensitivity reader wajib membaca naskah final sebelum rilis. Rp 5–15 juta. Non-negosiabel.
+Pemain Indonesia merasa game ini "malu jadi Indonesia"
+Bahasa Indonesia sebagai bahasa utama, terminologi lokal untuk sistem (Sukma, Pusaka, Prana, Laras), bukan istilah Inggris
+
+
+BAGIAN 1 — KERANGKA FIKSIONALISASI
+1.1 Prinsip Dasar
+Dunia fiktif, tata bahasa budaya nyata.
+
+Kita tidak menggambarkan Bali. Kita membangun tempat yang hidup dengan logika yang sama seperti Bali — dualitas yang saling melengkapi, ritual harian, tata ruang sakral-profan — tanpa pernah mengklaim itu Bali.
+
+Model referensi: Avatar: The Last Airbender (bangsa fiktif dengan tata bahasa budaya Asia nyata), Studio Ghibli (lanskap Jepang tanpa geografi nyata).
+1.2 ATURAN DUA PENANDA
+Setiap entitas yang difiksionalisasi wajib mengubah nama DAN minimal 2 dari 3 penanda berikut:
+
+Penanda
+Contoh
+A. Bentuk fisik
+Ikonografi khas: lidah menjulur, kepala terbang dengan organ, topeng singa tertentu
+B. Fungsi naratif
+Peran dalam cerita asal: pemakan hati, penjaga legitimasi raja, pembawa wabah
+C. Konteks ritual
+Keterikatan pada upacara nyata: tapakan, rambu solo, bau nyale
+
+Konsekuensi: Kalau sebuah karakter kehilangan seluruh daya tariknya setelah mengubah dua penanda, artinya daya tariknya memang milik budaya tersebut. Buang, jangan samarkan.
+Contoh Penerapan yang Benar
+Asal
+Hasil
+Penanda yang diubah
+Rangda — janda-penyihir, lidah menjulur, rambut terurai, lawan Barong dalam ritual Calonarang
+RARASUNYI — perempuan yang rambutnya tersusun dari nama anak-anak yang hilang. Tidak berlidah panjang. Bukan penyihir; ia adalah kesedihan yang tidak punya tempat pulang.
+✅ Bentuk ✅ Fungsi ✅ Konteks ritual dihapus
+Kuyang — kepala terbang lepas dari tubuh dengan organ menggantung, penghisap darah ibu melahirkan
+NGAYANG — tubuhnya tertidur di rumah sementara bayangannya terbang. Tidak ada organ, tidak ada kepala lepas. Ia mencuri ingatan, bukan darah.
+✅ Bentuk ✅ Fungsi
+Suanggi — penyihir pemakan hati; tuduhan suanggi pernah memicu kekerasan nyata
+MALAWANGI — makhluk yang terbentuk dari tuduhan yang tidak pernah diucapkan. Semakin sering orang mencurigai tetangganya, semakin besar ia.
+✅ Bentuk ✅ Fungsi — dan berubah menjadi kritik terhadap mitos aslinya
+Contoh Penerapan yang SALAH (jangan lakukan ini)
+❌ Salah
+Kenapa
+Rangda → "Ranggadha", ikonografi identik
+Hanya ganti nama. Tetap dikenali. Menambah deniability, bukan hormat.
+Wentira → "Wentura"
+Terlalu dekat. Terbaca sebagai upaya menghindari tanggung jawab.
+Panglima Burung → "Panglima Elang"
+Fungsi & konteks identik. Entitas ini harus dibuang, bukan diganti nama.
+1.3 Tiga Tingkat Perlakuan
+Tingkat
+Kriteria
+Perlakuan
+T1 — DIPERTAHANKAN
+Fauna, flora, fenomena alam, bentuk arsitektur umum, jenis instrumen
+Boleh dipakai apa adanya. Anoa tetap anoa. Gamelan tetap gamelan.
+T2 — DIFIKSIONALISASI
+Entitas folklor, tempat berkepercayaan, tokoh legenda, kerajaan historis
+Rename + Aturan Dua Penanda
+T3 — DIBUANG
+Terkait konflik etnis nyata, gerakan politik, naskah sakral, tokoh keagamaan
+Hapus. Ganti dengan ciptaan orisinal yang mengisi peran naratif yang sama.
+Daftar T3 — DIBUANG TOTAL (18 entitas)
+Entitas asal
+Alasan
+Peran naratif diisi oleh (ciptaan baru)
+Panglima Burung
+Terkait sejarah konflik etnis nyata di Kalimantan
+RAWANGGA — roh yang muncul sebagai kawanan ribuan burung kecil yang membentuk satu sosok. Bukan panglima, bukan manusia. Muncul ketika tanah, bukan manusia, yang terluka.
+Manarmakeri / Koreri
+Gerakan mesianis dengan resonansi politik hidup
+KAKI WARANA — perempuan tua yang bayangannya lebih muda dari dirinya. Tidak menjanjikan surga; ia hanya menagih janji lama.
+Hainuwele
+Mitos sakral suku Wemale
+INA GAMARA — perempuan yang berjalan ke laut, dan pulau tumbuh di tempat ia berdiri. Tidak dimutilasi, tidak melahirkan umbi.
+Sabdopalon & Naya Genggong
+Dipakai dalam wacana keagamaan-politik aktif
+(Tidak diganti — peran dihapus dari cerita)
+Punakawan (Semar, Gareng, Petruk, Bagong)
+Semi-ilahi dalam kosmologi Jawa
+KI PAMOMONG — bekas juru masak keraton yang tinggal setelah semua orang pergi. Manusia biasa. Tidak sakti.
+Nyi Roro Kidul
+Kepercayaan hidup, ritual aktif
+RATU ANJALA — bukan penguasa laut; ia adalah ingatan gunung yang mengambil wujud perempuan
+Bissu
+Pemuka spiritual yang hidup
+(Dihapus dari cerita)
+Naskah La Galigo
+Naskah sakral, pembacaannya diritualkan
+(Tidak dikutip; hanya arketipe pelayaran)
+Dewi Anjani
+Kepercayaan Sasak aktif
+RATU ANJALA (lihat atas)
+Sultan Baabullah & sultan historis lain
+Tokoh sejarah, keturunan hidup
+KOLANO WIRAMA — penguasa fiktif kesultanan fiktif
+Dapunta Hyang Sri Jayanasa
+Tokoh sejarah, nama pada prasasti nyata
+DAPUNTA WIRA
+Prabu Brawijaya V
+Tokoh sejarah dengan klaim keturunan
+SANG PRABU TERAKHIR (tanpa nama pribadi)
+Datu Kalampayan & ulama Banjar
+Tokoh keagamaan yang diziarahi
+(Dihapus; "Datu" dipakai sebagai gelar generik saja)
+Balian & Wadian (praktik ritual spesifik)
+Praktik spiritual aktif
+SANRA — gelar penyembuh fiktif, tanpa mantra atau tata cara nyata
+Bau Nyale (festival aktif)
+Festival berlangsung setiap tahun
+MALAM SERIBU CAHAYA — plankton bercahaya, bukan cacing laut
+Rambu Solo & tau-tau
+Upacara kematian yang berlangsung
+(Dihapus; boneka pengingat dipakai dalam festival fiktif)
+Korwar
+Patung leluhur dengan fungsi ritual
+PATUNG PANGGIL — bentuk berbeda, fungsi: menyimpan suara, bukan roh
+Legenda asal Raja Ampat (4 raja dari 7 telur)
+Legenda pendiri identitas kelompok
+TUJUH TELAPAK — tujuh cap tangan di dinding gua; empat milik manusia, satu milik yang bukan manusia, dua tidak pernah dikenali
+1.4 GEOGRAFI FIKTIF — NUSA LARAS
+Seluruh dunia game dipindahkan ke kepulauan fiktif NUSA LARAS ("laras" = selaras/tala, istilah gamelan — juga berarti ditalikan, diselaraskan).
+
+Sembilan wilayah disebut Sembilan Laras.
+Peta Padanan
+#
+Nama Lama
+NAMA BARU
+Inspirasi (tidak disebut in-game)
+Arti nama
+1
+Wentira
+PARIGAMA
+Sulawesi Tengah
+parigi (saluran) + gama — "yang mengalir tak terlihat"
+2
+Spirit Kingdom
+DWILARAS
+Bali
+"dua nada yang selaras"
+3
+Saranjana
+BANDARANTA
+Kalimantan Selatan
+bandar + ananta — "pelabuhan tak berujung"
+4
+Rimba Terlarang
+RIMBA LENGANG
+Sumatera Barat/Jambi
+"rimba yang sunyi"
+5
+Reruntuhan Sriwijaya
+MUARAWIRA
+Sumatera Selatan
+"muara para wira"
+6
+Kutagiri
+KUTAGIRI (tetap)
+Jawa (Gunung Lawu)
+kuta (benteng) + giri (gunung) — sudah generik
+7
+Tanah Para Raja
+GANDARIMA
+Maluku Utara
+ganda (wangi) + rima — "tanah yang wangi"
+8
+Anak-anak Laut
+NUSA LARUT
+Nusa Tenggara Barat
+"pulau yang melarut"
+9
+Surga Terakhir
+NUSA PURWA
+Papua Barat Daya
+"pulau yang pertama"
+Padanan Geografi Detail
+Nyata
+Fiktif
+Nyata
+Fiktif
+Teluk Tomini
+Teluk Ranaya
+Sungai Musi
+Sungai Wira
+Danau Poso
+Danau Sanu
+Bukit Siguntang
+Bukit Sunggara
+Lembah Bada
+Lembah Batu Diam
+Pulau Kemaro
+Pulau Dua Nama
+Gunung Gawalise
+Gunung Kelambu
+Gunung Lawu
+Gunung Giri
+Sungai Barito
+Sungai Lambung
+Candi Cetho/Sukuh
+Candi Bertingkat
+Pegunungan Meratus
+Pegunungan Ratus
+Gunung Gamalama
+Gunung Ganda
+Pulau Laut / Kotabaru
+Pulau Intan
+Danau Tolire
+Danau Diam
+Gunung Kerinci
+Gunung Lengang
+Kie Matubu
+Puncak Warima
+Danau Kerinci
+Danau Bening
+Gunung Rinjani
+Gunung Anjala
+Sungai Musi
+Sungai Wira
+Segara Anak
+Segara Dalam
+Trunyan
+Desa Tanpa Bakar
+Gunung Tambora
+Gunung Abu
+Nusa Penida
+Nusa Gersang
+Raja Ampat
+Kepulauan Purwa
+Alas Kedaton
+Alas Wanara
+Misool
+Pulau Telapak
+Kawah Batur
+Kawah Bara
+Selat Dampier
+Palung Purwa
+Wayag
+Karst Warana
+Waigeo/Salawati/Batanta
+Nusa Satu/Dua/Tiga
+
+Aturan: Nama fauna, flora, dan istilah teknis budaya (gamelan, tenun, keris, tifa) TETAP — itu Tingkat T1. Anoa tetap anoa. Cendrawasih tetap cendrawasih. Yang difiksionalisasi hanya nama tempat, nama entitas berkepercayaan, dan nama tokoh.
+1.5 Padanan Entitas — Region 1 & 2 (v1.0)
+PARIGAMA (eks-Wentira)
+#
+Nama Lama
+NAMA BARU
+Perubahan Penanda
+01
+Yaki Pengawal
+Yaki Pengawal ✓
+T1 — fauna, tidak diubah
+02
+Bombo Perantau
+Lampah Sesat
+Bukan arwah Toraja; sosok tanpa wajah yang hanya bisa berjalan, tidak bisa berhenti
+03
+Deata Padi
+Rasa Padi
+Bukan dewata; roh kecil yang lahir dari kebiasaan menanam
+04
+Prajurit Kaili
+Prajurit Ranaya
+Nama etnis dihapus
+05
+Sanro Balia
+Sanra Muda
+Gelar penyembuh fiktif; tanpa ritual Balia
+06
+Anoa Perbukitan
+Anoa Perbukitan ✓
+T1
+07
+Poppo
+Ngayang
+Bukan kepala terbang; tubuh tidur, bayangan terbang. Mencuri ingatan, bukan darah
+08
+Maleo Bara
+Maleo Bara ✓
+T1
+09
+Parakang
+Rupaganti
+Bukan pemakan mayat; makhluk yang meniru orang yang dilupakan keluarganya
+10
+Deata Ranu Poso
+Nyai Sanu
+Roh danau fiktif
+11
+Buaya Putih Palu
+Buaya Putih Wira
+Nama tempat diganti
+12
+Panglima Ntodea
+Panglima Ranaya
+Nama etnis dihapus
+13
+Tedong Bonga
+Kerbau Belang Pusaka
+Status sakral Toraja dihapus; menjadi hewan tunggangan lama yang setia
+14
+Palindo
+PANDU BATU
+Bukan megalit Lore Lindu; patung batu tanpa wajah, tinggi 6 m, ciptaan orisinal
+15
+Sawerigading
+NAKHODA WIRAJAYA
+Bukan tokoh La Galigo; pelaut yang berlayar mencari sesuatu yang sudah tiada. Tanpa kisah saudara kembar.
+16
+To Manurung
+TUMURUN
+Turun dari langit — tapi menolak memerintah. Legitimasi kerajaan dihapus.
+DWILARAS (eks-Spirit Kingdom / Bali)
+#
+Nama Lama
+NAMA BARU
+Perubahan Penanda
+17
+Celuluk
+Cengiran
+Tanpa ikonografi topeng Bali; sosok kecil yang hanya bisa tertawa
+18
+Tonya Sawah
+Tonyar
+Roh sawah generik
+19
+Pecalang Muda
+Penjaga Laras Muda
+Institusi adat Bali dihapus
+20
+Kera Wanara
+Kera Wanara ✓
+T1
+21
+Memedi Kuburan
+Memeди → MEMEDAR
+Sosok yang memudar, bukan hantu kuburan
+22
+Gajah Mina
+Gajahmina ✓
+Makhluk gajah-ikan; arketipe pan-Asia, risiko rendah
+23
+Juru Sapuh
+Juru Pamor
+Konteks pura dihapus; ahli pembersih pusaka
+24
+Leak Sungsang
+BAYANGSUNGSANG
+Tanpa ikonografi kepala-organ; bayangan yang berjalan terbalik
+25
+Rarung
+RANIKA
+Murid penyihir → perempuan yang belajar menulis kutukan karena tidak diajari menulis apa pun lagi
+26
+Dedari Kahyangan
+Bidadari Laras
+Konteks kahyangan Hindu dihapus
+27
+Jero Gede Macaling
+KALAWANGSA
+Penguasa pulau kering; wabah diganti menjadi "kelaparan yang tak bisa dipuaskan"
+28
+Kebo Iwa
+KEBAWANA
+Raksasa pembangun; kisah pengkhianatan Gajah Mada dihapus
+29
+Rangda
+RARASUNYI
+⚠️ Rambut = nama anak-anak yang hilang. Tanpa lidah panjang, tanpa taring, tanpa konteks Calonarang. Bukan penyihir — kesedihan yang tidak punya pulang.
+30
+Barong Ket
+LEMBUJAGA
+⚠️ Makhluk belang berkaki empat dengan wajah seperti topeng kayu — bukan desain Barong Ket. Tanpa konteks tapakan/pura. Tetap pasangan penyeimbang Rarasunyi.
+
+Catatan desain untuk Rarasunyi & Lembujaga: Ini pasangan paling berharga di game dan paling berisiko. Yang dipertahankan hanyalah arketipenya: dua kekuatan berlawanan yang saling membutuhkan, di mana tidak ada yang jahat. Arketipe itu universal (Yin-Yang, Apollo-Dionysus, Order-Chaos) dan bukan milik satu budaya. Yang dibuang adalah seluruh ikonografi, nama, dan konteks ritualnya.
+1.6 Padanan Entitas — Region 3–9 (World Bible)
+BANDARANTA (eks-Saranjana)
+Lama
+Baru
+Perubahan
+Saranjana
+BANDARANTA
+Kota dagang fiktif di Pulau Intan
+Antu Banyu
+Antu Lambung
+Nama sungai fiktif
+Kambe Rimba
+Kambar Rimba
+Roh hutan generik
+Prajurit Banjar
+Prajurit Bandara
+Etnis dihapus
+Burung Tingang
+Burung Tanduk
+Status sakral enggang Dayak dihapus
+Kuyang Perawan
+Ngayang Muda
+Sama dengan #07
+Balian Muda
+Sanra Bandara
+Ritual Balian dihapus
+Hantuen Terbang
+Lampah Terbang
+
+Jata Pengarung
+Jatar
+Dewa air Ngaju → naga sungai generik
+Buaya Kuning
+Buaya Kuning ✓
+Fauna legenda umum
+Wadian Bulat
+Sanra Bulat
+
+Naga Banjar
+Naga Lambung
+
+Putri Junjung Buih
+PUTRI TIMBUL
+Lahir dari buih → muncul dari kabut; kisah pendiri kerajaan Banjar dihapus
+Panglima Tariu
+Panglima Seruan
+⚠️ Ritual Tariu (terkait konflik nyata) dihapus total
+Intan Cempaka
+Intan Purba
+
+Panglima Burung
+RAWANGGA ⛔
+Dibuang & diganti. Kawanan ribuan burung kecil membentuk satu sosok. Bukan panglima, bukan manusia.
+Datu Rimba Meratus
+Datu Ratus
+
+Datu Pasar
+JURAGAN ANANTA
+Antagonis pedagang, ciptaan orisinal
+RIMBA LENGANG (eks-Rimba Terlarang)
+Lama
+Baru
+Perubahan
+Orang Bunian
+KAUM LENGANG
+"Orang Sunyi" → kaum yang tidak bersuara. Bukan makhluk halus; mereka manusia yang berhenti terdengar.
+Begu Kecil / Begu Ganjang
+JANGGARA
+Bayangan yang tumbuh setinggi pohon. Konteks Batak & pesugihan dihapus.
+Sigale-gale
+BONEKA GALIH
+Boneka pengingat dalam festival fiktif. Konteks upacara kematian Toraja/Batak dihapus total.
+Cindaku
+CINDARA
+Manusia-harimau; konteks Kerinci dihapus
+Inyiak Balang
+INYA BELANG
+Harimau leluhur → harimau yang menjaga batas, tanpa konsep leluhur/inyiak
+Naga Padoha
+NAGA PATALA
+Nama Sanskerta generik untuk dunia bawah
+Datu Pustaha
+JURU LAKLAK
+Aksara Batak → aksara fiktif
+Namborru
+Datu Tujuh Sungai
+
+Puti Bungsu / Puti Bunian
+PUTI LENGANG
+
+Orang Pendek
+Orang Pendek ✓
+Kriptid, bukan kepercayaan religius
+Raja Bunian
+RAJA LENGANG
+
+MUARAWIRA (eks-Reruntuhan Sriwijaya)
+Lama
+Baru
+Perubahan
+Sriwijaya
+KEDATUAN WIRAMUARA
+Imperium maritim fiktif
+Si Pahit Lidah / Serunting Sakti
+SANG LIDAH BATU
+Kata-katanya jadi kenyataan; nama & silsilah Besemah dihapus
+Prasasti Telaga Batu / Kedukan Bukit
+Prasasti Wira, Sunggara, Talang
+Teks prasasti seluruhnya fiktif. Jangan mengarang terjemahan prasasti nyata.
+Tan Bun An & Siti Fatimah
+TUAN BUNAN & PUTRI SAMUDRA
+Legenda Pulau Kemaro → legenda Pulau Dua Nama
+Dapunta Hyang
+DAPUNTA WIRA
+
+Puyang
+Punyang
+Gelar leluhur → penjaga generik
+Ular Lembu
+Ular Lembu ✓
+
+Bhiksu / Vajrayana
+Rahib Wira
+Denominasi agama nyata dihapus; ordo fiktif
+Bidadari Sungai Musi
+Bidadari Wira
+
+KUTAGIRI
+Lama
+Baru
+Perubahan
+Prabu Brawijaya V
+SANG PRABU TERAKHIR
+Tanpa nama pribadi, tanpa dinasti nyata
+Semar / Sang Pamomong
+KI PAMOMONG ⛔
+Bekas juru masak keraton. Manusia biasa, tidak sakti, tidak ilahi.
+Sabdopalon
+⛔ DIHAPUS
+Tidak diganti
+Nyi Roro Kidul
+⛔ DIHAPUS
+Tidak diganti
+Genderuwo
+GANDRUWA
+Tanpa konteks Kejawen
+Wewe Gombel
+NINI GOMBAK
+Fungsi diubah: menyembunyikan anak yang tidak diinginkan, bukan menculik
+Banaspati
+BANASPATRA
+
+Buto Ijo
+BUTA HIJAU
+Raksasa generik
+Kyai Jalak
+Burung Jalak Giri
+Gelar "Kyai" (keagamaan) dihapus
+Pasar Setan
+PASAR LENGANG
+
+Sendang Drajat
+Sendang Tujuh
+
+Hargo Dalem
+Puncak Dalem
+
+Panembahan Hargo
+Panembahan Giri
+
+Kuntilanak
+NYAI RARA SUNYI
+Ikonografi kuntilanak dihapus; sosok yang hanya terdengar, tidak pernah terlihat
+GANDARIMA (eks-Tanah Para Raja)
+Lama
+Baru
+Perubahan
+Ternate & Tidore
+KOLANO GANDA & KOLANO WARIMA
+Dua kesultanan fiktif
+Sultan Baabullah dll.
+KOLANO WIRAMA
+Penguasa fiktif
+Suanggi
+MALAWANGI ⛔
+Bukan penyihir pemakan hati. Makhluk yang terbentuk dari tuduhan yang tak pernah diucapkan. Semakin banyak orang mencurigai tetangganya, semakin besar ia.
+Hainuwele
+INA GAMARA ⛔
+Perempuan yang berjalan ke laut; pulau tumbuh di tempat ia berdiri
+Nusa Ina
+NUSA GAMARA
+
+Danau Tolire
+DANAU DIAM
+Legenda desa terkutuk dipertahankan sebagai arketipe, detail dihapus
+Bambu Gila
+BAMBU BERGERAK
+Ritual nyata → permainan kekuatan fiktif
+Boki
+BOKARA
+Gelar permaisuri fiktif
+Momole
+MOMOLA
+Gelar kepala adat fiktif
+Jin Gurabunga
+KABUT WARIMA
+Konsep "jin" (Islami) dihapus
+Kora-kora
+Kora-kora ✓
+Jenis perahu, T1
+NUSA LARUT (eks-Anak-anak Laut)
+Lama
+Baru
+Perubahan
+Putri Mandalika
+PUTRI MANDARA
+Memilih pecah agar tak dimiliki; cacing nyale → plankton bercahaya
+Bau Nyale
+MALAM SERIBU CAHAYA
+Festival fiktif
+Nyale
+Cahaya Larut
+
+Dewi Anjani
+RATU ANJALA ⛔
+Bukan ratu jin. Ingatan gunung yang mengambil wujud perempuan. Konteks Islam-Sasak dihapus.
+Gunung Rinjani
+Gunung Anjala
+
+Segara Anak
+Segara Dalam
+
+Gunung Tambora
+GUNUNG ABU
+Letusan 1815 → letusan fiktif "Satu Malam"
+Kerajaan Tambora/Pekat
+Kerajaan Larangga
+
+Datu Selaparang
+Datu Selarang
+
+Cupak & Gerantang
+CUPAR & GERANTA
+
+Bebadong
+BADONGAN
+Jimat generik
+Gendang Beleq
+Gendang Besar
+
+Suanggi Bau Nyale
+Malawangi Larut
+
+NUSA PURWA (eks-Surga Terakhir)
+Lama
+Baru
+Perubahan
+Raja Ampat
+KEPULAUAN PURWA
+
+Legenda 4 raja dari 7 telur
+TUJUH TELAPAK ⛔
+Tujuh cap tangan di dinding gua. Empat milik manusia, satu milik yang bukan manusia, dua tidak pernah dikenali. Legenda asli tidak digunakan.
+Empat Raja (Waigeo dll.)
+EMPAT TELAPAK
+Empat penjaga tanpa nama pulau nyata
+Manarmakeri
+KAKI WARANA ⛔
+Perempuan tua yang bayangannya lebih muda dari dirinya
+Suanggi Papua
+MALAWANGI PURWA
+Sama dengan Gandarima
+Korwar
+PATUNG PANGGIL ⛔
+Menyimpan suara, bukan roh. Bentuk berbeda.
+Mambri
+MAMBARA
+Gelar kesatria fiktif
+Lukisan batu Misool
+Dinding Telapak
+Situs fiktif; jangan gambarkan situs nyata rusak
+Cendrawasih, kasuari, kuskus, pari manta
+✓ TETAP
+T1 — fauna
+Noken
+Anyaman Purwa
+
+1.7 Halaman "TERINSPIRASI OLEH" (WAJIB)
+Diakses dari menu utama dan halaman Steam. Teks pembuka wajib:
+
+NUSA LARAS ADALAH TEMPAT YANG TIDAK ADA.
+
+Tapi ia tidak lahir dari kekosongan.
+
+Dunia ini terinspirasi oleh kekayaan cerita rakyat, mitologi, arsitektur, musik, dan tekstil dari berbagai kebudayaan di Indonesia — di antaranya Kaili, Bugis, Toraja, Bali, Banjar, Dayak, Minangkabau, Kerinci, Batak, Melayu-Palembang, Jawa, Ternate-Tidore, Sasak, Sumbawa, dan Papua pesisir.
+
+Tidak satu pun tokoh, tempat, makhluk, atau upacara dalam permainan ini merupakan penggambaran dari kepercayaan, tokoh, atau praktik yang nyata. Kami sengaja menciptakan nama, wujud, dan kisah baru — karena kami tidak merasa berhak berbicara atas nama siapa pun.
+
+Yang kami pinjam adalah cara bercerita, bukan ceritanya.
+
+Bila permainan ini membuat Anda ingin mencari tahu kisah yang sebenarnya, kami sarankan membaca sumber-sumber berikut — yang ditulis oleh orang-orang yang memang berhak menceritakannya.
+
+Diikuti daftar bacaan 15–25 judul (buku, jurnal, dokumenter), diperbarui tiap update.
+
+Kenapa halaman ini wajib: Fiksionalisasi tanpa pengakuan sumber terbaca sebagai pengambilan. Fiksionalisasi dengan pengakuan sumber terbaca sebagai kehati-hatian. Perbedaannya adalah satu halaman teks, dan ia menentukan bagaimana proyek ini dinilai.
+1.8 Yang Tetap Wajib Meski Ada Fiksionalisasi
+#
+Tindakan
+Biaya
+1
+1 sensitivity reader membaca naskah final sebelum rilis
+Rp 5–15 juta
+2
+Halaman "Terinspirasi Oleh" + daftar bacaan
+Waktu penulisan
+3
+Audit internal: setiap entitas dicek terhadap Aturan Dua Penanda
+1 minggu kerja designer
+4
+Larangan menggambarkan situs cagar budaya nyata hancur
+Aturan art
+5
+Terminologi in-game tetap Bahasa Indonesia (Sukma, Pusaka, Prana, Laras)
+—
+
+Jangan biarkan "sudah difiksionalisasi" menjadi alasan melewatkan poin 1. Fiksionalisasi mengurangi risiko; ia tidak menghapusnya. Kesultanan rempah dengan empat raja dan benteng kolonial tetap dikenali, apa pun namanya.
+
+
+BAGIAN 2 — MULTI-ENDING
+2.1 Prinsip Desain
+Prinsip
+Alasan
+Jangan beri label "Sad" atau "Good" di layar
+Melabeli = memberi tahu pemain pilihannya salah. Ambiguitas moral adalah kekuatan cerita ini. Beri nama, bukan nilai.
+Ending sedih harus bisa dicapai tanpa sengaja
+Kalau ending buruk butuh usaha khusus, ia tidak terasa seperti konsekuensi. Ia terasa seperti hukuman.
+Ending baik butuh perhatian, bukan grinding
+Syaratnya adalah memperhatikan cerita, bukan mengumpulkan 500 item
+Tidak ada ending yang membatalkan yang lain
+Galeri Ending dibuka setelah tamat pertama; semua ending kanonik dalam kerangka "gema yang berulang"
+Simpan otomatis sebelum titik pilihan
+Pemain boleh melihat ending lain tanpa mengulang 20 jam
+2.2 Struktur Ending v1.0
+Tiga ending. Dipicu di Bab 5, Puncak Laras (eks-Pura Puncak).
+
+                    BAB 5 — KLIMAKS
+                            │
+                            ▼
+              [ Sang Sunyi tidak bisa dibunuh ]
+                            │
+        ┌───────────────────┼───────────────────┐
+        ▼                   ▼                   ▼
+   ┌─────────┐         ┌─────────┐         ┌─────────┐
+   │ ENDING  │         │ ENDING  │         │ ENDING  │
+   │    A    │         │    B    │         │    C    │
+   │  KABUT  │         │   YANG  │         │  LARAS  │
+   │  YANG   │         │ MENGING │         │         │
+   │ KEMBALI │         │   AT    │         │(TERSEMB │
+   │         │         │         │         │  UNYI)  │
+   └─────────┘         └─────────┘         └─────────┘
+    Default              Syarat              Syarat
+   (Sedih)            (Baik-pahit)         (Terbaik)
+
+
+🌫️ ENDING A — "KABUT YANG KEMBALI"
+(Sedih · Default · Tidak butuh syarat)
+
+Pemicu: Selesaikan cerita utama tanpa memenuhi syarat Ending B atau C. Ini yang didapat pemain yang bergegas.
+
+Isi:
+
+Pemain menyegel Sang Sunyi dengan mengembalikan segalanya ke keadaan semula. Keseimbangan pulih. Lima batu Pusaka Gema menyala serentak, lalu padam.
+
+Parigama kembali tersembunyi. Bukan dihancurkan — hanya keluar dari fokus, seperti gambar yang perlahan buram. Penduduknya melambai. Mereka tersenyum, karena mereka lega.
+
+Hanya Adi yang tidak melambai. Anak yang sepanjang Bab 2 memohon agar dunia luar datang. Ia berdiri di dermaga dan memanggil nama pemain sampai suaranya tidak terdengar lagi.
+
+Dwilaras kembali menjalankan upacara. Sempurna, teratur, dan kosong seperti sebelumnya.
+
+Pemain pulang ke padepokan. Menggantung Pusaka Gema di dinding.
+
+Adegan terakhir: Pemain terbangun keesokan paginya. Melihat kalung di dinding dan tidak ingat kenapa itu penting. Nenek Ranaya menyanyikan lagu perjalanan tua di kejauhan — dan pemain tidak mengenali lagunya.
+
+Layar gelap. Teks: "Keseimbangan pulih. Tidak ada yang berubah."
+
+Kenapa ending ini penting: Ia bukan hukuman. Ia adalah kemenangan yang tepat secara teknis dan hampa secara manusiawi — yang persis merupakan tema game ini. Pemain yang mendapat ending ini tidak gagal; mereka memilih jalan yang paling masuk akal, dan itulah yang membuatnya menyakitkan.
+
+Audio: BGM-21 Yang Tersisa dimainkan tanpa melodi utama — hanya iringan. Melodinya baru muncul di Ending B.
+
+
+🕯️ ENDING B — "YANG MENGINGAT"
+(Baik · Pahit-manis · Butuh syarat)
+
+Syarat (semua harus terpenuhi):
+
+#
+Syarat
+Kenapa syarat ini
+1
+≥ 24 dari 30 Sukma dikumpulkan
+Pemain yang membangun ikatan
+2
+Selesaikan 4 rantai Titah Sampingan bernama (Nenek Ranaya, Kapten Lamalu, Sanra Buri, Jero Mangku)
+Pemain yang mendengarkan orang
+3
+≥ 80% Batu Gema di kedua region
+Pemain yang membaca
+4
+Di Bab 2, dengarkan seluruh kisah Pandu Batu tanpa melewati dialog
+Pemain yang tidak bergegas
+5
+Jangan menyerang Adi saat ia menghalangi di Bab 2 (opsi tersembunyi: tunggu 30 detik)
+Pemain yang sabar
+
+Isi:
+
+Pemain menolak menyegel. Ia melakukan hal yang lebih berat: mengikat Sang Sunyi ke dalam dirinya sendiri.
+
+Dunia mulai mengingat. Parigama muncul di peta — kecil, tapi ada. Kapal datang. Adi berdiri di dermaga, dan kali ini ia menyambut. Upacara di Dwilaras kembali punya arti; Jero Mangku menangis di tengah doa karena ia akhirnya paham apa yang ia ucapkan selama ini.
+
+Tapi harganya berlaku.
+
+Nenek Ranaya menatap pemain dan bertanya sopan siapa dia. Kapten Lamalu berterima kasih pada "seseorang" yang menyelamatkan awaknya, tanpa bisa menyebut nama. Padepokan yang dulu milik kakek pemain kini terdaftar sebagai bangunan tak bertuan.
+
+Adegan terakhir: Pemain duduk sendirian di pendopo. Lalu satu per satu, Sukma-nya datang dan duduk di sekitarnya.
+
+Mereka masih ingat.
+
+Layar gelap. Teks: "Dunia mengingat. Seseorang harus membayar."
+
+Audio: BGM-21 Yang Tersisa dengan melodi utama penuh — pertama kali pemain mendengarnya lengkap.
+
+
+🪶 ENDING C — "LARAS"
+(Tersembunyi · Terbaik · Membuka NG+ dan menyiapkan Season 2)
+
+Syarat (semua Ending B, ditambah):
+
+#
+Syarat
+6
+30 dari 30 Sukma dikumpulkan
+7
+100% Batu Gema di kedua region
+8
+Kalahkan Gema Kakek — superboss tersembunyi di Padepokan, hanya muncul setelah 100% Batu Gema
+9
+Di pertarungan akhir, berhenti menyerang selama 3 ronde penuh
+
+Isi:
+
+Pemain menyadari bahwa menyegel dan mengikat sama-sama salah, karena keduanya berangkat dari asumsi yang sama: bahwa ingatan harus disimpan seseorang.
+
+Ia melakukan hal ketiga. Ia membagikannya.
+
+Setiap orang mendapat sepotong. Nenek Ranaya mendapat lagunya kembali. Kapten Lamalu mendapat nama-nama awaknya. Adi mendapat kata untuk menyebut dunia luar. Jero Mangku mendapat arti dari satu baris doa — satu baris saja, dan itu cukup untuk memulai.
+
+Tidak ada yang menanggung semuanya. Karena itu, tidak ada yang runtuh.
+
+Sang Sunyi tidak dikalahkan. Ia menjadi jeda antar nada — bukan lawan musik, melainkan bagian yang membuatnya menjadi musik.
+
+Adegan terakhir: Pemain berjalan pulang. Orang-orang menyapanya dengan namanya. Ia membuka pintu padepokan, dan Pusaka Gema di dinding kini bercahaya dengan enam batu.
+
+Batu keenam berwarna yang belum pernah dilihat pemain.
+
+Di kejauhan, di seberang laut utara, sebuah pelabuhan yang seharusnya tidak ada menyalakan lampunya.
+
+Layar gelap. Teks: "Laras bukan berarti sama. Laras berarti saling memberi tempat."
+
+Membuka: NG+, Galeri Ending, Sukma #31 (Gema Kakek), dan prolog Season 2.
+
+
+2.3 Struktur Ending Finale (Season 4 — Nusa Purwa)
+Untuk kelengkapan World Bible. Status: 🟡 provisional.
+
+Ending
+Nama
+Sifat
+Syarat
+A
+"Yang Mengingat Segalanya"
+Sedih
+Default. Dunia tidak bisa melupakan apa pun — termasuk luka. Tidak ada yang bisa sembuh. Semua orang hidup dengan seluruh kesedihan mereka, selamanya.
+B
+"Telapak yang Kosong"
+Sedih (berbeda)
+Dunia dimulai ulang. Bersih, tenang, tanpa beban — dan tanpa apa pun. Pemain berdiri di gua dan menekan telapaknya di dinding, memulai siklus berikutnya.
+C
+"Sembilan Laras"
+Baik
+Butuh 8 region dipulihkan dengan Ending terbaiknya masing-masing. Sembilan wilayah saling menitipkan ingatan — tak seorang pun menanggung sendiri. Sang Sunyi menjadi napas di antara nada.
+2.4 Biaya Produksi Multi-Ending
+Aset
+Ending A
+Ending B
+Ending C
+Total
+Ilustrasi cutscene
+5 panel
+6 panel
+7 panel
+18 panel
+Dialog bercabang
+~800 kata
+~1.200 kata
+~1.500 kata
+3.500 kata
+Variasi musik
+Instrumental
+Melodi penuh
+Aransemen penuh
+3 varian BGM-21
+Pengecekan syarat
+—
+5 flag
+9 flag
+Sistem flag
+Galeri Ending & save otomatis
+—
+—
+—
+1 layar UI
+
+Estimasi tambahan: 5–7 minggu (art 3 minggu, tulis 1 minggu, program 1,5 minggu, audio 1 minggu, QA 0,5 minggu).
+
+Ini harus masuk jadwal secara eksplisit. Multi-ending yang ditambahkan di akhir produksi selalu terasa ditempel.
+2.5 Yang TIDAK Boleh Dilakukan
+❌
+Kenapa
+Menulis "SAD ENDING" / "GOOD ENDING" di layar
+Menghancurkan ambiguitas moral
+Menampilkan daftar syarat sebelum tamat
+Mengubah cerita jadi checklist
+Membuat Ending A terasa seperti hukuman (game over, layar merah)
+Ending A harus terasa seperti pilihan yang masuk akal, bukan kegagalan
+Mengunci Ending C di balik grinding
+Syaratnya harus perhatian, bukan waktu
+Menghapus save sebelum pilihan akhir
+Pemain harus bisa melihat ending lain tanpa 20 jam ulang
+
+
+BAGIAN 3 — TATA KELOLA PROJECT OWNER
+3.1 Masalah yang Diselesaikan
+Menunjuk Project Owner tanpa memberinya mekanisme hanya menghasilkan jabatan. Scope creep tidak terjadi karena tidak ada yang bertanggung jawab — ia terjadi karena tidak ada prosedur untuk mengatakan tidak.
+3.2 Wewenang & Batas
+Project Owner BERWENANG
+Project Owner TIDAK BERWENANG
+Menolak penambahan fitur apa pun
+Memutuskan detail desain (itu Game Designer)
+Memutuskan apa yang dipotong saat jadwal meleset
+Menolak peringatan risiko teknis dari programmer
+Menyetujui pemindahan konten World Bible → backlog
+Menambah scope tanpa memotong yang setara
+Menghentikan fase produksi di titik gate
+Mengubah keputusan gate secara sepihak tanpa data
+Menyetujui pengeluaran di luar anggaran
+Meniadakan sensitivity reader
+⚠️ Aturan Konflik Kepentingan
+Project Owner TIDAK BOLEH orang yang sama dengan Game Designer.
+
+Alasan: tugas Game Designer adalah membayangkan yang lebih baik; tugas Project Owner adalah melindungi yang bisa selesai. Satu orang tidak bisa mengerjakan keduanya dengan jujur. Kalau timmu hanya punya satu orang yang mampu jadi PO dan dia adalah designer-nya, cari orang lain — bisa dari luar tim inti (misalnya pemimpin studio atau pemodal).
+3.3 Alat 1 — BUKU BESAR SCOPE (Scope Ledger)
+Satu spreadsheet. Satu sumber kebenaran. Diperbarui setiap minggu oleh PO.
+
+Kolom
+Isi
+ID
+SCP-001
+Item
+"30 Sukma di v1.0"
+Status
+🟢 Disepakati / 🟡 Diusulkan / 🔴 Ditolak / ⚫ Dipotong
+Estimasi (hari)
+405
+Terpakai (hari)
+128
+Pemilik
+Nama
+Tanggal keputusan
+—
+Dipotong sebagai kompensasi
+(diisi jika status 🟢 hasil dari Permintaan Perubahan)
+
+Aturan emas: Total estimasi 🟢 tidak boleh melebihi kapasitas tim untuk periode tersebut. Kalau melebihi, PO wajib memotong sampai seimbang sebelum sprint dimulai, bukan sesudah.
+3.4 Alat 2 — FORMULIR PERMINTAAN PERUBAHAN
+Setiap penambahan apa pun wajib melewati formulir ini. Tidak ada pengecualian, termasuk untuk PO sendiri.
+
+┌──────────────────────────────────────────────┐
+│ PERMINTAAN PERUBAHAN SCOPE            #CR-___│
+├──────────────────────────────────────────────┤
+│ Pengusul  : ______________  Tanggal: ________│
+│                                              │
+│ 1. APA yang ditambahkan?                     │
+│    _________________________________________ │
+│                                              │
+│ 2. ESTIMASI (hari kerja, per peran)          │
+│    Art: ___  Anim: ___  Prog: ___  Audio:___ │
+│    Desain: ___  QA: ___     TOTAL: ______    │
+│                                              │
+│ 3. APA YANG DIPOTONG sebagai gantinya?       │
+│    (WAJIB. Estimasi harus ≥ poin 2)          │
+│    _________________________________________ │
+│    Estimasi yang dibebaskan: ______ hari     │
+│                                              │
+│ 4. Apa yang RUSAK kalau ini TIDAK dikerjakan?│
+│    _________________________________________ │
+│                                              │
+│ 5. Bisakah ini menunggu sampai pasca-rilis?  │
+│    ☐ Ya (→ masukkan World Bible, TOLAK)      │
+│    ☐ Tidak, karena: ________________________ │
+│                                              │
+│ 6. Risiko budaya? ☐ Tidak ☐ Ya → lampirkan   │
+│    hasil cek Aturan Dua Penanda              │
+├──────────────────────────────────────────────┤
+│ KEPUTUSAN PO:  ☐ Setuju  ☐ Tolak  ☐ Tunda    │
+│ Tanda tangan: __________  Tanggal: _________ │
+└──────────────────────────────────────────────┘
+
+Kolom 3 adalah inti dari seluruh dokumen tata kelola ini. Sembilan puluh persen scope creep mati di kolom ini, karena begitu orang harus menyebut apa yang mereka relakan, sebagian besar ide "kecil" ternyata tidak sepadan.
+3.5 Alat 3 — GATE DENGAN KRITERIA MATI
+PO wajib mengambil keputusan Lanjut/Hentikan di setiap gate berdasarkan data, bukan perasaan.
+
+Gate
+Bulan
+Pertanyaan
+🔴 Kriteria Hentikan
+G0 — Spike Teknis
+1
+Godot bisa build Android + Web + Windows? AdMob & Billing jalan?
+Kalau tidak → ganti engine sekarang, sebelum ada aset dibuat
+G1 — Vertical Slice
+4
+Apakah 30 detik pertarungan terasa seru?
+< 12 dari 20 penguji luar mau main lagi → hentikan atau desain ulang total
+G2 — Demo Publik
+7
+Berapa Steam wishlist?
+< 3.000 wishlist dalam 60 hari → hentikan produksi inti, evaluasi ulang
+G3 — Beta Tertutup
+18
+Rata-rata jam main? Tingkat penamatan?
+< 8 jam rata-rata atau < 25% tamat → tunda rilis, perbaiki
+G4 — Rilis
+21
+Sensitivity reader lulus? 3 ending berfungsi? Zero crash P0?
+Salah satu tidak → tunda
+
+Kriteria hentikan harus disepakati SEBELUM gate, dan ditulis. Kriteria yang ditetapkan setelah melihat hasil akan selalu dilonggarkan. Itu sifat manusia, bukan kelemahan tim.
+3.6 Alat 4 — PROTOKOL WORLD BIBLE
+Aturan
+Isi
+1. Firewall
+Isi World Bible tidak boleh masuk backlog tanpa Permintaan Perubahan bertanda tangan PO
+2. Tidak ada art spekulatif
+Artis tidak boleh menggambar aset region 3–9 di jam kerja, bahkan "untuk latihan"
+3. Tidak ada janji publik
+Tim tidak menyebut 9 region di media sosial, wawancara, atau materi pemasaran sebelum region itu masuk produksi
+4. Peninjauan tahunan
+World Bible ditinjau setahun sekali. Konten yang tidak masuk produksi dalam 3 tahun ditandai basi dan wajib ditulis ulang, bukan dipakai langsung
+5. Satu pengecualian
+Empat item di GDD Bagian XI.4 (data eksternal, sistem Tingkat Gema, editor internal, pipeline Lore Card) wajib dikerjakan di v1.0 karena mahal ditambahkan belakangan
+3.7 Ritme Mingguan PO
+Hari
+Kegiatan
+Durasi
+Senin
+Perbarui Buku Besar Scope; bandingkan estimasi vs realisasi
+45 menit
+Rabu
+Tinjau Permintaan Perubahan yang masuk
+30 menit
+Jumat
+Laporan satu halaman ke tim: apa yang selesai, apa yang meleset, apa yang dipotong
+30 menit
+Bulanan
+Proyeksi ulang tanggal rilis berdasarkan kecepatan aktual, bukan rencana awal
+2 jam
+
+Metrik paling penting yang harus dilacak PO: velocity aktual dibagi velocity rencana. Kalau rasio ini bertahan di bawah 0,7 selama tiga bulan berturut-turut, tanggal rilis tidak realistis dan harus diumumkan ulang secara internal — bukan dikejar dengan lembur.
+3.8 Kesalahan PO yang Paling Umum
+Kesalahan
+Akibat
+Pencegahan
+Menyetujui "penambahan kecil" tanpa formulir
+20 penambahan kecil = 4 bulan
+Tidak ada pengecualian. Nol.
+Melonggarkan kriteria gate setelah melihat hasil
+Gate jadi tidak berarti
+Tulis kriteria sebelum, tanda tangani
+Menutupi keterlambatan dari tim
+Tim kehilangan kepercayaan saat akhirnya ketahuan
+Laporan Jumat wajib jujur
+Menjadi PO sekaligus Designer
+Tidak ada yang mengatakan tidak
+Pisahkan peran
+Memotong QA & sensitivity reader saat mepet
+Dua hal yang paling mahal kalau gagal
+Kedua pos ini tidak boleh dipotong, titik
+
+
+BAGIAN 4 — DAFTAR TINDAKAN
+4.1 Segera (sebelum produksi berlanjut)
+#
+Tindakan
+Penanggung jawab
+Estimasi
+1
+Tunjuk Project Owner (bukan Game Designer)
+Pimpinan studio
+1 hari
+2
+Buat Buku Besar Scope; isi seluruh item v1.0
+PO
+3 hari
+3
+Audit seluruh nama terhadap Aturan Dua Penanda
+Designer + PO
+5 hari
+4
+Terapkan padanan nama Bagian 1.5 ke GDD v1.0
+Designer
+3 hari
+5
+Tulis draf halaman "Terinspirasi Oleh"
+Designer
+2 hari
+6
+Masukkan 5–7 minggu multi-ending ke jadwal
+PO
+1 hari
+7
+Tetapkan kriteria hentikan G0–G4 secara tertulis
+PO + tim
+1 hari
+4.2 Sebelum Rilis
+#
+Tindakan
+Kapan
+8
+Sensitivity reader membaca naskah final
+Bulan 19
+9
+Finalisasi daftar bacaan (15–25 judul)
+Bulan 19
+10
+Uji ketiga ending oleh penguji berbeda
+Bulan 20
+11
+Verifikasi tidak ada nama T3 tersisa di seluruh aset (termasuk file, komentar kode, dan nama layer art)
+Bulan 20
+
+Poin 11 sering terlewat. Nama asli yang tertinggal di nama file aset, komentar kode, atau metadata adalah cara paling umum fiksionalisasi terbongkar.
+
+
+PERTANYAAN YANG BELUM TERJAWAB
+Siapa Project Ownernya, dan apakah dia bukan Game Designer? Kalau iya, seluruh Bagian 3 tidak akan berfungsi.
+Apakah anggaran Rp 5–15 juta untuk sensitivity reader disetujui? Ini satu-satunya pos perlindungan yang tersisa setelah konsultan penuh dihapus.
+Apakah kamu menerima konsekuensi pemasaran dari fiksionalisasi? Segmen "Peminat Budaya Lokal" (35% target) melemah. Strategi pemasaran harus disesuaikan — dan itu keputusan yang perlu diambil sebelum materi promosi dibuat, bukan sesudah.
+Apakah nama "Nusa Laras" dan sembilan nama wilayah disetujui? Nama-nama ini akan muncul di ribuan baris dialog. Mengubahnya di bulan ke-15 sangat mahal.
+Apakah GDD induk akan direvisi sekarang, atau dokumen ini dijadikan adendum? Rekomendasi: revisi langsung. Dua dokumen dengan nama berbeda untuk hal yang sama adalah sumber kesalahan.
+
+
+
+Revisi Struktural v2.0-F · Agustus 2026 Dokumen ini menggantikan bagian terkait di GDD v1.0-R dan World Bible v1.0. Setiap perubahan wajib melewati Formulir Permintaan Perubahan.
+

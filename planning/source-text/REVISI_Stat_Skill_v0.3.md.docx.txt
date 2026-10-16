@@ -1,0 +1,2932 @@
+REVISI PANDUAN KARAKTER v0.3
+Sistem Statistik, Awaken, dan Kerangka Level Skill
+Status: 🟡 Bagian Statistik SIAP DIPAKAI (mekanis, tidak ambigu). Bagian Rename & Skill Level MENUNGGU KONFIRMASI. Dokumen induk: PANDUAN_KARAKTER_100_Nawantara.md v0.2
+
+
+BAGIAN 0 — YANG DITAHAN, DAN KENAPA
+Item diminta
+Status
+Alasan ditahan
+5 SR → Rare
+🟡 Kandidat diusulkan di §3, belum dieksekusi
+Menurunkan tier mengubah stat (2500→2000 HP dasar) dan proporsi rarity di §1.1 Panduan Karakter — perlu satu putaran konfirmasi sebelum tabel indeks ditulis ulang
+Rename 3→2 suku kata
+🟡 Kerangka aturan siap, eksekusi ditahan
+Interpretasi "per kata" vs "per nama utuh" beda 15× beban kerja (3 vs 42 karakter) — lihat pesan sebelum dokumen ini
+Sistem statistik Basic/Awaken
+✅ Selesai dihitung untuk 100 karakter
+Rumus tidak ambigu, kecuali satu titik (RES/ACC) yang sudah diberi keputusan eksplisit di §1.4
+Level skill (Basic 5–10, Special 1–5, Ultimate 1–3)
+🟡 Kerangka aturan di §5, penerapan ke 100 karakter ditahan
+Menyesuaikan "dengan lore masing-masing" untuk 100 karakter adalah pekerjaan penulisan besar — lebih efisien dikerjakan sekali setelah nama final (pasca rename), bukan dua kali
+
+
+BAGIAN 1 — SISTEM STATISTIK
+1.1 Stat Dasar per Tier (sesuai spesifikasi)
+Tier
+HP
+ATK
+DEF
+SPD
+CRT Rate
+CRT DMG
+RES
+ACC
+Common
+1000
+500
+500
+101
+15%
+50%
+0%
+0%
+Uncommon
+1500
+750
+750
+101
+15%
+50%
+0%
+0%
+Rare
+2000
+1000
+1000
+101
+15%
+50%
+0%
+0%
+Super Rare
+2500
+1250
+1250
+101
+15%
+50%
+0%
+0%
+Ultra Rare
+3000
+1500
+1500
+101
+15%
+50%
+0%
+0%
+Legendary
+5000
+2500
+2500
+101
+15%
+50%
+0%
+0%
+1.2 Bonus "Basic" per Role (sebelum Awaken)
+Hanya stat yang disebut yang mendapat bonus. Stat lain tetap murni Tier Default.
+
+Role
+Stat yang naik
+Besar
+Tank
+HP, RES, DEF
++10%
+Attacker
+ATK, Crit Damage, Crit Rate
++10%
+Support
+Speed, Accuracy, DEF
++10%
+Crowd Control
+Seluruh 8 stat
++7%
+1.3 Bonus "Awaken" per Role (ditambahkan di atas stat Basic)
+Role
+Stat bonus besar
+Stat lain
+Tank
+HP, RES: +15%
+6 stat lain: +7%
+Attacker
+ATK, Crit Damage: +15%
+6 stat lain: +7%
+Support
+DEF, Speed: +15%
+6 stat lain: +7%
+Crowd Control
+—
+Seluruh 8 stat: +10%
+
+Urutan perhitungan: Tier Default → Bonus Basic (role) → Bonus Awaken (role), berurutan (bertingkat), bukan dijumlah lalu dikali sekali. Ini berarti stat yang disebut role di kedua tahap (mis. DEF untuk Tank: +10% Basic lalu +7% Awaken sebagai "stat lain") mendapat dua lapis bonus — bukan kesalahan, itu konsekuensi alami menjadi role yang stat itu jadi identitasnya.
+1.4 ⚠️ Keputusan Eksplisit: RES & Accuracy
+RES dan Accuracy defaultnya 0% di semua tier. Bonus "+X% dari default" tidak bisa dihitung perkalian pada nilai 0 (0 × berapa pun tetap 0). Diputuskan: untuk RES dan ACC saja, bonus role diperlakukan sebagai poin persentase tetap (ditambahkan langsung), bukan perkalian. Enam stat lainnya (HP, ATK, DEF, SPD, Crit Rate, Crit DMG) tetap perkalian standar.
+
+Contoh dampaknya — Tank Common (Basic): RES = 0% + 10 = 10%, bukan 0%.
+
+Kalau ini bukan yang dimaksud (misalnya RES/ACC memang sengaja dibiarkan 0% sampai ada sumber lain seperti gear), beri tahu — seluruh 1.600 angka di tabel §2 akan berubah untuk 2 dari 8 kolom.
+1.5 Contoh Perhitungan Manual (verifikasi rumus)
+#02 Tandaraga — Common, Attacker
+
+Tier Default: HP 1000, ATK 500, DEF 500, SPD 101, CRT Rate 15%, CRT DMG 50%, RES 0%, ACC 0%
+Basic (Attacker: ATK/CRT DMG/CRT Rate +10%): ATK 500×1,1=550, CRT DMG 50×1,1=55%, CRT Rate 15×1,1=16,5%; HP/DEF/SPD/RES/ACC tetap.
+Awaken (Attacker: ATK/CRT DMG +15% dari Basic; 6 lain +7% dari Basic): ATK 550×1,15=632,5→632; CRT DMG 55×1,15=63,25→63,2%; HP 1000×1,07=1070; DEF 500×1,07=535; SPD 101×1,07=108,07→108; CRT Rate 16,5×1,07=17,655→17,7%; RES 0+7=7%; ACC 0+7=7%.
+
+Cocok dengan hasil program di tabel §2.
+
+
+1.6 TABEL LENGKAP — 100 KARAKTER, STAT BASIC (SEBELUM AWAKEN)
+#
+Nama
+Region
+Tier
+Role
+HP
+ATK
+DEF
+SPD
+CRT Rate
+CRT DMG
+RES
+ACC
+01
+LAMPAH SINARU
+Nirwasita
+Common
+Crowd Control
+1070
+535
+535
+108
+16.1%
+53.5%
+7.0%
+7.0%
+02
+TANDARAGA
+Nirwasita
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+03
+SANRA RANU
+Nirwasita
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+04
+WATU PALINDRA
+Nirwasita
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+05
+LARE WENGI
+Nirwasita
+Uncommon
+Crowd Control
+1605
+802
+802
+108
+16.1%
+53.5%
+7.0%
+7.0%
+06
+KAYURI SINDU
+Nirwasita
+Rare
+Support
+2000
+1000
+1100
+111
+15.0%
+50.0%
+0.0%
+10.0%
+07
+TOBELANG
+Nirwasita
+Rare
+Attacker
+2000
+1100
+1000
+101
+16.5%
+55.0%
+0.0%
+0.0%
+08
+NGGARINDU
+Nirwasita
+Super Rare
+Tank
+2750
+1250
+1375
+101
+15.0%
+50.0%
+10.0%
+0.0%
+09
+NIRSMARA
+Nirwasita
+Legendary
+Tank
+5500
+2500
+2750
+101
+15.0%
+50.0%
+10.0%
+0.0%
+10
+JURU WANGSUH
+Kadewan
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+11
+KALA SESARI
+Kadewan
+Common
+Crowd Control
+1070
+535
+535
+108
+16.1%
+53.5%
+7.0%
+7.0%
+12
+DEDALI KESUMA
+Kadewan
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+13
+BHARWANG KESARI
+Kadewan
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+14
+RARWANG CELENG
+Kadewan
+Uncommon
+Attacker
+1500
+825
+750
+101
+16.5%
+55.0%
+0.0%
+0.0%
+15
+BASUMITRA
+Kadewan
+Rare
+Tank
+2200
+1000
+1100
+101
+15.0%
+50.0%
+10.0%
+0.0%
+16
+LEMBUJAGA
+Kadewan
+Rare
+Support
+2000
+1000
+1100
+111
+15.0%
+50.0%
+0.0%
+10.0%
+17
+RARASUNYI
+Kadewan
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+18
+NYI RANDU GIRANG
+Kadewan
+Ultra Rare
+Crowd Control
+3210
+1605
+1605
+108
+16.1%
+53.5%
+7.0%
+7.0%
+19
+SANG WERDI
+Kadewan
+Legendary
+Support
+5000
+2500
+2750
+111
+15.0%
+50.0%
+0.0%
+10.0%
+20
+BANDAR ILUNG
+Smarana
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+21
+ANTUWAN MELAYANG
+Smarana
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+22
+WATU GAMBUT
+Smarana
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+23
+JATAWIRA
+Smarana
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+24
+WADYAN SALUNAI
+Smarana
+Uncommon
+Support
+1500
+750
+825
+111
+15.0%
+50.0%
+0.0%
+10.0%
+25
+TINGGANG INTAN
+Smarana
+Rare
+Attacker
+2000
+1100
+1000
+101
+16.5%
+55.0%
+0.0%
+0.0%
+26
+SAGARA BUIH
+Smarana
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+27
+DATU KALIMPAN
+Smarana
+Ultra Rare
+Crowd Control
+3210
+1605
+1605
+108
+16.1%
+53.5%
+7.0%
+7.0%
+28
+JURAGAN LARUNG
+Smarana
+Legendary
+Attacker
+5000
+2750
+2500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+29
+PUTI LENGANG
+Wanasunya
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+30
+LASIK KUBANG
+Wanasunya
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+31
+RANGKIANG BATU
+Wanasunya
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+32
+SINDAKA RIMBO
+Wanasunya
+Uncommon
+Attacker
+1500
+825
+750
+101
+16.5%
+55.0%
+0.0%
+0.0%
+33
+UHANG SUNYI
+Wanasunya
+Uncommon
+Crowd Control
+1605
+802
+802
+108
+16.1%
+53.5%
+7.0%
+7.0%
+34
+BUNDO SARIKASO
+Wanasunya
+Rare
+Support
+2000
+1000
+1100
+111
+15.0%
+50.0%
+0.0%
+10.0%
+35
+NINIAK BELANG
+Wanasunya
+Super Rare
+Tank
+2750
+1250
+1375
+101
+15.0%
+50.0%
+10.0%
+0.0%
+36
+SAMBILAN TALAGO
+Wanasunya
+Ultra Rare
+Crowd Control
+3210
+1605
+1605
+108
+16.1%
+53.5%
+7.0%
+7.0%
+37
+SANG LENGANG
+Wanasunya
+Legendary
+Crowd Control
+5350
+2675
+2675
+108
+16.1%
+53.5%
+7.0%
+7.0%
+38
+ANTUMUARA
+Kalamrtu
+Common
+Crowd Control
+1070
+535
+535
+108
+16.1%
+53.5%
+7.0%
+7.0%
+39
+SIDHAYATRI
+Kalamrtu
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+40
+KELASI WIRA
+Kalamrtu
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+41
+PUYANG WATU SEMA
+Kalamrtu
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+42
+DAYANG RINDANG
+Kalamrtu
+Uncommon
+Crowd Control
+1605
+802
+802
+108
+16.1%
+53.5%
+7.0%
+7.0%
+43
+NAGA WIRA
+Kalamrtu
+Rare
+Tank
+2200
+1000
+1100
+101
+15.0%
+50.0%
+10.0%
+0.0%
+44
+RAHIB KALPA
+Kalamrtu
+Rare
+Attacker
+2000
+1100
+1000
+101
+16.5%
+55.0%
+0.0%
+0.0%
+45
+LIDAH WATU
+Kalamrtu
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+46
+SEKAR KEMARUNG
+Kalamrtu
+Ultra Rare
+Support
+3000
+1500
+1650
+111
+15.0%
+50.0%
+0.0%
+10.0%
+47
+SANG WIRANATA
+Kalamrtu
+Legendary
+Tank
+5500
+2500
+2750
+101
+15.0%
+50.0%
+10.0%
+0.0%
+48
+JALAK GIRINDRA
+Himagiri
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+49
+PASARWENGI
+Himagiri
+Common
+Crowd Control
+1070
+535
+535
+108
+16.1%
+53.5%
+7.0%
+7.0%
+50
+KURAWATU
+Himagiri
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+51
+SABDAGUNA
+Himagiri
+Uncommon
+Support
+1500
+750
+825
+111
+15.0%
+50.0%
+0.0%
+10.0%
+52
+WANASPATI GIRI
+Himagiri
+Uncommon
+Attacker
+1500
+825
+750
+101
+16.5%
+55.0%
+0.0%
+0.0%
+53
+RATRI KEMUNING
+Himagiri
+Rare
+Attacker
+2000
+1100
+1000
+101
+16.5%
+55.0%
+0.0%
+0.0%
+54
+GANDARWA PINUS
+Himagiri
+Rare
+Tank
+2200
+1000
+1100
+101
+15.0%
+50.0%
+10.0%
+0.0%
+55
+SANG GIRIPAWANA
+Himagiri
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+56
+PRABU WISESA GIRINATHA
+Himagiri
+Legendary
+Tank
+5500
+2500
+2750
+101
+15.0%
+50.0%
+10.0%
+0.0%
+57
+JURU CENGKIH
+Rajawani
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+58
+SAWANGI PALA
+Rajawani
+Common
+Crowd Control
+1070
+535
+535
+108
+16.1%
+53.5%
+7.0%
+7.0%
+59
+BALA KARANGKASA
+Rajawani
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+60
+SOWAHI BARA
+Rajawani
+Uncommon
+Support
+1500
+750
+825
+111
+15.0%
+50.0%
+0.0%
+10.0%
+61
+RATU TALAGA DIAM
+Rajawani
+Uncommon
+Crowd Control
+1605
+802
+802
+108
+16.1%
+53.5%
+7.0%
+7.0%
+62
+BIKUSAGARI
+Rajawani
+Rare
+Tank
+2200
+1000
+1100
+101
+15.0%
+50.0%
+10.0%
+0.0%
+63
+NYAI BOKIRA
+Rajawani
+Super Rare
+Attacker
+2500
+1375
+1250
+101
+16.5%
+55.0%
+0.0%
+0.0%
+64
+DATU HONGGI
+Rajawani
+Ultra Rare
+Attacker
+3000
+1650
+1500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+65
+SANG HARGA
+Rajawani
+Legendary
+Crowd Control
+5350
+2675
+2675
+108
+16.1%
+53.5%
+7.0%
+7.0%
+66
+SEKAR NYALU
+Jaladri
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+67
+PADU ROTAN
+Jaladri
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+68
+ABU TEMBARA
+Jaladri
+Common
+Attacker
+1000
+550
+500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+69
+DAYAN NADHA
+Jaladri
+Uncommon
+Attacker
+1500
+825
+750
+101
+16.5%
+55.0%
+0.0%
+0.0%
+70
+SAGARANAK
+Jaladri
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+71
+MANDARASMI
+Jaladri
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+72
+CUPAKA LOBA
+Jaladri
+Rare
+Crowd Control
+2140
+1070
+1070
+108
+16.1%
+53.5%
+7.0%
+7.0%
+73
+ANJALA NIRMALA
+Jaladri
+Ultra Rare
+Support
+3000
+1500
+1650
+111
+15.0%
+50.0%
+0.0%
+10.0%
+74
+NAGA SASRA
+Jaladri
+Legendary
+Attacker
+5000
+2750
+2500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+75
+KASWARI TANAHWIL
+Anawil
+Common
+Tank
+1100
+500
+550
+101
+15.0%
+50.0%
+10.0%
+0.0%
+76
+TAPAK NIRBAHASA
+Anawil
+Common
+Support
+1000
+500
+550
+111
+15.0%
+50.0%
+0.0%
+10.0%
+77
+KARANG WAYAHAN
+Anawil
+Uncommon
+Tank
+1650
+750
+825
+101
+15.0%
+50.0%
+10.0%
+0.0%
+78
+PARI MANTA LAMPUR
+Anawil
+Uncommon
+Crowd Control
+1605
+802
+802
+108
+16.1%
+53.5%
+7.0%
+7.0%
+79
+SAMPARA WENE
+Anawil
+Uncommon
+Attacker
+1500
+825
+750
+101
+16.5%
+55.0%
+0.0%
+0.0%
+80
+WAI CENDRA
+Anawil
+Rare
+Attacker
+2000
+1100
+1000
+101
+16.5%
+55.0%
+0.0%
+0.0%
+81
+NIN WAIAM
+Anawil
+Rare
+Support
+2000
+1000
+1100
+111
+15.0%
+50.0%
+0.0%
+10.0%
+82
+KALANA SAUYAN
+Anawil
+Super Rare
+Attacker
+2500
+1375
+1250
+101
+16.5%
+55.0%
+0.0%
+0.0%
+83
+SANG GEMA PURWA
+Anawil
+Legendary
+Support
+5000
+2500
+2750
+111
+15.0%
+50.0%
+0.0%
+10.0%
+84
+WIRA SENJA
+Nirwasita
+Ultra Rare
+Attacker
+3000
+1650
+1500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+85
+SARAS PERTIWI
+Nirwasita
+Super Rare
+Support
+2500
+1250
+1375
+111
+15.0%
+50.0%
+0.0%
+10.0%
+86
+KIDANG BELANTIK
+Kadewan
+Super Rare
+Attacker
+2500
+1375
+1250
+101
+16.5%
+55.0%
+0.0%
+0.0%
+87
+TALAPAK EMBUN
+Smarana
+Super Rare
+Support
+2500
+1250
+1375
+111
+15.0%
+50.0%
+0.0%
+10.0%
+88
+BANDAR TIMBANGAN
+Smarana
+Ultra Rare
+Tank
+3300
+1500
+1650
+101
+15.0%
+50.0%
+10.0%
+0.0%
+89
+SUARA TAK BERWUJUD
+Wanasunya
+Super Rare
+Support
+2500
+1250
+1375
+111
+15.0%
+50.0%
+0.0%
+10.0%
+90
+TAPAK GHAIB
+Wanasunya
+Super Rare
+Attacker
+2500
+1375
+1250
+101
+16.5%
+55.0%
+0.0%
+0.0%
+91
+KIJANG PRASASTI
+Kalamrtu
+Super Rare
+Attacker
+2500
+1375
+1250
+101
+16.5%
+55.0%
+0.0%
+0.0%
+92
+RAHIB ABU
+Kalamrtu
+Ultra Rare
+Attacker
+3000
+1650
+1500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+93
+JURU TABUH SENJA
+Himagiri
+Ultra Rare
+Attacker
+3000
+1650
+1500
+101
+16.5%
+55.0%
+0.0%
+0.0%
+94
+SABDA YANG TERTUNDA
+Himagiri
+Super Rare
+Support
+2500
+1250
+1375
+111
+15.0%
+50.0%
+0.0%
+10.0%
+95
+SUKMA PENIMBANG
+Rajawani
+Super Rare
+Support
+2500
+1250
+1375
+111
+15.0%
+50.0%
+0.0%
+10.0%
+96
+PENJAGA TANPA PERHIASAN
+Rajawani
+Ultra Rare
+Tank
+3300
+1500
+1650
+101
+15.0%
+50.0%
+10.0%
+0.0%
+97
+PENJAGA SERIBU OMBAK
+Jaladri
+Super Rare
+Tank
+2750
+1250
+1375
+101
+15.0%
+50.0%
+10.0%
+0.0%
+98
+GEMA YANG BERGANDA
+Jaladri
+Ultra Rare
+Crowd Control
+3210
+1605
+1605
+108
+16.1%
+53.5%
+7.0%
+7.0%
+99
+PENUNGGU YANG TAK BERUJAR
+Anawil
+Ultra Rare
+Tank
+3300
+1500
+1650
+101
+15.0%
+50.0%
+10.0%
+0.0%
+100
+YANG BELUM PUNYA RUPA
+Anawil
+Super Rare
+Crowd Control
+2675
+1338
+1338
+108
+16.1%
+53.5%
+7.0%
+7.0%
+
+
+1.7 TABEL LENGKAP — 100 KARAKTER, STAT AWAKENED
+#
+Nama
+Region
+Tier
+Role
+HP
+ATK
+DEF
+SPD
+CRT Rate
+CRT DMG
+RES
+ACC
+01
+LAMPAH SINARU
+Nirwasita
+Common
+Crowd Control
+1177
+588
+588
+119
+17.7%
+58.9%
+17.0%
+17.0%
+02
+TANDARAGA
+Nirwasita
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+03
+SANRA RANU
+Nirwasita
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+04
+WATU PALINDRA
+Nirwasita
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+05
+LARE WENGI
+Nirwasita
+Uncommon
+Crowd Control
+1766
+883
+883
+119
+17.7%
+58.9%
+17.0%
+17.0%
+06
+KAYURI SINDU
+Nirwasita
+Rare
+Support
+2140
+1070
+1265
+128
+16.1%
+53.5%
+7.0%
+17.0%
+07
+TOBELANG
+Nirwasita
+Rare
+Attacker
+2140
+1265
+1070
+108
+17.7%
+63.2%
+7.0%
+7.0%
+08
+NGGARINDU
+Nirwasita
+Super Rare
+Tank
+3162
+1338
+1471
+108
+16.1%
+53.5%
+25.0%
+7.0%
+09
+NIRSMARA
+Nirwasita
+Legendary
+Tank
+6325
+2675
+2942
+108
+16.1%
+53.5%
+25.0%
+7.0%
+10
+JURU WANGSUH
+Kadewan
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+11
+KALA SESARI
+Kadewan
+Common
+Crowd Control
+1177
+588
+588
+119
+17.7%
+58.9%
+17.0%
+17.0%
+12
+DEDALI KESUMA
+Kadewan
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+13
+BHARWANG KESARI
+Kadewan
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+14
+RARWANG CELENG
+Kadewan
+Uncommon
+Attacker
+1605
+949
+802
+108
+17.7%
+63.2%
+7.0%
+7.0%
+15
+BASUMITRA
+Kadewan
+Rare
+Tank
+2530
+1070
+1177
+108
+16.1%
+53.5%
+25.0%
+7.0%
+16
+LEMBUJAGA
+Kadewan
+Rare
+Support
+2140
+1070
+1265
+128
+16.1%
+53.5%
+7.0%
+17.0%
+17
+RARASUNYI
+Kadewan
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+18
+NYI RANDU GIRANG
+Kadewan
+Ultra Rare
+Crowd Control
+3531
+1766
+1766
+119
+17.7%
+58.9%
+17.0%
+17.0%
+19
+SANG WERDI
+Kadewan
+Legendary
+Support
+5350
+2675
+3162
+128
+16.1%
+53.5%
+7.0%
+17.0%
+20
+BANDAR ILUNG
+Smarana
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+21
+ANTUWAN MELAYANG
+Smarana
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+22
+WATU GAMBUT
+Smarana
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+23
+JATAWIRA
+Smarana
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+24
+WADYAN SALUNAI
+Smarana
+Uncommon
+Support
+1605
+802
+949
+128
+16.1%
+53.5%
+7.0%
+17.0%
+25
+TINGGANG INTAN
+Smarana
+Rare
+Attacker
+2140
+1265
+1070
+108
+17.7%
+63.2%
+7.0%
+7.0%
+26
+SAGARA BUIH
+Smarana
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+27
+DATU KALIMPAN
+Smarana
+Ultra Rare
+Crowd Control
+3531
+1766
+1766
+119
+17.7%
+58.9%
+17.0%
+17.0%
+28
+JURAGAN LARUNG
+Smarana
+Legendary
+Attacker
+5350
+3162
+2675
+108
+17.7%
+63.2%
+7.0%
+7.0%
+29
+PUTI LENGANG
+Wanasunya
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+30
+LASIK KUBANG
+Wanasunya
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+31
+RANGKIANG BATU
+Wanasunya
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+32
+SINDAKA RIMBO
+Wanasunya
+Uncommon
+Attacker
+1605
+949
+802
+108
+17.7%
+63.2%
+7.0%
+7.0%
+33
+UHANG SUNYI
+Wanasunya
+Uncommon
+Crowd Control
+1766
+883
+883
+119
+17.7%
+58.9%
+17.0%
+17.0%
+34
+BUNDO SARIKASO
+Wanasunya
+Rare
+Support
+2140
+1070
+1265
+128
+16.1%
+53.5%
+7.0%
+17.0%
+35
+NINIAK BELANG
+Wanasunya
+Super Rare
+Tank
+3162
+1338
+1471
+108
+16.1%
+53.5%
+25.0%
+7.0%
+36
+SAMBILAN TALAGO
+Wanasunya
+Ultra Rare
+Crowd Control
+3531
+1766
+1766
+119
+17.7%
+58.9%
+17.0%
+17.0%
+37
+SANG LENGANG
+Wanasunya
+Legendary
+Crowd Control
+5885
+2943
+2943
+119
+17.7%
+58.9%
+17.0%
+17.0%
+38
+ANTUMUARA
+Kalamrtu
+Common
+Crowd Control
+1177
+588
+588
+119
+17.7%
+58.9%
+17.0%
+17.0%
+39
+SIDHAYATRI
+Kalamrtu
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+40
+KELASI WIRA
+Kalamrtu
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+41
+PUYANG WATU SEMA
+Kalamrtu
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+42
+DAYANG RINDANG
+Kalamrtu
+Uncommon
+Crowd Control
+1766
+883
+883
+119
+17.7%
+58.9%
+17.0%
+17.0%
+43
+NAGA WIRA
+Kalamrtu
+Rare
+Tank
+2530
+1070
+1177
+108
+16.1%
+53.5%
+25.0%
+7.0%
+44
+RAHIB KALPA
+Kalamrtu
+Rare
+Attacker
+2140
+1265
+1070
+108
+17.7%
+63.2%
+7.0%
+7.0%
+45
+LIDAH WATU
+Kalamrtu
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+46
+SEKAR KEMARUNG
+Kalamrtu
+Ultra Rare
+Support
+3210
+1605
+1898
+128
+16.1%
+53.5%
+7.0%
+17.0%
+47
+SANG WIRANATA
+Kalamrtu
+Legendary
+Tank
+6325
+2675
+2942
+108
+16.1%
+53.5%
+25.0%
+7.0%
+48
+JALAK GIRINDRA
+Himagiri
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+49
+PASARWENGI
+Himagiri
+Common
+Crowd Control
+1177
+588
+588
+119
+17.7%
+58.9%
+17.0%
+17.0%
+50
+KURAWATU
+Himagiri
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+51
+SABDAGUNA
+Himagiri
+Uncommon
+Support
+1605
+802
+949
+128
+16.1%
+53.5%
+7.0%
+17.0%
+52
+WANASPATI GIRI
+Himagiri
+Uncommon
+Attacker
+1605
+949
+802
+108
+17.7%
+63.2%
+7.0%
+7.0%
+53
+RATRI KEMUNING
+Himagiri
+Rare
+Attacker
+2140
+1265
+1070
+108
+17.7%
+63.2%
+7.0%
+7.0%
+54
+GANDARWA PINUS
+Himagiri
+Rare
+Tank
+2530
+1070
+1177
+108
+16.1%
+53.5%
+25.0%
+7.0%
+55
+SANG GIRIPAWANA
+Himagiri
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+56
+PRABU WISESA GIRINATHA
+Himagiri
+Legendary
+Tank
+6325
+2675
+2942
+108
+16.1%
+53.5%
+25.0%
+7.0%
+57
+JURU CENGKIH
+Rajawani
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+58
+SAWANGI PALA
+Rajawani
+Common
+Crowd Control
+1177
+588
+588
+119
+17.7%
+58.9%
+17.0%
+17.0%
+59
+BALA KARANGKASA
+Rajawani
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+60
+SOWAHI BARA
+Rajawani
+Uncommon
+Support
+1605
+802
+949
+128
+16.1%
+53.5%
+7.0%
+17.0%
+61
+RATU TALAGA DIAM
+Rajawani
+Uncommon
+Crowd Control
+1766
+883
+883
+119
+17.7%
+58.9%
+17.0%
+17.0%
+62
+BIKUSAGARI
+Rajawani
+Rare
+Tank
+2530
+1070
+1177
+108
+16.1%
+53.5%
+25.0%
+7.0%
+63
+NYAI BOKIRA
+Rajawani
+Super Rare
+Attacker
+2675
+1581
+1338
+108
+17.7%
+63.2%
+7.0%
+7.0%
+64
+DATU HONGGI
+Rajawani
+Ultra Rare
+Attacker
+3210
+1898
+1605
+108
+17.7%
+63.2%
+7.0%
+7.0%
+65
+SANG HARGA
+Rajawani
+Legendary
+Crowd Control
+5885
+2943
+2943
+119
+17.7%
+58.9%
+17.0%
+17.0%
+66
+SEKAR NYALU
+Jaladri
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+67
+PADU ROTAN
+Jaladri
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+68
+ABU TEMBARA
+Jaladri
+Common
+Attacker
+1070
+632
+535
+108
+17.7%
+63.2%
+7.0%
+7.0%
+69
+DAYAN NADHA
+Jaladri
+Uncommon
+Attacker
+1605
+949
+802
+108
+17.7%
+63.2%
+7.0%
+7.0%
+70
+SAGARANAK
+Jaladri
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+71
+MANDARASMI
+Jaladri
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+72
+CUPAKA LOBA
+Jaladri
+Rare
+Crowd Control
+2354
+1177
+1177
+119
+17.7%
+58.9%
+17.0%
+17.0%
+73
+ANJALA NIRMALA
+Jaladri
+Ultra Rare
+Support
+3210
+1605
+1898
+128
+16.1%
+53.5%
+7.0%
+17.0%
+74
+NAGA SASRA
+Jaladri
+Legendary
+Attacker
+5350
+3162
+2675
+108
+17.7%
+63.2%
+7.0%
+7.0%
+75
+KASWARI TANAHWIL
+Anawil
+Common
+Tank
+1265
+535
+588
+108
+16.1%
+53.5%
+25.0%
+7.0%
+76
+TAPAK NIRBAHASA
+Anawil
+Common
+Support
+1070
+535
+632
+128
+16.1%
+53.5%
+7.0%
+17.0%
+77
+KARANG WAYAHAN
+Anawil
+Uncommon
+Tank
+1898
+802
+883
+108
+16.1%
+53.5%
+25.0%
+7.0%
+78
+PARI MANTA LAMPUR
+Anawil
+Uncommon
+Crowd Control
+1766
+883
+883
+119
+17.7%
+58.9%
+17.0%
+17.0%
+79
+SAMPARA WENE
+Anawil
+Uncommon
+Attacker
+1605
+949
+802
+108
+17.7%
+63.2%
+7.0%
+7.0%
+80
+WAI CENDRA
+Anawil
+Rare
+Attacker
+2140
+1265
+1070
+108
+17.7%
+63.2%
+7.0%
+7.0%
+81
+NIN WAIAM
+Anawil
+Rare
+Support
+2140
+1070
+1265
+128
+16.1%
+53.5%
+7.0%
+17.0%
+82
+KALANA SAUYAN
+Anawil
+Super Rare
+Attacker
+2675
+1581
+1338
+108
+17.7%
+63.2%
+7.0%
+7.0%
+83
+SANG GEMA PURWA
+Anawil
+Legendary
+Support
+5350
+2675
+3162
+128
+16.1%
+53.5%
+7.0%
+17.0%
+84
+WIRA SENJA
+Nirwasita
+Ultra Rare
+Attacker
+3210
+1898
+1605
+108
+17.7%
+63.2%
+7.0%
+7.0%
+85
+SARAS PERTIWI
+Nirwasita
+Super Rare
+Support
+2675
+1338
+1581
+128
+16.1%
+53.5%
+7.0%
+17.0%
+86
+KIDANG BELANTIK
+Kadewan
+Super Rare
+Attacker
+2675
+1581
+1338
+108
+17.7%
+63.2%
+7.0%
+7.0%
+87
+TALAPAK EMBUN
+Smarana
+Super Rare
+Support
+2675
+1338
+1581
+128
+16.1%
+53.5%
+7.0%
+17.0%
+88
+BANDAR TIMBANGAN
+Smarana
+Ultra Rare
+Tank
+3795
+1605
+1766
+108
+16.1%
+53.5%
+25.0%
+7.0%
+89
+SUARA TAK BERWUJUD
+Wanasunya
+Super Rare
+Support
+2675
+1338
+1581
+128
+16.1%
+53.5%
+7.0%
+17.0%
+90
+TAPAK GHAIB
+Wanasunya
+Super Rare
+Attacker
+2675
+1581
+1338
+108
+17.7%
+63.2%
+7.0%
+7.0%
+91
+KIJANG PRASASTI
+Kalamrtu
+Super Rare
+Attacker
+2675
+1581
+1338
+108
+17.7%
+63.2%
+7.0%
+7.0%
+92
+RAHIB ABU
+Kalamrtu
+Ultra Rare
+Attacker
+3210
+1898
+1605
+108
+17.7%
+63.2%
+7.0%
+7.0%
+93
+JURU TABUH SENJA
+Himagiri
+Ultra Rare
+Attacker
+3210
+1898
+1605
+108
+17.7%
+63.2%
+7.0%
+7.0%
+94
+SABDA YANG TERTUNDA
+Himagiri
+Super Rare
+Support
+2675
+1338
+1581
+128
+16.1%
+53.5%
+7.0%
+17.0%
+95
+SUKMA PENIMBANG
+Rajawani
+Super Rare
+Support
+2675
+1338
+1581
+128
+16.1%
+53.5%
+7.0%
+17.0%
+96
+PENJAGA TANPA PERHIASAN
+Rajawani
+Ultra Rare
+Tank
+3795
+1605
+1766
+108
+16.1%
+53.5%
+25.0%
+7.0%
+97
+PENJAGA SERIBU OMBAK
+Jaladri
+Super Rare
+Tank
+3162
+1338
+1471
+108
+16.1%
+53.5%
+25.0%
+7.0%
+98
+GEMA YANG BERGANDA
+Jaladri
+Ultra Rare
+Crowd Control
+3531
+1766
+1766
+119
+17.7%
+58.9%
+17.0%
+17.0%
+99
+PENUNGGU YANG TAK BERUJAR
+Anawil
+Ultra Rare
+Tank
+3795
+1605
+1766
+108
+16.1%
+53.5%
+25.0%
+7.0%
+100
+YANG BELUM PUNYA RUPA
+Anawil
+Super Rare
+Crowd Control
+2943
+1471
+1471
+119
+17.7%
+58.9%
+17.0%
+17.0%
+
+
+BAGIAN 2 — KANDIDAT 5 SUPER RARE → RARE
+2.1 Prinsip Seleksi
+Menurunkan tier bukan sekadar mengubah label — ini mengubah stat dasar (2500→2000 HP, 1250→1000 ATK/DEF) dan cara didapat (biasanya lebih mudah dari Rare). Saya pilih 5 kandidat berdasarkan tiga kriteria, bukan acak:
+
+Bukan pemegang lencana ⭐ Wajah Region — menurunkan tier salah satu dari 9 Wajah Region akan merusak identitas "1 SR = wajah region" yang jadi struktur inti dokumen. Otomatis tidak menyentuh #08, #17, #26, #35, #45, #55, #63, #71, #82.
+Lore-nya secara alami "lebih kecil" dari SR lain — karakter pendukung/echo, bukan tokoh yang perannya besar di storyline region (World Bible v2 §III–IX).
+Sebar merata, tidak menumpuk di satu region, agar tidak ada region yang kehilangan lebih dari 1 SR sekaligus.
+2.2 Lima Kandidat
+#
+Nama
+Region
+Alasan diturunkan ke Rare
+90
+Tapak Ghaib
+Wanasunya
+SR ketiga di region ini (setelah Niniak Belang ⭐ dan Suara Tak Berwujud) — region ini SR paling banyak (3), aman dikurangi 1. Lore-nya "jejak tanpa pemilik" tetap kuat sebagai Rare.
+95
+Sukma Penimbang
+Rajawani
+Perannya sebagai penyeimbang stat tim adalah utilitas pendukung, bukan tokoh sentral — cocok jadi Rare tanpa kehilangan fungsi mekanisnya.
+86
+Kidang Belantik
+Kadewan
+Karakter pengisi celah satwa, bukan tokoh dengan bobot naratif besar. Skill "minum fajar" tetap relevan di tier Rare.
+91
+Kijang Prasasti
+Kalamrtu
+Perannya penyebar kutukan pasif — mendukung tema region tanpa perlu jadi SR.
+89
+Suara Tak Berwujud
+Wanasunya
+(alternatif — lihat catatan)
+
+Catatan: Saya sengaja mencalonkan 2 kandidat dari Wanasunya (#89 dan #90) karena wanasunya satu-satunya region dengan 3 SR (lainnya rata-rata 2). Kalau kamu ingin sebar 1-per-region murni, ganti salah satu dari keduanya dengan kandidat kelima dari region berbeda — misalnya #94 Sabda yang Tertunda (Himagiri, SR kedua non-⭐) atau #87 Talapak Embun (Smarana, SR kedua non-⭐).
+
+Dampak stat kalau kelima kandidat di atas (86, 90, 91, 94 atau 89, 95) disetujui: HP 2500→2000, ATK/DEF 1250→1000 (Basic & Awakened dihitung ulang otomatis dari rumus §1 begitu tier berubah — tidak perlu dihitung manual, cukup jalankan ulang skrip dengan tier baru).
+
+Tunggu konfirmasi kombinasi final sebelum saya: (a) tulis ulang tabel indeks Lampiran A, (b) tulis ulang §1.1/§1.3 distribusi rarity di Panduan Karakter v0.2, (c) hitung ulang 2 baris stat di tabel §1.6/1.7 dokumen ini.
+
+
+BAGIAN 3 — KERANGKA RENAME 3→2 SUKU KATA
+(Kerangka aturan saja — eksekusi menunggu konfirmasi Interpretasi A/B di atas)
+3.1 Aturan Kerja
+Kata yang dipotong tidak boleh kehilangan akar rujukan lore/budaya-nya — mempersingkat, bukan mengganti makna. Contoh pendekatan: buang akhiran, pakai bentuk pendek yang sudah lazim dalam bahasa sumber, atau pakai sinonim 2 suku kata dari akar yang sama.
+Nama pengganti tidak boleh bentrok dengan salah satu dari 100 nama yang sudah ada.
+Karakter dengan hubungan lintas-dokumen (dikutip di GDD v3 atau World Bible v2 dengan nama spesifik) wajib direname dengan catatan "cari-ganti" eksplisit di semua dokumen terkait, bukan hanya di sini.
+3.2 Contoh Penerapan (3 kasus di Interpretasi A — siap dieksekusi kapan saja karena tidak ambigu)
+#
+Nama lama
+Suku kata
+Nama baru usulan
+Alasan
+07
+TOBELANG
+To-be-lang (3)
+TOLANG
+Memangkas suku tengah, tetap mempertahankan akar "tulang/tobe" sebagai isyarat karakter Attacker bertubuh keras
+08
+NGGARINDU
+Ngga-rin-du (3)
+GARIN
+Mempertahankan bunyi inti "garin/nggarin", cocok dengan karakternya sebagai penjaga (Tank) — pendek, tegas
+09
+NIRSMARA
+Nir-sma-ra (3)
+NIRSMA atau SMARA
+"Nirsma" mempertahankan awalan "nir-" (negasi/tanpa, sesuai tema Nirwasita "tanpa wujud"); "Smara" mempertahankan akar tanpa negasi — pilih salah satu
+3.3 Jika Interpretasi B Dikonfirmasi (42 karakter)
+Saya akan proses region-per-region dengan format tabel sama seperti §3.2 di atas, plus daftar dokumen yang perlu diperbarui (GDD v3, World Bible v2) untuk setiap nama yang muncul di lebih dari satu dokumen. Estimasi: ini setara pekerjaan menulis ulang seluruh Lampiran A + audit silang 2 dokumen lain — dikerjakan sebagai revisi terpisah setelah konfirmasi, bukan disisipkan di sini.
+
+
+BAGIAN 4 — PROSES AWAKEN & SHARD (definisi minimum agar sistem stat/skill konsisten)
+Dokumen asal menyebut kedua hal ini sebagai "dibahas lebih lanjut" — saya definisikan versi minimum yang cukup untuk sistem stat & skill di atas bisa berfungsi, bukan desain lengkap:
+
+Aspek
+Definisi minimum
+Apa itu Awaken
+Transformasi permanen 1× per karakter yang menaikkan stat sesuai §1.3 dan membuka slot Passive Skill (untuk non-Common) atau Ultimate Skill (untuk Common — lihat §5.1).
+Syarat Awaken
+Karakter harus di level maksimum tier-nya (belum ditentukan — perlu keputusan terpisah, lihat GDD v3 §4.7 "Level Avatar 1–40 s/d 1–60") dan mengumpulkan Shard dalam jumlah tertentu.
+Apa itu Shard
+Material yang sama dengan "Serpihan Sukma" di GDD v3 §4.5 — direkomendasikan disatukan, bukan dibuat sistem material baru yang terpisah, supaya tidak ada 2 mata uang koleksi yang tumpang tindih fungsinya.
+Sumber Shard
+Farming monster spesifik per karakter (pola yang sudah ada di GDD v3) — jumlah untuk Awaken sebaiknya lebih besar dari jumlah untuk merakit karakter itu sendiri pertama kali (progres kedua yang bermakna, bukan pengulangan).
+
+Ini bukan keputusan final — hanya definisi cukup agar §1 (stat) dan §5 (skill) tidak bergantung pada sistem yang belum ada. Kalau Awaken dan Shard memang mau dirancang sebagai sistem terpisah dari Serpihan Sukma, beri tahu — akan mengubah ekonomi progresi di GDD v3 §4.6 juga.
+
+
+BAGIAN 5 — KERANGKA LEVEL SKILL
+5.1 Aturan Akses Skill per Tier
+Tier
+Basic
+Special
+Ultimate
+Passive
+Common
+✅
+✅
+❌ → dibuka saat Awaken
+❌ tidak pernah dapat
+Uncommon–Legendary
+✅
+✅
+✅ (sejak Basic)
+❌ dibuka saat Awaken
+
+Konsekuensi tersembunyi dari aturan ini: Common karakter tanpa Awaken hanya punya 2 skill aktif (Basic + Special), bukan 3 seperti tier lain. Ini menciptakan jarak kekuatan yang jelas antar tier bahkan sebelum stat dihitung — konsisten dengan filosofi "Common tetap relevan tapi jelas lebih sederhana" di Panduan Karakter §1.1.
+5.2 Rentang Level per Jenis Skill
+Skill
+Rentang Level
+Cara naik
+Basic
+5–10 level
+Train (currency) — akses termurah, dipakai tiap battle jadi wajar cepat di-upgrade
+Special
+1–5 level
+Train + konsumsi Shard — skill inti build
+Ultimate
+1–3 level
+Shard saja, jumlah besar — skill yang jarang dipakai tapi berdampak besar
+5.3 Aturan Penyesuaian per Lore (kerangka, belum diterapkan ke 100 karakter)
+Rentang level maksimum di tabel 5.2 adalah plafon, bukan angka wajib. Rekomendasi aturan penentuan berdasarkan lore:
+
+Kriteria lore
+Level Basic
+Level Special
+Level Ultimate
+Karakter dengan tema "berulang, terlatih, kebiasaan lama" (mis. Tandaraga "60 tahun mengasah", Kidang Belantik "minum fajar berulang")
+Plafon tinggi (9–10)
+Sedang (3–4)
+Sedang (2)
+Karakter dengan tema "sekali kejadian, tidak bisa diulang" (mis. Sang Gema Purwa yang Pamungkas-nya cuma 1× seumur game)
+Rendah (5–6)
+Rendah (1–2)
+1 level tetap — tidak bisa dilatih sama sekali, sesuai lore
+Karakter Legendary (semua)
+8–10
+4–5
+3
+Karakter dengan skill yang eksplisit "tidak bisa ditingkatkan" di teks lore (mis. Sang Gema Purwa Pasif "tidak bisa ditingkatkan")
+—
+—
+Passive juga ikut dikunci di level dasarnya
+
+Contoh kasus khusus yang sudah ada di lore: #83 Sang Gema Purwa — Pasif-nya secara eksplisit tertulis "tidak bisa ditingkatkan, tidak bisa diberi perlengkapan" (Panduan Karakter §Region 9). Aturan level skill generik di atas tidak berlaku untuknya — ini contoh kenapa penerapan ke 100 karakter perlu dikerjakan satu-satu, bukan rumus otomatis seperti stat.
+5.4 Kenapa Ini Ditahan, Bukan Dikerjakan Sekarang
+Menetapkan level Basic/Special/Ultimate untuk 100 karakter sesuai lore masing-masing adalah keputusan naratif per-karakter, bukan perhitungan — tidak bisa diskrip seperti stat di §1. Mengerjakannya sebelum rename (§3) selesai berarti berpotensi menulis ulang begitu nama-nama berubah. Urutan yang saya sarankan: (1) konfirmasi SR→Rare, (2) konfirmasi & eksekusi rename, (3) baru kerjakan 100 level skill di atas nama & tier final.
+
+
+PERTANYAAN YANG PERLU DIJAWAB
+Interpretasi aturan suku kata: A (3 karakter) atau B (42 karakter)? — pembeda 15× beban kerja.
+5 kandidat SR→Rare: pakai daftar §2.2 apa adanya, atau ganti salah satu (89/90) dengan region lain agar sebar 1-per-region?
+RES/ACC sebagai poin persentase tetap (§1.4) — sudah benar, atau ada mekanisme lain (mis. dari gear) yang seharusnya jadi sumber utamanya?
+Shard = Serpihan Sukma yang sudah ada di GDD v3, atau sistem material baru yang terpisah?
+Setelah 1–4 terjawab: lanjut ke penulisan 100 level skill (§5), atau ada prioritas lain dulu?
+
+
+
+Revisi v0.3 · Agustus 2026 · Bagian Statistik siap pakai; bagian lain menunggu 4 konfirmasi di atas.
+

@@ -1,0 +1,2498 @@
+GAME DESIGN DOCUMENT
+PUSAKA: GEMA NAWANTARA
+Versi: 3.0 — Konsolidasi Final Status: 🟢 DOKUMEN INDUK — menggantikan v1.0-R dan Revisi v2.0-F Pemilik Proyek: Program Studi Teknik Informatika, UNS Kampus Madiun Project Owner (perorangan): _____________________ ⚠️ wajib diisi sebelum sprint pertama Engine: Godot 4.x (GDScript) Platform: Android · PC/Steam · Web (demo) Tanggal: Agustus 2026
+
+
+STATUS DOKUMEN
+Dokumen
+Status
+Fungsi
+GDD v3.0 (ini)
+🟢 AKTIF
+Satu-satunya sumber kebenaran untuk v1.0
+GDD v1.0-R
+⚫ Arsip
+Digantikan
+Revisi v2.0-F
+⚫ Diserap ke dokumen ini
+Digantikan
+World Bible v1.0
+🟡 Guidance
+Region 3–9. Bukan backlog. Perlu pembaruan nama.
+
+
+DAFTAR ISI
+Identitas Game
+Game Overview
+Dunia Nawantara & Kerangka Fiksionalisasi
+Gameplay & Mechanic
+Storyline, Storyboard & Multi-Ending
+Roster 30 Sukma
+Detail Item
+Detail Spawn Monster
+Detail Region
+Detail 5 Elemen
+UI Mockup
+Icon & Logo
+Sound Effect & Musik
+Produksi, Tata Kelola & Risiko
+
+
+1. IDENTITAS GAME
+1.1 Judul
+PUSAKA: GEMA NAWANTARA
+Judul internasional (Steam): PUSAKA: Echoes of the Unseen Tagline: "Yang terlupakan, tak pernah benar-benar hilang."
+
+Nama dunia: NAWANTARA — dari nawa (sembilan) + antara. Kepulauan fiktif yang terdiri dari sembilan wilayah, disebut Sembilan Laras.
+
+Catatan: Nama dunia dan nama wilayah akan muncul di ribuan baris dialog, nama file aset, dan kode. Kunci sekarang. Perubahan setelah bulan ke-6 sangat mahal. Alternatif yang sempat dipertimbangkan (Banua Laras, Swarnalaya, Nusa Laras) tercatat di lampiran keputusan.
+1.2 Posisi Produk
+Aspek
+Isi
+Genre
+2D Top-Down RPG · Turn-Based · Koleksi Deterministik
+Model
+Premium (bukan gacha, bukan live-service)
+Durasi
+20 jam cerita + 12–15 jam endgame
+Bahasa
+Indonesia (utama), Inggris
+Rating target
+IGRS 13+ / ESRB Teen / PEGI 12
+1.3 Core Pillars
+RASA YANG DIKENAL — Pemain merasa "ini terasa seperti cerita dari kakek saya." Bukan klaim representasi, melainkan resonansi. (Direvisi dari "PENGENALAN" karena fiksionalisasi.)
+KEDALAMAN TANPA KERUMITAN — Battle bisa dimainkan 90 detik tapi punya keputusan nyata.
+PEMULIHAN, BUKAN PENAKLUKAN — Pemain memulihkan hubungan yang rusak, tidak membasmi.
+ADIL SECARA DESAIN — Semua 30 Sukma bisa didapat dengan bermain. Nol RNG di jalur progresi.
+
+Aturan filter: Setiap usulan fitur harus mendukung minimal 2 dari 4 pilar. Kalau tidak, PO menolak.
+
+
+2. GAME OVERVIEW
+2.1 Deskripsi
+Seribu tahun lalu, keseimbangan Panca Maha Bhuta runtuh — bukan karena perang, melainkan karena kesenyapan. Sebuah kekuatan yang tidak membunuh, melainkan membuat dilupakan. Kota lenyap dari ingatan. Nama memudar dari lidah manusia. Nawantara masih ada, tapi tak lagi terlihat.
+
+Kamu adalah Pewaris Pusaka — satu-satunya yang masih bisa mendengar gemanya.
+
+Susuri jalur kabut menuju kota Parigama, lalu seberangi laut ke kerajaan roh Dwilaras. Panggil kembali sukma-sukma yang terlupakan, dan pulihkan keseimbangan lima unsur sebelum kesenyapan menelan yang tersisa.
+
+Elevator pitch: "Sea of Stars bertemu dunia fantasi berakar Nusantara. RPG turn-based 2D dengan 30 makhluk dari legenda kepulauan yang belum pernah digarap game mana pun. Premium, tanpa gacha, cerita selesai dalam 20 jam, tiga ending."
+2.2 Target Pemain
+Segmen
+%
+Profil
+Motivasi
+Pemain RPG Premium
+50%
+20–35, global (Steam). Bermain Chained Echoes, Sea of Stars, CrossCode.
+Cerita yang selesai, sistem adil, tanpa monetisasi predatoris
+Kolektor Nostalgia
+30%
+18–30, Indonesia & SEA. Tumbuh dengan Pokémon GBA.
+Koleksi, eksplorasi, pixel-art
+Peminat Fantasi Berakar Lokal
+20%
+16–35, Indonesia.
+Estetika, musik, dan lanskap yang terasa familiar
+
+Perubahan dari versi sebelumnya: Segmen "Peminat Budaya & Horor Lokal" turun dari 35% → 20% dan berganti karakter. Fiksionalisasi menghapus daya tarik pengenalan nama ("Wentira ada di game!"). Konsekuensi pemasaran sudah diterima; strategi promosi wajib menyesuaikan — jual atmosfer dan musik, bukan nama mitologi.
+2.3 Struktur Menu
+SPLASH → MENU UTAMA (Lanjutkan / Baru / Galeri / Terinspirasi Oleh / Pengaturan)
+   │
+   └─ PADEPOKAN (hub, scene 2D — bukan daftar tombol)
+      ├─ [PETA]     → World Map → Region → Overworld → Zona → BATTLE
+      ├─ [SUKMA]    → Koleksi · Detail · Perkuat · Susun Tim
+      ├─ [PUSAKA]   → Senjata/Pelindung/Jimat/Kitab · Bahan · Bengkel
+      ├─ [ALTAR]    → Rakit Sukma (deterministik) · Progres 0/30
+      ├─ [TITAH]    → Cerita · Sampingan · Perburuan
+      ├─ [SANGGAR]  → Menara Bhuta · Perburuan Agung · Kisah Ulang
+      └─ [PENGATURAN]
+
+Padepokan adalah pendopo 2D yang bisa dilihat. Peti = inventory, Altar batu = perakitan, Gerbang = peta. Menaikkan sense of place dengan biaya art rendah (1 background + 6 hotspot).
+2.4 Platform & Monetisasi
+Platform
+Konten
+Model
+Harga
+PC / Steam 🥇
+Penuh
+Premium
+$14.99
+Android 🥈
+Penuh
+Free-to-Start
+Gratis s/d akhir Bab 1, unlock Rp 79.000
+Web (itch.io) 🥉
+Prolog + Bab 1
+Gratis
+—
+iOS
+Penuh
+Ditunda ke v1.2
+—
+
+Rewarded ads (Android saja, opsional): | Penempatan | Reward | Cap/hari | |---|---|---| | Pasca-battle | 2× Kepeng & Serpihan | 5× | | Titik Sesajen | Pulihkan tim penuh | 3× | | Bengkel | Lewati waktu craft | 3× |
+
+❌ Tidak ada interstitial · ❌ Tidak ada konten eksklusif-ads · ✅ Ads mati total di Steam
+
+Titik impas: ±16.000 penjualan Steam atau setara. Perhitungan lengkap di 14.5.
+2.5 Spesifikasi Teknis
+Aspek
+Ketentuan
+Android minimum
+Android 8.0, RAM 3GB
+PC minimum
+Windows 10 / Ubuntu 20.04, 4GB RAM, GPU terintegrasi
+Web
+Browser desktop saja. Tidak didukung di browser mobile.
+Resolusi internal
+480×270, upscale integer
+Save
+Lokal (JSON terenkripsi) + Steam Cloud
+Backend
+TIDAK ADA — penghematan risiko terbesar dari penghapusan gacha
+
+
+3. DUNIA NAWANTARA & KERANGKA FIKSIONALISASI
+3.1 Prinsip
+Dunia fiktif, tata bahasa budaya nyata.
+
+Kita tidak menggambarkan tempat mana pun yang nyata. Kita membangun dunia yang hidup dengan logika yang sama — dualitas yang saling melengkapi, ritual harian, tata ruang sakral-profan, pelayaran, tekstil, ansambel perkusi — tanpa pernah mengklaim itu adalah Indonesia.
+
+Model referensi: Avatar: The Last Airbender, Studio Ghibli.
+3.2 ATURAN DUA PENANDA (Wajib, Tanpa Pengecualian)
+Setiap entitas yang terinspirasi kepercayaan hidup wajib mengubah nama DAN minimal 2 dari 3 penanda:
+
+Penanda
+Contoh
+A. Bentuk fisik
+Ikonografi khas
+B. Fungsi naratif
+Peran dalam cerita asal
+C. Konteks ritual
+Keterikatan pada upacara nyata
+
+Konsekuensi: Kalau karakter kehilangan seluruh daya tariknya setelah mengubah dua penanda, artinya daya tariknya memang milik budaya tersebut. Buang, jangan samarkan. Rename tanpa reshape lebih buruk daripada tidak rename — ia hanya menambah deniability, dan terbaca sebagai malas, bukan hormat.
+3.3 Tiga Tingkat Perlakuan
+Tingkat
+Cakupan
+Perlakuan
+T1 — DIPERTAHANKAN
+Fauna, flora, bentuk arsitektur umum, jenis instrumen, teknik tekstil
+Dipakai apa adanya. Anoa tetap anoa. Gamelan tetap gamelan.
+T2 — DIFIKSIONALISASI
+Entitas folklor, tempat, tokoh legenda
+Rename + Aturan Dua Penanda
+T3 — DIBUANG
+Terkait konflik nyata, gerakan politik, naskah sakral, tokoh keagamaan
+Hapus. Ganti dengan ciptaan orisinal berperan sama.
+3.4 Peta Sembilan Laras
+#
+Wilayah
+Wajah Kelupaan
+Status
+1
+PARIGAMA
+Dilupakan sebagai perlindungan
+🟢 v1.0
+2
+DWILARAS
+Diingat tanpa makna
+🟢 v1.0
+3
+BANDARANTA
+Memanen yang dilupakan
+🟡 World Bible
+4
+RIMBA LENGANG
+Memilih dilupakan
+🟡 World Bible
+5
+MUARAWIRA
+Dihapus dari catatan
+🟡 World Bible
+6
+KUTAGIRI
+Menolak mengakui berakhir
+🟡 World Bible
+7
+GANDARIMA
+Diingat sebagai barang
+🟡 World Bible
+8
+NUSA LARUT
+Memilih menjadi banyak
+🟡 World Bible
+9
+NUSA PURWA
+Ingatan sebelum bahasa
+🟡 World Bible
+3.5 Geografi v1.0
+Parigama
+Dwilaras
+Teluk Ranaya
+Sawah Selaras
+Rimba Sanu
+Alas Wanara
+Danau Sanu
+Pura Tepi Ombak (pura → Balai Laras)
+Lembah Batu Diam
+Kawah Bara
+Jalur Kabut Kelambu
+Desa Tanpa Bakar
+Kota Parigama
+Nusa Gersang
+Menara Pandu
+Puncak Laras
+3.6 Halaman "TERINSPIRASI OLEH" (WAJIB)
+Diakses dari menu utama dan halaman Steam.
+
+NAWANTARA ADALAH TEMPAT YANG TIDAK ADA.
+
+Tapi ia tidak lahir dari kekosongan.
+
+Dunia ini terinspirasi oleh kekayaan cerita rakyat, mitologi, arsitektur, musik, dan tekstil dari berbagai kebudayaan di Indonesia.
+
+Tidak satu pun tokoh, tempat, makhluk, atau upacara dalam permainan ini merupakan penggambaran dari kepercayaan, tokoh, atau praktik yang nyata. Kami sengaja menciptakan nama, wujud, dan kisah baru — karena kami tidak merasa berhak berbicara atas nama siapa pun.
+
+Yang kami pinjam adalah cara bercerita, bukan ceritanya.
+
+Bila permainan ini membuat Anda ingin mencari tahu kisah yang sebenarnya, kami sarankan membaca sumber-sumber berikut — yang ditulis oleh orang-orang yang memang berhak menceritakannya.
+
+Diikuti daftar bacaan 15–25 judul.
+
+Kenapa wajib: Fiksionalisasi tanpa pengakuan sumber terbaca sebagai pengambilan. Fiksionalisasi dengan pengakuan terbaca sebagai kehati-hatian. Bedanya satu halaman teks, dan ia menentukan bagaimana proyek ini dinilai.
+3.7 Perlindungan yang Tetap Berlaku
+#
+Tindakan
+Anggaran
+Status
+1
+1 sensitivity reader membaca naskah final sebelum rilis
+Rp 15 juta (disetujui)
+🟢 Terkunci
+2
+Halaman "Terinspirasi Oleh" + daftar bacaan
+Waktu penulisan
+🟢
+3
+Audit Aturan Dua Penanda atas seluruh entitas
+1 minggu designer
+🟢
+4
+Larangan menggambarkan situs cagar budaya nyata hancur
+Aturan art
+🟢
+5
+Bersihkan nama T3 dari nama file, komentar kode, dan layer art
+2 hari, bulan 20
+🟢
+
+Poin 5 sering terlewat dan merupakan cara paling umum fiksionalisasi terbongkar.
+
+Peringatan: "Sudah difiksionalisasi" bukan alasan melewatkan poin 1. Fiksionalisasi mengurangi risiko; ia tidak menghapusnya.
+
+
+4. GAMEPLAY & MECHANIC
+4.1 Core Loop
+JELAJAH OVERWORLD → ENCOUNTER → BATTLE → EXP · Kepeng · SERPIHAN · Bahan
+        │                                          │
+        ▼                                          ▼
+   SELESAIKAN TITAH ──────────→ ALTAR: RAKIT SUKMA BARU
+        │                                          │
+        └──────────→ PERKUAT TIM & PUSAKA ◄────────┘
+
+Loop tidak berujung pada "dapat mata uang → summon acak", melainkan pada target yang terlihat: pemain tahu persis Sukma apa yang dikejar, berapa Serpihan lagi, dan di zona mana.
+
+Loop
+Durasi
+Isi
+Mikro
+2–4 menit
+3–5 encounter → 1 elite/peti
+Meso
+30–60 menit
+1 bab → unlock zona → rakit 1 Sukma
+Makro
+2–4 jam
+1 region → tim berubah signifikan
+4.2 Overworld
+Aspek
+Ketentuan
+Kamera
+Top-down orthographic, grid 16×16 px, smooth-follow
+Pergerakan
+Grid-based 4 arah (16 frame walk + 4 idle per karakter)
+Kontrol
+D-pad virtual (Android) · WASD/Arrow/Gamepad (PC)
+Encounter
+Monster terlihat berkeliaran, bisa dihindari
+Energi/stamina
+Tidak ada — hanya relevan di model gacha
+
+Objek overworld: | Objek | Fungsi | |---|---| | Titik Sesajen | Save + pulihkan tim + fast travel | | Peti Pusaka | Gear & bahan, sekali ambil (bukan farm) | | Portal Kabut | Pintu antar-zona | | Batu Gema | Fragmen lore, membuka Ensiklopedia — syarat ending | | Rintangan Lore | Butuh Sukma berelemen tertentu di tim (soft gating) |
+
+Sprite follower: hanya 9 Sukma tier atas. Sisanya memakai sprite "Sukma Melayang" berwarna elemen. Batasan ini tidak boleh dilanggar — 30 sprite follower = 960 frame tambahan untuk 1 animator, 4 bulan kerja tanpa nilai gameplay.
+4.3 Sistem Battle
+Format: Turn-based, Round-Based Simultan, 4 vs 4 (+2 cadangan).
+
+ATB berbasis Speed tidak dipakai. Penyakit strukturalnya (Speed jadi satu-satunya stat penting) butuh combat designer berpengalaman. Round-based lebih mudah di-balance dan cukup dalam untuk game 20 jam.
+
+Alur ronde:
+
+1. FASE PERINTAH   → pilih aksi 4 unit (tanpa batas waktu)
+2. FASE URUTAN     → urutkan semua unit berdasarkan Kecepatan
+3. FASE EKSEKUSI   → jalankan sesuai urutan
+4. FASE AKHIR      → tick DoT/HoT, kurangi durasi & cooldown
+
+Aksi: Serangan Dasar (+1 Prana) · Skill 1 (CD 0–2) · Skill 2 (CD 2–4) · Pamungkas (butuh 4 Prana) · Bertahan (−40% damage, +1 Prana) · Ganti (1×/battle)
+
+Stat: Tenaga (HP) · Serang (ATK) · Tahan (DEF) · Cepat (SPD) · Tepat (ACC) · Tolak (RES) · Kritis (CRT%) · Bengis (CDM%)
+
+Rumus damage:
+
+Damage = (ATK × Multiplier) × ModElemen × (1 − ReduksiDEF) × ModKritis × Variance
+ReduksiDEF = DEF / (DEF + 300 + 15 × LevelPenyerang)
+ModElemen  = 1.5 / 1.0 / 0.75
+Variance   = 0.95 – 1.05
+
+Durasi target: 60–90 detik (biasa), 3–5 menit (boss). Wajib ada: Auto-battle, Speed 2×, dan Ulangi Battle tanpa hukuman.
+4.4 Sistem Tipe Lore
+Tipe
+Nama Lokal
+Pasif
+Kelemahan
+GHOST
+Lelembut
+Selubung Kabut — 50% damage fisik sampai terkena Tersingkap
+Lemah vs damage Sukma; DEF rendah
+SPIRIT
+Sukma
+Titis Ulang — bangkit 1× dengan 30% HP; dicegah Segel
+HP terendah; rentan burst
+BEAST
+Satwa
+Ngamuk — di bawah 40% HP: +40% ATK, −25% ACC, kebal Takut
+Tidak bisa pakai Kitab; ACC rendah
+HUMAN
+Manusa
+Warisan — 4 slot pusaka + bisa pakai Kitab
+Stat dasar −15%; lemah tanpa gear
+
+Urutan implementasi: Ghost & Beast di vertical slice → Spirit & Human di bulan 5–6.
+4.5 Akuisisi Sukma (Deterministik, Tanpa Gacha)
+Jalur
+Jumlah
+Cara
+Hadiah Cerita
+10
+Otomatis di titik cerita. Menjamin tim layak di tiap bab.
+Perakitan Serpihan
+14
+Kumpulkan Serpihan dari monster & peti, rakit di Altar
+Titah Sampingan
+4
+Rantai quest NPC. Biasanya Sukma dengan lore terkuat.
+Rahasia / Eksplorasi
+2
+Tersembunyi. Reward untuk pemain teliti.
+Ending C
++1
+Gema Kakek — Sukma ke-31, hanya dari ending tersembunyi
+
+Contoh sistem Serpihan:
+
+Buaya Putih Wira (Rare)
+  Butuh: 120 Serpihan
+  Sumber: Zona P3 (Danau Sanu) — 3-6 per Monster Kuat, 15 per Elite
+  Estimasi: ~25 encounter (±40 menit)
+  Progres SELALU terlihat: [ 84 / 120 ]
+
+Serpihan berlebih setelah Sukma dirakit dipakai untuk Skill Up — sehingga farming tidak pernah sia-sia.
+4.6 Ekonomi
+Mata Uang
+Sumber
+Fungsi
+Kepeng
+Battle, peti, quest
+Upgrade gear, bahan, ramuan
+Serpihan Sukma [nama]
+Monster spesifik
+Rakit Sukma
+Sukma Kosong
+Elite, boss, lebur gear
+Naikkan Wangsa
+Bahan Bengkel
+Monster & tambang
+Craft & upgrade gear
+
+Dihapus: hard currency, gulungan, energi.
+
+Kurva target: | Titik | Jam | Sukma | Level | |---|---|---|---| | Akhir Bab 1 (batas demo) | 1,5 | 4 | 15 | | Akhir Bab 2 | 6 | 11 | 35 | | Akhir Bab 4 | 14 | 22 | 70 | | Tamat Bab 5 | 20 | 27 | 90 | | Koleksi 100% | 32 | 30 | 100 |
+4.7 Progresi & Endgame
+Level: 1–40 (Common) s/d 1–60 (Ultra Rare) · Wangsa: 1★–6★, skill baru di 3★ & 5★ · Level Pemain: 1–60
+
+Mode Endgame
+Deskripsi
+Menara Bhuta
+50 lantai, komposisi tim dibatasi per set 10 lantai (memaksa memakai seluruh roster)
+Perburuan Agung
+5 boss elemental, berulang, sumber bahan gear atas
+Kisah Ulang (NG+)
+Ulangi cerita dengan tim & level dipertahankan; dialog tambahan
+Ensiklopedia Gema
+100% Lore Card & Batu Gema → art gallery + music player
+Galeri Ending
+Dibuka setelah tamat pertama
+
+Dihapus: Arena PvP, Guild, Daily/Weekly quest (semua butuh backend atau merupakan mekanik retensi live-service).
+
+
+5. STORYLINE, STORYBOARD & MULTI-ENDING
+5.1 Premis
+Seribu tahun lalu, Panca Maha Bhuta dijaga oleh perjanjian antara manusia dan makhluk tak kasat mata. Manusia memberi sesajen dan ingatan; makhluk gaib memberi keseimbangan.
+
+Lalu datang Sang Sunyi — yang tidak membunuh dan tidak menuntut penyembahan, hanya membuat dilupakan. Perjanjian tidak dilanggar; perjanjian itu terlupakan.
+
+Ketika manusia berhenti mengingat, makhluk gaib berhenti terlihat.
+5.2 Protagonis
+Nama: default Arta / Ratih Peran: Pewaris Pusaka — keturunan terakhir garis penjaga perjanjian Kemampuan: Mendengar gema — sisa suara dari hal yang sudah dilupakan
+
+Warisan (dipilih di awal): | Warisan | Bonus | Sukma Starter | |---|---|---| | Wangsa Raja | +15% Kepeng, +1 baris inventory | Prajurit Ranaya (Human/Teja) | | Wangsa Ksatria | +8% ATK tim | Yaki Pengawal (Beast/Bayu) | | Wangsa Sanra | +10% heal, −10% CD skill dukungan | Sanra Muda (Human/Akasa) |
+
+Mempengaruhi dialog, sapaan, dan dekorasi Padepokan. Tidak bercabang jadi jalur cerita terpisah.
+5.3 Lima Bab
+PROLOG — Gema Pertama (20 menit · GRATIS semua platform)
+Kakek pemain meninggal, mewariskan Pusaka Gema — kalung berlima batu. Satu batu menyala. Tutorial: gerak → encounter → battle → Sukma pertama. Beat kunci: Suara tanpa wujud memanggil nama pemain. Bukan menyeramkan — sedih.
+BAB 1 — Jalan yang Tidak Berujung (Parigama P1–P2, Lv.1–30 · GRATIS, batas demo)
+Ada ruas jalan di lintasan gunung yang, bila dilewati saat kabut turun, tidak pernah berakhir. Penduduk tidak takut membicarakannya — mereka takut membicarakannya dengan salah. Konflik: Rombongan pedagang hilang, termasuk anak NPC utama. Boss: Lampah Sesat Agung (Ghost/Apah) — arwah pemandu jalan yang lupa jalan mana yang ia pandu. Beat kunci: Kemenangan dicapai dengan mengingatkan, bukan membunuh. Pemain menyanyikan lagu perjalanan tua. → Layar konversi demo di sini.
+BAB 2 — Kota yang Menolak Dilihat (Parigama P3–P6, Lv.30–55)
+Parigama terbuka: besar, ramai, sepenuhnya fungsional. Penduduknya telah menunggu seribu tahun untuk dikunjungi. Mereka menyambut dengan kegembiraan yang menyakitkan. Antagonis: Pandu Batu — sosok batu setinggi enam meter, berdiri sejak sebelum kota ada.
+
+"Kau kira dilupakan itu kutukan. Bagi kami, itu satu-satunya alasan kami masih ada."
+
+Beat kunci: Kemenangan pemain terasa tidak enak. Pandu Batu tidak salah. Karakter kunci: Adi (±10 tahun) — satu-satunya penduduk yang ingin dunia luar datang.
+BAB 3 — Retak di Selatan (Transisi, Lv.55–60, ±1,5 jam)
+Batu kedua menyala. Pemain berlayar bersama Nakhoda Wirajaya. Memperkenalkan Menara Bhuta, Perburuan Agung, sistem Wangsa.
+BAB 4 — Kerajaan yang Tidak Tidur (Dwilaras D1–D6, Lv.60–85)
+Di Dwilaras, manusia masih mengingat — tapi menjalankan upacara tanpa memahami maknanya. Bentuk utuh, isi kosong. Para roh menerima persembahan tapi tidak menerima pengertian. Boss: Kalawangsa (Ghost/Bayu) Karakter kunci: Jero Mangku — pemangku yang sadar ia menjalankan ritual tanpa tahu artinya.
+BAB 5 — Yang Tersisa dari Suara (Puncak Laras, Lv.85–100)
+Sang Sunyi bukan makhluk. Ia adalah konsekuensi — akumulasi dari setiap kali manusia memilih lupa karena mengingat itu berat.
+5.4 Storyboard Kunci
+SB-01 — Layar Pembuka
+
+[Wide] Rumah panggung kayu berukir di tepi teluk. Kabut pagi.
+Pegunungan di latar. Kamera slow-pan turun ke jendela menyala.
+TEKS: "Seribu tahun lalu, kami berjanji."
+Audio: ombak, burung jauh, satu nada KAKULA tunggal.
+
+SB-02 — Masuk Kabut (akhir Bab 1)
+
+P1: POV jalur gunung. Kabut menutup layar.
+P2: Layar HAMPIR PUTIH SEPENUHNYA. 4 detik. Hanya suara langkah.
+P3: Langkah berhenti. Suara langkah KEDUA terus berjalan.
+P4: Pemain berbalik. Tidak ada siapa-siapa.
+P5: Di depan — LAMPU. Ratusan.
+Audio: senyap total 4 detik → pasar Parigama meledak masuk.
+
+SB-03 — Parigama Terlihat (awal Bab 2 · SCREENSHOT MARKETING UTAMA)
+
+P1: Kabut terbelah — siluet rumah panggung & menara batu
+P2: Pull back luas — kota penuh cahaya obor, sangat hidup
+P3: Penduduk berhenti. Semua menoleh. SERENTAK.
+P4: Seorang anak berlari mendekat, tertawa: "Ada tamu!"
+P5: Close-up pemain — bukan takjub. TERGUNCANG.
+
+SB-04 — Konfrontasi Pandu Batu
+
+P1: Pandu Batu membelakangi, menghadap kabut
+P2: "Kau tahu apa yang terjadi terakhir kali kami terlihat?"
+P3: Flashback monokrom siluet — kapal, obor, asap
+P4: Berbalik. Wajah batu tanpa ekspresi. Tapi suaranya lelah.
+5.5 MULTI-ENDING
+Prinsip Desain
+Prinsip
+Alasan
+Jangan label "Sad"/"Good" di layar
+Melabeli = memberi tahu pemain pilihannya salah. Ambiguitas moral adalah kekuatan cerita ini. Beri nama, bukan nilai.
+Ending sedih bisa dicapai tanpa sengaja
+Kalau ending buruk butuh usaha khusus, ia terasa hukuman, bukan konsekuensi
+Ending baik butuh perhatian, bukan grinding
+Syaratnya memperhatikan cerita, bukan mengumpulkan 500 item
+Save otomatis sebelum titik pilihan
+Pemain boleh melihat ending lain tanpa mengulang 20 jam
+
+
+🌫️ ENDING A — "KABUT YANG KEMBALI"
+Default · tanpa syarat · nada: sedih
+
+Pemain menyegel Sang Sunyi. Keseimbangan pulih. Lima batu menyala serentak, lalu padam.
+
+Parigama kembali tersembunyi — bukan dihancurkan, hanya keluar dari fokus seperti gambar yang perlahan buram. Penduduknya melambai. Mereka tersenyum, karena mereka lega.
+
+Hanya Adi yang tidak melambai. Ia berdiri di dermaga dan memanggil nama pemain sampai suaranya tidak terdengar lagi.
+
+Dwilaras kembali menjalankan upacara. Sempurna, teratur, dan kosong seperti sebelumnya.
+
+Adegan terakhir: Pemain terbangun keesokan paginya, melihat kalung di dinding, dan tidak ingat kenapa itu penting. Nenek Ranaya menyanyikan lagu perjalanan tua di kejauhan — dan pemain tidak mengenali lagunya.
+
+"Keseimbangan pulih. Tidak ada yang berubah."
+
+Audio: BGM-21 Yang Tersisa dimainkan tanpa melodi utama — hanya iringan.
+
+Kenapa ini bukan hukuman: Ini kemenangan yang tepat secara teknis dan hampa secara manusiawi — persis tema game ini. Pemain yang mendapat ending ini tidak gagal; mereka memilih jalan paling masuk akal, dan itulah yang membuatnya menyakitkan.
+
+
+🕯️ ENDING B — "YANG MENGINGAT"
+Butuh syarat · nada: baik, pahit-manis
+
+#
+Syarat
+Menguji
+1
+≥ 24 dari 30 Sukma
+Pemain yang membangun ikatan
+2
+4 rantai Titah Sampingan bernama selesai (Nenek Ranaya, Kapten Lamalu, Sanra Buri, Jero Mangku)
+Pemain yang mendengarkan
+3
+≥ 80% Batu Gema kedua region
+Pemain yang membaca
+4
+Dengarkan seluruh kisah Pandu Batu tanpa skip
+Pemain yang tidak bergegas
+5
+Jangan serang Adi di Bab 2 (opsi tersembunyi: tunggu 30 detik)
+Pemain yang sabar
+
+Pemain menolak menyegel. Ia mengikat Sang Sunyi ke dalam dirinya sendiri.
+
+Dunia mulai mengingat. Parigama muncul di peta — kecil, tapi ada. Kapal datang. Adi berdiri di dermaga, dan kali ini ia menyambut. Jero Mangku menangis di tengah doa karena ia akhirnya paham apa yang ia ucapkan selama ini.
+
+Tapi harganya berlaku. Nenek Ranaya menatap pemain dan bertanya sopan siapa dia. Kapten Lamalu berterima kasih pada "seseorang" tanpa bisa menyebut nama. Padepokan kakek kini terdaftar sebagai bangunan tak bertuan.
+
+Adegan terakhir: Pemain duduk sendirian di pendopo. Lalu satu per satu, Sukma-nya datang dan duduk di sekitarnya. Mereka masih ingat.
+
+"Dunia mengingat. Seseorang harus membayar."
+
+Audio: BGM-21 dengan melodi utama penuh — pertama kali pemain mendengarnya lengkap.
+
+
+🪶 ENDING C — "LARAS"
+Tersembunyi · membuka NG+ & Season 2
+
+#
+Syarat tambahan (di atas Ending B)
+6
+30/30 Sukma
+7
+100% Batu Gema kedua region
+8
+Kalahkan Gema Kakek — superboss tersembunyi di Padepokan
+9
+Di pertarungan akhir, berhenti menyerang 3 ronde penuh
+
+Pemain menyadari menyegel dan mengikat sama-sama salah — keduanya berangkat dari asumsi bahwa ingatan harus disimpan seseorang.
+
+Ia melakukan hal ketiga: membagikannya.
+
+Nenek Ranaya mendapat lagunya kembali. Kapten Lamalu mendapat nama-nama awaknya. Adi mendapat kata untuk menyebut dunia luar. Jero Mangku mendapat arti dari satu baris doa — satu baris saja, dan itu cukup untuk memulai.
+
+Tidak ada yang menanggung semuanya. Karena itu, tidak ada yang runtuh.
+
+Sang Sunyi tidak dikalahkan. Ia menjadi jeda antar nada — bukan lawan musik, melainkan bagian yang membuatnya menjadi musik.
+
+Adegan terakhir: Orang-orang menyapa pemain dengan namanya. Ia membuka pintu padepokan, dan Pusaka Gema kini bercahaya dengan enam batu. Batu keenam berwarna yang belum pernah dilihat pemain.
+
+Di seberang laut utara, sebuah pelabuhan yang seharusnya tidak ada menyalakan lampunya.
+
+"Laras bukan berarti sama. Laras berarti saling memberi tempat."
+
+Membuka: NG+, Galeri Ending, Sukma #31 (Gema Kakek), prolog Season 2.
+
+
+Biaya Produksi Multi-Ending
+Aset
+A
+B
+C
+Total
+Panel cutscene
+5
+6
+7
+18
+Dialog bercabang
+800 kata
+1.200
+1.500
+3.500
+Varian BGM-21
+Instrumental
+Melodi penuh
+Aransemen penuh
+3
+Flag pengecekan
+—
+5
+9
+Sistem flag
+
+Tambahan: 5–7 minggu (art 3, tulis 1, program 1,5, audio 1, QA 0,5). Wajib masuk jadwal secara eksplisit — multi-ending yang ditempel di akhir selalu terasa ditempel.
+Yang TIDAK Boleh
+❌ Menulis "SAD ENDING"/"GOOD ENDING" di layar ❌ Menampilkan daftar syarat sebelum tamat ❌ Membuat Ending A terasa game-over (layar merah, musik gagal) ❌ Mengunci Ending C di balik grinding ❌ Menghapus save sebelum titik pilihan
+5.6 Struktur Titah
+Jenis
+Jumlah
+Reward
+Titah Utama
+55
+10 Sukma, unlock zona, gear kunci
+Titah Sampingan
+40
+Kepeng, gear, Lore Card, 4 Sukma
+Perburuan Agung
+5 (berulang)
+Bahan gear atas
+Rahasia
+12
+Batu Gema, 2 Sukma, gear UR
+
+
+6. ROSTER 30 SUKMA
+6.1 Distribusi
+Rarity
+Jumlah
+Level Maks
+Wangsa Maks
+Common
+8
+40
+4★
+Uncommon
+7
+45
+5★
+Rare
+7
+50
+5★
+Super Rare
+5
+55
+6★
+Ultra Rare
+3
+60
+6★
+(Rahasia)
++1
+60
+6★
+
+Elemen: 6 per elemen (merata) · Tipe: Beast 8, Ghost 8, Human 8, Spirit 6 · Region: Parigama 16, Dwilaras 14
+
+Rarity di game ini adalah penanda kekuatan & kesulitan mendapatkan, bukan peluang. Tidak ada RNG.
+6.2 COMMON (8)
+#
+Nama
+Tipe
+Elemen
+Region
+Peran
+Skill Signature
+Cara Didapat
+01
+Yaki Pengawal
+Beast
+Bayu
+Parigama
+Attacker
+Lompat Dahan — 2 hit, +20% CRT saat HP penuh
+Starter (Ksatria)
+02
+Lampah Sesat
+Ghost
+Apah
+Parigama
+Debuffer
+Kabut Jalan — −SPD lawan 2 ronde
+Serpihan P1
+03
+Rasa Padi
+Spirit
+Pertiwi
+Parigama
+Tank
+Akar Sawah — +40% DEF diri 2 ronde
+Cerita Bab 1
+04
+Prajurit Ranaya
+Human
+Teja
+Parigama
+Attacker
+Tebasan Guma — damage tunggal tinggi
+Starter (Raja)
+05
+Cengiran
+Ghost
+Akasa
+Dwilaras
+Debuffer
+Tawa Malam — 40% Takut
+Serpihan D1
+06
+Tonyar
+Spirit
+Pertiwi
+Dwilaras
+Support
+Berkat Panen — heal 1 sekutu 15%
+Serpihan D1
+07
+Penjaga Laras Muda
+Human
+Bayu
+Dwilaras
+Support
+Aba-aba — +15% SPD tim 2 ronde
+Cerita Bab 4
+08
+Kera Wanara
+Beast
+Teja
+Dwilaras
+Attacker
+Cakar Beruntun — 3 hit acak
+Serpihan D2
+
+Setiap Common punya minimal 1 skill yang tetap relevan di endgame. Lampah Sesat adalah sumber −SPD termurah, berguna sampai Menara Bhuta lantai 50.
+6.3 UNCOMMON (7)
+#
+Nama
+Tipe
+Elemen
+Region
+Peran
+Skill Signature
+Cara Didapat
+09
+Anoa Perbukitan
+Beast
+Pertiwi
+Parigama
+Tank
+Sundulan Kokoh — tarik aggro 2 ronde, +50% DEF
+Serpihan P2
+10
+Ngayang
+Ghost
+Apah
+Parigama
+Lifesteal
+Hisap Ingatan — damage + heal diri 40% damage
+Serpihan P2
+11
+Sanra Muda
+Human
+Akasa
+Parigama
+Healer
+Mantra Pemulih — heal 30% + cleanse 1
+Starter (Sanra)
+12
+Maleo Bara
+Beast
+Teja
+Parigama
+Attacker
+Kepak Bara — AoE 60%, abaikan 20% DEF
+Serpihan P2
+13
+Memedar
+Ghost
+Pertiwi
+Dwilaras
+Debuffer
+Bisikan Pudar — −ATK lawan 2 ronde
+Serpihan D1
+14
+Gajahmina
+Beast
+Apah
+Dwilaras
+Tank
+Gelombang Perisai — perisai tim 15% max HP
+Serpihan D3
+15
+Juru Pamor
+Human
+Teja
+Dwilaras
+Anti-Ghost
+Sapu Pamor — TERSINGKAP 3 ronde
+Cerita Bab 4
+
+Juru Pamor (#15) adalah unit kunci sistemik — salah satu dari hanya 4 unit yang bisa menerapkan Tersingkap. Sengaja ditempatkan sebagai hadiah cerita agar setiap pemain pasti memilikinya sebelum menghadapi banyak lawan Ghost di Dwilaras.
+6.4 RARE (7)
+#
+Nama
+Tipe
+Elemen
+Region
+Peran
+Skill Signature
+Cara Didapat
+16
+Rupaganti
+Ghost
+Bayu
+Parigama
+Assassin
+Rupa Berganti — +100% damage jika lawan < 50% HP
+Serpihan P4
+17
+Nyai Sanu
+Spirit
+Apah
+Parigama
+Healer
+Arus Danau — heal tim 20% + cleanse tim
+Titah Sampingan
+18
+Buaya Putih Wira
+Beast
+Apah
+Parigama
+Bruiser
+Gigitan Kunci — damage + Terkunci
+Serpihan P3
+19
+Panglima Ranaya
+Human
+Bayu
+Parigama
+Buffer
+Seruan Ranaya — +30% ATK tim 3 ronde
+Cerita Bab 2
+20
+Bayangsungsang
+Ghost
+Akasa
+Dwilaras
+Reflector
+Balik Bayangan — pantulkan 40% damage 2 ronde
+Serpihan D5
+21
+Ranika
+Human
+Teja
+Dwilaras
+DoT
+Rajah Api — Bakar 3 ronde (5% max HP/ronde)
+Serpihan D5
+22
+Bidadari Laras
+Spirit
+Akasa
+Dwilaras
+Anti-Spirit
+Tarian Segel — SEGEL
+Titah Sampingan
+6.5 SUPER RARE (5)
+#
+Nama
+Tipe
+Elemen
+Region
+Peran
+Skill Pamungkas
+Cara Didapat
+23
+Kerbau Belang Pusaka
+Beast
+Pertiwi
+Parigama
+Tank/DPS
+Injakan Leluhur — AoE 150% + Membatu seluruh lawan
+Serpihan P4
+24
+Pandu Batu
+Spirit
+Akasa
+Parigama
+Controller
+Tirai Batu — tim kebal debuff 2 ronde + −25% ACC lawan
+Cerita Bab 2 (boss)
+25
+Nakhoda Wirajaya
+Human
+Apah
+Parigama
+Physical DPS
+Pelayaran Terakhir — 5 hit acak, tiap hit +10% CRT diri
+Cerita Bab 2
+26
+Kalawangsa
+Ghost
+Bayu
+Dwilaras
+Debuff Nuker
+Lapar yang Tak Puas — AoE 140% + Racun seluruh lawan
+Cerita Bab 4 (boss)
+27
+Kebawana
+Human
+Pertiwi
+Dwilaras
+DEF-scaling DPS
+Hantaman Gunung — damage dihitung dari DEF
+Serpihan D6
+6.6 ULTRA RARE (3)
+28. TUMURUN — Yang Turun dari Langit
+Spirit · Bayu · Parigama · Buffer/Reviver
+Skill 1 — Turunnya Cahaya: Damage 130% + hapus 1 buff lawan
+Skill 2 — Sumpah Langit: Tim +25% ATK & +25% DEF, 3 ronde
+Pamungkas — Titah Tumurun: Bangkitkan 1 sekutu tumbang (60% HP) + tim kebal kematian 1 ronde
+Pasif diperkuat: Titis Ulang bangkit dengan 60% HP
+Didapat: Rahasia — Puncak Gunung Kelambu, setelah 12 Batu Gema Parigama
+Lore: Ketika sebuah negeri kehilangan arah, seseorang turun dari langit untuk memberi tatanan — lalu menolak memerintah dan pergi tanpa meninggalkan makam.
+29. RARASUNYI
+Ghost · Teja · Dwilaras · AoE Nuker/Debuffer
+Skill 1 — Sebut Namanya: Damage 150% + Luka (heal diterima −50%)
+Skill 2 — Rajah Kehilangan: DoT AoE, damage naik tiap ronde
+Pamungkas — Yang Tak Punya Pulang: AoE 200%, +30% damage per sekutu tumbang
+Pasif diperkuat: Selubung Kabut — menerima 35% damage fisik
+Didapat: Rantai Titah Sampingan "Kisah yang Tak Diceritakan" (7 tahap, dibuka Bab 4)
+Desain visual: Rambutnya tersusun dari nama anak-anak yang hilang — huruf-huruf yang bergerak. Tanpa lidah menjulur, tanpa taring.
+Lore: Bukan penyihir. Kesedihan yang tidak punya tempat pulang, dan dunia menyebutnya monster karena itu lebih mudah daripada mendengarkan.
+30. LEMBUJAGA
+Beast · Akasa · Dwilaras · Tank/Team Support
+Skill 1 — Terjangan Sakral: Damage 120% + Tersingkap
+Skill 2 — Lindungan Belang: Perisai tim 25% max HP + kebal 1 debuff berikutnya
+Pamungkas — Dwi Laras: Heal tim 50%, hapus semua debuff, dan 2 ronde berikutnya semua damage yang diterima sekutu dibagi rata ke seluruh tim
+Pasif dimodifikasi: Ngamuk di bawah 40% HP memberi +60% DEF & heal 10% HP/ronde
+Didapat: Tamatkan cerita utama
+Desain visual: Makhluk belang berkaki empat, wajah seperti topeng kayu tanpa ekspresi. Bukan desain topeng ritual mana pun.
+Lore: Penjaga keseimbangan. Bukan lawan Rarasunyi — pasangannya. Tanpa salah satu, dunia berhenti berputar.
+6.7 RAHASIA (1)
+31. GEMA KAKEK
+Spirit · Akasa · Padepokan · Wildcard
+Pamungkas — Yang Selalu Menunggu: Salin pamungkas 1 sekutu, gunakan tanpa biaya Prana
+Didapat: Hanya dari Ending C. Superboss tersembunyi di Padepokan setelah 100% Batu Gema.
+Lore: Ia tidak pernah pergi. Ia hanya menunggu sampai kamu cukup memperhatikan untuk melihatnya.
+6.8 Audit Aturan Dua Penanda
+Seluruh 31 Sukma telah melewati audit. Entitas berisiko tertinggi:
+
+Sukma
+Inspirasi
+Penanda yang diubah
+Rarasunyi
+Figur janda-penyihir Bali
+✅ Bentuk ✅ Fungsi ✅ Konteks ritual dihapus
+Lembujaga
+Figur penjaga berwujud singa Bali
+✅ Bentuk ✅ Konteks ritual dihapus
+Ngayang
+Kepercayaan kepala terbang
+✅ Bentuk (tubuh tidur, bayangan terbang) ✅ Fungsi (mencuri ingatan, bukan darah)
+Rupaganti
+Kepercayaan manusia penjelmaan
+✅ Bentuk ✅ Fungsi (meniru orang yang dilupakan keluarganya)
+Tumurun
+Mitos pendiri legitimasi kerajaan
+✅ Fungsi (menolak memerintah) ✅ Konteks
+Nakhoda Wirajaya
+Tokoh epik pelayaran
+✅ Fungsi ✅ Konteks (tanpa kisah saudara kembar)
+Pandu Batu
+Patung megalitik
+✅ Bentuk (tanpa wajah) ✅ Konteks (ciptaan orisinal)
+Kerbau Belang Pusaka
+Hewan sakral upacara
+✅ Fungsi ✅ Konteks upacara dihapus
+Sanra Muda
+Penyembuh tradisional
+✅ Konteks (gelar fiktif, tanpa mantra nyata)
+
+
+7. DETAIL ITEM
+7.1 Rarity & Slot
+Rarity
+Warna
+Hex
+Maks Upgrade
+Substat
+Common
+Abu
+#8A8A8A
++6
+1
+Uncommon
+Hijau
+#4CAF50
++9
+2
+Rare
+Biru
+#2196F3
++12
+3
+Super Rare
+Ungu
+#9C27B0
++15
+4
+Ultra Rare
+Emas
+#FFB300
++15
+4 + Efek Pusaka
+
+  NON-HUMAN (2 slot)          HUMAN (4 slot + Kitab)
+  ┌─────────────┐             ┌─────────────┐
+  │  SENJATA    │             │  SENJATA    │
+  ├─────────────┤             ├─────────────┤
+  │  JIMAT      │             │  PELINDUNG  │
+  └─────────────┘             ├─────────────┤
+                              │  JIMAT      │
+                              ├─────────────┤
+                              │  PUSAKA     │
+                              ├─────────────┤
+                              │  KITAB ★    │
+                              └─────────────┘
+
+Substat tidak acak tanpa batas. Setiap gear punya 2 substat tetap (ditentukan desainer) + 1–2 substat yang dipilih pemain dari 3 opsi saat crafting. Ini menghapus "rune grinding hell" (mekanik retensi gacha) dan menggantinya dengan build crafting yang disengaja.
+7.2 SENJATA
+Nama
+Rarity
+Region
+Efek
+Parang Kayu
+Common
+Parigama
+ATK +8%
+Tombak Bambu
+Common
+Dwilaras
+ATK +8%
+Guma Rimba
+Uncommon
+Parigama
+ATK +14%, CRT +5%
+Keris Tepi Laut
+Uncommon
+Dwilaras
+ATK +14%, ACC +8%
+Sumpit Ranaya
+Rare
+Parigama
+ATK +20%, 15% Racun
+Keris Pamor Sungsang
+Rare
+Dwilaras
+ATK +20%, +10% vs Ghost
+Guma Panglima
+Super Rare
+Parigama
+ATK +28%, CDM +15%, +10% saat HP > 80%
+Keris Rarasunyi
+Ultra Rare
+Dwilaras
+ATK +35%, CDM +20%, Pusaka: serangan menerapkan Luka
+Badik Wirajaya
+Ultra Rare
+Parigama
+ATK +35%, SPD +15, Pusaka: pamungkas tidak bisa dihindari
+7.3 PELINDUNG (Human only)
+Nama
+Rarity
+Region
+Efek
+Rompi Kulit Kayu
+Common
+Parigama
+HP +10%
+Kain Belang
+Common
+Dwilaras
+DEF +10%
+Baju Kulit Bark
+Uncommon
+Parigama
+HP +16%, DEF +8%
+Saput Balai
+Uncommon
+Dwilaras
+DEF +16%, RES +8%
+Perisai Kanta
+Rare
+Parigama
+DEF +24%, −15% damage AoE
+Kampuh Laras
+Rare
+Dwilaras
+HP +24%, +10% heal diterima
+Zirah Tumurun
+Super Rare
+Parigama
+HP +30%, DEF +18%, refleksi 10%
+Kampuh Dwi Laras
+Ultra Rare
+Dwilaras
+HP +35%, DEF +20%, Pusaka: bertahan 1× dari fatal per battle
+7.4 JIMAT
+Nama
+Rarity
+Region
+Efek
+Manik Kayu
+Common
+Parigama
+SPD +4
+Gelang Tiga Warna
+Common
+Dwilaras
+RES +8%
+Taring Babirusa
+Uncommon
+Parigama
+CRT +8%
+Bulu Jalak Laras
+Uncommon
+Dwilaras
+SPD +8
+Mata Tarsius
+Rare
+Parigama
+CRT +12%, CDM +10%
+Rajah Penolak Bala
+Rare
+Dwilaras
+RES +20%, kebal Takut
+Bulu Maleo Emas
+Super Rare
+Parigama
+SPD +15, ACC +15%
+Manik Panca Bhuta
+Ultra Rare
+Both
+Semua stat +10%, Pusaka: +20% damage vs elemen lemah
+7.5 PUSAKA & KITAB (Human only)
+Nama
+Rarity
+Slot
+Efek
+Batu Sungai
+Common
+Pusaka
+Heal diberi +8%
+Cincin Tembaga
+Uncommon
+Pusaka
+CDM +12%
+Lontarak Usang
+Rare
+Pusaka
+Cooldown Skill 2 −1 ronde
+Cupu Manik
+Super Rare
+Pusaka
+Prana +1/ronde
+Pusaka Gema
+Ultra Rare
+Pusaka
+Pusaka: saat unit tumbang, tim +30% ATK 2 ronde
+Kitab Dasar
+Uncommon
+Kitab
+EXP +10%
+Kitab Pengobatan
+Rare
+Kitab
+Heal 5% HP tiap akhir ronde
+Kitab Pamor
+Rare
+Kitab
+Serangan dasar 20% Tersingkap
+Kitab Sanra
+Super Rare
+Kitab
+Saat sekutu tumbang, +25% ATK diri (stack 3×)
+Kitab Panca Sunyi
+Ultra Rare
+Kitab
+Kebal efek Sang Sunyi; +15% damage semua tipe
+7.6 Consumable, Material & Set Bonus
+Item
+Rarity
+Fungsi
+Ramuan Kecil/Sedang/Besar
+C/U/R
+Heal 20%/40%/70%
+Sesajen Sederhana/Lengkap
+U/R
+Buff pra-battle +15%/+30% ATK (3 battle)
+Serpihan Sukma [nama]
+Bervariasi
+Rakit Sukma
+Sukma Kosong
+C–UR
+Naikkan Wangsa
+Bijih Besi/Perunggu/Pamor
+C/U/R
+Upgrade senjata
+Getah Ebony
+U
+Upgrade pelindung
+Air Balai Suci
+R
+Ganti 1 substat pilihan
+Debu Bintang Akasa
+UR
+Kunci substat
+
+Set
+2-piece
+4-piece (Human)
+Set Rimba
+HP +15%
+Heal 8% HP tiap ronde
+Set Arus
+SPD +12
+Serangan pertama tiap battle +50%
+Set Bara
+ATK +18%
+Kritikal menerapkan Bakar
+Set Kabut
+RES +20%
+Kebal debuff pertama tiap battle
+Set Pamor
+ACC +20%
+Semua serangan menerapkan Tersingkap
+
+
+8. DETAIL SPAWN MONSTER
+8.1 Prinsip & Tier
+Monster tidak bisa ditangkap. Mereka menjatuhkan Serpihan Sukma, Kepeng, dan bahan.
+Mayoritas monster adalah fauna nyata — membuat dunia terasa nyata & menghemat biaya art.
+Makhluk mitologi hanya sebagai Elite & Boss.
+
+Tier
+Frekuensi
+HP ×
+Drop
+Biasa
+78%
+1,0×
+Kepeng, bahan
+Kuat
+16%
+2,5×
++ Serpihan 3–6
+Elite
+5%
+6×
++ Serpihan 15, gear Rare
+Boss Zona
+1%
+20×
+Gear SR jaminan, Serpihan 50
+8.2 PARIGAMA
+Zona
+Lv
+Nama
+Monster Biasa
+Kuat
+Elite / Boss
+Serpihan
+P1
+1–15
+Pesisir Teluk Ranaya
+Kepiting Bakau (Beast/Apah), Ikan Terbang (Beast/Bayu), Camar (Beast/Bayu), Ular Laut (Beast/Apah)
+Biawak Pesisir (Beast/Pertiwi), Kelomang Raksasa (Beast/Apah)
+E: Buaya Muara Muda ▪ B: Lampah Sesat Agung (Ghost/Apah) Lv.15
+Lampah Sesat
+P2
+16–30
+Rimba Sanu
+Yaki Liar (Beast/Bayu), Kuskus (Beast/Pertiwi), Babirusa (Beast/Pertiwi), Julang (Beast/Bayu)
+Anoa Jantan (Beast/Pertiwi), Musang Rimba (Beast/Bayu)
+E: Maleo Bara ▪ B: Rasa Rimba (Spirit/Pertiwi) Lv.30
+Anoa, Ngayang, Maleo
+P3
+31–45
+Danau Sanu
+Sidat (Beast/Apah), Ikan Rono (Beast/Apah), Bangau (Beast/Bayu), Kadal Air (Beast/Apah)
+Sidat Raksasa (Beast/Apah), Sanca Air (Beast/Apah)
+E: Buaya Putih Wira ▪ B: Nyai Sanu (Spirit/Apah) Lv.45
+Buaya Putih Wira
+P4
+46–60
+Lembah Batu Diam
+Tarsius Bayang (Spirit/Akasa), Kalajengking Batu (Beast/Pertiwi), Kelelawar (Beast/Bayu), Laba-laba Purba (Beast/Pertiwi)
+Patung Kecil Bergerak (Spirit/Pertiwi), Kerbau Liar (Beast/Pertiwi)
+E: Rupaganti Pengintai ▪ B: Penjaga Batu Diam (Spirit/Pertiwi) Lv.60
+Rupaganti, Kerbau Belang
+P5
+61–75
+Jalur Kabut Kelambu
+Sukma Sesat (Spirit/Akasa), Bayang Pedagang (Ghost/Apah), Kabut Berbisik (Spirit/Bayu), Langkah Tanpa Tubuh (Ghost/Akasa)
+Rombongan Hilang (Ghost/Akasa), Kuda Beban Bayang (Beast/Bayu)
+E: Ngayang Ratu ▪ B: Penjaga Tirai Kabut (Spirit/Akasa) Lv.75
+— (zona lore)
+P6
+76–90
+Kota Parigama
+Warga Terlupakan (Spirit/Akasa), Pedagang Bayang (Ghost/Akasa), Penjaga Gerbang (Human/Pertiwi)
+Prajurit Parigama (Human/Teja), Nakhoda Bayang (Ghost/Apah)
+E: Panglima Kota ▪ B: Naga Danau (Beast/Apah) Lv.90
+Bahan gear SR
+P7
+91–100
+Menara Pandu
+Sukma Menara (Spirit/Akasa), Cermin Sunyi (Ghost/Akasa)
+Gema Terpecah (Spirit/Akasa)
+BOSS BAB: Pandu Batu (Spirit/Akasa) Lv.100
+—
+
+Level 91–100 hanya diakses di endgame/NG+. Dalam alur normal Bab 2, pemain melintasi P5–P7 di level 45–55 dengan monster yang diskalakan turun.
+8.3 DWILARAS
+Zona
+Lv
+Nama
+Monster Biasa
+Kuat
+Elite / Boss
+Serpihan
+D1
+55–65
+Sawah Selaras
+Belalang (Beast/Pertiwi), Katak (Beast/Apah), Bebek Liar (Beast/Apah), Tikus Sawah (Beast/Pertiwi)
+Ular Hijau (Beast/Pertiwi), Jalak Laras (Beast/Bayu)
+E: Tonyar Pengganggu ▪ B: Memedar Sawah (Ghost/Pertiwi) Lv.65
+Cengiran, Tonyar, Memedar
+D2
+65–72
+Alas Wanara
+Monyet Ekor Panjang (Beast/Bayu), Kalong (Beast/Bayu), Tupai (Beast/Bayu), Ayam Hutan (Beast/Teja)
+Monyet Alfa (Beast/Bayu), Anjing Gunung (Beast/Teja)
+E: Wanara Tua ▪ B: Raja Kera Alas (Beast/Bayu) Lv.72
+Kera Wanara
+D3
+72–78
+Balai Tepi Ombak
+Kepiting Karang (Beast/Apah), Ikan Karang (Beast/Apah), Camar (Beast/Bayu), Ular Laut (Beast/Apah)
+Penyu Tua (Beast/Apah), Gurita Karang (Beast/Apah)
+E: Gajahmina Muda ▪ B: Penunggu Balai Laut (Spirit/Apah) Lv.78
+Gajahmina
+D4
+78–84
+Kawah Bara
+Kelabang Belerang (Beast/Teja), Kadal Batu Panas (Beast/Teja), Burung Belerang (Beast/Teja)
+Anjing Api (Beast/Teja), Kalajengking Lava (Beast/Teja)
+E: Bara Berjalan ▪ B: Buta Kawah (Ghost/Teja) Lv.84
+Bahan gear
+D5
+84–90
+Desa Tanpa Bakar
+Memedar Kecil (Ghost/Pertiwi), Cengiran Liar (Ghost/Akasa), Sukma Belum Puput (Spirit/Akasa)
+Bayangsungsang Pemula (Ghost/Akasa), Bangkai Berjalan (Ghost/Pertiwi)
+E: Bayangsungsang ▪ B: Murid Ranika (Human/Teja) Lv.90
+Bayangsungsang, Ranika
+D6
+90–96
+Nusa Gersang
+Prajurit Nusa (Human/Bayu), Lapar Berjalan (Ghost/Bayu), Kabut Kering (Ghost/Akasa)
+Panglima Nusa (Human/Bayu), Bayang Bebai (Ghost/Akasa)
+E: Ranika ▪ B: Kalawangsa (Ghost/Bayu) Lv.96
+Kebawana
+D7
+96–100
+Puncak Laras
+Penjaga Sakral (Spirit/Akasa), Gema Mantra (Spirit/Akasa)
+Lembujaga Kecil (Beast/Akasa), Rarasunyi Bayangan (Ghost/Teja)
+BOSS AKHIR: Gema Sang Sunyi (Spirit/Akasa) Lv.100
+—
+8.4 Kurva Statistik
+HP     = 80 × (1 + 0.14 × Level) × TierMultiplier
+ATK    = 20 × (1 + 0.11 × Level) × TierMultiplier
+DEF    = 15 × (1 + 0.09 × Level) × TierMultiplier
+EXP    = 12 × Level × TierMultiplier
+Kepeng = 8  × Level × TierMultiplier × random(0.8–1.2)
+
+Aturan komposisi: Minimal 3 dari 5 elemen di setiap pool zona — mencegah pemain menuntaskan zona dengan tim mono-elemen.
+
+Total jenis monster: ~85.
+
+
+9. DETAIL REGION
+9.1 PARIGAMA — Kota yang Menolak Dilihat
+Sumber inspirasi (tidak disebut in-game): Sulawesi Tengah (Kaili) sebagai inti, dengan pengaruh Toraja (pegunungan) dan Bugis (pesisir).
+
+Latar: Dari pesisir Teluk Ranaya, menembus Rimba Sanu dan Danau Sanu, menuju jalur pegunungan berkabut tempat Parigama berdiri.
+
+Legenda dasar (fiktif): Ada lintasan pegunungan yang, bila dilewati saat kabut turun, tidak pernah berakhir. Rombongan yang masuk kadang keluar tiga hari kemudian mengaku baru berjalan satu jam. Kadang tidak keluar sama sekali.
+Palet & Mood
+Zona
+Palet
+Mood
+P1 Pesisir
+Biru turquoise, pasir putih, hijau bakau
+Terbuka, cerah
+P2 Rimba
+Hijau gelap berlapis, batang tinggi, kabut rendah
+Rimbun, purba
+P3 Danau
+Biru jernih tak wajar, pasir putih, tebing
+Tenang, asing
+P4 Lembah Batu
+Coklat rumput kering, abu batu, langit luas
+Sunyi, mengawasi
+P5 Kabut
+Putih monokrom, hampir tanpa warna
+Disorientasi, salah
+P6 Kota
+Ledakan warna: emas obor, merah kain, biru laut
+Hidup, hangat, mengejutkan
+P7 Menara
+Abu batu, ungu gelap, satu berkas cahaya
+Final, agung, sepi
+
+Momen desain kunci: Kontras P5 (monokrom, hampir tanpa suara) → P6 (warna & suara penuh) adalah payoff terbesar di game. P5 sengaja dibuat kosong agar P6 memukau. Teknik murah, dampak besar.
+Elemen Visual & Budaya (inspirasi, bukan reproduksi)
+Rumah panggung berukir · Rumah pegunungan beratap tinggi · Patung batu tanpa wajah (ciptaan orisinal) · Tekstil celup ikat · Guma (parang) & badik · Ansambel gong bilah · Perahu bercadik · Fauna endemik: anoa, babirusa, maleo, tarsius, yaki
+Struktur & NPC
+[Desa Pesisir — HUB] → P1 (1-15) → P2 (16-30) → ┬ P3 (31-45)
+                                                 └ P4 (46-60)
+                                                     ↓
+                              P5 (61-75) → P6 (76-90) [HUB 2] → P7 (91-100)
+
+NPC
+Peran
+Nenek Ranaya
+Satu-satunya yang masih hafal lagu perjalanan tua yang membuka kabut
+Kapten Lamalu
+Nakhoda yang kehilangan seluruh rombongannya di jalur gunung; terobsesi kembali
+Sanra Buri
+Penyembuh yang tahu lebih banyak daripada yang ia katakan; pemberi Titah Sampingan utama
+Pandu Batu
+Penjaga; antagonis Bab 2, sekutu di Bab 5
+Adi
+Anak ±10 tahun, satu-satunya penduduk yang ingin dunia luar datang. Komponen emosional utama Bab 2 dan penentu Ending B.
+9.2 DWILARAS — Kerajaan yang Tidak Tidur
+Sumber inspirasi: Bali, dengan konsep dualitas saling melengkapi.
+
+Konsep region: Berlawanan dengan Parigama yang dilupakan, Dwilaras masih diingat — tapi diingat secara kosong. Ritual berjalan, makna hilang. Bentuk lain dari serangan Sang Sunyi, dan lebih berbahaya karena tidak terlihat.
+Palet & Mood
+Zona
+Palet
+Mood
+D1 Sawah Selaras
+Hijau muda, emas padi, biru langit
+Damai, teratur
+D2 Alas Wanara
+Hijau gelap, coklat akar
+Rimbun, jenaka, liar
+D3 Balai Tepi Ombak
+Abu batu, turquoise, putih ombak
+Sakral, terbuka
+D4 Kawah Bara
+Hitam vulkanik, jingga bara
+Panas, mati
+D5 Desa Tanpa Bakar
+Abu pucat, putih tulang, hijau kemenyan
+Tenang tapi salah
+D6 Nusa Gersang
+Tebing putih, laut gelap, langit merah
+Terisolasi, mengancam
+D7 Puncak Laras
+Emas, putih, belang hitam-putih
+Agung, final
+Elemen Visual & Budaya (inspirasi)
+Kain belang hitam-putih (simbol dualitas) · Sistem irigasi bertingkat → puzzle zona D1 · Gerbang terbelah & gerbang beratap · Tiang hias upacara · Persembahan harian → item Sesajen · Ansambel gamelan · Konsep dualitas → mekanik zona: beberapa area butuh 2 Sukma berelemen berlawanan dalam tim
+NPC
+NPC
+Peran
+Jero Mangku
+Pemangku yang sadar ia menjalankan ritual tanpa lagi tahu maknanya. Quest giver terpenting; penentu Ending B & C.
+Luh Sari
+Penari muda yang bisa melihat roh, dianggap sakit oleh keluarganya
+Kalawangsa
+Antagonis Bab 4
+
+
+10. DETAIL 5 ELEMEN
+10.1 Panca Maha Bhuta
+Elemen
+Unsur
+Warna
+Hex
+Simbol
+PERTIWI
+Tanah
+Coklat–Kuning
+#C8963E
+Gunung / akar
+APAH
+Air
+Biru
+#2E86C1
+Gelombang / tetes
+TEJA
+Api & Cahaya
+Merah–Jingga
+#E74C3C
+Nyala
+BAYU
+Angin & Napas
+Hijau Toska
+#16A085
+Pusaran
+AKASA
+Ruang & Kekosongan
+Ungu–Perak
+#8E44AD
+Lingkaran kosong
+10.2 Siklus
+                    TEJA
+                   ╱      ╲
+              1.5×╱        ╲1.5×
+              APAH ◄──────► BAYU
+                   ╲1.5× 1.5×╱
+                    PERTIWI
+
+     AKASA — netral vs 4 elemen; AKASA vs AKASA = 1.5×
+
+TEJA > BAYU > PERTIWI > APAH > TEJA
+
+Penyerang →
+Pertiwi
+Apah
+Teja
+Bayu
+Akasa
+Pertiwi
+1.0
+1.5
+1.0
+0.75
+1.0
+Apah
+0.75
+1.0
+1.5
+1.0
+1.0
+Teja
+1.0
+0.75
+1.0
+1.5
+1.0
+Bayu
+1.5
+1.0
+0.75
+1.0
+1.0
+Akasa
+1.0
+1.0
+1.0
+1.0
+1.5
+
+Unggul: +15% peluang debuff, +10% peluang kritikal · Lemah: −15% peluang debuff, tidak bisa kritikal
+10.3 Identitas Mekanik
+Elemen
+Stat
+Peran
+Status Signature
+PERTIWI
+DEF & HP tinggi, SPD rendah
+Tank
+Membatu — −30% damage diterima, tidak bisa bergerak 1 ronde
+APAH
+HP menengah, heal & cleanse
+Healer
+Basah — +30% damage Teja, −20% RES
+TEJA
+ATK & CDM tinggi, DEF rendah
+Nuker/DoT
+Bakar — 5% max HP/ronde, 3 ronde
+BAYU
+SPD & ACC tinggi, HP rendah
+Assassin
+Terhempas — −30% SPD, aksi tertunda 1 ronde
+AKASA
+Seimbang, utilitas ekstrem
+Controller
+Hampa — tidak bisa menerima buff & heal 2 ronde
+10.4 Resonansi Panca Bhuta
+Tim (4 aktif + 2 cadangan) yang memuat kelima elemen mendapat +15% seluruh stat dan Prana pamungkas terisi 1 lebih cepat.
+
+Ini hadiah untuk pemain yang mengoleksi luas, sekaligus mencegah meta mono-elemen yang membuat 80% roster mubazir.
+10.5 Naratif Elemen
+Elemen
+Batu
+Dipulihkan di
+Apah
+Batu Biru
+Bab 1
+Pertiwi
+Batu Coklat
+Bab 2
+Bayu
+Batu Toska
+Bab 4
+Teja
+Batu Merah
+Bab 4
+Akasa
+Batu Kosong
+Bab 5 — batu ini tidak menyala; ia menyerap
+(Ending C)
+Batu Keenam
+Warna yang belum pernah dilihat pemain
+
+
+11. UI MOCKUP
+11.1 Prinsip
+Dua layout: potret 9:20 (Android) & lanskap 16:9 (PC). Nav bar berpindah ke sisi kiri di lanskap — bukan sekadar stretch.
+Elemen interaktif ≥ 48×48 dp (Android) · navigasi keyboard & gamepad penuh (PC)
+Ornamen sebagai frame, bukan latar. Area konten bersih.
+Maksimal 3 tingkat kedalaman menu
+Pixel-art UI, skala integer
+11.2 Padepokan
+┌──────────────────────────────────────┐
+│ [👤 Lv.42]        [🪙12,450]  [⚙️]   │
+├──────────────────────────────────────┤
+│      ╔══════════════════════╗        │
+│      ║   [Pendopo 2D art]   ║        │
+│      ║   🧍 Pemain          ║        │
+│      ║   👻 Follower        ║        │
+│      ║ 🏺Peti ⛩️Altar 🚪Gerbang ║      │
+│      ╚══════════════════════╝        │
+│  ┌─────────────────────────────────┐ │
+│  │ 📜 TITAH AKTIF                  │ │
+│  │ "Temukan lagu perjalanan tua"   │ │
+│  │ ▸ Bicara dengan Nenek Ranaya    │ │
+│  └─────────────────────────────────┘ │
+├──────────────────────────────────────┤
+│  🗺️     👻      🎒      ⛩️      ⚔️   │
+│ PETA   SUKMA  PUSAKA  ALTAR  SANGGAR │
+└──────────────────────────────────────┘
+
+Tidak ada bar energi, tidak ada mata uang premium, tidak ada checklist harian.
+11.3 Battle & Layar Kalah
+┌──────────────────────────────────────┐
+│  RONDE 3       [⏩2×] [🤖AUTO] [☰]   │
+├──────────────────────────────────────┤
+│   LAWAN:                             │
+│   [🔥Lv40]  [💧Lv40]  [🌪️Lv42]        │
+│   ▓▓▓▓░░░   ▓▓▓▓▓▓░   ▓░░░░░░        │
+│    ☠️2                  💧            │
+│   ───────────────────────────────    │
+│   TIM ANDA:                          │
+│   [🌍Lv45] [💧Lv44] [🔥Lv46] [🌪️Lv43] │
+│   ▓▓▓▓▓▓▓  ▓▓▓▓░░░  ▓▓▓▓▓░░  ▓▓▓▓▓▓░ │
+│   ⚡⚡⚡⚡    ⚡⚡░░     ⚡⚡⚡░    ⚡░░░   │
+├──────────────────────────────────────┤
+│  PERINTAH — Buaya Putih Wira         │
+│  ┌────┐┌────┐┌────┐┌────┐┌────┐     │
+│  │ ⚔️ ││ 💧 ││ 🌊 ││ ⭐ ││ 🛡️ │     │
+│  │Dasar│Skil1│Skil2│PAMUN│Tahan│     │
+│  │    ││CD:0││CD:2││ 4/4││    │     │
+│  └────┘└────┘└────┘└────┘└────┘     │
+└──────────────────────────────────────┘
+
+        LAYAR KALAH (tanpa hukuman)
+┌──────────────────────────────────────┐
+│           TIM ANDA MEMUDAR           │
+│    [ 🔄 ULANGI BATTLE ]              │
+│    [ 🔧 UBAH TIM & ULANGI ]          │
+│    [ 🏃 KEMBALI KE SESAJEN ]         │
+└──────────────────────────────────────┘
+11.4 Koleksi Sukma & ALTAR
+      KOLEKSI                          ALTAR
+┌──────────────────────┐   ┌──────────────────────────┐
+│ ◀ SUKMA    24/30     │   │ ◀ ALTAR PEMANGGILAN      │
+├──────────────────────┤   ├──────────────────────────┤
+│[🌍][💧][🔥][🌪️][🌌]   │   │  SIAP DIRAKIT (2)        │
+│[C][U][R][SR][UR]     │   │  ┌────────────────────┐  │
+├──────────────────────┤   │  │[ART] Ngayang    U  │  │
+│╔══════╗╔══════╗      │   │  │▓▓▓▓▓▓▓▓▓▓ 80/80    │  │
+│║★★★★★★║║★★★★★ ║      │   │  │        [ RAKIT ]   │  │
+│║[ART] ║║[ART] ║      │   │  └────────────────────┘  │
+│║ 🌪️✨ ║║ 🔥👻 ║      │   │                          │
+│║Tumurun║║Rarasu║     │   │  DALAM PROSES (4)        │
+│║Lv.60 ║║Lv.58 ║      │   │  ┌────────────────────┐  │
+│╚══════╝╚══════╝      │   │  │[ART] Rupaganti   R │  │
+│ [EMAS]  [EMAS]       │   │  │▓▓▓▓▓▓▓░░░ 84/120   │  │
+│                      │   │  │📍 Lembah Batu (P4) │  │
+│╔══════╗              │   │  │   Elite            │  │
+│║▓▓▓▓▓ ║              │   │  └────────────────────┘  │
+│║ 84/  ║ ← progres,   │   ├──────────────────────────┤
+│║ 120  ║   bukan "?"  │   │ Koleksi: 24/30           │
+│╚══════╝              │   └──────────────────────────┘
+└──────────────────────┘
+
+Perbedaan kunci dari model gacha: Sukma yang belum dimiliki tidak ditampilkan sebagai "?". Mereka menampilkan progres Serpihan dan lokasi sumbernya. Layar Altar memikul beban motivasi yang dulu dipegang layar gacha — ia harus menjawab tiga hal sekali lihat: apa yang bisa saya dapat sekarang, apa yang sedang saya kejar, ke mana saya harus pergi.
+11.5 Lore Card & Layar Konversi
+        LORE CARD                    KONVERSI (akhir demo)
+┌──────────────────────┐   ┌──────────────────────────┐
+│ ◀ PANDU BATU — Kisah │   │  ╔════════════════════╗  │
+├──────────────────────┤   │  ║ [Kabut terbelah,   ║  │
+│ ╔══════════════════╗ │   │  ║  lampu Parigama]   ║  │
+│ ║  [Ilustrasi]     ║ │   │  ╚════════════════════╝  │
+│ ╚══════════════════╝ │   │                          │
+│                      │   │   KABUT TELAH TERBUKA    │
+│ "Kau kira dilupakan  │   │                          │
+│  itu kutukan. Bagi   │   │  ── VERSI LENGKAP ──     │
+│  kami, itu satu-     │   │  ✓ 5 bab, ±20 jam        │
+│  satunya alasan kami │   │  ✓ 30 Sukma, semua bisa  │
+│  masih ada."         │   │    didapat dengan main   │
+│                      │   │  ✓ 3 ending              │
+│ ── ASAL ──           │   │  ✓ Tanpa gacha           │
+│ Lembah Batu Diam     │   │  ✓ Tanpa iklan wajib     │
+│                      │   │                          │
+│ ── CATATAN ──        │   │  ┌────────────────────┐  │
+│ Patung batu tanpa    │   │  │ BUKA — Rp 79.000   │  │
+│ wajah setinggi empat │   │  │   (sekali bayar)   │  │
+│ meter. Tidak ada     │   │  └────────────────────┘  │
+│ catatan siapa yang   │   │                          │
+│ membuatnya.          │   │  [ Lanjut main Bab 1 ]   │
+│                      │   └──────────────────────────┘
+│ [ 📤 BAGIKAN KARTU ] │
+└──────────────────────┘
+
+Bagikan Kartu menghasilkan gambar 1080×1920 siap unggah ke Instagram Story/TikTok. Ini kanal akuisisi organik — dan tanpa nama mitologi nyata, kualitas ilustrasi & kutipan yang memikul beban pemasaran, bukan pengenalan nama.
+
+Layar konversi muncul satu kali di akhir Bab 1, dan dapat diakses kembali dari menu. Tidak pernah muncul di tengah gameplay.
+11.6 Galeri Ending (baru)
+Dibuka setelah tamat pertama. Menampilkan 3 slot; yang belum didapat berupa siluet tanpa petunjuk syarat. Setelah semua terbuka, syaratnya baru ditampilkan.
+
+
+12. ICON & LOGO
+12.1 Logo
+Konsep: Kalung berlima batu membentuk lingkaran, satu batu di tengah dalam keadaan gelap (Akasa). Ditumpangkan pada motif geometris ciptaan orisinal yang menggabungkan garis ukir dan pola belang.
+
+        ╭───────────────╮
+       ╱   ◆   ●   ◆     ╲
+      │  ●    ◯    ●      │      ◯ = batu Akasa (kosong)
+       ╲   ◆   ●   ◆     ╱       ● = 4 batu elemen
+        ╰───────────────╯        ◆ = ukiran
+
+           P U S A K A
+      ─────────────────────
+        GEMA NAWANTARA
+
+Aspek
+Ketentuan
+Font judul
+Serif dengan ujung menyerupai ukiran; custom lettering
+Warna
+Emas tua #C9A227 di atas hitam #0D0D0D
+Varian
+Full color, mono putih, mono hitam, ikon-saja
+Uji
+Harus terbaca di 48×48 px
+Steam capsule
+616×353, 460×215, 231×87 — masing-masing treatment terpisah, bukan crop
+12.2 App Icon
+Satu batu Pusaka (berlian terpotong) emas di atas gradasi ungu-hitam, retakan halus memancarkan lima warna elemen. Hindari wajah karakter — tidak terbaca di ukuran kecil dan menaikkan risiko sensitivitas.
+12.3 Set Ikon
+Kategori
+Item
+Elemen
+Pertiwi (segitiga gunung berakar) · Apah (tetes beriak) · Teja (nyala berukir) · Bayu (pusaran 3 garis) · Akasa (lingkaran kosong bertitik)
+Tipe
+Spirit (nyala melayang, #B3E5FC) · Ghost (berjumbai, 2 titik mata, #CE93D8) · Beast (cakar 3 jari, #8D6E63) · Human (siluet berikat kepala, #FFE082)
+Navigasi
+Peta (gulungan) · Sukma (3 siluet) · Pusaka (peti berukir) · Altar (batu megalit bercahaya) · Sanggar (2 guma bersilang)
+Ekonomi
+Kepeng (koin lubang tengah) · Serpihan Sukma (pecahan kristal bercahaya)
+
+Frame rarity: Common (garis polos) · Uncommon (sudut sederhana) · Rare (ukiran sudut + kilau) · Super Rare (ukiran penuh + partikel) · Ultra Rare (ukiran penuh + mahkota + animasi partikel)
+
+Konsistensi: garis luar 2px, maksimal 4 warna per ikon, sudut membulat 2px. Base 64×64, harus terbaca di 24×24.
+
+
+13. SOUND EFFECT & MUSIK
+13.1 Arah Audio
+Filosofi: Instrumen tradisional sebagai lapisan utama, bukan bumbu. Bukan orkestra Hollywood dengan sedikit gamelan di atasnya — justru sebaliknya.
+
+Referensi tonal: Gris (tekstur), Ori (emosi), Sekiro (integrasi instrumen tradisional).
+
+Region
+Instrumen Utama
+Pendukung
+Parigama
+Gong bilah, suling bambu panjang, gendang tangan
+Bambu perkusi, kecapi, ambient pad, ombak & hutan
+Dwilaras
+Ansambel gamelan, bilah bambu
+Cymbal kecil, kendang, suling, vokal ritmis berlapis
+Umum/UI
+Kalimba, gong kecil
+Pad sintetis lembut
+
+⚠️ Risiko produksi tertinggi di dokumen ini: Sample library untuk gong bilah dan suling bambu Sulawesi tidak tersedia komersial, tidak seperti gamelan. Rekaman live untuk 4 track kunci Parigama (BGM-01, 07, 08, 21) kemungkinan bukan peningkatan kualitas, melainkan satu-satunya jalan. Wajib divalidasi di bulan 1–2. Estimasi Rp 35–50 juta.
+13.2 Daftar Musik (24 track, ±60 menit)
+ID
+Judul
+Konteks
+Durasi
+Mood
+BGM-01
+Gema
+Title
+1:30
+Sunyi, satu nada suling tunggal
+BGM-02
+Padepokan
+Hub
+2:30
+Hangat, minim
+BGM-03
+Teluk yang Tenang
+P1
+3:00
+Terbuka, ombak, gong lembut
+BGM-04
+Rimba Sanu
+P2
+3:00
+Rimbun, perkusi bambu
+BGM-05
+Air Biru
+P3
+3:00
+Jernih, melankolis
+BGM-06
+Batu yang Menunggu
+P4
+3:00
+Sparse, gong dalam, jeda panjang
+BGM-07
+Kabut
+P5
+4:00
+Hampir tanpa melodi, drone
+BGM-08
+Kota yang Menunggu
+P6
+3:30
+Meledak penuh, gembira, ramai
+BGM-09
+Sawah Pagi
+D1
+3:00
+Bilah bambu cerah, damai
+BGM-10
+Alas
+D2
+3:00
+Playful, perkusi bambu
+BGM-11
+Balai & Ombak
+D3
+3:00
+Gamelan lambat, ombak
+BGM-12
+Kawah
+D4
+3:00
+Perkusi berat, lambat
+BGM-13
+Tanpa Bakar
+D5
+3:30
+Gamelan disonan, bisikan
+BGM-14
+Nusa Gersang
+D6
+3:30
+Vokal ritmis, tegang
+BGM-15
+Puncak
+D7
+4:00
+Gong penuh, agung
+BGM-16
+Pertempuran
+Battle
+1:30
+Ritmis, tidak melelahkan saat berulang
+BGM-17
+Pertempuran Elite
+Elite
+2:00
+Tempo naik, layer tambahan
+BGM-18
+Batu Berbicara
+Boss Pandu Batu
+3:00
+Gong berat + drone, melankolis-epik
+BGM-19
+Yang Tak Punya Pulang
+Boss Rarasunyi
+3:00
+Vokal + gamelan cepat, intens
+BGM-20
+Sang Sunyi
+Boss akhir
+4:00
+Senyap total 15 detik lalu membangun
+BGM-21
+Yang Tersisa
+Ending
+3:00
+3 varian — lihat 13.3
+BGM-22
+Perakitan
+Altar
+1:00
+Tenang, penuh harap, kalimba
+BGM-23
+Kemenangan
+Victory
+0:12
+Gong + fanfare pendek
+BGM-24
+Menara Bhuta
+Endgame
+2:30
+Repetitif, hipnotis
+13.3 BGM-21 — Tiga Varian Ending
+Ending
+Aransemen
+Efek
+A — Kabut yang Kembali
+Hanya iringan. Melodi utama tidak pernah muncul.
+Pemain merasa ada yang kurang tanpa tahu apa
+B — Yang Mengingat
+Melodi utama penuh, suling solo
+Pemain akhirnya mendengar lagu yang utuh
+C — Laras
+Aransemen penuh — melodi dibawakan bergantian oleh setiap instrumen region
+Tema "dibagi rata" diwujudkan secara musikal
+
+Ini adalah alat naratif termurah dan paling kuat di seluruh dokumen. Pemain yang mendapat Ending A lalu Ending B akan merasakan perbedaannya sebelum memahaminya.
+13.4 Sound Effect (±85)
+UI (8): tap · tap terkunci · buka/tutup menu · konfirmasi (gong kecil) · batal · notifikasi · error
+
+Overworld (15): langkah tanah/pasir/batu (4 varian masing-masing) · buka peti · Titik Sesajen · portal · encounter trigger · Batu Gema ditemukan (nada murni panjang) · ambience: pantai, hutan, danau, batu, kabut (hampir senyap), kota, balai
+
+Battle umum (15): start · giliran · serangan dasar · kritikal (+ slowmo audio) · miss · perisai terbentuk/pecah · heal · buff · debuff · unit memudar (bukan suara kematian) · Prana penuh · pamungkas cast · victory · defeat
+
+Per elemen (10): | Elemen | Serangan | Skill Besar | |---|---|---| | Pertiwi | Hentakan batu tumpul | Retakan tanah + longsor | | Apah | Cipratan tajam | Gelombang deras | | Teja | Desisan api | Ledakan + bara | | Bayu | Whoosh tajam | Pusaran + jeritan angin | | Akasa | Dentang kosong ber-reverb | Suara mundur + senyap tiba-tiba |
+
+Per tipe lore (4): Spirit (nada tinggi melayang) · Ghost (bisikan berlapis) · Beast (geraman, hentakan) · Human (logam, kain, napas)
+
+Altar (5): | ID | Deskripsi | |---|---| | SFX-A01 | Serpihan masuk — dentang kristal bertumpuk | | SFX-A02 | Progres bertambah — nada naik 1 semitone per 10% | | SFX-A03 | Perakitan siap — gong lembut + kilau | | SFX-A04 | Perakitan dimulai — SENYAP 0,8 detik → gong besar → crescendo → cahaya | | SFX-A05 | Sukma muncul — sesuai tipe lore |
+
+SFX-A04 adalah suara paling penting di game. Ia mewarisi peran yang di game gacha dipegang animasi summon. Bedanya: di sini ia adalah puncak dari usaha, bukan hasil keberuntungan — yang seharusnya lebih memuaskan, asalkan build-up-nya benar. Alokasikan iterasi terbanyak: minimal 10 versi, di-playtest langsung.
+13.5 Spesifikasi Teknis
+Aspek
+Ketentuan
+Format
+BGM: OGG 128 kbps · SFX: WAV 16-bit 44.1kHz → OGG
+Loudness
+−16 LUFS (mobile), −18 LUFS (PC)
+Budget memori
+< 30 MB (Android), < 60 MB (PC), < 15 MB (web demo)
+Audio bus
+Master → Musik / SFX / Ambience / UI (slider terpisah)
+Ducking
+Musik −6dB saat pamungkas & dialog
+Mode senyap
+Game wajib dapat dimainkan penuh tanpa audio. Semua feedback audio punya padanan visual.
+
+
+14. PRODUKSI, TATA KELOLA & RISIKO
+14.1 ⚠️ KONTEKS INSTITUSIONAL — HARUS DIPUTUSKAN
+Pemilik proyek adalah Program Studi Teknik Informatika UNS Kampus Madiun. Ini mengubah asumsi dasar dokumen ini, dan ada dua skenario yang sangat berbeda:
+Skenario 1 — Studio (tim tetap, digaji)
+Seluruh estimasi di dokumen ini berlaku apa adanya: 21–24 bulan, Rp ±2,9 M, rilis komersial.
+Skenario 2 — Proyek Akademik (tim mahasiswa)
+Kalau 10 orang itu mahasiswa, seluruh kerangka waktu dan anggaran tidak berlaku. Yang berubah:
+
+Aspek
+Konsekuensi
+Pergantian tim
+Mahasiswa lulus. Realistis 2–3 semester per orang. Dalam 24 bulan, tim berganti total minimal sekali.
+Ketersediaan
+Bukan 20 hari kerja/bulan. Realistis 8–12 hari efektif (kuliah, UTS/UAS, KP, libur). Kapasitas turun ±50%.
+Timeline
+21–24 bulan → 4–6 semester (2–3 tahun) untuk vertical slice + 1 region
+Anggaran
+Rp 2,9 M → tidak relevan. Yang relevan: hibah, dana prodi, kompetisi
+Keuntungan
+Tidak ada tekanan runway. Kontinuitas institusional. Luaran publikasi & akreditasi. Akses hibah (PKM, Matching Fund, Hibah Penelitian).
+
+Kalau Skenario 2 berlaku, empat hal wajib diubah:
+
+#
+Perubahan
+Alasan
+1
+Target v1.0 dipotong ke Vertical Slice + Bab 1 (bukan 5 bab)
+20 jam konten tidak realistis dengan kapasitas separuh dan tim yang berganti
+2
+Milestone mengikuti semester, bukan bulan
+Semester adalah unit waktu yang sebenarnya
+3
+Dokumentasi serah-terima wajib per modul
+Penerus tidak bisa bertanya pada pendahulunya
+4
+Kepemilikan modular — setiap modul punya 1 penanggung jawab + 1 cadangan
+Kelulusan tidak boleh mematikan modul
+
+Pertanyaan terbuka: Skenario mana yang berlaku? Ini pertanyaan paling menentukan di seluruh dokumen dan harus dijawab sebelum sprint pertama. Kalau Skenario 2, saya sarankan mendefinisikan ulang "v1.0" sebagai demo Bab 1 yang layak rilis — target yang membanggakan, dapat diselesaikan, dan menjadi fondasi nyata untuk tim berikutnya. Menargetkan game 20 jam dengan tim yang berganti tiap tahun adalah cara paling pasti untuk tidak pernah merilis apa pun.
+14.2 Tata Kelola Project Owner
+⚠️ Aturan Penunjukan
+Aturan
+Isi
+1. PO harus perorangan
+"TIF UNS Madiun" adalah pemilik proyek, bukan Project Owner. Institusi tidak bisa menandatangani permintaan perubahan. Wajib satu nama.
+2. PO ≠ Game Designer
+Tugas designer adalah membayangkan yang lebih baik; tugas PO melindungi yang bisa selesai. Satu orang tidak bisa melakukan keduanya dengan jujur.
+3. PO harus permanen
+Kalau tim mahasiswa berganti, PO wajib dosen atau staf tetap — bukan mahasiswa.
+4. PO cadangan
+Tunjuk 1 cadangan. Proyek 2–3 tahun akan melewati cuti, sakit, dan tugas luar.
+Wewenang
+PO BERWENANG
+PO TIDAK BERWENANG
+Menolak penambahan fitur apa pun
+Memutuskan detail desain
+Memutuskan apa yang dipotong saat jadwal meleset
+Menolak peringatan risiko teknis dari programmer
+Menyetujui pemindahan World Bible → backlog
+Menambah scope tanpa memotong yang setara
+Menghentikan fase di titik gate
+Meniadakan sensitivity reader atau QA
+Alat 1 — Buku Besar Scope
+Satu spreadsheet, diperbarui mingguan.
+
+ID
+Item
+Status
+Estimasi
+Terpakai
+Pemilik
+Dipotong sebagai kompensasi
+SCP-001
+30 Sukma v1.0
+🟢
+405 hari
+128
+—
+—
+
+Aturan emas: Total estimasi 🟢 tidak boleh melebihi kapasitas tim. Kalau melebihi, PO memotong sebelum sprint dimulai, bukan sesudah.
+Alat 2 — Formulir Permintaan Perubahan
+┌──────────────────────────────────────────────┐
+│ PERMINTAAN PERUBAHAN SCOPE            #CR-___│
+├──────────────────────────────────────────────┤
+│ Pengusul: ____________  Tanggal: ___________ │
+│ 1. APA yang ditambahkan?                     │
+│ 2. ESTIMASI (hari, per peran) → TOTAL: _____ │
+│ 3. APA YANG DIPOTONG? (WAJIB, ≥ poin 2)      │
+│ 4. Apa yang RUSAK kalau ini tidak dikerjakan?│
+│ 5. Bisa menunggu pasca-rilis? ☐Ya→TOLAK ☐Tdk │
+│ 6. Risiko budaya? ☐Tidak ☐Ya→lampirkan audit │
+│    Aturan Dua Penanda                        │
+├──────────────────────────────────────────────┤
+│ KEPUTUSAN PO: ☐Setuju ☐Tolak ☐Tunda          │
+│ Tanda tangan: __________ Tanggal: __________ │
+└──────────────────────────────────────────────┘
+
+Kolom 3 adalah inti seluruh sistem ini. Sembilan puluh persen scope creep mati di sana, karena begitu orang harus menyebut apa yang mereka relakan, sebagian besar ide "kecil" ternyata tidak sepadan.
+Alat 3 — Gate dengan Kriteria Mati
+Gate
+Kapan
+Pertanyaan
+🔴 Kriteria Hentikan
+G0 Spike Teknis
+Bulan 1
+Godot build Android + Web + Windows? AdMob & Billing jalan? Instrumen bisa direkam?
+Kalau tidak → ganti engine sekarang, sebelum ada aset
+G1 Vertical Slice
+Bulan 4
+Apakah 30 detik pertarungan seru?
+< 12 dari 20 penguji luar mau main lagi → hentikan atau desain ulang total
+G2 Demo Publik
+Bulan 7
+Steam wishlist?
+< 3.000 dalam 60 hari → hentikan produksi inti, evaluasi ulang
+G3 Beta Tertutup
+Bulan 18
+Jam main rata-rata? Tingkat penamatan?
+< 8 jam atau < 25% tamat → tunda rilis
+G4 Rilis
+Bulan 21
+Sensitivity reader lulus? 3 ending berfungsi? Nol crash P0? Nama T3 bersih dari seluruh aset?
+Salah satu tidak → tunda
+
+Kriteria hentikan wajib disepakati dan ditulis SEBELUM gate. Kriteria yang ditetapkan setelah melihat hasil akan selalu dilonggarkan. Itu sifat manusia, bukan kelemahan tim.
+Alat 4 — Protokol World Bible
+#
+Aturan
+1
+Isi World Bible tidak boleh masuk backlog tanpa CR bertanda tangan PO
+2
+Tidak ada art spekulatif untuk region 3–9, bahkan "untuk latihan"
+3
+Tidak ada janji publik tentang 9 region sebelum region itu masuk produksi
+4
+Peninjauan tahunan; konten > 3 tahun ditandai basi dan wajib ditulis ulang
+5
+Satu pengecualian: empat item di 14.4 wajib dikerjakan di v1.0
+Ritme PO
+Kapan
+Kegiatan
+Durasi
+Senin
+Perbarui Buku Besar; bandingkan estimasi vs realisasi
+45 menit
+Rabu
+Tinjau CR masuk
+30 menit
+Jumat
+Laporan 1 halaman ke tim: selesai / meleset / dipotong
+30 menit
+Bulanan
+Proyeksi ulang tanggal berdasarkan kecepatan aktual
+2 jam
+
+Metrik terpenting: velocity aktual ÷ velocity rencana. Kalau bertahan < 0,7 selama 3 bulan, tanggal rilis tidak realistis dan harus diumumkan ulang secara internal — bukan dikejar dengan lembur.
+14.3 Timeline & Alokasi Tim
+Timeline (Skenario 1 — tim tetap)
+Fase
+Bulan
+Deliverable
+0. Spike Teknis
+1
+Build 3 platform · AdMob & Billing · tes rekaman instrumen
+1. Vertical Slice
+2–4
+Zona P1, 8 Sukma, battle penuh, 1 boss, Altar
+2. Demo Publik
+5–7
+Prolog + Bab 1 · itch.io & Steam Next Fest
+3. Produksi Inti
+8–17
+30 Sukma, 2 region, 5 bab, 3 ending, endgame
+4. Beta Tertutup
+18–20
+200–500 penguji, Android + PC
+5. Rilis
+21–24
+Steam + Play Store serentak
+Alokasi
+Peran
+Orang
+Tanggung Jawab
+Risiko
+Game Designer
+1
+Combat, level, misi, balancing, ekonomi Serpihan, flag ending
+🟠 Tinggi
+Game Artist
+2
+Sukma, tileset, UI ×2 layout, ikon, 18 panel cutscene
+🔴 Bottleneck
+Animator
+1
+Animasi battle, VFX, animasi UI
+🔴 Bottleneck
+Programmer
+3
+1× gameplay · 1× UI/sistem + sistem flag ending · 1× tooling & multi-platform
+🟢 Turun — tanpa backend
+Sound Engineer
+1
+24 BGM (+3 varian ending), 85 SFX, rekaman instrumen
+🟠 Sample tidak tersedia
+Tester
+1
+QA ×3 platform, balance, uji 3 jalur ending
+🟠 Tinggi
+
+Rekomendasi penambahan (prioritas): (1) Junior VFX/Technical Artist · (2) Kontrak musisi tradisional untuk rekaman · (3) Marketing/Community paruh waktu dari bulan 5
+Beban Art
+Aset
+Jumlah
+Hari/unit
+Total
+Ilustrasi Sukma
+31
+3
+93
+Sprite battle
+31
+1,5
+47
+Animasi battle
+31
+3
+93
+VFX skill
+62
+1
+62
+Sprite & animasi monster
+85
+1,25
+106
+Tileset zona
+14
+3
+42
+Sprite pemain + 9 follower
+10
+2
+20
+NPC
+25
+0,5
+13
+Panel cutscene ending
+18
+1
+18
+UI ×2 layout
+—
+—
+75
+Ikon, logo, Steam capsule
+—
+—
+25
+TOTAL
+
+
+±594 hari
+
+3 orang × 20 hari/bulan = 60 hari/bulan → 9,9 bulan ideal × 1,8 (tim pemula) = ±18 bulan untuk art saja (Skenario 2 / mahasiswa: × 2 lagi karena kapasitas separuh → ±36 bulan)
+14.4 Wajib Dikerjakan di v1.0 (mahal ditambahkan belakangan)
+#
+Tindakan
+Alasan
+1
+Data Sukma & item berbasis file eksternal (JSON/Resource), bukan hard-code
+Menambah Sukma nanti harus jadi pekerjaan data, bukan kode
+2
+Sistem Tingkat Gema (TG) dirancang meski hanya TG1 dipakai
+Menambah rank system pasca-rilis merusak save lama
+3
+Editor dialog & editor skill internal (tugas Programmer #3)
+Tanpa ini, 3.500 kata dialog bercabang dan 110 misi mustahil dikelola
+4
+Sistem flag & save otomatis pra-ending
+Multi-ending yang ditambahkan belakangan selalu terasa ditempel
+5
+Format Lore Card & pipeline audit Aturan Dua Penanda
+Kebiasaan harus terbentuk saat masih 31 Sukma, bukan 225
+14.5 Proyeksi Finansial
+Biaya (Skenario 1)
+Pos
+Estimasi
+Gaji 10 orang × 22 bulan (Rp 110jt/bln beban)
+Rp 2,42 M
+Sensitivity reader
+Rp 15 jt ✅ disetujui
+Rekaman instrumen tradisional
+Rp 50 jt
+Steam Direct + Play Console + legal + IGRS
+Rp 30 jt
+Web hosting demo
+Rp 15 jt
+Marketing & UA
+Rp 300 jt
+TOTAL
+± Rp 2,83 M
+Skenario Pendapatan
+Skenario
+Steam ($14.99)
+Android (Rp 79k)
+Ads
+Bersih (−30% platform, −pajak)
+Hasil
+Pesimis
+8.000
+5.000
+Rp 50 jt
+Rp 1,42 M
+❌ Rugi
+Realistis
+20.000
+15.000
+Rp 120 jt
+Rp 3,65 M
+✅ +29%
+Optimis
+50.000
+40.000
+Rp 300 jt
+Rp 9,05 M
+✅ Kuat
+
+Titik impas: ±16.000 penjualan Steam atau setara.
+
+Penentu utama: jumlah Steam wishlist saat rilis. Konversi wishlist→pembelian minggu pertama biasanya 15–25%. Untuk skenario realistis, dibutuhkan ±40.000 wishlist — target yang dikejar sejak bulan 5, bukan bulan 20.
+
+Konsekuensi fiksionalisasi terhadap angka ini: Segmen "Peminat Budaya Lokal" turun dari 35% ke 20%. Wishlist organik dari konten viral berbasis pengenalan nama mitologi tidak lagi bisa diandalkan. Strategi pemasaran harus bergeser ke: trailer musik, screenshot P5→P6, dan Lore Card yang layak dibagikan. Ini keputusan yang perlu diambil sebelum materi promosi dibuat.
+14.6 Daftar Risiko
+#
+Risiko
+Dampak
+Prob.
+Mitigasi
+1
+Konteks institusional belum jelas (Skenario 1 vs 2)
+🔴 Fatal
+Tinggi
+Jawab sebelum sprint 1. Kalau Skenario 2, potong target ke Vertical Slice + Bab 1
+2
+Model premium tidak menutup biaya
+🔴 Fatal
+Tinggi
+Steam sebagai kanal utama. Kejar wishlist sejak bulan 5. Gate G2 sebagai titik hentikan.
+3
+Bottleneck art & animasi
+🟠 Delay 6+ bulan
+Tinggi
+Sprite follower hanya 9 Sukma. VFX modular. Tambah 1 orang.
+4
+Sample instrumen tidak tersedia
+🟠 Kualitas audio region utama turun
+Tinggi
+Validasi bulan 1. Anggarkan rekaman live.
+5
+Godot Web export berat/buruk
+🟡 Kehilangan corong demo
+Menengah
+Batasi demo web ke Prolog+Bab 1, audio minimal
+6
+Scope creep
+🟠 Tidak pernah selesai
+Sangat tinggi
+Formulir CR kolom 3. PO perorangan.
+7
+Sistem deterministik terasa hambar tanpa RNG
+🟠 Retensi rendah
+Menengah
+Uji Altar di vertical slice. SFX-A04 sebagai kompensasi emosional.
+8
+Fiksionalisasi melemahkan pemasaran organik
+🟠 Wishlist rendah
+Diterima
+Geser strategi ke musik + visual + Lore Card
+9
+Fiksionalisasi setengah jalan
+🟠 Reputasi
+Menengah
+Aturan Dua Penanda + audit + sensitivity reader
+10
+Backend di-hack
+🔴 HILANG
+—
+Tidak ada backend
+11
+Regulasi loot box
+🟠 HILANG
+—
+Tidak ada loot box
+14.7 Daftar Tindakan Segera
+#
+Tindakan
+Penanggung jawab
+Estimasi
+1
+Tetapkan Skenario 1 atau 2
+Pemilik proyek
+1 hari
+2
+Tunjuk PO perorangan + cadangan (bukan Game Designer, bukan mahasiswa)
+Pemilik proyek
+1 hari
+3
+Konfirmasi nama dunia NAWANTARA & 9 nama wilayah
+PO
+1 hari
+4
+Buat Buku Besar Scope; isi seluruh item v1.0
+PO
+3 hari
+5
+Spike test Godot (3 platform + AdMob + Billing)
+Programmer
+5 hari
+6
+Tes rekaman instrumen — validasi risiko #4
+Sound Engineer
+5 hari
+7
+Audit Aturan Dua Penanda seluruh 31 Sukma
+Designer + PO
+5 hari
+8
+Tetapkan kriteria hentikan G0–G4 secara tertulis
+PO + tim
+1 hari
+9
+Masukkan 5–7 minggu multi-ending ke jadwal
+PO
+1 hari
+10
+Draf halaman "Terinspirasi Oleh" + daftar bacaan awal
+Designer
+2 hari
+
+
+LAMPIRAN — CATATAN KEPUTUSAN
+Keputusan
+Alternatif yang ditolak
+Alasan
+Nama dunia Nawantara
+Banua Laras, Swarnalaya, Nusa Laras, Gemantara
+Terbaca Indonesia dalam satu detik; mengunci struktur 9 wilayah; cukup berbeda dari Nusantara untuk tidak diklaim sebagai representasi nyata
+Battle Round-Based
+ATB berbasis Speed
+ATB menjadikan Speed satu-satunya stat penting; butuh designer berpengalaman
+Tanpa gacha
+Gacha + ads
+Menghapus backend, regulasi loot box, dan beban ops — dua risiko fatal hilang
+Steam ditambahkan
+Android saja
+Model premium mustahil balik modal di pasar mobile Indonesia saja
+Web = demo saja
+Web sebagai platform penuh
+Godot web export berat; browser mobile tidak didukung
+Ending A default
+Ending baik sebagai default
+Ending buruk yang butuh usaha khusus terasa hukuman, bukan konsekuensi
+Fiksionalisasi penuh
+Nama mitologi asli
+Tanpa akses konsultan/co-writer, risiko tidak dapat dimitigasi
+1 sensitivity reader
+Tanpa pengecekan sama sekali
+Fiksionalisasi mengurangi risiko, tidak menghapusnya
+
+
+PERTANYAAN TERBUKA
+Skenario 1 (studio) atau Skenario 2 (proyek akademik)? — pertanyaan paling menentukan di dokumen ini
+Siapa nama Project Owner perorangannya? — dan siapa cadangannya
+Apakah nama NAWANTARA dan 9 nama wilayah dikunci? — mengubahnya setelah bulan 6 sangat mahal
+Apakah Steam disetujui sebagai kanal utama? — kalau tidak, model premium perlu didiskusikan ulang
+Apakah ada akses ke musisi tradisional untuk rekaman? — risiko #4, wajib divalidasi bulan 1
+
+
+
+GDD v3.0 — Konsolidasi Final · Agustus 2026 Dokumen induk. Setiap perubahan wajib melewati Formulir Permintaan Perubahan.
+

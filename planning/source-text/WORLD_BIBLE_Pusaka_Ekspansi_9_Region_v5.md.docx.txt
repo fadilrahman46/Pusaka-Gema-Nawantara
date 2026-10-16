@@ -1,0 +1,1368 @@
+WORLD BIBLE — WORLDMAP GUIDEBOOK
+PUSAKA: GEMA NAWANTARA
+Sembilan Laras, Sembilan Wajah Kelupaan
+Versi: 5.0 (Revisi Terakhir — Kalender Dunia ditambahkan, cerita dimulai TL 117) Status: 🟡 GUIDEBOOK WORLDMAP — bukan spesifikasi produksi, bukan dokumen item/skill Dokumen terkait: GDD_v3_Pusaka_Gema_Nawantara.md · GUIDE_KARAKTER_100_Nawantara_v2.md · (Dokumen Item — dibuat setelah World Bible & karakter final) Tanggal: Agustus 2026
+
+
+CHANGELOG v4.0 → v5.0
+#
+Perubahan
+1
+Kalender dunia ditambahkan: Tarikh Laras (TL). Cerita dimulai TL 117. Epoch kalender sengaja dimulai SETELAH peristiwa Sang Sunyi, bukan menghitungnya — "seribu tahun lalu" tetap tradisi lisan, bukan fakta kalender.
+2
+5 musim mengikuti Panca Maha Bhuta (bukan 4 musim generik), 11 bulan bernama Sanskerta + 1 jeda "Sela Akasa" yang panjangnya sengaja tidak pernah disepakati semua region — konsisten dengan Akasa sebagai elemen "kosong/ruang antara".
+3
+Minggu 5 hari, juga mengikuti Panca Maha Bhuta — direkomendasikan terhubung ke spawn rate monster per elemen.
+4
+Himagiri dikonfirmasi memakai kalender sendiri (Tarikh Girinata), tidak pernah beralih ke Tarikh Laras — penguat mekanis-naratif langsung untuk tema "menolak mengakui berakhir".
+5
+Pertanyaan v4.0 #3 (sinkronisasi waktu tempuh dengan kalender) terjawab.
+
+
+CHANGELOG v3.0 → v4.0
+#
+Perubahan
+1
+Nirwasita & Kadewan resmi memakai Guide Karakter sebagai kanon — status 🔴 BUTUH REKONSILIASI dicabut. GDD v3 Bab 1-4 (nama lama: Pandu Batu, Lampah Sesat Agung, Kalawangsa, Nakhoda Wirajaya) sekarang dinyatakan usang, bukan alternatif yang sah — perlu direvisi terpisah, dicatat sebagai utang di §Pertanyaan.
+2
+Dokumen Item: dikonfirmasi dikerjakan setelah World Bible & Guide Karakter final — tidak ada perubahan di dokumen ini.
+3
+NPC Mission Jaladri diisi: Kapten Ndiru.
+4
+Dualitas Bharwang Kesari–Randu Girang dikonfirmasi tetap di Kadewan — hedge "perlu verifikasi" dicabut.
+5
+7 elemen standar worldmap ditambahkan: peta & waktu tempuh antar region, konfirmasi Fast Travel (Sesajen) per zona, tabel level minimum disarankan (region 3-9), siklus siang-malam per region, 1 area tersembunyi per region, 1 NPC vendor per region, legenda simbol peta.
+
+
+CHANGELOG v2.0 → v3.0
+#
+Perubahan
+1
+Region 1 (Nirwasita) & Region 2 (Kadewan) resmi masuk World Bible, memakai template yang sama dengan region 3–9. Sebelumnya hanya ada di GDD v3 dengan format berbeda.
+2
+2 nama basi diperbaiki: "Prabu Wisesa Girinatha" → Wisesa Girinatha, "Sang Gema Purwa" → Gema Purwa (mengikuti rename Guide Karakter v2.0). 8 titik referensi diperbaiki.
+3
+3 baris roster tier basi diperbaiki: Suara Tanwujud & Tapak Ghaib (Wanasunya), Kijang Prasasti (Kalamrtu), Sukma Penimbang (Rajawani) — keempatnya turun dari Super Rare ke Rare, jumlah SR per region disesuaikan.
+4
+Seluruh 63 nama zona (7×9 region) diaudit — yang lebih dari 2 kata dipangkas, memakai kosakata Sanskerta/Kawi. 14 dari 63 melanggar aturan lama; semua diperbaiki di dokumen ini.
+5
+NPC Mission & NPC Monster ditambahkan per region — bukan daftar lengkap per zona (menghindari kesalahan skala 175-avatar yang sudah dikoreksi sebelumnya), tapi arketipe yang cukup untuk memandu desain zona.
+6
+1 Item Ultra Rare spesial per region ditambahkan — hanya bisa didapat dari menyelesaikan misi region, bukan dari monster biasa. Detail statistik item sengaja tidak dibahas di sini (domain Dokumen Item terpisah).
+7
+Validasi lintas-region: tabel pembuktian 9 mekanik signature semuanya berbeda, validasi pembagian season, dan validasi/perluasan multi-ending berbasis kondisi pemain.
+8
+Rekomendasi konten standar World Map RPG yang belum ada di akhir dokumen.
+
+
+BAGIAN 0 — TEMUAN REVIEW
+0.1 Yang Diperbaiki (bukan ditambah, tapi dikoreksi)
+Dua nama karakter di World Bible v2 sudah basi setelah Guide Karakter v2.0 memangkas nama jadi maksimal 2 kata:
+
+Lama
+Baru
+Muncul di
+Prabu Wisesa Girinatha
+Wisesa Girinatha
+§0.2 (tabel kecocokan), Storyline Himagiri (4×), Roster Himagiri (2×)
+Sang Gema Purwa
+Gema Purwa
+§0.2, prasyarat Anawil, Storyline Anawil (2×), Roster Anawil
+
+Tiga baris roster masih menyebut karakter sebagai Super Rare padahal sudah turun ke Rare di Guide Karakter v2.0:
+
+Region
+Karakter
+Status lama
+Status benar
+Wanasunya
+Suara Tanwujud, Tapak Ghaib
+2× "tambahan SR"
+Keduanya Rare — SR Wanasunya turun dari 3 jadi 1 (hanya Niniak Belang ⭐)
+Kalamrtu
+Kijang Prasasti
+"tambahan SR"
+Rare — SR Kalamrtu turun dari 2 jadi 1 (hanya Lidah Watu ⭐)
+Rajawani
+Sukma Penimbang
+"tambahan SR"
+Rare — SR Rajawani turun dari 2 jadi 1 (hanya Nyai Bokira ⭐)
+0.2 Yang Ditemukan Saat Audit Zona (belum pernah ditandai sebelumnya)
+Instruksi kali ini menetapkan aturan zona: maksimal 2 kata, referensi Sanskerta atau teks Indonesia kuno. Mengecek 63 zona yang sudah ada (region 3–9) terhadap aturan ini — 14 dari 63 melanggar (3–4 kata). Bukan kesalahan waktu ditulis (aturan ini belum ada saat itu), tapi harus diperbaiki sekarang karena instruksi eksplisit menetapkannya sebagai standar. Daftar lengkap perbaikan ada di tabel zona tiap region di bawah — kolom "Nama Lama" ditampilkan untuk transparansi perubahan.
+
+
+BAGIAN I — ARSITEKTUR NARATIF (tidak berubah struktur, referensi diperbarui)
+I.1 Sembilan Wajah Kelupaan — Lengkap 9 Region
+#
+Region
+Wajah Kelupaan
+Kalimat Inti
+Status di WB
+1
+Nirwasita
+Dilupakan sebagai perlindungan
+"Kami bersembunyi supaya selamat."
+🆕 Baru ditambahkan
+2
+Kadewan
+Diingat tanpa makna
+"Kami masih dipanggil, tapi tidak lagi dimengerti."
+🆕 Baru ditambahkan
+3
+Smarana
+Memanen yang dilupakan
+"Kelupaan kalian adalah dagangan kami."
+Direvisi
+4
+Wanasunya
+Memilih dilupakan
+"Kami pergi. Jangan cari kami."
+Direvisi
+5
+Kalamrtu
+Dihapus dari catatan
+"Kami ada. Buktinya hilang, bukan kami."
+Direvisi
+6
+Himagiri
+Menolak mengakui berakhir
+"Kerajaan ini belum runtuh. Kalian saja yang pergi."
+Direvisi
+7
+Rajawani
+Diingat sebagai barang
+"Mereka ingat rempah kami. Bukan kami."
+Direvisi
+8
+Jaladri
+Memilih menjadi banyak
+"Aku pecah agar tak seorang pun memilikiku."
+Direvisi
+9
+Anawil
+Ingatan sebelum bahasa
+"Kami tidak pernah lupa. Kalian yang belum pernah tahu."
+Direvisi
+I.2 Meta-Arc — Tidak Berubah
+Sama seperti v2.0 §I.3: Pusaka Gema sebenarnya sembilan batu, empat pecah dan tersebar di region 3–9, finale di Anawil membalik tesis "lupa selalu buruk" menjadi "lupa juga syarat kehidupan".
+
+
+BAGIAN II — SEASON & PROGRESI (validasi + region 1&2 masuk peta)
+II.1 Pembagian Season — Divalidasi
+Season
+Region
+Fokus Tematik
+Jam
+Validasi
+S1 — Gema Pertama
+Nirwasita, Kadewan
+Bersembunyi vs kosong
+20
+✅ Linear, wajib berurutan (cerita utama GDD v3)
+S2 — Gema Dagang
+Smarana, Wanasunya
+Transaksi & pilihan
+14
+✅ Bebas urutan, TG1
+S3 — Gema Batu
+Kalamrtu, Himagiri
+Penghapusan & penyangkalan
+14
+✅ Bebas urutan, TG2
+S4 — Gema Garam
+Rajawani, Jaladri
+Reduksi & pengorbanan
+14
+✅ Bebas urutan, TG3
+FINALE — Gema Purba
+Anawil
+Pembalikan tesis
+10
+✅ Wajib 8 region selesai, TG4-5
+
+Hasil validasi: Struktur 5-season sudah konsisten — tidak ada region yang terisolasi tanpa jalur akses, tidak ada dua region yang bersaing di season yang sama tanpa alasan (S2-S4 masing-masing sengaja berisi 2 tema yang KONTRAS, bukan sama: dagang-vs-memilih-pergi, dihapus-vs-menyangkal, komoditas-vs-fragmentasi — pasangan tematik yang saling menegaskan lewat perbedaan, bukan pengulangan).
+
+Satu catatan struktural yang perlu diputuskan: S1 (Nirwasita+Kadewan) linear wajib berurutan, sedangkan S2-S4 bebas urutan. Ini konsisten by design (S1 = tutorial + fondasi cerita, S2+ = konten ekspansi bebas jelajah) — tapi berarti World Bible dan GDD v3 harus selalu sepakat bahwa region 1&2 TIDAK diperlakukan setara dengan region 3-9 meski sekarang sama-sama ada di dokumen ini. Ditandai eksplisit di tiap section region 1&2 di bawah.
+II.2 Sistem Tingkat Gema — Tidak Berubah
+Level cap tetap 100, progresi lanjutan lewat Tingkat Gema (TG1-TG5), Legendary tetap 1 per region diperoleh dengan menyaksikan/memahami.
+
+
+BAB 1 — NIRWASITA
+Kota yang Bersembunyi Supaya Selamat
+🆕 Region baru di World Bible — sebelumnya hanya ada di GDD v3 sebagai bagian cerita utama linear (Bab 1-2 & Prolog). Ditulis ulang di sini memakai template yang sama dengan region 3-9 untuk konsistensi dokumen, tapi tetap S1 (linear, wajib), bukan S2+ (bebas urutan).
+
+Wajah Kelupaan: Dilupakan sebagai perlindungan · Season: S1 (wajib pertama) · TG: Tutorial → TG1
+1.1 Storyline (diringkas dari GDD v3 Bab Prolog-2, format World Bible)
+Ada ruas jalan di lintasan pegunungan yang, bila dilewati saat kabut turun, tidak pernah berakhir. Penduduk yang tersesat ke dalamnya kadang keluar tiga hari kemudian mengaku baru berjalan satu jam. Kadang tidak keluar sama sekali.
+
+Titik balik: Pemain bertemu Adi, anak ±10 tahun yang justru ingin dunia luar datang — satu-satunya penduduk yang menolak logika bersembunyi.
+
+Antagonis: Nirsmara (Legendary, Ghost/Akasa/Tank) — bukan raja atau penjaga tunggal, melainkan wujud kolektif dari seluruh keputusan "melupakan" yang pernah diambil kota ini. Pasifnya ("lawan tidak bisa menerapkan debuff yang sama dua kali") secara mekanis adalah metafora tema region: kota ini sudah terlalu sering diserang dengan cara yang sama (diminta terlihat kembali) sehingga ia otomatis kebal terhadap pendekatan yang diulang.
+
+NPC pendukung: Wira Senja (#84, Human/Teja/Attacker) — kelanjutan tematik Tandaraga, penjaga yang enam puluh tahun berlatih untuk perang yang tak pernah datang, kini menghadapi lawan yang bukan perang sama sekali.
+
+Ending region: Pemain tidak mengalahkan siapa pun lewat kekerasan biasa. Ia menyanyikan lagu perjalanan tua yang mengingatkan penjaga jalan pada tugasnya — kabut terbuka bukan lewat pertarungan konvensional, melainkan lewat battle yang berakhir saat Nirsmara "diingatkan", bukan dihabisi HP-nya sampai nol dengan cara biasa.
+
+Status kanon: Storyline ini memakai Guide Karakter v2.0 sebagai sumber kebenaran (keputusan resmi, lihat Changelog v4.0 #1). GDD v3 Bab 1-2 yang masih menyebut "Pandu Batu"/"Lampah Sesat Agung" usang dan perlu direvisi menyusul — dicatat di §Pertanyaan, tidak lagi memblokir status region ini.
+1.2 Zona
+#
+Nama Baru
+Nama Lama (GDD v3)
+TG
+Palet
+Mood
+N1
+Teluk Ranaya
+Pesisir Teluk Ranaya (3 kata)
+Tutorial
+Biru turquoise, pasir putih
+Terbuka, awal
+N2
+Wana Sanu
+Rimba Sanu
+TG1
+Hijau berlapis, kabut rendah
+Rimbun, purba
+N3
+Danu Sanu
+Danau Sanu
+TG1
+Biru jernih tak wajar
+Tenang, asing
+N4
+Lembah Diam
+Lembah Batu Diam (3 kata)
+TG1
+Coklat rumput kering, batu
+Sunyi, mengawasi
+N5
+Kabut Kelambu
+Jalur Kabut Kelambu (3 kata)
+TG2
+Putih monokrom
+Disorientasi
+N6
+Kuta Wisata
+Kota Parigama
+TG2
+Ledakan warna
+Hidup, hangat
+N7
+Menara Pandu
+Menara Pandu
+TG3
+Abu batu, ungu gelap
+Final, agung
+
+(Kuta=Kawi "kota berbenteng"; Wana=Sanskerta "hutan"; Danu=Sanskerta "danau/air")
+1.3 Mekanik Signature: JALAN YANG MENUTUP KEMBALI
+Berbeda dari mekanik Wanasunya ("Jejak yang Menutup" — peta tertutup setelah dilewati), mekanik Nirwasita adalah tentang arah, bukan jejak: kompas mini di HUD berputar pelan secara acak setiap kali pemain berhenti bergerak lebih dari 5 detik, memaksa orientasi ulang terus-menerus. Pemain harus mengandalkan penanda visual di dunia (bukan HUD) untuk bernavigasi — konsisten dengan tema "kota yang sengaja membuat dirinya sulit ditemukan".
+
+Validasi keunikan: Ini BUKAN mekanik yang sama dengan Wanasunya (yang tentang jejak/rute yang hilang) meski secara permukaan mirip "kesulitan navigasi". Nirwasita = orientasi diganggu terus-menerus (kompas), Wanasunya = rute yang sudah dilalui terhapus (jejak). Perbedaannya nyata secara gameplay: Nirwasita menghukum berhenti diam, Wanasunya menghukum bolak-balik.
+1.4 NPC Mission (Pemandu)
+NPC
+Peran
+Lokasi
+Nenek Ranaya
+Pemegang lagu perjalanan tua — kunci membuka N5 ke N6. Memandu pemain lewat 3 tahap dialog bertingkat.
+N1 (hub awal)
+Sanra Buri
+Pemberi Titah Sampingan; tahu lebih banyak dari yang ia katakan.
+N2-N4
+1.5 NPC Monster (Arketipe)
+Nama
+Tier
+Tipe/Elemen
+Zona
+Konsep
+Bayang Penjaga
+Umum
+Ghost/Apah
+N1-N3
+Sisa penjaga lama yang masih menjalankan rute patroli tanpa tujuan
+Kabut Bersuara
+Elite
+Spirit/Akasa
+N5
+Kumpulan suara tersesat yang menyerang sebagai satu entitas
+Nirsmara
+Boss Region
+Ghost/Akasa/Tank
+N7
+Legendary — lihat §1.1
+1.6 Item Spesial (Ultra Rare, hanya dari misi)
+"Kalung Jalan Pulang" — didapat dari menyelesaikan rantai misi Nenek Ranaya (mempelajari seluruh lagu perjalanan tua). (Detail statistik: lihat Dokumen Item — belum ditulis, lihat §Rekomendasi.)
+1.7 Resolusi Region (Kondisi Pemain)
+Kondisi
+Hasil
+Selesaikan tanpa syarat khusus
+Kabut terbuka, tapi Adi tetap menganggap dunia luar mengecewakan
+Selesaikan misi sampingan Adi penuh dan jangan serang dia di titik konflik
+Adi ikut sebagai NPC pendukung di Padepokan pasca-region
+1.8 Elemen Budaya
+(Tidak berubah dari GDD v3 §9.1 — arsitektur panggung, tekstil celup ikat, ansambel gong bilah, fauna endemik.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate: Tidak berlaku — region linear (S1), level ditentukan progres cerita, bukan pilihan pemain.
+
+Siklus Siang-Malam:
+
+Siang: kabut tipis, navigasi normal.
+Malam: kompas mekanik signature berputar 2x lebih sering; monster Umum digantikan Elite di N2-N4.
+
+Area Tersembunyi: Rumah Ranaya Lama — Pondok tersembunyi di balik N2 — hanya terbuka setelah menyelesaikan seluruh dialog bertingkat Nenek Ranaya. Berisi Batu Gema langka dan bukan pertarungan.
+
+NPC Vendor: Sanra Buri — Menjual ramuan & bahan bengkel dasar. Harga naik tiap kali pemain menolak Titah Sampingannya — satu-satunya vendor yang "mengingat" penolakan pemain.
+
+
+BAB 2 — KADEWAN
+Yang Masih Dipanggil, Tak Lagi Dimengerti
+🆕 Region baru di World Bible. Sama seperti Nirwasita: S1 wajib, linear, bukan konten bebas-jelajah.
+
+Wajah Kelupaan: Diingat tanpa makna · Season: S1 (wajib kedua) · TG: TG1
+2.1 Storyline
+Berlawanan dengan Nirwasita yang dilupakan, Kadewan masih diingat — tapi diingat secara kosong. Upacara masih dijalankan setiap hari, tapi maknanya sudah hilang. Bentuk utuh, isi kosong.
+
+Antagonis: Sang Werdi (Legendary) — Guide Karakter sudah dikonfirmasi sebagai kanon resmi (lihat Changelog v4.0 #1); nama lama "Kalawangsa" dari GDD v3 usang, perlu direvisi menyusul di GDD v3 sendiri (dicatat §Pertanyaan). Pasifnya, "selama hidup, seluruh heal & buff tim +20%", secara mekanis mewakili tema "ritual yang masih memberi manfaat meski dijalankan tanpa pemahaman". Konflik utamanya bukan pertarungan melawan kejahatan, melainkan pemain harus memilih apakah memulihkan makna ritual (mengorbankan efisiensi mekanis Sang Werdi) atau membiarkannya kosong tapi berfungsi.
+
+Dualitas Bharwang Kesari–Randu Girang — dikonfirmasi tetap berada di Kadewan (bukan berpindah region). Pasangan sentral ini adalah representasi paling langsung dari "diingat tanpa makna": dunia hanya bersorak untuk salah satu dari mereka, padahal keduanya hanya bisa ada lewat kekalahan bergantian, bukan kemenangan satu pihak.
+2.2 Zona
+#
+Nama Baru
+Nama Lama (GDD v3)
+TG
+Palet
+Mood
+D1
+Sawah Laras
+Sawah Selaras
+TG1
+Hijau muda, emas padi
+Damai, teratur
+D2
+Wana Wanara
+Alas Wanara
+TG1
+Hijau gelap, coklat akar
+Rimbun, jenaka
+D3
+Bale Ombak
+Balai Laras / Pura Tepi Ombak (3 kata)
+TG1
+Abu batu, turquoise
+Sakral, terbuka
+D4
+Kawah Bara
+Kawah Bara
+TG2
+Hitam vulkanik, jingga
+Panas, mati
+D5
+Griya Sunya
+Desa Tanpa Bakar (3 kata)
+TG2
+Abu pucat, hijau kemenyan
+Tenang tapi salah
+D6
+Nusa Gersang
+Nusa Gersang
+TG2
+Tebing putih, laut gelap
+Terisolasi
+D7
+Puncak Laras
+Puncak Laras
+TG3
+Emas, putih, belang
+Agung, final
+
+(Bale=Kawi "balai/aula"; Griya=Kawi "rumah/kediaman"; Sunya=Sanskerta "kosong/hampa")
+2.3 Mekanik Signature: RITUAL OTOMATIS
+Berbeda dari Himagiri ("Tata Krama" — perilaku pemain di luar battle menentukan hasil) dan Smarana ("Neraca Dagang" — menjual ingatan), Kadewan punya trigger pasif berbasis waktu, bukan aksi pemain: setiap 3 ronde di battle apa pun di region ini, sebuah "Upacara" otomatis terpicu — efek buff/debuff acak diberlakukan ke seluruh lapangan tanpa dipicu pemain maupun musuh. Pemain harus merencanakan sekitar ketidakpastian ini, bukan mengendalikannya — mekanis, tema "ritual berjalan tanpa kendali siapa pun" diwujudkan secara harfiah.
+
+Validasi keunikan: Tidak ada region lain yang punya efek battle-wide TANPA sumber (bukan dari skill pemain atau musuh). Ini murni unik Kadewan.
+2.4 NPC Mission (Pemandu)
+NPC
+Peran
+Lokasi
+Jero Mangku
+Pemangku yang sadar ia menjalankan ritual tanpa tahu maknanya. Guide utama, penentu jalur "memulihkan makna" vs "membiarkan kosong".
+D3, D7
+Luh Sari
+Penari muda yang bisa melihat roh, dianggap sakit oleh keluarganya.
+D1-D2
+2.5 NPC Monster (Arketipe)
+Nama
+Tier
+Tipe/Elemen
+Zona
+Konsep
+Penari Kosong
+Umum
+Ghost/Akasa
+D1-D3
+Menjalankan gerak tari tanpa penonton, menyerang dalam pola berulang
+Sesaji Berjalan
+Elite
+Spirit/Pertiwi
+D5
+Persembahan yang tidak pernah diambil, kini bergerak sendiri
+Sang Werdi
+Boss Region
+—
+D7
+Legendary — lihat §2.1
+2.6 Item Spesial (Ultra Rare, hanya dari misi)
+"Genta Makna" — didapat dari menyelesaikan rantai misi Jero Mangku (memulihkan 1 baris doa yang benar-benar dipahami). (Detail: Dokumen Item.)
+2.7 Resolusi Region (Kondisi Pemain)
+Kondisi
+Hasil
+Pilih efisiensi (biarkan ritual kosong)
+Sang Werdi tetap memberi bonus tim, tapi Jero Mangku tidak bergabung sebagai NPC pendukung
+Pilih makna (pulihkan 1 baris doa)
+Jero Mangku bergabung; bonus Sang Werdi turun 5% tapi terbuka dialog tambahan di ending finale
+2.8 Elemen Budaya
+(Tidak berubah dari GDD v3 §9.2.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate: Tidak berlaku — region linear (S1), level ditentukan progres cerita, bukan pilihan pemain.
+
+Siklus Siang-Malam:
+
+Siang: upacara berjalan sesuai jadwal terlihat.
+Malam: Ritual Otomatis (mekanik signature) terpicu tiap 2 ronde alih-alih 3 — dunia "lebih sibuk" saat tak ada yang menyaksikan.
+
+Area Tersembunyi: Sanggar Luh Sari — Ruang tari tersembunyi di balik D2 — akses lewat titah sampingan Luh Sari. Berisi Sukma Kera Wanara versi lore alternatif (kosmetik, bukan gameplay).
+
+NPC Vendor: Jero Mangku — Menjual perlengkapan upacara & Kitab. Satu-satunya vendor yang harganya berubah tergantung pilihan pemain di Resolusi Region (§2.7) — lebih murah di jalur "makna".
+
+
+BAB 3 — SMARANA (existing, diperbarui)
+Wajah Kelupaan: Memanen yang dilupakan · Season: S2 · TG1
+
+(Storyline dan Mekanik Signature "Neraca Dagang" tidak berubah dari v2.0 §III.1, §III.3.)
+3.1 Zona (direvisi: 6 dari 7 dipangkas ke 2 kata)
+#
+Nama Baru
+Nama Lama
+TG
+S1
+Muara Larung
+(sudah 2 kata)
+TG1
+S2
+Rawa Kelam
+Rawa Gambut Hitam (3 kata)
+TG1
+S3
+Wana Sunya
+Hutan Ulin Sunyi (3 kata)
+TG1
+S4
+Pasar Tanhana
+Pasar Terapung Tak Berujung (4 kata)
+TG2
+S5
+Gudang Tirta
+Gudang Bawah Air (3 kata)
+TG2
+S6
+Kuta Manik
+Kota Intan Smarana (3 kata)
+TG3
+S7
+Bale Adol
+Balai Lelang Agung (3 kata)
+TG3
+
+(Tanhana=Kawi "tanpa batas/ujung"; Tirta=Sanskerta "air suci"; Manik=Sanskerta-Kawi "permata"; Adol=Jawa Kuno "menjual")
+3.2 NPC Mission
+NPC
+Peran
+Kapten Lamalu
+Kehilangan seluruh rombongannya; kunci akses S4 ke S5
+Juragan Ananta (bawahan Juragan Larung)
+Guide sistem Neraca Dagang, muncul tiap kali pemain akan menjual Batu Gema
+3.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Kuli Pelabuhan Bayang
+Umum
+Pekerja yang dilupakan namanya, kini hanya angka di buku besar
+Penagih Utang Lama
+Elite
+Menagih hutang yang sudah dilupakan siapa yang berhutang
+Juragan Larung
+Boss Region
+Legendary — lihat v2.0 §III.1
+3.4 Item Spesial
+"Timbangan Terakhir" — dari rantai misi menyelesaikan pembongkaran gudang bawah air. (Detail: Dokumen Item.)
+3.5 Resolusi Region
+Kondisi
+Hasil
+Jual 3 atau lebih Batu Gema demi akses cepat
+Ending region "mahal" — kota runtuh, tapi pemain kehilangan sebagian Ensiklopedia permanen
+Selesaikan tanpa menjual Batu Gema (jalur lebih panjang)
+Kota tetap runtuh, tapi seluruh ingatan pemain utuh — reaksi NPC pasca-region berbeda
+3.6 Roster & Elemen Budaya
+(Tidak berubah dari v2.0 §III.4, §III.7, kecuali status tier yang sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Muara Larung
+1-15
+Rawa Kelam
+16-30
+Wana Sunya
+16-30
+Pasar Tanhana
+31-45
+Gudang Tirta
+31-45
+Kuta Manik
+46-55
+Bale Adol
+46-55
+
+Siklus Siang-Malam:
+
+Siang: pasar penuh, harga normal.
+Malam: Pasar Tanhana (S4) buka jalur khusus — barang langka muncul, tapi harga jual ingatan (Neraca Dagang) naik 20%.
+
+Area Tersembunyi: Gudang Bawah Gudang — Ruang tersembunyi di dalam S5 — ditemukan lewat titah SR-M02. Berisi item yang bahkan Juragan Larung tidak tahu ada.
+
+NPC Vendor: Juragan Ananta — Bawahan Juragan Larung. Satu-satunya vendor di game yang menerima Batu Gema sebagai alat tukar langsung, konsisten dengan Neraca Dagang.
+
+
+BAB 4 — WANASUNYA (existing, diperbarui)
+Wajah Kelupaan: Memilih dilupakan · Season: S2 · TG1
+4.1 Zona (1 dari 7 dipangkas)
+#
+Nama Baru
+Nama Lama
+TG
+W1-W3, W5-W7
+(tidak berubah, sudah 2 kata)
+—
+—
+W4
+Lembah Musna
+Lembah Tanpa Jejak (3 kata)
+TG2
+
+(Musna=Jawa Kuno "lenyap/musnah")
+4.2 NPC Mission
+NPC
+Peran
+Upiak
+Masuk hutan 40 tahun lalu, memilih tetap tinggal. Titik keputusan moral utama region.
+4.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Pemburu Tersesat
+Umum
+Mencari sesuatu yang sudah lupa apa
+Rimba Bersuara
+Elite
+Hutan itu sendiri menyerang siapa pun yang memaksa masuk
+Sang Lengang
+Boss Region
+Legendary — lihat v2.0 §IV.1
+4.4 Item Spesial
+"Penanda Terakhir" — dari rantai misi menemukan seluruh Penanda yang hilang. (Detail: Dokumen Item.)
+4.5 Resolusi Region
+Kondisi
+Hasil
+Beri tahu keluarga Upiak
+Upiak keluar hutan; region terasa "menang" tapi ia tidak pernah benar-benar bahagia lagi
+Jangan beri tahu
+Upiak tetap; pemain membawa rahasia yang muncul lagi di dialog Ending B/C GDD v3
+4.6 Roster & Elemen Budaya
+(Tidak berubah — status tier Suara Tanwujud & Tapak Ghaib sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Ladang Terakhir
+1-15
+Rimba Batas
+16-30
+Danau Bening
+16-30
+Lembah Musna
+31-45
+Kampung Lengang
+31-45
+Hutan Belang
+46-55
+Puncak Lengang
+46-55
+
+Siklus Siang-Malam:
+
+Siang: Jejak Penanda bertahan 5 ronde sebelum tertutup.
+Malam: Jejak tertutup dalam 3 ronde — navigasi jauh lebih sulit, avatar Beast jadi krusial.
+
+Area Tersembunyi: Rumah Upiak — Tersembunyi di dalam Lembah Musna, hanya muncul setelah rantai misi Upiak selesai penuh — lokasi keputusan moral utama region.
+
+NPC Vendor: Puti Lengang — Menjual Penanda tambahan (item pembatas mekanik signature) — vendor paling fungsional secara mekanik, bukan sekadar dagang biasa.
+
+
+BAB 5 — KALAMRTU (existing, diperbarui)
+Wajah Kelupaan: Dihapus dari catatan · Season: S3 · TG2
+5.1 Zona (3 dari 7 dipangkas)
+#
+Nama Baru
+Nama Lama
+TG
+K1, K4, K5, K7
+(tidak berubah)
+—
+—
+K2
+Pulau Dwinama
+Pulau Dua Nama (3 kata)
+TG2
+K3
+Rawa Purwa
+Rawa Bakau Purba (3 kata)
+TG2
+K6
+Pelabuhan Pralaya
+Pelabuhan Bawah Lumpur (3 kata)
+TG3
+
+(Dwinama=Sanskerta "dua nama"; Purwa=Sanskerta-Kawi "purba/pertama"; Pralaya=Sanskerta "kehancuran/peleburan")
+5.2 NPC Mission
+NPC
+Peran
+Juru Laklak
+Ahli aksara, guide sistem Aksara Kutukan
+5.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Penjaga Prasasti Bisu
+Umum
+Menjaga aksara yang tak lagi bisa dibaca siapa pun
+Kutukan Berjalan
+Elite
+Prasasti yang lepas dari batunya
+Sang Wiranata
+Boss Region
+Legendary — lihat v2.0 §V.1
+5.4 Item Spesial
+"Aksara yang Tersisa" — dari rantai misi menonaktifkan seluruh prasasti kutukan. (Detail: Dokumen Item.)
+5.5 Resolusi Region
+Kondisi
+Hasil
+Ungkap sisi kelam kerajaan (bukti kekejaman)
+Ensiklopedia mencatat versi lengkap — tidak nyaman tapi jujur
+Biarkan tidak terungkap
+Kerajaan diingat sebagai korban murni — lebih nyaman, kurang jujur
+5.6 Roster & Elemen Budaya
+(Tidak berubah — status tier Kijang Prasasti sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Muara Wira
+1-15
+Pulau Dwinama
+16-30
+Rawa Purwa
+16-30
+Bukit Sunggara
+31-45
+Ladang Prasasti
+31-45
+Pelabuhan Pralaya
+46-55
+Balai Kedatuan
+46-55
+
+Siklus Siang-Malam:
+
+Siang: prasasti aktif seperti biasa.
+Malam: 1 prasasti tambahan aktif otomatis di tiap zona — debuff Aksara Kutukan menumpuk lebih berat.
+
+Area Tersembunyi: Prasasti Ketujuh — Tersembunyi di bawah Ladang Prasasti — prasasti yang tidak pernah disebut dalam catatan resmi kerajaan, isinya bertentangan dengan prasasti lain.
+
+NPC Vendor: Juru Laklak — Menjual bahan bengkel & 1 Kitab langka terkait pembacaan aksara — satu-satunya vendor yang barangnya berubah tergantung prasasti mana yang aktif.
+
+
+BAB 6 — HIMAGIRI (existing, diperbarui)
+Wajah Kelupaan: Menolak mengakui berakhir · Season: S3 · TG2
+6.1 Zona (1 dari 7 dipangkas)
+#
+Nama Baru
+Nama Lama
+TG
+H1, H3-H7
+(tidak berubah)
+—
+—
+H2
+Wana Bisu
+Hutan Pinus Bisu (3 kata)
+TG2
+6.2 NPC Mission
+NPC
+Peran
+Sabdaguna
+Penasihat yang tetap jujur ke penguasa; bond mekanis dengan Wisesa Girinatha (nama sudah diperbaiki, lihat §0.1)
+6.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Abdi Dalem Bayang
+Umum
+Pelayan istana yang masih bertugas meski istana kosong
+Upacara yang Mengeras
+Elite
+Ritual harian yang terlalu lama diulang hingga jadi entitas sendiri
+Wisesa Girinatha
+Boss Region
+Legendary — nama diperbaiki, lihat §0.1
+6.4 Item Spesial
+"Regalia Terakhir" — dari misi "menjadi saksi" upacara penutup tanpa bertarung. (Detail: Dokumen Item.)
+6.5 Resolusi Region
+(Tidak berubah dari v2.0 — sudah punya struktur "menjadi saksi", tidak perlu ending binary tambahan karena sudah non-combat resolution by design.)
+6.6 Roster & Elemen Budaya
+(Tidak berubah — nama Legendary sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Lereng Kabut
+1-15
+Wana Bisu
+16-30
+Candi Bertingkat
+16-30
+Pasar Lengang
+31-45
+Sendang Tujuh
+31-45
+Gerbang Puncak
+46-55
+Keraton Himagiri
+46-55
+
+Siklus Siang-Malam:
+
+Siang: meter Kelancangan (Tata Krama) naik normal.
+Malam: seluruh NPC keraton "tidur" — Tata Krama nonaktif total, tapi tidak ada informasi baru bisa digali sampai pagi.
+
+Area Tersembunyi: Ruang Semedi Sabdaguna — Tersembunyi di balik Candi Bertingkat — hanya terbuka jika meter Kelancangan pemain 0 sepanjang region. Berisi dialog eksklusif tentang Wisesa Girinatha muda.
+
+NPC Vendor: Abdi Dalem Tua — Menjual perlengkapan formal yang menurunkan kenaikan Kelancangan — vendor yang secara mekanik membantu pemain mematuhi Tata Krama.
+
+
+BAB 7 — RAJAWANI (existing, diperbarui)
+Wajah Kelupaan: Diingat sebagai barang · Season: S4 · TG3
+7.1 Zona (2 dari 7 dipangkas)
+#
+Nama Baru
+Nama Lama
+TG
+R1-R3, R5, R6
+(tidak berubah)
+—
+—
+R4
+Lereng Dahana
+Lereng Gunung Api (3 kata)
+TG4
+R7
+Bale Caturnata
+Balai Empat Penguasa (3 kata)
+TG5
+
+(Dahana=Sanskerta "api"; Caturnata=Sanskerta "empat penguasa", gabungan catur+nata)
+7.2 NPC Mission
+NPC
+Peran
+Momola
+Kepala adat, guide sistem "Yang Tak Terjual" (Warisan)
+7.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Pedagang Bayang
+Umum
+Menjual apa pun, termasuk hal yang seharusnya tidak dijual
+Timbangan Serakah
+Elite
+Neraca yang sudah lupa cara menimbang adil
+Sang Harga
+Boss Region
+Legendary
+7.4 Item Spesial
+"Warisan yang Tak Ternilai" — dari rantai misi menyebarkan 20 atau lebih Warisan. (Detail: Dokumen Item.)
+7.5 Resolusi Region
+(Sudah punya struktur fase-boss berbasis jumlah Warisan tersebar — tidak perlu ending binary tambahan, sudah kondisional by design.)
+7.6 Roster & Elemen Budaya
+(Tidak berubah — status tier Sukma Penimbang sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Pelabuhan Rempah
+1-15
+Kebun Tua
+16-30
+Benteng Karang
+16-30
+Lereng Dahana
+31-45
+Danau Diam
+31-45
+Puncak Warima
+46-55
+Bale Caturnata
+46-55
+
+Siklus Siang-Malam:
+
+Siang: harga rempah (kosmetik naratif) stabil.
+Malam: Danau Diam memancarkan cahaya hijau — satu-satunya zona dengan perubahan visual malam yang eksplisit terkait lore (desa terkutuk).
+
+Area Tersembunyi: Desa di Bawah Danau Diam — Reruntuhan desa yang tenggelam — akses via menyelam saat malam hari saja. Sumber utama Warisan langka.
+
+NPC Vendor: Momola — Menjual barang adat yang tidak bisa dijual-belikan di tempat lain — ironis, karena ia sendiri adalah penjaga sistem "Yang Tak Terjual".
+
+
+BAB 8 — JALADRI (existing, diperbarui)
+Wajah Kelupaan: Memilih menjadi banyak · Season: S4 · TG3
+8.1 Zona (1 dari 7 dipangkas)
+#
+Nama Baru
+Nama Lama
+TG
+J1-J4, J6, J7
+(tidak berubah)
+—
+—
+J5
+Laut Sahasra
+Laut Seribu Cahaya (3 kata)
+TG4
+
+(Sahasra=Sanskerta "seribu")
+8.2 NPC Mission
+NPC
+Peran
+Kapten Ndiru
+Nakhoda yang kehilangan rombongannya di Padang Abu; memandu pemain menyusun ulang jalur yang terhapus tiap kali keluar-masuk J6.
+8.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Serpihan Hanyut
+Umum
+Pecahan kecil yang terus mencari sisa dirinya
+Ombak Tak Bertuan
+Elite
+Gelombang yang tidak lagi tahu pantai mana miliknya
+Naga Sasra
+Boss Region
+Legendary
+8.4 Item Spesial
+"Serpihan Terakhir" — dari misi mengumpulkan 30 dari 40 serpihan Anjala Nirmala. (Detail: Dokumen Item.)
+8.5 Resolusi Region
+(Sudah punya struktur binary "satukan Anjala Nirmala atau biarkan tersebar" — konsisten, tidak perlu ditambah.)
+8.6 Roster & Elemen Budaya
+(Tidak berubah.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Pantai Selatan
+1-15
+Sawah Terasering
+16-30
+Hutan Gunung
+16-30
+Danau Dalam
+31-45
+Laut Sahasra
+31-45
+Padang Abu
+46-55
+Kerajaan Terkubur
+46-55
+
+Siklus Siang-Malam:
+
+Siang: Padang Abu bisa dipetakan sementara.
+Malam: Laut Sahasra memancarkan cahaya (sesuai nama) — satu-satunya zona yang SECARA MEKANIK lebih mudah dinavigasi di malam hari, kebalikan pola region lain.
+
+Area Tersembunyi: Karang Kapten Ndiru — Bangkai kapal Kapten Ndiru, tersembunyi di dasar Danau Dalam — ditemukan lewat titah AL-M03/rantai NPC Kapten Ndiru.
+
+NPC Vendor: Kapten Ndiru — Menjual perlengkapan pelayaran & Penanda — merangkap NPC Mission dan vendor, satu-satunya di game dengan peran ganda eksplisit.
+
+
+BAB 9 — ANAWIL (existing, diperbarui)
+Wajah Kelupaan: Ingatan sebelum bahasa · Season: FINALE · TG4-5
+
+(Prasyarat konsultan/co-writer di §IX.1 v2.0 TIDAK BERUBAH — tetap wajib.)
+9.1 Zona
+(Sudah sepenuhnya sesuai aturan 2-kata sejak v2.0 — tidak ada yang perlu diubah. Satu-satunya region yang sudah compliant sejak awal.)
+9.2 NPC Mission
+NPC
+Peran
+(Belum ada — region ini sengaja minim dialog teks, lihat Mekanik "Tanpa Kata")
+Guide di sini kemungkinan tidak berbentuk NPC bicara, tapi gestur — lihat §Rekomendasi
+9.3 NPC Monster (Arketipe)
+Nama
+Tier
+Konsep
+Telapak Berjalan
+Umum
+Jejak tangan purba yang bergerak sendiri
+Suara Sebelum Kata
+Elite
+Entitas yang berkomunikasi lewat getaran, bukan bahasa
+Gema Purwa
+Boss Region
+Legendary — nama diperbaiki, lihat §0.1
+9.4 Item Spesial
+"Telapak Keenam" — dari misi menyelesaikan interaksi tanpa dialog teks. (Detail: Dokumen Item.)
+9.5 Resolusi Region — Terhubung ke Ending Global
+Anawil tidak punya resolusi region terpisah — hasilnya adalah 3-ending global GDD v3 §5.5 (Kabut Yang Kembali / Yang Mengingat / Laras). Ini satu-satunya region di mana "resolusi region" dan "ending game" adalah hal yang sama, sesuai posisinya sebagai finale.
+9.6 Roster & Elemen Budaya
+(Tidak berubah — nama Legendary sudah diperbaiki di §0.1.)
+Elemen Standar Worldmap
+Fast Travel (Sesajen): 1 Titik Sesajen di gerbang masuk tiap zona, terbuka otomatis saat kunjungan pertama. Fungsi: simpan, pulihkan tim, lompat cepat ke titik lain yang sudah terbuka.
+
+Level Gate (disarankan, region bebas urutan):
+
+Zona
+Level Karakter Disarankan
+Karst Warana
+46-55
+Hutan Purba
+46-55
+Laguna Tenang
+46-55
+Dinding Telapak
+56-60
+Palung Purwa
+56-60
+Pulau Ketujuh
+56-60
+Telapak Pertama
+60
+
+Siklus Siang-Malam:
+
+Siang: —
+Malam: — (region ini sengaja tidak membedakan siang/malam; sesuai Mekanik "Tanpa Kata", bahkan waktu tidak dikomunikasikan lewat teks — hanya lewat perubahan palet zona yang sudah ada di §9.1)
+
+Area Tersembunyi: Telapak Kedelapan — Satu cap tangan tambahan di Dinding Telapak yang tidak disebut di legenda Tujuh Telapak manapun — tidak dijelaskan, sengaja dibiarkan tidak dijelaskan.
+
+NPC Vendor: (Tidak ada — sesuai desain minim-antarmuka region ini; progres didapat murni dari eksplorasi & misi, bukan transaksi)
+
+
+BAGIAN IX-B — PETA & KONEKTIVITAS DUNIA
+IX-B.1 Jalur & Waktu Tempuh Antar Region
+Dunia Nawantara tidak dipetakan dengan koordinat kartesian (fiksi, bukan geografi nyata) — konektivitas disajikan sebagai graf jalur, konsisten dengan cara pemain sebenarnya berpindah (kapal/jalan darat antar hub), bukan peta bebas-terbang.
+
+                    NIRWASITA ═══(3 hari, darat)═══ KADEWAN
+                                                        │
+                                                  (4 hari, laut)
+                                                        │
+                        ┌───────────────────────────────┼───────────────────────────────┐
+                        │                                                               │
+                     SMARANA ═══(2 hari, darat)═══ WANASUNYA                             │
+                        │                                │                              │
+                  (6 hari, laut)                   (5 hari, laut)                        │
+                        │                                │                              │
+                        └────────────┬───────────────────┘                              │
+                                     │                                                   │
+                        KALAMRTU ═══(3 hari, laut)═══ HIMAGIRI                            │
+                              │                              │                           │
+                        (8 hari, laut)                 (7 hari, darat)                   │
+                              │                              │                           │
+                              └──────────────┬───────────────┘                           │
+                                             │                                            │
+                              RAJAWANI ═══(4 hari, laut)═══ JALADRI                       │
+                                    │                              │                      │
+                              (10 hari, laut) ──────────────────── (9 hari, laut) ────────┘
+                                             │
+                                          ANAWIL
+
+Rute
+Moda
+Waktu
+Nirwasita ↔ Kadewan
+Darat (jalur gunung)
+3 hari
+Kadewan ↔ Smarana
+Laut
+4 hari
+Kadewan ↔ Wanasunya
+Laut
+5 hari
+Smarana ↔ Wanasunya
+Darat
+2 hari
+Smarana/Wanasunya ↔ Kalamrtu
+Laut
+6 hari
+Smarana/Wanasunya ↔ Himagiri
+Laut/Darat
+7 hari
+Kalamrtu ↔ Himagiri
+Laut
+3 hari
+Kalamrtu/Himagiri ↔ Rajawani
+Laut
+8 hari
+Kalamrtu/Himagiri ↔ Jaladri
+Laut
+9 hari
+Rajawani ↔ Jaladri
+Laut
+4 hari
+Rajawani/Jaladri ↔ Anawil
+Laut
+10 hari
+
+Fungsi gameplay: Waktu tempuh ini naratif, bukan literal ditunggu pemain — dipakai untuk (a) menentukan biaya Fast Travel antar-hub yang belum terhubung langsung (opsional, berbayar Kepeng, skip waktu), (b) dialog NPC yang merujuk jarak ("perjalanan sepuluh hari ke Anawil" terasa bermakna), (c) validasi kenapa S1 harus linear (Nirwasita-Kadewan berdekatan, 3 hari — masuk akal sebagai satu kesatuan awal) sementara Anawil paling jauh dari segala arah (konsisten posisinya sebagai finale).
+IX-B.2 Legenda Simbol Peta
+Simbol
+Arti
+🏛️
+Hub Region (kota/desa utama, tempat NPC Vendor & Mission utama)
+⛩️
+Titik Sesajen (Fast Travel)
+👑
+Boss Region (Legendary)
+⚔️
+Zona Battle Umum
+🔒
+Area Tersembunyi (butuh syarat untuk buka)
+🛒
+NPC Vendor
+📜
+NPC Mission (pemberi Titah)
+☀️/🌙
+Indikator siklus siang/malam aktif di zona ini
+⚠️
+Level Gate — peringatan level minimum disarankan
+⭐
+Wajah Region (SR dengan lencana, lihat Guide Karakter)
+
+Simbol ini dipakai konsisten di seluruh UI peta (world map & minimap in-game) sesuai GDD v3 §11 (UI Mockup) — dokumen ini yang mendefinisikan artinya, GDD v3 yang mendefinisikan tata letaknya di layar.
+
+
+BAGIAN IX-C — KALENDER DUNIA (TARIKH LARAS)
+IX-C.1 Prinsip Dasar
+Kalender Nawantara tidak menghitung dari peristiwa Sang Sunyi. Ini keputusan desain, bukan kelalaian: dunia yang lukanya adalah kelupaan secara wajar juga kehilangan hitungan pasti tentang lukanya sendiri. "Konon seribu tahun lalu" yang berulang kali disebut di seluruh dokumen (GDD v3, World Bible) tetap berstatus tradisi lisan, bukan fakta kalender — dan itu sengaja dibiarkan begitu.
+
+Era
+Nama
+Mulai Dihitung Dari
+Status
+Sebelum Laras (disingkat SL, dihitung mundur)
+—
+Tidak ada epoch pasti. Berisi peristiwa Sang Sunyi dan keruntuhan-keruntuhan awal (termasuk Himagiri).
+Legendaris, tidak diverifikasi. Sarjana dan pendongeng punya angka berbeda-beda.
+Tarikh Laras (disingkat TL, dihitung maju — kalender resmi)
+TL 1 = tahun region-region yang bertahan pasca-Sunyi sepakat membangun hitungan waktu bersama untuk berdagang dan berkoordinasi kembali.
+Aktif, dipakai mayoritas region.
+
+
+Cerita utama dimulai di TL 117.
+
+Kenapa ini penting secara naratif, bukan cuma teknis: Karena epoch Laras dimulai SETELAH Sunyi (bukan saat/sebelumnya), tidak ada satu pun dokumen sejarah resmi yang mencatat detail peristiwa itu sendiri — hanya akibatnya. Ini menjelaskan secara elegan kenapa protagonis (dan pemain) harus menyusun ulang kebenaran dari serpihan lore per region, alih-alih membaca satu buku sejarah lengkap. Kalender ini secara struktural mendukung premis utama game, bukan sekadar dekorasi worldbuilding.
+IX-C.2 Kalender yang Tidak Sinkron — Detail yang Disengaja
+Tidak semua region memakai Tarikh Laras. Ini bukan cuma variasi kosmetik — dipakai sebagai sinyal karakter/tema:
+
+Region
+Kalender Dipakai
+Alasan
+Smarana, Rajawani, Jaladri, Kalamrtu
+Tarikh Laras penuh
+Region dagang/maritim — butuh kalender bersama untuk koordinasi niaga
+Wanasunya, Anawil
+Tidak memakai kalender formal
+Wanasunya: penghuninya sengaja menghilang dari sistem apa pun, termasuk waktu. Anawil: konsisten dengan Mekanik "Tanpa Kata" — bahkan waktu tidak diberi nama.
+Nirwasita
+Memakai penanggalan lokal sendiri, jarang disinkronkan ke Laras
+Kota yang bersembunyi dari dunia secara wajar juga tidak repot menyamakan jam dengan dunia yang ia hindari.
+Kadewan
+Tarikh Laras dipakai untuk urusan resmi, tapi upacara harian memakai penanggalan-bintang tersendiri yang lebih tua
+Selaras dengan tema "ritual tanpa makna" — bentuk (kalender lama) dipertahankan meski fungsinya (kenapa kalender itu penting) sudah dilupakan.
+Himagiri
+Tarikh Girinata — dihitung sejak penobatan terakhir raja lama, TIDAK PERNAH beralih ke Tarikh Laras
+Kerajaan ini runtuh (menurut catatan luar) sekitar 500 tahun sebelum masa kini — mendekati awal era Sebelum Laras, mendekati sebelum Tarikh Laras bahkan ada. Wisesa Girinatha bukan cuma menolak mengakui kerajaannya berakhir — ia secara harfiah masih hidup di sistem waktu yang lebih tua dari kalender yang dipakai seluruh dunia luar. Saat pemain tiba di Himagiri, kedua pihak akan menyebut tahun yang berbeda untuk hari yang sama — ini direkomendasikan jadi detail dialog eksplisit (lihat GDD v3, dicatat sebagai rekomendasi baru di §Pertanyaan).
+IX-C.3 Struktur Tahun — 5 Musim, Mengikuti Panca Maha Bhuta
+Satu tahun Tarikh Laras dibagi 5 musim sesuai 5 elemen (bukan 4 musim generik) — konsisten dengan seluruh sistem elemen game.
+
+Musim
+Bulan
+Jumlah Hari
+Karakter
+Musim Pertiwi
+Srawana, Kartika, Margasira
+3×32 hari
+Awal tahun, musim tanam, akar
+Musim Apah
+Pausa, Magha, Phalguna
+3×32 hari
+Musim hujan
+Musim Teja
+Chaitra, Waisakha
+2×32 hari
+Puncak kemarau — musim terpendek, terpanas
+Musim Bayu
+Jyestha, Asadha, Bhadrapada
+3×32 hari
+Angin peralihan, munson berbalik
+Sela Akasa
+(bukan bulan penuh)
+5–13 hari, berubah tiap tahun
+Jeda antara akhir Bhadrapada dan awal Srawana tahun berikutnya
+
+Total: 11 bulan bernama × 32 hari (352 hari) + Sela Akasa (5–13 hari) = 357–365 hari/tahun, tidak tetap.
+
+Nama bulan diambil bebas dari kosakata Sanskerta — bukan replikasi kalender Hindu yang sudah ada, sama seperti prinsip penamaan zona di seluruh dokumen ini (lihat §0.2 v3.0).
+
+Sela Akasa yang panjangnya tidak pernah disepakati adalah detail yang disengaja, bukan kemalasan menetapkan angka pasti: pendeta/penanggalan tiap region menghitungnya berbeda-beda, dan tidak ada yang benar-benar tahu berapa hari sebenarnya — konsisten penuh dengan tema Akasa sebagai elemen "kosong/ruang antara" yang di GDD v3 §10 memang didefinisikan sebagai satu-satunya elemen yang "menyerap", bukan berwujud.
+IX-C.4 Minggu — 5 Hari, Juga Mengikuti Panca Maha Bhuta
+Hari
+Elemen
+Dina Pertiwi
+Pertiwi
+Dina Apah
+Apah
+Dina Teja
+Teja
+Dina Bayu
+Bayu
+Dina Akasa
+Akasa
+
+Berulang terus-menerus sepanjang tahun (tidak berhenti di Sela Akasa). Fungsi gameplay yang direkomendasikan: monster dengan elemen yang cocok hari itu mendapat spawn rate sedikit lebih tinggi (mis. lebih banyak monster Apah muncul di Dina Apah) — opsional, tapi memberi alasan mekanis nyata bagi hari dalam seminggu untuk berarti sesuatu, bukan cuma label.
+IX-C.5 Tanggal-Tanggal Penting
+Tanggal
+Peristiwa
+SL (~1000 sebelum TL, tidak pasti)
+Peristiwa Sang Sunyi / Perjanjian pertama runtuh — hanya tradisi lisan
+SL ~383 (setara ±500 tahun sebelum masa kini)
+Himagiri runtuh menurut catatan luar — Wisesa Girinatha masih menghitung dari titik ini di Tarikh Girinata-nya sendiri
+TL 1
+Epoch Tarikh Laras — region penyintas sepakat membangun hitungan waktu bersama
+TL 117, Srawana 1 (disarankan sebagai hari mulai Prolog GDD v3)
+Kakek pemain meninggal; cerita dimulai
+Malam terakhir Bhadrapada, tiap tahun
+Malam Seribu Cahaya (festival Jaladri) — sengaja jatuh tepat sebelum Sela Akasa dimulai, malam terakhir sebelum dunia memasuki jeda yang tak tercatat, selaras dengan tema Jaladri "memilih pecah agar tak dimiliki"
+Kalamrtu: tidak ada tanggal keruntuhan yang disepakati
+Disengaja — intinya region ini memang dihapus dari catatan, termasuk catatan kapan ia dihapus
+IX-C.6 Menjawab Pertanyaan Terbuka v4.0 #3
+Pertanyaan lama: "Apakah waktu tempuh perlu disinkronkan dengan kalender?" — Ya, sudah bisa dijawab sekarang: waktu tempuh di §IX-B.1 (dalam hari) memakai satuan hari Tarikh Laras yang sama dengan §IX-C.3-4. Satu catatan praktis: perjalanan yang jatuh di Sela Akasa disarankan tidak dihitung presisi (karena panjangnya sendiri tidak pasti dalam lore) — kapal/rombongan yang berangkat mendekati Sela Akasa sebaiknya digambarkan "tertunda tanpa kepastian", bukan diberi angka hari yang salah memberi kesan pasti.
+
+
+BAGIAN X — VALIDASI LINTAS-REGION
+X.1 Pembuktian: 9 Mekanik Signature Semuanya Berbeda
+Region
+Mekanik
+Yang Dikontrol
+Pemicu
+Nirwasita
+Jalan yang Menutup Kembali
+Arah/orientasi (kompas)
+Berhenti bergerak lebih dari 5 detik
+Kadewan
+Ritual Otomatis
+Buff/debuff acak lapangan
+Waktu (tiap 3 ronde), bukan aksi
+Smarana
+Neraca Dagang
+Ekonomi ingatan (Batu Gema)
+Pilihan jual/tidak jual pemain
+Wanasunya
+Jejak yang Menutup
+Rute yang sudah dilalui
+Pergerakan pemain di peta
+Kalamrtu
+Aksara Kutukan
+Debuff global per zona
+Prasasti aktif/nonaktif
+Himagiri
+Tata Krama
+Hasil pertarungan lewat perilaku sosial
+Interaksi NPC di luar battle
+Rajawani
+Yang Tak Terjual
+Kekuatan boss (fase)
+Penyebaran item non-jual (Warisan)
+Jaladri
+Yang Tersebar
+Cara akuisisi avatar
+Serpihan tersebar di peta
+Anawil
+Tanpa Kata
+Antarmuka itu sendiri (HUD)
+Kedalaman zona (progresif hilang)
+
+Kesimpulan validasi: Sembilan mekanik mengontrol sembilan aspek game yang berbeda — navigasi, battle-wide-random, ekonomi, peta, debuff-zona, hasil-sosial, kekuatan-boss, akuisisi-karakter, antarmuka. Tidak ada dua region yang memakai aspek yang sama. Validasi lolos.
+X.2 Pembuktian: Representasi Lore Konsisten dengan Mekanik
+Region
+Tema Lore
+Mekanik Merepresentasikannya Karena
+Nirwasita
+Bersembunyi demi selamat
+Navigasi sengaja dipersulit — kota secara harfiah menolak ditemukan
+Kadewan
+Ritual tanpa makna
+Efek battle terjadi otomatis tanpa niat siapa pun — persis ritual kosong
+Smarana
+Menjual kelupaan
+Mata uangnya secara harfiah adalah ingatan yang dijual
+Wanasunya
+Memilih pergi
+Jalur yang dilalui menghilang — dunia "melupakan" jejak pemain sendiri
+Kalamrtu
+Dihapus dari catatan
+Prasasti (catatan) masih aktif meski tak terbaca — kutukan yang bertahan
+Himagiri
+Menolak mengakui akhir
+Hasil ditentukan tata krama — dunia lama yang formalitasnya masih berlaku
+Rajawani
+Diingat sebagai barang
+Kekuatan musuh dihitung dari nilai barang, bukan cerita
+Jaladri
+Memilih pecah
+Avatar didapat sebagai pecahan tersebar — koleksi meniru fragmentasi
+Anawil
+Sebelum bahasa
+UI kehilangan kata-kata secara harfiah
+
+Kesimpulan validasi: Tidak ada mekanik yang generik lalu ditempeli tema. Kesembilannya diturunkan langsung dari kalimat inti wajah kelupaan masing-masing. Validasi lolos.
+X.3 Validasi Ending — Diperluas ke Kondisi Pemain Per Region
+Sebelumnya, hanya 3 ending GLOBAL (GDD v3 §5.5) yang terdefinisi. Revisi ini menambahkan resolusi per-region berbasis kondisi pemain — total sekarang 9 titik keputusan region ditambah 3 ending global, bukan cuma 3.
+
+Region
+Jenis Variasi
+Mempengaruhi Ending Global?
+Nirwasita
+Binary (misi Adi)
+Ya — syarat Ending B/C
+Kadewan
+Binary (efisiensi vs makna)
+Ya — dialog tambahan di Ending B/C
+Smarana
+Binary (jual vs tidak)
+Tidak langsung — pengaruh ke Ensiklopedia saja
+Wanasunya
+Binary (beri tahu keluarga)
+Ya — muncul di dialog Ending B/C (sudah tercatat di GDD v3)
+Kalamrtu
+Binary (ungkap sisi kelam)
+Tidak langsung — pengaruh ke Ensiklopedia
+Himagiri
+Non-combat resolution (sudah unik)
+Tidak langsung
+Rajawani
+Kondisional bertingkat (jumlah Warisan)
+Tidak langsung
+Jaladri
+Binary (satukan Anjala Nirmala)
+Ya — menentukan apakah Sukma tersedia untuk finale
+Anawil
+Sama dengan Ending Global
+Adalah ending itu sendiri
+
+Kesimpulan validasi: Struktur ending sudah "multiple berdasarkan kondisi pemain" di level region (9 titik) DAN di level global (3 ending) — dua lapis, bukan satu. Ini yang diminta di instruksi terbaru, dan sudah terpenuhi setelah revisi ini — sebelumnya v2.0 hanya punya 3 global tanpa validasi eksplisit variasi per-region.
+
+
+BAGIAN XI — STATUS ELEMEN STANDAR WORLD MAP RPG
+Sembilan rekomendasi di v3.0 — status setelah v4.0:
+
+#
+Elemen Standar
+Status v3.0
+Status v4.0
+1
+Peta koordinat/travel time antar region
+Tidak ada
+Selesai — lihat Bagian IX-B.1
+2
+Fast Travel Point per zona
+Tidak ada
+Selesai — dikonfirmasi per region (Sesajen, 1 per zona)
+3
+Level gate eksplisit per zona
+Sebagian
+Selesai — tabel level minimum tiap zona region 3-9
+4
+Weather/waktu dinamis dunia
+Tidak ada
+Selesai — siklus siang-malam per region, termasuk Anawil yang sengaja dikecualikan sesuai mekanik "Tanpa Kata"
+5
+Hidden area/secret zone per region
+Sebagian
+Selesai — 1 area tersembunyi bernama per region (11 total)
+6
+NPC vendor/toko per region
+Tidak ada
+Selesai — 1 vendor per region (10; Anawil sengaja tanpa vendor)
+7
+Legenda/simbol peta
+Tidak ada
+Selesai — lihat Bagian IX-B.2
+8
+Dokumen Item terpisah
+Belum ada
+Masih tertunda — dikonfirmasi dikerjakan setelah World Bible & karakter final
+9
+Nama NPC Mission Jaladri
+Placeholder
+Selesai — Kapten Ndiru
+
+Tujuh dari sembilan selesai di revisi ini. Yang benar-benar tersisa terbuka hanya nomor 8, dan itu sudah disepakati sebagai pekerjaan tahap berikutnya, bukan kekosongan yang terlewat.
+Catatan Desain: Pengecualian yang Disengaja
+Dua region sengaja tidak mengikuti pola penuh, dan ini konsisten dengan mekanik signature masing-masing, bukan kelalaian:
+
+Anawil tanpa siklus siang-malam bertekstual dan tanpa NPC Vendor — keduanya konsisten dengan Mekanik "Tanpa Kata". Menambahkan vendor dengan dialog transaksi akan bertentangan langsung dengan premis "region tanpa antarmuka bicara".
+Jaladri: Kapten Ndiru merangkap NPC Mission dan Vendor — satu-satunya region dengan peran ganda eksplisit. Ini disengaja: Jaladri bertema "banyak dari satu" (Anjala Nirmala pecah jadi ribuan), jadi satu NPC yang memegang dua fungsi sekaligus adalah gema kecil dari tema besarnya.
+
+
+PERTANYAAN YANG PERLU DIJAWAB
+GDD v3 Bab 1-4 perlu direvisi mengikuti Guide Karakter (nama lama Pandu Batu/Lampah Sesat Agung/Kalawangsa/Nakhoda Wirajaya harus diganti Nirsmara/Sang Werdi dan seterusnya di GDD v3 sendiri) — World Bible sudah konsisten, GDD v3 belum. Siapa mengerjakan, kapan?
+Dokumen Item — kapan tepatnya "setelah World Bible & karakter final"? Perlu kriteria konkret supaya "final" tidak jadi tanggal yang terus mundur.
+Apakah waktu tempuh perlu disinkronkan dengan kalender? Terjawab di v5.0, lihat Bagian IX-C.6.
+Baru: Dialog "dua kalender yang tidak sinkron" di Himagiri (Bagian IX-C.2) direkomendasikan masuk sebagai beat penulisan eksplisit di GDD v3 — siapa yang menulis dialognya, dan apakah ini masuk cerita utama atau Titah Sampingan?
+Baru: Apakah tanggal SL ~383 (keruntuhan Himagiri) dan TL 117 (mulai cerita) sudah final, atau masih bisa bergeser tergantung kebutuhan pacing 5 bab GDD v3?
+
+
+
+World Bible v5.0 — Worldmap Guidebook · Agustus 2026 Status: GUIDEBOOK. Nirwasita & Kadewan berstatus FINAL (memakai Guide Karakter). Kalender dunia (Tarikh Laras) ditambahkan — cerita dimulai TL 117. GDD v3 Bab 1-4 masih perlu menyusul — dicatat di atas, tidak lagi memblokir dokumen ini.
+

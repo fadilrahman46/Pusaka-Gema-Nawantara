@@ -1,0 +1,986 @@
+WORLD BIBLE — EKSPANSI
+PUSAKA: GEMA NAWANTARA
+Sembilan Wajah Kelupaan
+Versi: 2.0 (Revisi — Selaras dengan Panduan Karakter 100) Status: 🟡 GUIDANCE ONLY — bukan rencana produksi, bukan backlog Dokumen induk: GDD_v3_Pusaka_Gema_Nawantara.md · PANDUAN_KARAKTER_100_Nawantara.md Tanggal: Agustus 2026
+
+
+⛔ BACA INI SEBELUM APA PUN — CATATAN REVISI
+Apa yang berubah dari v1.0
+#
+Perubahan
+Alasan
+1
+Sembilan nama region diganti total mengikuti kanon Panduan Karakter: Nirwasita, Kadewan, Smarana, Wanasunya, Kalamrtu, Himagiri, Rajawani, Jaladri, Anawil
+Pemetaan nama sudah diputuskan resmi di Panduan Karakter §Pemetaan Region. Dokumen ini mengikutinya, bukan mengulang perdebatan yang sama.
+2
+Roster 25-avatar-per-region versi lama DIHAPUS, diganti rujukan langsung ke Panduan Karakter
+Roster lama (Buaya Putih Palu, Panglima Burung, Si Pahit Lidah, dst.) sudah digantikan total oleh 100 karakter di Panduan Karakter dengan nama, jumlah tier, dan struktur skill yang berbeda. Mempertahankan keduanya berarti dua kanon yang bertabrakan — persis masalah yang sudah diperingatkan Panduan Karakter §1.5 soal dokumen ini sendiri.
+3
+Item & Misi per-region diringkas jadi "arah desain", bukan tabel lengkap 25/20 entri
+Tabel lama terikat ke nama avatar lama yang sudah tidak ada. Menulis ulang 175 item + 140 misi agar cocok dengan 100 karakter baru adalah pekerjaan produksi penuh, bukan pekerjaan revisi dokumen guidance. Ditandai eksplisit sebagai belum dikerjakan, bukan disembunyikan.
+4
+Matriks Sensitivitas Bagian X diringkas — sensitivitas per-karakter sekarang tunggal di Panduan Karakter Lampiran B (lebih lengkap & terikat langsung ke 100 nama aktual)
+Dua daftar sensitivitas untuk nama yang berbeda-beda adalah risiko, bukan kehati-hatian ganda. Satu sumber kebenaran per jenis data.
+5
+Storyline & antagonis per-region dipetakan ke karakter Legendary aktual yang sudah punya lore lengkap di Panduan Karakter
+Storyline lama menyebut tokoh yang tidak lagi eksis di roster (mis. "Datu Pasar", "Raja Bunian"). Sekarang storyline memakai karakter yang benar-benar ada, dengan kecocokan tematik yang sudah diperiksa satu per satu (lihat tabel §0.2).
+6
+Total roster naik dari 83 → 100 (catatan: dokumen ini ditulis mengikuti Panduan Karakter v0.2 dengan 100 karakter final)
+—
+0.2 Peta Kecocokan Antagonis (Legendary Lama vs Baru)
+Region
+Antagonis/Apex lama
+Karakter Legendary Panduan Karakter
+Kecocokan tema
+Smarana (eks-Saranjana)
+Datu Pasar, Sang Juragan
+Juragan Larung (Human/Bayu/Attacker)
+"Juragan" = gelar pedagang; "Larung" = melepas ke air — pas untuk kota yang menjual ingatan
+Wanasunya (eks-Rimba Terlarang)
+Raja Bunian
+Sang Lengang (Beast/Pertiwi/CC)
+"Lengang" = sunyi/kosong — pas untuk tema "memilih dilupakan"
+Kalamrtu (eks-Sriwijaya)
+Si Pahit Lidah
+Sang Wiranata (Human/Apah/Tank)
+Raja-pahlawan sungai yang menanggung kutukan catatan yang hilang
+Himagiri (eks-Kutagiri)
+Sang Prabu Terakhir
+Prabu Wisesa Girinatha (Human/Teja/Tank)
+Kecocokan langsung — lore Panduan Karakter untuk karakter ini SUDAH ditulis persis sebagai "raja yang menolak mengakui kerajaannya berakhir"
+Rajawani (eks-Tanah Para Raja)
+Sang Penjaga Rempah
+Sang Harga (Ghost/Akasa/CC)
+"Harga" = nilai tukar — pas untuk tema komodifikasi/"diingat sebagai barang"
+Jaladri (eks-Anak-anak Laut)
+Abu Tambora / Putri Mandalika
+Naga Sasra (kekuatan penghancur) + Anjala Nirmala, UR (figur yang memilih pecah)
+Peran dibagi dua karakter alih-alih satu
+Anawil (eks-Surga Terakhir)
+Gema Purba (tanpa antagonis)
+Sang Gema Purwa (Spirit/Akasa/Support)
+Kecocokan nyaris sempurna — namanya sendiri berarti "gema purba/pertama"
+
+Tabel ini adalah kerja inti dari revisi ini. Tujuh storyline di bawah ditulis ulang mengacu ke kolom kanan, bukan kolom kiri.
+
+
+DAFTAR ISI
+I. Arsitektur Naratif: Sembilan Wajah Kelupaan
+II. Struktur Season & Progresi Lintas-Region
+III. Region 3 — SMARANA
+IV. Region 4 — WANASUNYA
+V. Region 5 — KALAMRTU
+VI. Region 6 — HIMAGIRI
+VII. Region 7 — RAJAWANI
+VIII. Region 8 — JALADRI
+IX. Region 9 — ANAWIL
+X. Sensitivitas Budaya — Rujukan, Bukan Duplikat
+XI. Konsekuensi Produksi & Rekomendasi Jalur Realistis
+
+
+I. ARSITEKTUR NARATIF: SEMBILAN WAJAH KELUPAAN
+I.1 Masalah yang Harus Dipecahkan
+(tidak berubah dari v1.0) Sembilan region dengan satu tema yang sama akan terasa monoton di region ke-4. Solusinya: setiap region adalah cara berbeda untuk dilupakan, bukan pengulangan tema yang sama.
+I.2 Tabel Induk: Sembilan Wajah (nama diperbarui)
+#
+Region
+Wajah Kelupaan
+Kalimat Inti
+Pertanyaan ke Pemain
+1
+Nirwasita
+Dilupakan sebagai perlindungan
+"Kami bersembunyi supaya selamat."
+Apakah kamu berhak memaksa seseorang terlihat?
+2
+Kadewan
+Diingat tanpa makna
+"Kami masih dipanggil, tapi tidak lagi dimengerti."
+Apa bedanya ritual dan kebiasaan?
+3
+Smarana
+Memanen yang dilupakan
+"Kelupaan kalian adalah dagangan kami."
+Apakah keuntungan bisa dibangun di atas hilangnya orang lain?
+4
+Wanasunya
+Memilih dilupakan
+"Kami pergi. Jangan cari kami."
+Apakah orang berhak memilih menghilang?
+5
+Kalamrtu
+Dihapus dari catatan
+"Kami ada. Buktinya hilang, bukan kami."
+Apakah sesuatu nyata jika tidak ada yang mencatatnya?
+6
+Himagiri
+Menolak mengakui berakhir
+"Kerajaan ini belum runtuh. Kalian saja yang pergi."
+Kapan sebuah akhir harus diakui?
+7
+Rajawani
+Diingat sebagai barang
+"Mereka ingat rempah kami. Bukan kami."
+Apakah diingat salah lebih baik daripada dilupakan?
+8
+Jaladri
+Memilih menjadi banyak
+"Aku pecah agar tak seorang pun memilikiku."
+Apakah kehilangan diri bisa menjadi kemenangan?
+9
+Anawil
+Ingatan sebelum bahasa
+"Kami tidak pernah lupa. Kalian yang belum pernah tahu."
+Apakah kelupaan selalu buruk?
+
+Region 1 & 2 (Nirwasita, Kadewan) adalah region v1.0 di GDD induk — tidak dibahas ulang di sini. World Bible ini fokus di region 3–9 (ekspansi).
+I.3 Meta-Arc (tidak berubah struktur, hanya konsisten dengan nama baru)
+BATU 1–5 (v1.0)   Pusaka Gema memiliki 5 batu = 5 elemen. Pemain
+                  memulihkan keseimbangan lokal di Nirwasita & Kadewan.
+                        │
+                        ▼
+GEMA KEDUA        Segel retak — bukan karena gagal, karena Sang Sunyi
+                  bukan makhluk yang bisa dikalahkan sekali.
+                        │
+                        ▼
+SEMBILAN GEMA     Pusaka Gema ternyata sembilan, bukan lima. Empat
+                  pecahan tersebar di Smarana, Wanasunya, Kalamrtu,
+                  Himagiri, Rajawani, Jaladri, Anawil.
+                        │
+                        ▼
+FINALE (Anawil)   Lukisan purba menunjukkan kalung berlima batu —
+                  digambar sebelum ada tulisan. Sang Sunyi bukan
+                  musuh perjanjian; ia SYARAT perjanjian.
+                        │
+                        ▼
+PILIHAN AKHIR     Ingat Semua / Lupakan Semua / Bagi Rata
+                  (konsisten dengan struktur 3-ending GDD v3 §5.5)
+
+
+II. STRUKTUR SEASON & PROGRESI LINTAS-REGION
+II.1 Pembagian Season (nama diperbarui)
+Season
+Region
+Fokus Tematik
+Estimasi Jam
+S1 — Gema Pertama (v1.0)
+Nirwasita, Kadewan
+Bersembunyi vs kosong
+20
+S2 — Gema Dagang
+Smarana, Wanasunya
+Kelupaan sebagai transaksi & pilihan
+14
+S3 — Gema Batu
+Kalamrtu, Himagiri
+Kelupaan sebagai penghapusan & penyangkalan
+14
+S4 — Gema Garam
+Rajawani, Jaladri
+Kelupaan sebagai reduksi & pengorbanan
+14
+FINALE — Gema Purba
+Anawil
+Pembalikan tesis
+10
+II.2 Masalah Progresi & Solusinya
+(tidak berubah dari v1.0) Level cap tetap 100. Progresi lanjutan pakai Tingkat Gema (TG1–TG5), bukan level tak terbatas.
+
+Catatan revisi: Panduan Karakter menambahkan tier Legendary (1 per region, 9 total) yang tidak ada di kerangka TG awal. Selaraskan: Legendary = unit puncak per region, diperoleh di akhir TG yang sesuai dengan region tersebut (mis. Legendary Anawil hanya bisa diperoleh di TG4–5, sesuai posisi Anawil sebagai finale). Ini konsisten dengan cara akuisisi Legendary di Panduan Karakter — bukan lewat pertarungan biasa, tapi lewat pemahaman/penyaksian.
+II.3 Urutan Akses (tidak berubah, nama diperbarui)
+        [S1 SELESAI — Nirwasita & Kadewan]
+              │
+    ┌─────────┴─────────┐
+    ▼                   ▼
+ SMARANA            WANASUNYA           (S2 — bebas urutan, TG1)
+    └─────────┬─────────┘
+              ▼
+    ┌─────────┴─────────┐
+    ▼                   ▼
+KALAMRTU            HIMAGIRI            (S3 — bebas urutan, TG2)
+    └─────────┬─────────┘
+              ▼
+    ┌─────────┴─────────┐
+    ▼                   ▼
+ RAJAWANI            JALADRI            (S4 — bebas urutan, TG3)
+    └─────────┬─────────┘
+              ▼
+        ANAWIL                          (FINALE — TG4, wajib 8 region)
+II.4 Aturan Desain Roster Lintas-Region (diperbarui total, mengikuti Panduan Karakter)
+Aturan lama ("5 avatar per elemen per region", "25 avatar per region") sudah tidak berlaku. Aturan yang berlaku sekarang mengikuti Panduan Karakter:
+
+Rarity = kesulitan mendapatkan, bukan peluang. Tidak ada RNG akuisisi di seluruh 100 karakter.
+Setiap region punya 1 karakter Legendary — puncak koleksi region, didapat dengan memahami/menyaksikan, bukan mengalahkan.
+Super Rare & Ultra Rare boleh lebih dari 1 per region (diputuskan dalam revisi Panduan Karakter terakhir) — lencana ⭐ Wajah Region tetap eksklusif hanya untuk 9 karakter SR asli, bukan seluruh SR/UR baru.
+Distribusi role & elemen per region tidak lagi wajib merata sempurna — Panduan Karakter §1.2 mencatat deviasi ±1 sebagai target realistis untuk kategori/role, dan proporsi bebas untuk elemen di tiap region selama peringatan dominasi Akasa (lihat §1.2 Panduan Karakter) dipatuhi di level roster keseluruhan.
+Roster definitif ada di Panduan Karakter, bukan di sini. World Bible tidak lagi menyimpan salinan nama/skill karakter — hanya rujukan.
+
+
+III. REGION 3 — SMARANA
+Kota yang Menjual Kelupaan
+Wajah Kelupaan: Memanen yang dilupakan · Season: S2 · TG1 Identitas roster (Panduan Karakter): proporsi merata, dengan tambahan Beast/Support di revisi terakhir
+III.1 Storyline
+Smarana tidak bersembunyi seperti Nirwasita. Smarana berdagang.
+
+Kota ini menemukan sesuatu yang tidak diketahui kota gaib lain: hal-hal yang dilupakan dunia tidak lenyap — mereka jatuh. Dan Smarana berdiri tepat di bawahnya. Nama yang tak lagi disebut, jalan yang tak lagi dilalui, orang yang tak lagi dicari — semuanya berakhir di pelabuhan Smarana, dan di sana mereka punya harga.
+
+Konflik: Pemain tiba mencari pecahan Pusaka Gema. Ia menemukannya — dipajang di balai lelang, dengan harga.
+
+Antagonis: Juragan Larung (Legendary, Human/Bayu/Attacker — lihat §0.2). Bukan penjahat. Seorang pedagang yang argumennya sulit dibantah: "Kami tidak membuat dunia lupa. Kami hanya memungut yang mereka jatuhkan." Namanya sendiri menyimpan ironi: "Larung" adalah ritual melepas sesuatu ke air agar pergi selamanya — persis yang ia lakukan pada setiap ingatan yang ia perdagangkan, sebelum ia sendiri menjualnya kembali.
+
+Titik balik: Pemain menemukan bahwa yang diperdagangkan bukan hanya benda. Ada orang di gudang Smarana — yang tidak dicari siapa pun, dan karena itu, secara hukum kota ini, mereka adalah barang tak bertuan.
+
+Boss Region: Juragan Larung, lalu Gema Smarana — bukan sosok, melainkan kota itu sendiri melawan untuk mempertahankan modalnya.
+
+Ending region: Pemain memaksa kota membuka daftar inventarisnya. Kemakmuran Smarana runtuh dalam semalam. Ratusan penduduk tak bersalah kehilangan penghidupan. Kemenangan yang mahal.
+III.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+S1
+Muara Larung
+TG1
+Coklat keruh, jingga senja, layar perahu
+Ramai, dagang
+S2
+Rawa Gambut Hitam
+TG1
+Hitam air, hijau lumut, kabut rendah
+Lembab, menekan
+S3
+Hutan Ulin Sunyi
+TG1
+Hijau gelap berlapis, batang raksasa
+Purba, rimbun
+S4
+Pasar Terapung Tak Berujung
+TG2
+Warna kain penuh, lentera
+Meriah, terlalu meriah
+S5
+Gudang Bawah Air
+TG2
+Biru gelap, kilau intan, rak tak berujung
+Dingin, salah
+S6
+Kota Intan Smarana
+TG3
+Putih kapur, emas, biru laut
+Megah, dingin
+S7
+Balai Lelang Agung
+TG3
+Merah kain, emas, satu sorot cahaya
+Final, teatrikal
+III.3 Mekanik Signature: NERACA DAGANG (tidak berubah)
+Smarana hanya menerima Ingatan sebagai alat tukar. Pemain dapat "menjual" Batu Gema untuk membeli akses/item/informasi — dan setiap yang dijual hilang permanen dari Ensiklopedia, NPC terkait tidak lagi mengingatnya. Beberapa jalur cerita hanya terbuka dengan menjual ingatan tertentu, memaksa pemain memilih apa yang rela ia lupakan.
+
+Peringatan implementasi tidak berubah: mekanik ini menuntut sistem dialog bercabang yang sadar-state. Jangan diimplementasikan sebelum editor dialog internal selesai (GDD v3 §14.4).
+III.4 Roster — Rujukan ke Panduan Karakter
+Roster lengkap Smarana (nama, tier, tipe, elemen, role, skill, lore) ada di Panduan Karakter, bukan di sini. Ringkasan struktur untuk konteks region:
+
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+—
+Rare
+1
+—
+Super Rare
+2
+⭐ Sagara Buih (Wajah Region, Spirit/Apah/CC) + 1 tambahan (Beast/Teja/Support)
+Ultra Rare
+2
+Datu Kalimpan (Ghost/Akasa/CC) + 1 tambahan (Human/Pertiwi/Tank)
+Legendary
+1
+Juragan Larung (antagonis region — lihat §III.1)
+III.5 Item — Arah Desain (bukan tabel final)
+🟡 Belum dirancang penuh. Prinsip yang wajib dipegang saat perancangan dilakukan:
+
+Tema "harga/nilai tukar" harus tercermin di minimal 1 item per tier (mis. efek yang menguat sebanding jumlah Batu Gema yang dijual, bukan dikumpulkan — kebalikan dari pola item region lain).
+Senjata & Pusaka Ultra Rare sebaiknya terikat ke Juragan Larung atau Gema Smarana, bukan avatar acak.
+III.6 Misi — Arah Desain (bukan tabel final)
+🟡 Belum dirancang penuh. Struktur wajib: 3 tingkat (Mudah/Menengah/Sulit), total 15–20 misi, dengan minimal 1 misi yang memaksa pemain menjual Batu Gema untuk membuka jalur (sesuai Mekanik Signature §III.3) dan 1 misi penebusan pasca-tamat (menebus kembali ingatan yang terjual).
+III.7 Elemen Budaya
+Rumah Bubungan Tinggi · Pasar Terapung · Kain celup ikat · Mandau & perisai kayu · Rumah rakit · Praktik penyembuhan komunal · Intan & perdagangan sungai · Fauna: bekantan, beruang madu, pesut, macan dahan, burung enggang
+
+Audio: Gong bilah, kecapi, perkusi bambu, ambient air.
+
+
+IV. REGION 4 — WANASUNYA
+Mereka yang Memilih Pergi
+Wajah Kelupaan: Memilih dilupakan · Season: S2 · TG1
+IV.1 Storyline
+Kaum Lengang tidak menculik. Mereka menawarkan — dan yang mereka tawarkan hanya menarik bagi orang yang tidak lagi ingin dicari. Mereka masuk ke hutan, dan hutan menutup di belakang mereka. Bukan penjara. Kelegaan.
+
+Konflik: Pecahan Pusaka Gema dipegang seseorang yang tidak mau mengembalikannya — karena mengembalikannya berarti kembali diingat.
+
+Antagonis: Sang Lengang (Legendary, Beast/Pertiwi/CC — lihat §0.2). Kehendak hutan itu sendiri, dipersonifikasikan sebagai satwa raksasa — bukan sosok humanoid. Argumennya: "Kau bicara tentang memulihkan ingatan seolah itu hadiah. Tanyakan pada mereka yang di sini apakah mereka ingin diingat oleh orang-orang yang membuat mereka pergi."
+
+Titik balik: Pemain bertemu seseorang yang masuk hutan puluhan tahun lalu dan memilih tetap tinggal, meski keluarganya masih mencari. Game tidak memberi jawaban benar soal memberi tahu keluarganya atau tidak.
+
+Boss Region: Sang Lengang — menyerang bukan untuk membunuh, tapi menguji apakah pemain benar-benar yakin.
+
+Ending region: Pemain diberi kunci gerbang, memilih siapa yang boleh keluar — konsekuensi muncul kembali di region lain.
+IV.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+W1
+Ladang Terakhir
+TG1
+Hijau sawah, coklat gonjong
+Damai, terlalu damai
+W2
+Rimba Batas
+TG1
+Hijau berlapis, kabut putih
+Rimbun, ambigu
+W3
+Danau Bening
+TG1
+Biru kelabu, kabut permukaan
+Sunyi, dalam
+W4
+Lembah Tanpa Jejak
+TG2
+Hijau minus kanal merah
+Salah secara halus
+W5
+Kampung Lengang
+TG2
+Emas hangat, kayu ukir
+Hangat, memikat
+W6
+Hutan Belang
+TG3
+Jingga senja, siluet belang
+Tegang, mengawasi
+W7
+Puncak Lengang
+TG3
+Abu vulkanik, awan
+Final, dingin, luas
+IV.3 Mekanik Signature: JEJAK YANG MENUTUP (tidak berubah)
+Peta tidak permanen — jalur yang sudah dilewati tertutup kembali setelah 3 ronde berjalan. Pemain meninggalkan Penanda (maks 5) untuk menjaga jalur. Avatar tipe Beast dapat mengendus jalur tertutup, mengurangi kebutuhan Penanda.
+
+Peringatan implementasi tidak berubah: wajib ada mekanisme keluar darurat. Prototipe wajib sebelum zona dibangun.
+IV.4 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+—
+Rare
+1
+—
+Super Rare
+3
+⭐ Niniak Belang (Wajah Region, Beast/Pertiwi/Tank) + 2 tambahan (Ghost/Pertiwi/Support · Spirit/Apah/Attacker)
+Ultra Rare
+1
+Sambilan Talago (Spirit/Apah/CC)
+Legendary
+1
+Sang Lengang (antagonis region — lihat §IV.1)
+IV.5 Item — Arah Desain
+🟡 Belum dirancang penuh. Prinsip: item bertema "menghilang/tidak terlacak" (mis. efek tak-bisa-jadi-target, penyamaran elemen) harus jadi ciri khas tier atas region ini, konsisten dengan Mekanik Signature Jejak yang Menutup.
+IV.6 Misi — Arah Desain
+🟡 Belum dirancang penuh. Wajib ada 1 misi pilihan tanpa jawaban benar (memberi tahu keluarga penghuni hutan atau tidak), konsisten dengan Titik Balik §IV.1, dengan konsekuensi yang tercatat lintas-region.
+IV.7 Elemen Budaya
+Rumah Gadang & atap gonjong · Songket · Senjata tradisional & aksara daun lontar · Boneka pengingat dalam festival fiktif · Silek · Danau & gunung pedalaman · Fauna: harimau, badak, tapir, siamang, rangkong, kucing hutan
+
+Audio: Saluang, talempong, rabab, gondang, taganing.
+
+
+V. REGION 5 — KALAMRTU
+Kerajaan yang Hilang dari Catatan, Bukan dari Tanah
+Wajah Kelupaan: Dihapus dari catatan · Season: S3 · TG2
+V.1 Storyline
+Sebuah imperium maritim yang begitu besar, lalu menghilang total dari ingatan sehingga selama ratusan tahun tidak ada yang tahu ia pernah ada. Dalam dunia game ini, itu bukan kebetulan sejarah — itu kasus pertama Sang Sunyi.
+
+Konflik: Reruntuhan Kalamrtu adalah tempat Sang Sunyi pertama kali berhasil. Yang tersisa adalah prasasti kutukan — batu berukir sumpah yang masih bekerja meski tidak ada lagi yang bisa membacanya.
+
+Antagonis: Sang Wiranata (Legendary, Human/Apah/Tank — lihat §0.2). Raja-pahlawan sungai yang menanggung sendiri beban catatan yang hilang. Ia tidak bisa mencabut kutukan, karena ia sendiri sudah lupa kalimat aslinya.
+
+Titik balik: Mengembalikan ingatan Kalamrtu berarti mengembalikan seluruh ingatan — termasuk kekejaman yang dilakukan kerajaan itu sendiri.
+
+Boss Region: Sang Wiranata, lalu Gema Kedatuan — arwah kolektif kerajaan yang tidak ingin diingat secara utuh.
+
+Ending region: Pemain memutuskan versi mana yang dicatat. Teks Ensiklopedia berubah permanen sesuai keputusan pemain.
+V.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+K1
+Muara Wira
+TG2
+Coklat sungai, merah bata, jingga
+Ramai, hidup
+K2
+Pulau Dua Nama
+TG2
+Merah pagoda, hijau, air keruh
+Sakral, campuran
+K3
+Rawa Bakau Purba
+TG2
+Hijau lumpur, akar tinggi
+Labirin, purba
+K4
+Bukit Sunggara
+TG3
+Hijau bukit, batu abu
+Sunyi, agung
+K5
+Ladang Prasasti
+TG3
+Abu batu dengan teks bercahaya
+Kutukan aktif
+K6
+Pelabuhan Bawah Lumpur
+TG3
+Coklat gelap, siluet kapal
+Terkubur, luas
+K7
+Balai Kedatuan
+TG4
+Emas pudar, merah, lantai batu
+Final, kosong
+V.3 Mekanik Signature: AKSARA KUTUKAN (tidak berubah)
+Prasasti masih berfungsi dan memberi debuff global per zona. Pemain menonaktifkannya dengan mini-game menyusun aksara, atau membiarkannya aktif karena kutukan tertentu juga melemahkan boss zona. Avatar Human dengan Kitab membaca sebagian aksara tanpa mini-game.
+V.4 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+—
+Rare
+2
+Termasuk Rahib Kalpa (Ghost/Teja/Attacker) — figur ordo fiktif terkait prasasti
+Super Rare
+2
+⭐ Lidah Watu (Wajah Region, Human/Pertiwi/CC) + 1 tambahan (Beast/Bayu/Attacker)
+Ultra Rare
+2
+Sekar Kemarung (Ghost/Apah/Support) + 1 tambahan (Spirit/Teja/Attacker)
+Legendary
+1
+Sang Wiranata (antagonis region — lihat §V.1)
+V.5 Item — Arah Desain
+🟡 Belum dirancang penuh. Prinsip: minimal 1 item per tier bertema "membaca/menahan kutukan" (selaras Mekanik Signature), dan item Human-only sebaiknya berinteraksi langsung dengan sistem Aksara Kutukan.
+V.6 Misi — Arah Desain
+🟡 Belum dirancang penuh. Wajib ada 1 misi yang membuka "sisi lain" kerajaan (bukti kekejaman historisnya) sebagai syarat menuju ending alternatif region, konsisten dengan Titik Balik §V.1.
+V.7 Elemen Budaya
+Rumah Limas · Songket & kain jumputan · Prasasti fiktif (jangan mengarang terjemahan menyerupai prasasti nyata) · Arsitektur maritim-religius fiktif · Megalit pedalaman
+
+Audio: Gamelan pesisir, akordeon Melayu, gambus, drone untuk zona reruntuhan.
+
+
+VI. REGION 6 — HIMAGIRI
+Istana yang Menolak Mengakui Ia Sudah Runtuh
+Wajah Kelupaan: Menolak mengakui berakhir · Season: S3 · TG2
+VI.1 Storyline
+Di puncak gunung berdiri sebuah keraton yang seharusnya tidak ada. Lima ratus tahun lalu sebuah kerajaan runtuh — rajanya tidak menyerah, tidak melarikan diri, dan tidak mati. Ia naik gunung, dan terus memerintah.
+
+Konflik: Pecahan Pusaka Gema adalah bagian regalia keraton. Memintanya kembali sama dengan meminta raja mengakui kerajaannya tidak ada lagi.
+
+Antagonis: Prabu Wisesa Girinatha (Legendary, Human/Teja/Tank — lihat §0.2, kecocokan langsung). Sepenuhnya sadar tidak ada rakyat, tapi menjalankan upacara harian karena selama upacara berlangsung, kerajaan itu belum resmi berakhir.
+
+Titik balik: Pemain menemukan Pasar Lengang — pasar hantu tempat penduduk asli kerajaan berkumpul, yang sudah lama menerima semuanya berakhir. Yang menahan mereka bukan Sang Sunyi — kesetiaan pada raja yang tidak bisa melepaskan.
+
+Boss Region: Prabu Wisesa Girinatha — pertarungan tiga fase yang sengaja terasa menyedihkan, bukan epik.
+
+Ending region: Pemain tidak mengalahkan raja. Pemain menghadiri upacara terakhirnya, menjadi satu-satunya saksi.
+VI.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+H1
+Lereng Kabut
+TG2
+Hijau teh, kabut pagi
+Sejuk, tenang
+H2
+Hutan Pinus Bisu
+TG2
+Hijau-abu vertikal
+Berulang, disorientasi
+H3
+Candi Bertingkat
+TG2
+Batu andesit, lumut, relief
+Kuno, misterius
+H4
+Pasar Lengang
+TG3
+Warna penuh tanpa bayangan
+Ramai, salah, hangat
+H5
+Sendang Tujuh
+TG3
+Biru jernih, uap
+Sakral, sunyi
+H6
+Gerbang Puncak
+TG3
+Abu awan, merah kain, obor
+Formal, dingin
+H7
+Keraton Himagiri
+TG4
+Emas pudar, jati gelap, lilin
+Megah, kosong, sedih
+VI.3 Mekanik Signature: TATA KRAMA (tidak berubah)
+Perilaku pemain di luar pertarungan menentukan hasil pertarungan. Melanggar tata krama menaikkan meter Kelancangan (pasukan bertarung dengan buff, NPC menutup informasi). Mengikuti tata krama membuka dialog eksklusif.
+
+Peringatan implementasi tidak berubah: sistem paling mahal dalam penulisan dialog di seluruh dokumen. Butuh playtest paling intensif.
+VI.4 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+Termasuk Sabdaguna (Spirit/Pertiwi/Support) — "penasihat yang berkata jujur kepada kekuasaan"
+Rare
+2
+—
+Super Rare
+2
+⭐ Sang Giripawana (Wajah Region, Spirit/Akasa/CC) + 1 tambahan (Ghost/Bayu/Support)
+Ultra Rare
+1
+1 karakter baru (Spirit/Teja/Attacker) — mengisi celah UR yang sebelumnya kosong di region ini
+Legendary
+1
+Prabu Wisesa Girinatha (antagonis region — lihat §VI.1)
+
+Pasif Sabdaguna dan lore Prabu Wisesa Girinatha di Panduan Karakter sudah saling merujuk (bonus durasi buff jika keduanya satu tim) — pertahankan hubungan mekanis ini di narasi mana pun yang menampilkan keduanya.
+VI.5 Item — Arah Desain
+🟡 Belum dirancang penuh. Prinsip: item bertema "penundaan/pembekuan" (selaras Mekanik Signature §VI.3 dan benang merah skill "menunda, mengulang, membekukan" dari Panduan Karakter) harus dominan di tier atas.
+VI.6 Misi — Arah Desain
+🟡 Belum dirancang penuh. Wajib ada 1 misi "menjadi saksi" tanpa pertarungan sebagai jalur menuju ending sejati region, konsisten dengan cara akuisisi Prabu Wisesa Girinatha di Panduan Karakter (menyaksikan upacara penutup tanpa menyerang).
+VI.7 Elemen Budaya
+Keraton & pendopo · Keris & pamor · Batik · Relief candi fiktif · Pasar hantu · Tata krama & bahasa berjenjang · Tembang · Fauna: burung pemandu, kijang, macan tutul
+
+Audio: Gamelan (slendro & pelog), rebab, gender, suling, sinden. Risiko produksi audio terendah di antara 7 region ekspansi — sample tersedia baik.
+
+
+VII. REGION 7 — RAJAWANI
+Diingat sebagai Barang, Dilupakan sebagai Bangsa
+Wajah Kelupaan: Diingat sebagai barang · Season: S4 · TG3
+VII.1 Storyline
+Dunia tidak melupakan region ini — dunia mengingatnya dengan salah. Selama berabad-abad tempat ini satu-satunya penghasil rempah yang diperebutkan dunia. Yang diingat dunia adalah rempahnya. Bukan kesultanannya, bukan hukum lautnya, bukan bahasanya.
+
+Konflik: Pecahan Pusaka Gema tenggelam bersama desa yang dikutuk dan tidak ada dalam catatan mana pun.
+
+Antagonis: Sang Harga (Legendary, Ghost/Akasa/CC — lihat §0.2). Roh yang lahir dari perdagangan itu sendiri — begitu kuat sehingga sekarang ia yang mendefinisikan apa itu region ini. Namanya sendiri adalah pernyataan tema: nilai tukar yang menggantikan identitas.
+
+Titik balik: Untuk mengalahkannya, pemain harus mengumpulkan hal yang tidak bisa diperdagangkan — syair, aturan adat, nama seorang anak.
+
+Boss Region: Sang Harga — setiap "barang" yang pemain bawa justru memperkuatnya.
+
+Ending region: Para pemimpin bersatu bukan untuk berperang, tapi untuk mencatat.
+VII.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+R1
+Pelabuhan Rempah
+TG3
+Coklat kayu, jingga rempah
+Ramai, wangi
+R2
+Kebun Tua
+TG3
+Hijau gelap, batang tua
+Teduh, sunyi
+R3
+Benteng Karang
+TG3
+Abu batu, lumut
+Kolonial, keras
+R4
+Lereng Gunung Api
+TG4
+Hitam vulkanik, jingga bara
+Panas, hidup
+R5
+Danau Diam
+TG4
+Hijau tak wajar, permukaan sempurna
+Diam, terkutuk
+R6
+Puncak Warima
+TG4
+Biru langit, hijau tinggi
+Tinggi, agung, sepi
+R7
+Balai Empat Penguasa
+TG5
+Emas, merah, putih
+Final, luas
+VII.3 Mekanik Signature: YANG TAK TERJUAL (tidak berubah)
+Sistem inventaris paralel: Warisan (syair, aturan adat, teknik, nama) yang tidak bisa dijual/dibuang/memberi stat — hanya bisa diberikan ke NPC yang tepat, dan setiap yang tersebar melemahkan Sang Harga secara permanen (menghapus 1 fase pertarungan).
+VII.4 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+—
+Rare
+1
+—
+Super Rare
+2
+⭐ Nyai Bokira (Wajah Region, Ghost/Akasa/Attacker) + 1 tambahan (Spirit/Bayu/Support)
+Ultra Rare
+2
+Datu Honggi (Human/Akasa/Attacker) + 1 tambahan (Beast/Pertiwi/Tank)
+Legendary
+1
+Sang Harga (antagonis region — lihat §VII.1)
+
+⚠️ Region ini sudah 3 karakter Akasa di tier tinggi (Nyai Bokira, Datu Honggi, Sang Harga) — persis peringatan dominasi Akasa di Panduan Karakter §1.2. Elemen tambahan di revisi terakhir sengaja dijauhkan dari Akasa (Bayu, Pertiwi). Jangan tambahkan Akasa lagi ke region ini.
+VII.5 Item — Arah Desain
+🟡 Belum dirancang penuh. Prinsip: item bertema "nilai/harga" — mis. efek yang skalanya bergantung jumlah item lain yang dipakai tim (echo skill pamungkas Sang Harga di Panduan Karakter).
+VII.6 Misi — Arah Desain
+🟡 Belum dirancang penuh. Wajib ada rantai misi pengumpulan Warisan (selaras Mekanik Signature §VII.3) sebagai jalur utama melemahkan boss, bukan jalur opsional.
+VII.7 Elemen Budaya
+Kesultanan kepulauan fiktif · Perahu perang tradisional · Senjata & perisai tradisional · Benteng pesisir · Legenda danau terkutuk · Permainan kekuatan berbasis bambu · Rempah · Fauna: burung cendrawasih-adjacent, kakatua, kuskus, buaya muara
+
+Audio: Tifa, gong logam, kerang tiup, suling bambu, vokal berlapis. Rekaman live sangat disarankan.
+
+
+VIII. REGION 8 — JALADRI
+Yang Pecah agar Tak Menjadi Milik Siapa Pun
+Wajah Kelupaan: Memilih menjadi banyak · Season: S4 · TG3
+VIII.1 Storyline
+Seorang putri begitu dicintai sehingga kerajaan-kerajaan siap berperang memilikinya. Ia tidak bisa memilih satu tanpa membunuh yang lain. Maka ia memilih tidak menjadi satu — melompat ke laut dan pecah menjadi ribuan.
+
+Region ini satu-satunya di mana kelupaan bukan tragedi, melainkan strategi.
+
+Konflik: Pecahan Pusaka Gema di region ini juga pecah — 40 serpihan tersebar di laut dan gunung.
+
+Antagonis (kekuatan penghancur): Naga Sasra (Legendary, Beast/Bayu/Attacker — lihat §0.2). Bukan makhluk berkehendak — sisa dari bencana yang mengubur tiga wilayah dalam satu malam. Tidak bisa dinegosiasi, hanya menutupi.
+
+Figur yang memilih pecah: Anjala Nirmala (Ultra Rare, Spirit/Bayu/Support). Perannya sebagai figur "putri" dijalankan lewat kit Support/reviver — mekanik yang secara alami cocok dengan tema "memberi diri agar yang lain selamat".
+
+Kenapa peran antagonis dibagi dua karakter: Naga Sasra (kekuatan tanpa alasan) dan Anjala Nirmala (pilihan yang punya alasan) menjaga kontras "kelupaan tanpa niat vs kelupaan sebagai strategi" yang jadi inti region ini — tanpa harus memaksakan satu Legendary memikul dua fungsi naratif yang bertentangan.
+
+Titik balik: Anjala Nirmala tidak ingin disatukan kembali — menyatukan pecahannya berarti mengembalikan perang yang dulu ia hentikan.
+
+Ending region: Pemain memilih: kumpulkan Anjala Nirmala, atau biarkan ia tetap tersebar. Tidak bisa keduanya di satu playthrough.
+VIII.2 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+J1
+Pantai Selatan
+TG3
+Pasir putih-merah muda, turquoise
+Terbuka, luas
+J2
+Sawah Terasering
+TG3
+Hijau padi, coklat lumbung
+Teratur, damai
+J3
+Hutan Gunung
+TG3
+Hijau tinggi, kabut, batu vulkanik
+Menanjak, dingin
+J4
+Danau Dalam
+TG4
+Biru-hijau susu, uap belerang
+Sunyi, asing
+J5
+Laut Seribu Cahaya
+TG4
+Hitam laut malam, titik cahaya
+Ramai, tak terhitung
+J6
+Padang Abu
+TG4
+Abu total, tanpa vegetasi
+Kosong, mati
+J7
+Kerajaan Terkubur
+TG5
+Coklat abu, siluet bangunan
+Final, sunyi
+VIII.3 Mekanik Signature: YANG TERSEBAR (tidak berubah)
+Sistem koleksi dibalik: avatar didapat sebagai serpihan tersebar (3–7 pecahan per avatar). Beberapa avatar lebih kuat dengan versi tidak-utuh. Zona J5 punya event mingguan; Padang Abu (J6) menghapus tanda peta permanen setiap pemain keluar.
+
+Peringatan implementasi tidak berubah: butuh level design terbaik dari seluruh dokumen. Jangan diimplementasikan dengan tim level design 1 orang.
+VIII.4 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+3
+—
+Uncommon
+2
+—
+Rare
+0–1
+—
+Super Rare
+2
+⭐ Mandarasmi (Wajah Region, Spirit/Bayu/CC) + 1 tambahan (Human/Apah/Tank)
+Ultra Rare
+2
+Anjala Nirmala (figur "putri yang pecah" — lihat §VIII.1) + 1 tambahan (Ghost/Teja/CC)
+Legendary
+1
+Naga Sasra (kekuatan penghancur region — lihat §VIII.1)
+
+⚠️ Mekanik "Yang Tersebar" (§VIII.3) awalnya dirancang untuk avatar versi lama yang sudah tidak eksis. Perlu diputuskan ulang: apakah mekanik pecahan-diri ini tetap berlaku untuk seluruh roster Jaladri di Panduan Karakter, atau hanya untuk Anjala Nirmala sebagai kasus khusus yang terikat langsung ke Titik Balik ceritanya. Rekomendasi: opsi kedua — menerapkannya ke seluruh 9–10 karakter region butuh linimasa level-design yang jauh lebih besar daripada menerapkannya ke 1 karakter kunci saja.
+VIII.5 Item — Arah Desain
+🟡 Belum dirancang penuh. Kalau keputusan di atas memilih opsi kedua (mekanik pecahan hanya untuk Anjala Nirmala), maka hanya perlu 1 set item "Pusaka" yang bertema pecahan/serpihan, bukan seluruh tier.
+VIII.6 Misi — Arah Desain
+🟡 Belum dirancang penuh. Wajib ada 1 rantai misi mengumpulkan serpihan Anjala Nirmala dengan pilihan akhir tanpa jawaban benar (satukan atau biarkan tersebar), konsisten dengan §VIII.1.
+VIII.7 Elemen Budaya
+Rumah adat panggung · Tenun · Perkusi tabuh besar · Festival cahaya laut fiktif (bukan festival nyata yang masih berlangsung) · Danau kawah & gunung · Reruntuhan akibat bencana fiktif · Fauna: rusa, elang, kera, biota laut bercahaya
+
+Audio: Perkusi tabuh besar, gambus, suling. Untuk Padang Abu: drone tanpa nada, hampir tanpa musik.
+
+
+IX. REGION 9 — ANAWIL
+Ingatan yang Lebih Tua daripada Bahasa
+Wajah Kelupaan: Ingatan sebelum bahasa — pembalikan tesis · Season: FINALE · TG4–TG5
+IX.1 ⛔ Peringatan Khusus Region Ini — Tidak Berubah
+Prasyarat produksi region ini tidak berubah dari v1.0 dan tetap berlaku penuh:
+
+Konsultan bukan sekadar reviewer — harus co-writer, mengingat basis inspirasi region ini adalah budaya yang paling sering disalahgambarkan dalam sejarah media.
+Mitos mesianis sumber inspirasi TIDAK DIGUNAKAN secara langsung. Panduan Karakter sudah konsisten dengan prinsip ini — karakter Legendary region ini, Sang Gema Purwa, adalah ciptaan orisinal tanpa nama/silsilah yang merujuk gerakan kepercayaan hidup mana pun.
+Jika konsultan kompeten tidak dapat dilibatkan, region ini dibatalkan dan digantikan. Tidak ada versi "kompromi" yang aman.
+
+Status ini tidak melunak hanya karena roster sudah berganti nama. Fiksionalisasi nama bukan pengganti proses konsultasi.
+IX.2 Storyline
+Di dinding batu ada lukisan tangan berusia puluhan ribu tahun — lebih tua dari tulisan, lebih tua dari semua kerajaan yang pemain kunjungi. Di antara telapak tangan itu ada gambar kalung berlima batu.
+
+Konflik: Pemain menemukan bahwa Pusaka Gema bukan buatan manusia, dan perjanjian yang selama ini ia pulihkan bukan perjanjian pertama. Ini sudah terjadi berkali-kali — dan setiap kali, dunia mengumpulkan cukup banyak ingatan sehingga tidak sanggup lagi bergerak, lalu semuanya dimulai ulang.
+
+Antagonis: TIDAK ADA — keputusan desain yang disengaja dan tidak berubah.
+
+Apex region: Sang Gema Purwa (Legendary, Spirit/Akasa/Support — lihat §0.2). Namanya sendiri berarti "gema pertama/purba" — kecocokan yang lebih kuat daripada versi lama, dan secara langsung menggemakan penamaan Gema Kakek/Gema Sang Sunyi di ending finale GDD v3 §5.5. Berbeda dari Legendary region lain, ia bukan lawan — pertarungan dengannya (kalau memang dirancang sebagai pertarungan) tidak bisa dimenangkan dengan damage. Perannya sebagai kit Support memperkuat ini secara mekanis: ia dirancang untuk membantu, bukan menyerang.
+IX.3 Zona
+Zona
+Nama
+TG
+Palet
+Mood
+A1
+Karst Warana
+TG4
+Hijau karst, biru pirus
+Megah, terbuka
+A2
+Hutan Purba
+TG4
+Hijau padat, cahaya belang
+Hidup, penuh suara
+A3
+Laguna Tenang
+TG4
+Biru bertingkat, bayang karang
+Tenang, jernih
+A4
+Dinding Telapak
+TG5
+Abu batu, oker, laut gelap
+Purba, hening
+A5
+Palung Purwa
+TG5
+Hitam total dengan bioluminesensi
+Dalam, asing
+A6
+Pulau Ketujuh
+TG5
+Warna yang tidak ada di region lain
+Salah, tidak seharusnya ada
+A7
+Telapak Pertama
+TG5
+Oker, batu, satu berkas cahaya
+Final, sunyi, purba
+IX.4 Mekanik Signature: TANPA KATA (tidak berubah)
+Zona A4–A7 menghapus dialog teks; komunikasi lewat gestur, warna, suara. HUD berkurang bertahap tiap zona hingga hilang total di A7.
+
+Peringatan implementasi tidak berubah: mekanik paling berisiko di dokumen. Wajib ada opsi aksesibilitas mengembalikan HUD, tidak dianggap "curang".
+IX.5 Roster — Rujukan ke Panduan Karakter
+Tier
+Jumlah
+Karakter Wajah Region / Sorotan
+Common
+2
+—
+Uncommon
+3
+—
+Rare
+2
+—
+Super Rare
+2
+⭐ Kalana Sauyan (Wajah Region, Human/Apah/Attacker) + 1 tambahan (Human/Pertiwi/CC)
+Ultra Rare
+1
+1 karakter baru (Ghost/Bayu/Tank) — mengisi celah UR yang sebelumnya kosong di region ini
+Legendary
+1
+Sang Gema Purwa (apex region — lihat §IX.2)
+
+⚠️ Panduan Karakter Lampiran B menandai 3 karakter di region ini (nomor lama #62/#81/#82 dalam penomoran 83-karakter, setara dengan Bikusagari/Nin Waiam/Kalana Sauyan di penomoran saat ini) sebagai risiko tinggi karena berbasis mitos asal-usul yang berfungsi sebagai legitimasi hak wilayah nyata. Audit itu tetap berlaku penuh — lihat §X.
+IX.6 Item — Arah Desain
+🟡 Belum dirancang penuh, dan belum boleh dirancang sampai prasyarat §IX.1 terpenuhi. Kalau nanti dikerjakan: hindari efek yang meniru artefak ritual apa pun; ikuti prinsip "ciptaan orisinal terinspirasi struktur, bukan reproduksi" yang sudah dipakai konsisten di seluruh roster karakter region ini.
+IX.7 Misi — Arah Desain
+🟡 Belum dirancang penuh, tunduk pada prasyarat yang sama dengan §IX.6. Struktur wajib mengikuti Mekanik Signature §IX.4: minimal 1 misi diselesaikan sepenuhnya tanpa dialog teks.
+IX.8 Elemen Budaya
+⚠️ Seluruh daftar ini bersifat provisional dan wajib divalidasi co-writer sebelum produksi.
+
+Rumah panggung pesisir · Perahu bercadik · Lukisan batu purba · Anyaman tradisional · Fauna: burung berbulu merah langka, kasuari, kuskus, pari manta
+
+Audio: Perkusi kerang & kayu, vokal berlapis, ambience laut dominan. Zona A5–A7 hampir seluruhnya ambience alam tanpa instrumen.
+
+
+X. SENSITIVITAS BUDAYA — RUJUKAN, BUKAN DUPLIKAT
+X.1 Perubahan Arsitektur
+Versi 1.0 dokumen ini punya matriks sensitivitas sendiri (18+ entitas) terikat ke nama-nama roster lama. Matriks itu sudah tidak akurat — separuh nama yang didaftarnya tidak lagi eksis di roster.
+
+Sumber kebenaran sensitivitas budaya sekarang tunggal: Panduan Karakter Lampiran B, yang:
+
+Sudah mencakup audit per-karakter untuk seluruh roster terkini
+Sudah memakai skema klasifikasi risiko yang sama (T1/T2/T3, Aturan Dua Penanda dari GDD v3 §3.2)
+Diperbarui setiap kali roster berubah — sesuatu yang tidak bisa dijamin oleh dua dokumen paralel
+
+World Bible tidak lagi menyimpan salinan matriks sensitivitas karakter. Sebagai gantinya, bagian ini hanya berisi risiko yang berbasis tempat/geografi, bukan karakter — jenis risiko yang memang menjadi domain World Bible, bukan Panduan Karakter.
+X.2 Risiko Berbasis Tempat (Domain World Bible)
+Region
+Elemen geografis berisiko
+Mitigasi
+Smarana
+Situs arkeologi/pelabuhan bersejarah nyata sebagai inspirasi
+Nama & detail geografis fiktif sepenuhnya (§III.2); tidak ada koordinat atau nama tempat nyata dipakai
+Kalamrtu
+Prasasti kerajaan maritim bersejarah nyata
+Teks prasasti in-game seluruhnya fiktif — jangan pernah mengarang "terjemahan" yang menyerupai prasasti nyata (§V.5)
+Himagiri
+Situs candi & kompleks di lereng gunung nyata
+Relief & arsitektur adalah desain orisinal; situs nyata tidak digambarkan hancur
+Jaladri
+Danau kawah & catatan bencana vulkanik nyata
+Nama, tanggal, dan skala bencana sepenuhnya fiksi; tidak merujuk peristiwa/tahun nyata
+Anawil
+Situs lukisan batu purba nyata
+Lihat prasyarat §IX.1 — berlaku untuk geografi maupun karakter
+X.3 Aturan yang Tetap Berlaku Lintas-Region (tidak berubah dari v1.0)
+Tidak ada makhluk yang "dikalahkan" — istilah: dipulihkan, ditenangkan, diseimbangkan.
+Tidak ada reproduksi harfiah ritual, mantra, doa, atau gerak upacara nyata.
+Tidak ada situs cagar budaya nyata digambarkan hancur.
+Setiap karakter wajib punya Lore Card bersumber tertulis — kewajiban ini sekarang dipenuhi lewat Panduan Karakter, bukan dokumen ini.
+Setiap region wajib punya minimal 1 NPC dari kelompok budaya sumber inspirasi yang menolak premis pemain.
+Bersihkan nama T3 dari nama file, komentar kode, dan layer art — cara paling umum fiksionalisasi terbongkar.
+X.4 Anggaran Konsultan (diperbarui)
+Lingkup
+v1.0 (belum resmi)
+Sekarang
+Sumber acuan
+Matriks World Bible + Matriks Panduan Karakter (dua daftar)
+Satu daftar — Panduan Karakter Lampiran B
+Wilayah risiko tertinggi tetap
+Anawil (⛔ wajib co-writer)
+Tidak berubah
+Estimasi biaya
+Rp 150–200 juta (9 region, 2 co-writer)
+Belum dihitung ulang — tunggu Panduan Karakter final sebelum finalisasi angka, karena jumlah karakter berisiko tinggi bisa berubah setiap revisi roster
+
+
+XI. KONSEKUENSI PRODUKSI & REKOMENDASI JALUR REALISTIS
+XI.1 Hitungan Jujur — Diperbarui
+Aset
+v1.0 (175 avatar, 7 region)
+Sekarang (91 avatar di 7 region ekspansi, dari total 100)
+Ilustrasi avatar
+525 hari
+±280 hari (91 × ~3 hari, tier tinggi lebih mahal — lihat catatan)
+Total estimasi art 7 region ekspansi
+±2.180 hari
+±1.250–1.400 hari
+Faktor tim pemula ×1,8
+±39 bulan
+±23–25 bulan (hanya untuk 7 region ekspansi, di luar 2 region v1.0)
+
+Catatan penting: Angka turun signifikan bukan karena pekerjaan jadi lebih murah, tapi karena jumlah karakter per region turun dari 25 menjadi ~11 — desain yang jauh lebih realistis untuk party 4+2 slot (rasio karakter:slot turun dari 13,8:1 versi lama menjadi sekitar 16,6:1 untuk keseluruhan 100 karakter, tapi dengan proporsi Common yang lebih sehat per region). Namun Item §III.5–IX.6 dan Misi §III.6–IX.7 di seluruh 7 region masih berstatus 🟡 belum dirancang — hitungan di atas TIDAK termasuk pekerjaan itu. Tambahkan estimasi terpisah begitu Item/Misi dirancang penuh.
+XI.2 Tiga Jalur — Tidak Berubah Strukturnya
+Jalur A (Bertahap), B (Potong Kedalaman), C (Trilogi) dari v1.0 tetap berlaku sebagai kerangka keputusan. Rekomendasi tetap Jalur C, dengan catatan tambahan: pemetaan region-ke-buku trilogi (GDD v3 §14 Lampiran) perlu ditinjau ulang karena nama & antagonis region sudah berubah — tapi struktur 3-region-per-buku tidak perlu diubah.
+XI.3 Yang Harus Dilakukan Sekarang
+#
+Tindakan
+Status
+1
+Sistem data karakter berbasis file eksternal, bukan hard-code
+Tetap wajib (GDD v3 §14.4)
+2
+Sistem Tingkat Gema dirancang meski hanya TG1 dipakai di v1.0
+Tetap wajib — kini juga harus mengakomodasi tier Legendary, lihat §II.2
+3
+Editor dialog & skill internal
+Tetap wajib — kini lebih kritis karena Mekanik Signature "Tata Krama" (Himagiri) dan "Neraca Dagang" (Smarana) keduanya bergantung penuh padanya
+4
+Format Lore Card & pipeline audit Aturan Dua Penanda
+Sudah berjalan — Panduan Karakter Lampiran B menunjukkan pipeline ini sudah dipakai konsisten untuk 100 karakter
+5
+Baru: Selesaikan Item & Misi untuk 7 region ekspansi
+🟡 Belum dimulai — item terbesar yang tersisa di dokumen ini
+XI.4 Yang Tidak Boleh Dilakukan Sekarang — Tidak Berubah
+Larangan art spekulatif, janji publik soal 9 region, dan rekrutmen untuk kapasitas 9 region semuanya tetap berlaku. Peninjauan tahunan World Bible tetap wajib.
+
+
+PERTANYAAN YANG BELUM TERJAWAB
+Item & Misi untuk 7 region ekspansi — siapa yang mengerjakan, dan kapan? Ini pekerjaan besar yang sengaja ditunda di revisi ini karena membutuhkan lore final tiap karakter yang belum sepenuhnya tersedia untuk region 3–9 di luar yang sudah dikutip.
+Mekanik "Yang Tersebar" di Jaladri (§VIII.3) — diterapkan ke seluruh roster region atau hanya ke Anjala Nirmala? Ini keputusan desain yang mengubah signifikan beban produksi region tersebut.
+Angka anggaran konsultan §X.4 perlu dihitung ulang setelah Panduan Karakter benar-benar final (tidak ada lagi revisi jumlah karakter) — menghitungnya sekarang berisiko basi lagi dalam waktu dekat.
+Apakah "Panduan Karakter 100" ini sudah versi final, atau masih akan bertambah? Kalau masih cair, sebagian angka produksi di §XI.1 perlu ditandai sebagai perkiraan sementara, bukan angka yang bisa dipakai untuk komitmen anggaran.
+
+
+
+World Bible v2.0 — Revisi selaras Panduan Karakter 100 · Agustus 2026 Status: 🟡 GUIDANCE ONLY. Roster definitif ada di Panduan Karakter, bukan di sini. Setiap pemindahan konten dari dokumen ini ke backlog produksi wajib melewati CR bertanda tangan PO, sesuai Protokol World Bible (GDD v3 §14.2).
+
