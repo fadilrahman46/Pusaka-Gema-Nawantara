@@ -1,0 +1,1641 @@
+[
+  {
+    "id": "NR-M01",
+    "title": "KABUT PERTAMA",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 30,
+    "flags": [
+      "flag_compass_tutorial_seen",
+      "flag_nr_m01_complete",
+      "flag_nr_m01_started"
+    ]
+  },
+  {
+    "id": "NR-M02",
+    "title": "SUARA DI BALIK DANAU",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 75,
+    "flags": [
+      "counter_dialog_patience",
+      "flag_lampah_sinaru_recruited",
+      "flag_nr_m01_complete",
+      "flag_nr_m02_complete",
+      "flag_ranaya_song_stage"
+    ]
+  },
+  {
+    "id": "NR-M03",
+    "title": "ENAM PULUH TAHUN MENUNGGU",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 121,
+    "flags": [
+      "counter_patience_rounds",
+      "flag_nr_m02_complete",
+      "flag_tandaraga_recruited"
+    ]
+  },
+  {
+    "id": "NR-M04",
+    "title": "ADI DAN GERBANG TERBUKA",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 157,
+    "flags": [
+      "counter_wrong_turns",
+      "flag_adi_met",
+      "flag_hud_compass_disabled",
+      "flag_nr_m04_complete",
+      "flag_tandaraga_recruited"
+    ]
+  },
+  {
+    "id": "NR-M05",
+    "title": "LAGU PERJALANAN TUA",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 212,
+    "flags": [
+      "flag_fragment_elder",
+      "flag_fragment_sanra_ranu",
+      "flag_fragment_vendor",
+      "flag_nr_m04_complete",
+      "flag_nr_m05_complete",
+      "flag_ranaya_song_stage"
+    ]
+  },
+  {
+    "id": "NR-M06",
+    "title": "KABUT TERBUKA",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 268,
+    "flags": [
+      "flag_kalung_jalan_pulang_obtained",
+      "flag_nirsmara_recruited",
+      "flag_nr_m05_complete",
+      "flag_nr_m06_complete",
+      "flag_ranaya_song_stage"
+    ]
+  },
+  {
+    "id": "NR-S01",
+    "title": "GUDANG BARANG TERTINGGAL",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 311,
+    "flags": [
+      "counter_gudang_correct_matches",
+      "flag_lare_wengi_recruited",
+      "flag_nr_m02_complete"
+    ]
+  },
+  {
+    "id": "NR-S02",
+    "title": "EMPAT RATUS BAIT",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 335,
+    "flags": [
+      "array_memorized_baits",
+      "flag_kayuri_dialogue_tone",
+      "flag_kayuri_sindu_recruited",
+      "flag_nr_m03_complete"
+    ]
+  },
+  {
+    "id": "NR-S03",
+    "title": "MISI OPSIONAL ADI — DUNIA LUAR",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 357,
+    "flags": [
+      "flag_adi_dialogue_choice",
+      "flag_adi_met",
+      "flag_adi_resolution_path",
+      "flag_region_resolution_nirwasita"
+    ]
+  },
+  {
+    "id": "NR-S04",
+    "title": "HARGA PERLINDUNGAN (TITAH NGGARINDU)",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 395,
+    "flags": [
+      "counter_nggarindu_fragments",
+      "flag_ensiklopedia_sacrificed_nggarindu",
+      "flag_nggarindu_recruited",
+      "flag_nr_m04_complete",
+      "flag_used_memory_restore_item"
+    ]
+  },
+  {
+    "id": "NR-H01",
+    "title": "RUMAH RANAYA LAMA",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 436,
+    "flags": [
+      "array_mural_order",
+      "flag_ranaya_song_stage",
+      "flag_rumah_ranaya_lama_unlocked",
+      "flag_sanra_ranu_buff_permanent"
+    ]
+  },
+  {
+    "id": "NR-H02",
+    "title": "MUSUH YANG SEBENARNYA (TITAH WIRA SENJA)",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 460,
+    "flags": [
+      "counter_restricted_battles",
+      "flag_nr_m06_complete",
+      "flag_wira_senja_recruited"
+    ]
+  },
+  {
+    "id": "NR-H03",
+    "title": "YANG TERTANAM SELAMAT (TITAH SARAS PERTIWI)",
+    "source": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "line": 495,
+    "flags": [
+      "counter_dig_temptation_resisted",
+      "flag_ensiklopedia_sacrificed_nggarindu",
+      "flag_misi_gagal_permanent_playthrough",
+      "flag_nr_m04_complete",
+      "flag_ranaya_song_stage",
+      "flag_region_resolution_nirwasita",
+      "flag_saras_pertiwi_recruited"
+    ]
+  },
+  {
+    "id": "KD-M01",
+    "title": "UPACARA PAGI",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 24,
+    "flags": [
+      "counter_upacara_answer",
+      "flag_kd_m01_complete",
+      "flag_kd_m01_started",
+      "flag_nr_m06_complete",
+      "flag_ritual_otomatis_tutorial_seen"
+    ]
+  },
+  {
+    "id": "KD-M02",
+    "title": "DUA YANG SATU",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 69,
+    "flags": [
+      "counter_neutral_rounds",
+      "flag_bharwang_kesari_recruited",
+      "flag_kd_m01_complete",
+      "flag_kd_m02_complete",
+      "flag_kd_m02_path",
+      "flag_rarwang_celeng_recruited"
+    ]
+  },
+  {
+    "id": "KD-M03",
+    "title": "DOA YANG SALAH SATU BARISNYA BENAR",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 112,
+    "flags": [
+      "array_doa_lines_eliminated",
+      "flag_doa_line_identified",
+      "flag_jero_mangku_chain_stage",
+      "flag_kd_m02_complete",
+      "flag_kd_m03_complete"
+    ]
+  },
+  {
+    "id": "KD-M04",
+    "title": "EFISIENSI ATAU MAKNA",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 155,
+    "flags": [
+      "flag_doa_line_identified",
+      "flag_jero_mangku_recruited_as_npc",
+      "flag_kd_m03_complete",
+      "flag_kd_m04_complete",
+      "flag_kd_resolution_path"
+    ]
+  },
+  {
+    "id": "KD-M05",
+    "title": "SEMBILAN RATUS TAHUN TERAKHIR",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 204,
+    "flags": [
+      "array_upacara_points_visited",
+      "flag_kd_m04_complete",
+      "flag_kd_m05_complete"
+    ]
+  },
+  {
+    "id": "KD-M06",
+    "title": "RASA YANG KEMBALI",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 235,
+    "flags": [
+      "flag_doa_line_identified",
+      "flag_genta_makna_obtained",
+      "flag_jero_mangku_chain_stage",
+      "flag_kd_m05_complete",
+      "flag_kd_m06_complete",
+      "flag_kd_resolution_path",
+      "flag_sang_werdi_recruited"
+    ]
+  },
+  {
+    "id": "KD-S01",
+    "title": "URUTAN YANG DIWARISKAN (TITAH JURU WANGSUH)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 272,
+    "flags": [
+      "array_cuci_steps_performed",
+      "flag_juru_wangsuh_recruited",
+      "flag_kd_m01_complete"
+    ]
+  },
+  {
+    "id": "KD-S02",
+    "title": "LUPA BENTUK ASLI (TITAH RARWANG CELENG)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 294,
+    "flags": [
+      "flag_kd_m02_complete",
+      "flag_kd_m02_path",
+      "flag_rarwang_titah_complete"
+    ]
+  },
+  {
+    "id": "KD-S03",
+    "title": "SUMBER YANG DIULANG (TITAH KIDANG BELANTIK)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 312,
+    "flags": [
+      "counter_fajar_observed",
+      "flag_kd_m01_complete",
+      "flag_kidang_belantik_recruited"
+    ]
+  },
+  {
+    "id": "KD-S04",
+    "title": "PENARI YANG MELIHAT ROH (RANTAI LUH SARI)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 333,
+    "flags": [
+      "counter_family_convinced",
+      "flag_ghost_evidence_found",
+      "flag_kd_m01_complete",
+      "flag_sanggar_luh_sari_unlocked"
+    ]
+  },
+  {
+    "id": "KD-S05",
+    "title": "TIDAK ADA YANG MENANGGUNG SEMUANYA (TITAH LEMBUJAGA)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 355,
+    "flags": [
+      "array_beban_distribution",
+      "flag_kd_m02_complete",
+      "flag_lembujaga_recruited"
+    ]
+  },
+  {
+    "id": "KD-H01",
+    "title": "SANGGAR LUH SARI",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 375,
+    "flags": [
+      "array_dance_gestures_interpreted",
+      "flag_kd_h01_complete",
+      "flag_sanggar_luh_sari_unlocked"
+    ]
+  },
+  {
+    "id": "KD-H02",
+    "title": "DUKA YANG TAK DIRASAKAN (TITAH RARASUNYI)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 396,
+    "flags": [
+      "flag_kd_m04_complete",
+      "flag_rarasunyi_recruited",
+      "flag_upacara_duka_followed"
+    ]
+  },
+  {
+    "id": "KD-H03",
+    "title": "YANG LEBIH MUDAH DARIPADA MENDENGARKAN (TITAH RANDU GIRANG)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 418,
+    "flags": [
+      "counter_testimoni_collected",
+      "flag_kd_m02_path",
+      "flag_kd_m03_complete",
+      "flag_kd_resolution_path",
+      "flag_randu_girang_recruited"
+    ]
+  },
+  {
+    "id": "KD-S06",
+    "title": "Titah Sembilan Ratus Tahun (Kala Sesari)",
+    "source": "QUEST_SCRIPT_R2_Kadewan.md",
+    "line": 488,
+    "flags": [
+      "counter_kala_sesari_fragments",
+      "flag_kala_sesari_recruited",
+      "flag_kd_m02_path",
+      "flag_kd_m05_complete"
+    ]
+  },
+  {
+    "id": "SM-M01",
+    "title": "MUARA YANG MENERIMA SEMUANYA",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 27,
+    "flags": [
+      "flag_first_batu_gema_sold",
+      "flag_kd_m06_complete",
+      "flag_neraca_dagang_tutorial_seen",
+      "flag_sm_m01_complete"
+    ]
+  },
+  {
+    "id": "SM-M02",
+    "title": "HARGA HARI INI",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 75,
+    "flags": [
+      "array_market_prices",
+      "flag_bandar_ilung_recruited",
+      "flag_pusaka_gema_fragment_smarana_revealed",
+      "flag_sm_m01_complete",
+      "flag_sm_m02_complete"
+    ]
+  },
+  {
+    "id": "SM-M03",
+    "title": "YANG TERTINGGAL ENTAH DI MANA",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 116,
+    "flags": [
+      "counter_gudang_identified",
+      "flag_antuwan_encountered",
+      "flag_antuwan_melayang_recruited",
+      "flag_sm_m02_complete",
+      "flag_sm_m03_complete",
+      "flag_sm_m03_night_path"
+    ]
+  },
+  {
+    "id": "SM-M04",
+    "title": "GUDANG TIRTA",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 162,
+    "flags": [
+      "array_segel_terbuka",
+      "flag_first_batu_gema_sold",
+      "flag_sm_m03_complete",
+      "flag_sm_m04_complete",
+      "flag_timbangan_terakhir_progress"
+    ]
+  },
+  {
+    "id": "SM-M05",
+    "title": "BALAI LELANG",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 197,
+    "flags": [
+      "flag_lelang_won",
+      "flag_pusaka_gema_fragment_smarana_revealed",
+      "flag_sm_m04_complete",
+      "flag_sm_m05_complete",
+      "flag_sm_m05_declined_path"
+    ]
+  },
+  {
+    "id": "SM-M06",
+    "title": "KEMAKMURAN YANG RUNTUH",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 238,
+    "flags": [
+      "counter_kuli_adds_defeated",
+      "flag_juragan_larung_recruited",
+      "flag_sm_m05_complete",
+      "flag_sm_m05_declined_path",
+      "flag_sm_m06_complete",
+      "flag_timbangan_terakhir_obtained",
+      "flag_timbangan_terakhir_progress"
+    ]
+  },
+  {
+    "id": "SM-M07",
+    "title": "PENEBUSAN (PASCA-REGION)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 283,
+    "flags": [
+      "array_lost_encyclopedia_entries",
+      "counter_entries_redeemed",
+      "flag_sm_m06_complete"
+    ]
+  },
+  {
+    "id": "SM-S01",
+    "title": "BUKAN ALASANMU (TITAH SAGARA BUIH)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 313,
+    "flags": [
+      "counter_origin_stories",
+      "flag_sagara_buih_recruited",
+      "flag_sm_m02_complete"
+    ]
+  },
+  {
+    "id": "SM-S02",
+    "title": "BALAI LELANG (TITAH DATU KALIMPAN)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 334,
+    "flags": [
+      "counter_neraca_dagang_transactions_lifetime",
+      "flag_balai_lelang_tersembunyi_found",
+      "flag_datu_kalimpan_recruited"
+    ]
+  },
+  {
+    "id": "SM-S03",
+    "title": "LENTERA YANG TAK PADAM (TITAH TALAPAK EMBUN)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 355,
+    "flags": [
+      "flag_sm_m04_complete",
+      "flag_talapak_embun_recruited"
+    ]
+  },
+  {
+    "id": "SM-S04",
+    "title": "HARGA YANG DITANGGUNG BERSAMA (TITAH BANDAR TIMBANGAN)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 374,
+    "flags": [
+      "counter_transaksi_diobservasi",
+      "flag_bandar_timbangan_recruited",
+      "flag_sm_m04_complete"
+    ]
+  },
+  {
+    "id": "SM-S05",
+    "title": "ENAM RATUS TAHUN DI BAWAH (TITAH WATU GAMBUT)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 396,
+    "flags": [
+      "array_lapisan_tanah",
+      "flag_sm_m01_complete",
+      "flag_watu_gambut_recruited"
+    ]
+  },
+  {
+    "id": "SM-S06",
+    "title": "YANG TIDAK MENGUCAP IZIN (TITAH JATAWIRA)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 417,
+    "flags": [
+      "counter_doa_pelayaran_found",
+      "flag_jatawira_izin_path",
+      "flag_jatawira_recruited",
+      "flag_sm_m01_complete"
+    ]
+  },
+  {
+    "id": "SM-H01",
+    "title": "GUDANG BAWAH GUDANG",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 467,
+    "flags": [
+      "array_brankas_opened",
+      "flag_first_batu_gema_sold",
+      "flag_gudang_bawah_gudang_unlocked",
+      "flag_sm_m04_complete"
+    ]
+  },
+  {
+    "id": "SM-H02",
+    "title": "YANG TAK LAGI DICARI (LANJUTAN JURAGAN LARUNG)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 487,
+    "flags": [
+      "flag_juragan_larung_recruited",
+      "flag_juragan_larung_recruited_late",
+      "flag_sm_m06_complete"
+    ]
+  },
+  {
+    "id": "SM-H03",
+    "title": "YANG HAFAL SEMUA NAMA (TITAH WADYAN SALUNAI)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 508,
+    "flags": [
+      "counter_unique_npc_talked",
+      "flag_wadyan_salunai_recruited"
+    ]
+  },
+  {
+    "id": "SM-H04",
+    "title": "PARUH YANG TERLALU TERANG (TITAH TINGGANG INTAN)",
+    "source": "QUEST_SCRIPT_R3_Smarana.md",
+    "line": 528,
+    "flags": [
+      "flag_first_batu_gema_sold",
+      "flag_pusaka_gema_fragment_smarana_revealed",
+      "flag_sm_m03_complete",
+      "flag_tinggang_intan_protected",
+      "flag_tinggang_intan_recruited"
+    ]
+  },
+  {
+    "id": "WN-M01",
+    "title": "LADANG TERAKHIR",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 28,
+    "flags": [
+      "counter_penanda_placed",
+      "flag_jejak_tutorial_seen",
+      "flag_kd_m06_complete",
+      "flag_wn_m01_complete"
+    ]
+  },
+  {
+    "id": "WN-M02",
+    "title": "EMPAT PULUH TAHUN",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 64,
+    "flags": [
+      "counter_tanda_found",
+      "flag_wn_m01_complete",
+      "flag_wn_m02_complete"
+    ]
+  },
+  {
+    "id": "WN-M03",
+    "title": "RUMAH UPIAK",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 98,
+    "flags": [
+      "counter_bukti_beri_tahu",
+      "counter_bukti_jangan",
+      "flag_upiak_met",
+      "flag_wn_m02_complete",
+      "flag_wn_m03_complete",
+      "flag_wn_resolution_path"
+    ]
+  },
+  {
+    "id": "WN-M04",
+    "title": "HUTAN BELANG",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 140,
+    "flags": [
+      "array_pohon_penanda",
+      "flag_wn_m03_complete",
+      "flag_wn_m04_complete"
+    ]
+  },
+  {
+    "id": "WN-M05",
+    "title": "EMPAT RATUS TAHUN BERTANYA (TITAH NINIAK BELANG)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 174,
+    "flags": [
+      "counter_aksi_restoratif",
+      "flag_niniak_belang_recruited",
+      "flag_wn_m04_complete",
+      "flag_wn_m05_complete"
+    ]
+  },
+  {
+    "id": "WN-M06",
+    "title": "BELANTARA MENELAN (SANG LENGANG, SPECTATOR)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 221,
+    "flags": [
+      "counter_penanda_placed",
+      "flag_penanda_terakhir_obtained",
+      "flag_sang_lengang_recruited",
+      "flag_wn_m05_complete",
+      "flag_wn_m06_complete"
+    ]
+  },
+  {
+    "id": "WN-S01",
+    "title": "YANG MEMILIH PERGI (TITAH PUTI LENGANG)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 279,
+    "flags": [
+      "counter_approach_attempts",
+      "flag_puti_lengang_recruited",
+      "flag_wn_m01_complete"
+    ]
+  },
+  {
+    "id": "WN-S02",
+    "title": "GENANGAN YANG TAK PERNAH KERING (TITAH LASIK KUBANG)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 301,
+    "flags": [
+      "counter_kubangan_kering_found",
+      "flag_lasik_kubang_recruited",
+      "flag_wn_m01_complete"
+    ]
+  },
+  {
+    "id": "WN-S03",
+    "title": "CUKUP UNTUK SEMUA (TITAH RANGKIANG BATU)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 322,
+    "flags": [
+      "flag_hitungan_lumbung_correct",
+      "flag_rangkiang_batu_recruited",
+      "flag_wn_m02_complete"
+    ]
+  },
+  {
+    "id": "WN-S04",
+    "title": "KESEPAKATAN LAMA (TITAH SINDAKA RIMBO)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 343,
+    "flags": [
+      "flag_dialog_avoided_name",
+      "flag_sindaka_rimbo_recruited",
+      "flag_wn_m01_complete"
+    ]
+  },
+  {
+    "id": "WN-S05",
+    "title": "BERJALAN MUNDUR SEMALAMAN (TITAH UHANG SUNYI)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 364,
+    "flags": [
+      "flag_reverse_navigation_complete",
+      "flag_uhang_sunyi_recruited",
+      "flag_wn_m02_complete"
+    ]
+  },
+  {
+    "id": "WN-S06",
+    "title": "SEMBILAN METER DAFTAR (TITAH BUNDO SARIKASO)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 385,
+    "flags": [
+      "counter_daftar_fragmen",
+      "flag_bundo_sarikaso_recruited",
+      "flag_wn_m03_complete"
+    ]
+  },
+  {
+    "id": "WN-S07",
+    "title": "KE SINI, IKUTI SUARAKU (TITAH SUARA TANWUJUD)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 407,
+    "flags": [
+      "flag_audio_navigation_complete",
+      "flag_suara_tanwujud_recruited",
+      "flag_wn_m04_complete"
+    ]
+  },
+  {
+    "id": "WN-S08",
+    "title": "RUTE YANG DIULANG (TITAH TAPAK GHAIB)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 428,
+    "flags": [
+      "flag_anomaly_point_found",
+      "flag_tapak_ghaib_recruited",
+      "flag_wn_m04_complete"
+    ]
+  },
+  {
+    "id": "WN-H01",
+    "title": "AIR NAIK (TITAH SAMBILAN TALAGO)",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 449,
+    "flags": [
+      "counter_versi_cerita",
+      "flag_sambilan_talago_recruited",
+      "flag_wn_m04_complete"
+    ]
+  },
+  {
+    "id": "WN-H02",
+    "title": "RUMAH UPIAK",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 474,
+    "flags": [
+      "array_objek_personal",
+      "flag_wn_h02_complete",
+      "flag_wn_m03_complete",
+      "flag_wn_resolution_path"
+    ]
+  },
+  {
+    "id": "WN-H03",
+    "title": "YANG TERSISA DARI PILIHAN",
+    "source": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "line": 498,
+    "flags": [
+      "flag_kd_resolution_path",
+      "flag_wn_h02_complete",
+      "flag_wn_h03_complete",
+      "flag_wn_resolution_path"
+    ]
+  },
+  {
+    "id": "KL-M01",
+    "title": "MUARA WIRA",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 29,
+    "flags": [
+      "flag_aksara_tutorial_seen",
+      "flag_kd_m06_complete",
+      "flag_kl_m01_complete",
+      "flag_sm_m06_complete",
+      "flag_wn_m06_complete"
+    ]
+  },
+  {
+    "id": "KL-M02",
+    "title": "PULAU DUA NAMA",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 62,
+    "flags": [
+      "flag_kl_m01_complete",
+      "flag_kl_m02_complete",
+      "flag_nama_pulau_identified"
+    ]
+  },
+  {
+    "id": "KL-M03",
+    "title": "AKSARA YANG BERBICARA",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 92,
+    "flags": [
+      "counter_prasasti_perbatasan_read",
+      "flag_kl_m02_complete",
+      "flag_kl_m03_complete"
+    ]
+  },
+  {
+    "id": "KL-M04",
+    "title": "SISI KELAM KERAJAAN",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 128,
+    "flags": [
+      "counter_bukti_kekejaman",
+      "flag_kl_m03_complete",
+      "flag_kl_m04_complete",
+      "flag_kl_resolution_path"
+    ]
+  },
+  {
+    "id": "KL-M05",
+    "title": "PELABUHAN PRALAYA",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 166,
+    "flags": [
+      "counter_prasasti_dinonaktifkan",
+      "flag_kl_m04_complete",
+      "flag_kl_m05_complete"
+    ]
+  },
+  {
+    "id": "KL-M06",
+    "title": "DIHAPUS DEMI SELAMAT (TITAH SANG WIRANATA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 196,
+    "flags": [
+      "counter_prasasti_dinonaktifkan",
+      "flag_aksara_yang_tersisa_obtained",
+      "flag_kl_m05_complete",
+      "flag_kl_m06_complete",
+      "flag_kl_resolution_path",
+      "flag_sang_wiranata_recruited"
+    ]
+  },
+  {
+    "id": "KL-S01",
+    "title": "KEBIASAAN, BUKAN NIAT (TITAH ANTUMUARA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 244,
+    "flags": [
+      "flag_antumuara_recruited",
+      "flag_kl_m01_complete"
+    ]
+  },
+  {
+    "id": "KL-S02",
+    "title": "DELAPAN RATUS TAHUN (TITAH NAGA WIRA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 264,
+    "flags": [
+      "array_kronologi_fragmen",
+      "flag_kl_m03_complete",
+      "flag_naga_wira_recruited"
+    ]
+  },
+  {
+    "id": "KL-S03",
+    "title": "JURU KUTUK NEGARA (TITAH LIDAH WATU)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 285,
+    "flags": [
+      "counter_prasasti_perbatasan_read",
+      "flag_kl_m03_complete",
+      "flag_lidah_watu_recruited"
+    ]
+  },
+  {
+    "id": "KL-S04",
+    "title": "YANG TIDAK PERNAH BERHENTI MELOMPAT (TITAH SEKAR KEMARUNG)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 309,
+    "flags": [
+      "counter_lompatan_observed",
+      "flag_kl_m03_complete",
+      "flag_sekar_kemarung_recruited"
+    ]
+  },
+  {
+    "id": "KL-S05",
+    "title": "YANG TAK BISA DITAHAN LAGI (TITAH RAHIB ABU)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 332,
+    "flags": [
+      "counter_prasasti_rahib_kalpa",
+      "flag_kl_h04_complete",
+      "flag_rahib_abu_recruited",
+      "flag_rahib_abu_seal_choice"
+    ]
+  },
+  {
+    "id": "KL-S06",
+    "title": "SATU BARIS YANG KABUR (TITAH SIDHAYATRI)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 375,
+    "flags": [
+      "array_kalimat_fragmen",
+      "flag_kl_m01_complete",
+      "flag_sidhayatri_recruited"
+    ]
+  },
+  {
+    "id": "KL-S07",
+    "title": "PERJALANAN YANG BELUM SELESAI (TITAH KELASI WIRA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 400,
+    "flags": [
+      "counter_daftar_diperiksa",
+      "flag_kelasi_wira_recruited",
+      "flag_kl_m01_complete"
+    ]
+  },
+  {
+    "id": "KL-S08",
+    "title": "PERNAH ADA YANG MEMULAI (TITAH WATU SEMA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 424,
+    "flags": [
+      "counter_persembahan_dibawa",
+      "flag_kl_m02_complete",
+      "flag_watu_sema_recruited"
+    ]
+  },
+  {
+    "id": "KL-H01",
+    "title": "PRASASTI KETUJUH",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 448,
+    "flags": [
+      "flag_kl_h01_complete",
+      "flag_kl_m03_complete"
+    ]
+  },
+  {
+    "id": "KL-H02",
+    "title": "ANGIN YANG TAK MEMBEDAKAN (TITAH KIJANG PRASASTI)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 466,
+    "flags": [
+      "flag_kijang_prasasti_recruited",
+      "flag_kl_m03_complete",
+      "flag_serbuk_aksara_tracked"
+    ]
+  },
+  {
+    "id": "KL-H03",
+    "title": "VERSI YANG DIKUBUR (TITAH DAYANG RINDANG)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 487,
+    "flags": [
+      "array_lapisan_gali",
+      "flag_dayang_rindang_recruited",
+      "flag_kl_m02_complete"
+    ]
+  },
+  {
+    "id": "KL-H04",
+    "title": "MEMBUKTIKAN ILMUNYA (TITAH RAHIB KALPA)",
+    "source": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "line": 509,
+    "flags": [
+      "counter_prasasti_perbatasan_read",
+      "flag_kd_resolution_path",
+      "flag_kl_h04_complete",
+      "flag_kl_m04_complete",
+      "flag_kl_resolution_path",
+      "flag_rahib_kalpa_recruited"
+    ]
+  },
+  {
+    "id": "HM-M01",
+    "title": "LERENG YANG MENJAGA",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 53,
+    "flags": [
+      "flag_hm_m01_complete",
+      "flag_tata_krama_tutorial_seen"
+    ]
+  },
+  {
+    "id": "HM-M02",
+    "title": "PASAR HANTU (TITAH PASARWENGI)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 86,
+    "flags": [
+      "counter_fragmen_pasar_heard",
+      "flag_hm_m01_complete",
+      "flag_hm_m02_complete",
+      "flag_kelancangan_meter",
+      "flag_pasarwengi_recruited"
+    ]
+  },
+  {
+    "id": "HM-M03",
+    "title": "LIMA RATUS PAGI (TITAH SABDAGUNA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 132,
+    "flags": [
+      "counter_pagi_disaksikan",
+      "flag_dua_kalender_understood",
+      "flag_hm_m02_complete",
+      "flag_hm_m03_complete",
+      "flag_kelancangan_meter",
+      "flag_sabdaguna_recruited"
+    ]
+  },
+  {
+    "id": "HM-M04",
+    "title": "UPACARA TERAKHIR (TITAH WISESA GIRINATHA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 176,
+    "flags": [
+      "flag_hm_m03_complete",
+      "flag_hm_m04_complete",
+      "flag_kelancangan_meter",
+      "flag_kelancangan_since_hm_m03",
+      "flag_regalia_terakhir_obtained",
+      "flag_wisesa_girinatha_recruited"
+    ]
+  },
+  {
+    "id": "HM-M05",
+    "title": "KERATON KOSONG (PASCA-UPACARA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 217,
+    "flags": [
+      "array_ruangan_kenangan",
+      "flag_hm_m04_complete",
+      "flag_hm_m05_complete"
+    ]
+  },
+  {
+    "id": "HM-S01",
+    "title": "MENAHAN WAKTU (TITAH SANG GIRIPAWANA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 246,
+    "flags": [
+      "flag_hm_m04_complete",
+      "flag_izin_arsip_found",
+      "flag_sang_giripawana_recruited"
+    ]
+  },
+  {
+    "id": "HM-S02",
+    "title": "GENTA YANG TAK BERHENTI (TITAH TABUH SENJA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 267,
+    "flags": [
+      "counter_siklus_tahap",
+      "flag_hm_m03_complete",
+      "flag_hm_s02_complete",
+      "flag_tabuh_senja_recruited"
+    ]
+  },
+  {
+    "id": "HM-S03",
+    "title": "MENUNGGU KESEMPATAN BERIKUTNYA (TITAH SABDA TERTUNDA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 303,
+    "flags": [
+      "flag_hm_m02_complete",
+      "flag_konteks_kalimat_500_found",
+      "flag_sabda_tertunda_recruited"
+    ]
+  },
+  {
+    "id": "HM-S04",
+    "title": "MENARI UNTUK SEMBILAN (TITAH RATRI KEMUNING)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 326,
+    "flags": [
+      "flag_hm_m02_complete",
+      "flag_ratri_kemuning_recruited",
+      "flag_tarian_9_gerakan_complete"
+    ]
+  },
+  {
+    "id": "HM-S05",
+    "title": "IKUTI SAJA (TITAH JALAK GIRINDRA)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 348,
+    "flags": [
+      "flag_hm_m01_complete",
+      "flag_jalak_girindra_recruited",
+      "flag_navigasi_burung_complete"
+    ]
+  },
+  {
+    "id": "HM-H01",
+    "title": "RUANG SEMEDI SABDAGUNA",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 369,
+    "flags": [
+      "flag_hm_h01_complete",
+      "flag_kelancangan_meter"
+    ]
+  },
+  {
+    "id": "HM-H02",
+    "title": "TETAP MENYALA (TITAH WANASPATI GIRI)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 392,
+    "flags": [
+      "flag_api_tidak_padam_found",
+      "flag_hm_m01_complete",
+      "flag_wanaspati_giri_recruited"
+    ]
+  },
+  {
+    "id": "HM-H03",
+    "title": "HUTAN YANG TIDAK BERBUNYI (TITAH GANDARWA PINUS)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 413,
+    "flags": [
+      "flag_gandarwa_pinus_recruited",
+      "flag_hm_m01_complete",
+      "flag_navigasi_sunyi_complete"
+    ]
+  },
+  {
+    "id": "HM-H04",
+    "title": "TIDAK ADA YANG MEMBATALKAN (TITAH KURAWATU)",
+    "source": "QUEST_SCRIPT_R6_Himagiri.md",
+    "line": 436,
+    "flags": [
+      "flag_hm_m01_complete",
+      "flag_kelancangan_meter",
+      "flag_kelancangan_since_hm_m03",
+      "flag_kurawatu_recruited",
+      "flag_pintu_dipilih"
+    ]
+  },
+  {
+    "id": "RJ-M01",
+    "title": "PELABUHAN REMPAH",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 30,
+    "flags": [
+      "counter_warisan_total",
+      "flag_rj_m01_complete",
+      "flag_warisan_tutorial_seen"
+    ]
+  },
+  {
+    "id": "RJ-M02",
+    "title": "KEBUN YANG DIPETIK HABIS",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 63,
+    "flags": [
+      "counter_warisan_kebun",
+      "counter_warisan_total",
+      "flag_rj_m01_complete",
+      "flag_rj_m02_complete"
+    ]
+  },
+  {
+    "id": "RJ-M03",
+    "title": "DANAU DIAM",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 94,
+    "flags": [
+      "counter_warisan_danau",
+      "counter_warisan_total",
+      "flag_rj_m02_complete",
+      "flag_rj_m03_complete"
+    ]
+  },
+  {
+    "id": "RJ-M04",
+    "title": "TUJUH RIBU CATATAN (TITAH NYAI BOKIRA)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 129,
+    "flags": [
+      "flag_nyai_bokira_recruited",
+      "flag_rj_m03_complete",
+      "flag_rj_m04_complete",
+      "flag_surat_kenegaraan_searched"
+    ]
+  },
+  {
+    "id": "RJ-M05",
+    "title": "YANG TAK BISA DITAWAR (TITAH SANG HARGA)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 165,
+    "flags": [
+      "counter_warisan_total",
+      "flag_rj_m04_complete",
+      "flag_rj_m05_complete",
+      "flag_sang_harga_recruited",
+      "flag_warisan_tak_ternilai_obtained"
+    ]
+  },
+  {
+    "id": "RJ-M06",
+    "title": "PARA PEMIMPIN MENCATAT",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 221,
+    "flags": [
+      "array_bukti_dikumpulkan",
+      "flag_rj_m05_complete",
+      "flag_rj_m06_complete"
+    ]
+  },
+  {
+    "id": "RJ-S01",
+    "title": "TIGA PULUH TAHUN MENEBANG (TITAH DATU HONGGI)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 248,
+    "flags": [
+      "flag_datu_honggi_recruited",
+      "flag_rj_m02_complete"
+    ]
+  },
+  {
+    "id": "RJ-S02",
+    "title": "YANG TAK BISA DIBELI (TITAH PENJAGA POLOS)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 269,
+    "flags": [
+      "counter_gelombang_bertahan",
+      "flag_penjaga_polos_recruited",
+      "flag_rj_m01_complete"
+    ]
+  },
+  {
+    "id": "RJ-S03",
+    "title": "KEADILAN YANG TERSISA (TITAH SUKMA PENIMBANG)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 303,
+    "flags": [
+      "counter_timbangan_seimbang",
+      "flag_rj_m03_complete",
+      "flag_sukma_penimbang_recruited"
+    ]
+  },
+  {
+    "id": "RJ-S04",
+    "title": "PERINGATAN TERAKHIR (TITAH SOWAHI BARA)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 325,
+    "flags": [
+      "flag_peringatan_didecode",
+      "flag_rj_m02_complete",
+      "flag_sowahi_bara_recruited"
+    ]
+  },
+  {
+    "id": "RJ-S05",
+    "title": "SETIA PADA TEMBOK (TITAH BALA KARANGKASA)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 346,
+    "flags": [
+      "counter_gelombang_benteng",
+      "flag_bala_karangkasa_recruited",
+      "flag_rj_m01_complete"
+    ]
+  },
+  {
+    "id": "RJ-S06",
+    "title": "RATUSAN TAHUN MEMETIK (TITAH SAWANGI PALA)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 367,
+    "flags": [
+      "counter_dipetik_dini",
+      "flag_rj_m02_complete",
+      "flag_sawangi_pala_recruited"
+    ]
+  },
+  {
+    "id": "RJ-H01",
+    "title": "DESA DI BAWAH DANAU DIAM",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 391,
+    "flags": [
+      "counter_warisan_total",
+      "flag_rj_h01_complete",
+      "flag_rj_m03_complete"
+    ]
+  },
+  {
+    "id": "RJ-H02",
+    "title": "YANG PUNYA NAMA (TITAH JURU CENGKIH)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 409,
+    "flags": [
+      "flag_juru_cengkih_recruited",
+      "flag_nama_asli_found",
+      "flag_rj_m01_complete"
+    ]
+  },
+  {
+    "id": "RJ-H03",
+    "title": "TIDAK BERIAK (TITAH TALAGA DIAM)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 430,
+    "flags": [
+      "flag_meditasi_complete",
+      "flag_rj_m03_complete",
+      "flag_talaga_diam_recruited"
+    ]
+  },
+  {
+    "id": "RJ-H04",
+    "title": "BAHAN BAKU (TITAH BIKUSAGARI)",
+    "source": "QUEST_SCRIPT_R7_Rajawani.md",
+    "line": 451,
+    "flags": [
+      "counter_warisan_total",
+      "flag_bahan_baku_identified",
+      "flag_bikusagari_recruited",
+      "flag_rj_m02_complete"
+    ]
+  },
+  {
+    "id": "JL-M01",
+    "title": "PANTAI SELATAN",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 31,
+    "flags": [
+      "counter_serpihan_total",
+      "flag_jl_m01_complete",
+      "flag_serpihan_tutorial_seen"
+    ]
+  },
+  {
+    "id": "JL-M02",
+    "title": "SAWAH TERASERING",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 64,
+    "flags": [
+      "counter_serpihan_j2",
+      "counter_serpihan_total",
+      "flag_jl_m01_complete",
+      "flag_jl_m02_complete"
+    ]
+  },
+  {
+    "id": "JL-M03",
+    "title": "LAUT SAHASRA",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 94,
+    "flags": [
+      "counter_serpihan_j3",
+      "flag_jl_m02_complete",
+      "flag_jl_m03_complete"
+    ]
+  },
+  {
+    "id": "JL-M04",
+    "title": "PADANG ABU",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 127,
+    "flags": [
+      "counter_serpihan_j4",
+      "counter_serpihan_total",
+      "flag_jl_m03_complete",
+      "flag_jl_m04_complete",
+      "flag_peta_mental_progress"
+    ]
+  },
+  {
+    "id": "JL-M05",
+    "title": "KERAJAAN TERKUBUR",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 157,
+    "flags": [
+      "flag_jl_m04_complete",
+      "flag_jl_m05_complete",
+      "flag_jl_unity_choice"
+    ]
+  },
+  {
+    "id": "JL-M06",
+    "title": "SERIBU JADI SATU ATAU SERIBU TETAP SERIBU",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 195,
+    "flags": [
+      "counter_serpihan_total",
+      "flag_anjala_nirmala_recruited",
+      "flag_jl_m05_complete",
+      "flag_jl_m06_complete",
+      "flag_jl_unity_choice",
+      "flag_naga_sasra_recruited",
+      "flag_serpihan_terakhir_obtained"
+    ]
+  },
+  {
+    "id": "JL-S01",
+    "title": "SERIBU BAGIAN (TITAH MANDARASMI)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 237,
+    "flags": [
+      "counter_kerajaan_simulasi",
+      "flag_jl_m02_complete",
+      "flag_mandarasmi_recruited"
+    ]
+  },
+  {
+    "id": "JL-S02",
+    "title": "SERIBU ORANG MENAHAN SATU OMBAK (TITAH PENJAGA GELOMBANG)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 259,
+    "flags": [
+      "counter_gelombang_timing",
+      "flag_jl_m03_complete",
+      "flag_penjaga_gelombang_recruited"
+    ]
+  },
+  {
+    "id": "JL-S03",
+    "title": "SERIBU MENYAHUT SATU (TITAH GEMA GANDA)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 282,
+    "flags": [
+      "counter_pantulan_suara",
+      "flag_gema_ganda_recruited",
+      "flag_jl_m01_complete"
+    ]
+  },
+  {
+    "id": "JL-S04",
+    "title": "SATU BATU UNTUK IBU (TITAH DAYAN NADHA)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 317,
+    "flags": [
+      "flag_batu_spesifik_found",
+      "flag_dayan_nadha_recruited",
+      "flag_jl_m02_complete"
+    ]
+  },
+  {
+    "id": "JL-S05",
+    "title": "BAGIAN YANG TAK DIINGINKAN (TITAH CUPAKA LOBA)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 338,
+    "flags": [
+      "flag_cupaka_loba_recruited",
+      "flag_jl_m02_complete",
+      "flag_serpihan_tak_diinginkan_identified"
+    ]
+  },
+  {
+    "id": "JL-S06",
+    "title": "SATU MALAM (TITAH ABU TEMBARA)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 359,
+    "flags": [
+      "counter_cetakan_kerajaan",
+      "flag_abu_tembara_recruited",
+      "flag_jl_m04_complete"
+    ]
+  },
+  {
+    "id": "JL-H01",
+    "title": "KARANG KAPTEN NDIRU",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 383,
+    "flags": [
+      "array_bangkai_fragmen",
+      "counter_warisan_total",
+      "flag_jl_h01_complete",
+      "flag_jl_m04_complete"
+    ]
+  },
+  {
+    "id": "JL-H02",
+    "title": "EMPAT RATUS JABAT TANGAN (TITAH PADU ROTAN)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 402,
+    "flags": [
+      "counter_jabat_tangan",
+      "flag_jl_m01_complete",
+      "flag_padu_rotan_recruited"
+    ]
+  },
+  {
+    "id": "JL-H03",
+    "title": "SEJUTA EKOR (TITAH SEKAR NYALU)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 424,
+    "flags": [
+      "flag_ikan_dihitung",
+      "flag_jl_m01_complete",
+      "flag_sekar_nyalu_recruited"
+    ]
+  },
+  {
+    "id": "JL-H04",
+    "title": "DINDING YANG MENUTUP (TITAH SAGARANAK)",
+    "source": "QUEST_SCRIPT_R8_Jaladri.md",
+    "line": 446,
+    "flags": [
+      "flag_dinding_tersembunyi_found",
+      "flag_jl_m02_complete",
+      "flag_jl_unity_choice",
+      "flag_sagaranak_recruited"
+    ]
+  },
+  {
+    "id": "AW-M01",
+    "title": "KARST WARANA (SUB-OBJECTIVE: TAPAK NIRBAHASA)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 38,
+    "flags": [
+      "counter_encyclopedia_8_region",
+      "flag_aw_m01_complete",
+      "flag_hm_m04_complete",
+      "flag_jl_m06_complete",
+      "flag_kd_m06_complete",
+      "flag_kl_m06_complete",
+      "flag_rj_m06_complete",
+      "flag_sm_m06_complete",
+      "flag_tanpa_kata_tutorial_seen",
+      "flag_tapak_nirbahasa_subobjective_complete",
+      "flag_wn_m06_complete"
+    ]
+  },
+  {
+    "id": "AW-M02",
+    "title": "HUTAN PURBA (SUB-OBJECTIVE: KASWARI TANAHWIL, PARI LAMPUR)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 77,
+    "flags": [
+      "flag_aw_m01_complete",
+      "flag_aw_m02_complete",
+      "flag_kaswari_subobjective_complete",
+      "flag_pari_lampur_subobjective_complete"
+    ]
+  },
+  {
+    "id": "AW-M03",
+    "title": "LAGUNA TENANG (SUB-OBJECTIVE: KARANG WAYAHAN)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 120,
+    "flags": [
+      "flag_aw_m02_complete",
+      "flag_aw_m03_complete",
+      "flag_dialog_teks_disabled",
+      "flag_karang_wayahan_subobjective_complete"
+    ]
+  },
+  {
+    "id": "AW-M04",
+    "title": "DINDING TELAPAK (SUB-OBJECTIVE: SAMPARA WENE)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 156,
+    "flags": [
+      "flag_aw_m03_complete",
+      "flag_aw_m04_complete",
+      "flag_battle_ui_teks_disabled",
+      "flag_dialog_teks_disabled",
+      "flag_sampara_wene_subobjective_complete",
+      "flag_telapak_keenam_progress"
+    ]
+  },
+  {
+    "id": "AW-M05",
+    "title": "TELAPAK PERTAMA — GEMA PURBA",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 198,
+    "flags": [
+      "array_gema_8_region",
+      "counter_encyclopedia_percentage",
+      "counter_karakter_direkrut_total",
+      "counter_warisan_total",
+      "flag_aw_m04_complete",
+      "flag_aw_m05_complete",
+      "flag_ending_global",
+      "flag_hud_total_disabled",
+      "flag_jl_unity_choice",
+      "flag_kd_resolution_path",
+      "flag_kl_resolution_path",
+      "flag_region_resolution_nirwasita",
+      "flag_telapak_keenam_progress",
+      "flag_wn_resolution_path"
+    ]
+  },
+  {
+    "id": "AW-S01",
+    "title": "EMPAT PULUH TAHUN TANPA KATA (TITAH KALANA SAUYAN)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 273,
+    "flags": [
+      "counter_titik_ditunjuk",
+      "flag_aw_m03_complete",
+      "flag_kalana_sauyan_recruited"
+    ]
+  },
+  {
+    "id": "AW-S02",
+    "title": "TANPA BERNIAT MEMILIKI (TITAH NIN WAIAM)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 296,
+    "flags": [
+      "flag_aw_m04_complete",
+      "flag_nin_waiam_recruited",
+      "flag_rawat_makhluk_complete"
+    ]
+  },
+  {
+    "id": "AW-S03",
+    "title": "YANG TIDAK PERNAH DIAJARKAN (TITAH WAI CENDRA)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 318,
+    "flags": [
+      "flag_aw_m03_complete",
+      "flag_tarian_gestur_complete",
+      "flag_wai_cendra_recruited"
+    ]
+  },
+  {
+    "id": "AW-H01",
+    "title": "TELAPAK KEDELAPAN",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 339,
+    "flags": [
+      "flag_aw_h01_complete",
+      "flag_aw_m01_complete"
+    ]
+  },
+  {
+    "id": "AW-H02",
+    "title": "GEMA YANG MENUNGGU DIKETUK (TITAH GEMA PURWA)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 358,
+    "flags": [
+      "counter_encyclopedia_8_region",
+      "flag_aw_h02_complete",
+      "flag_gema_purwa_recruited",
+      "flag_yang_tersisa_ketika_semua_gagal_obtained"
+    ]
+  },
+  {
+    "id": "AW-H03",
+    "title": "TITAH PENUNGGU SUNYI (#99)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 397,
+    "flags": [
+      "counter_gelombang_survival",
+      "flag_aw_m04_complete",
+      "flag_ending_global",
+      "flag_hp_threshold_no_ally_down",
+      "flag_penunggu_sunyi_recruited"
+    ]
+  },
+  {
+    "id": "AW-H04",
+    "title": "TITAH TANPA RUPA (#100)",
+    "source": "QUEST_SCRIPT_R9_Anawil.md",
+    "line": 427,
+    "flags": [
+      "array_jejak_kaki_pattern",
+      "flag_aw_m02_complete",
+      "flag_battle_ui_teks_disabled",
+      "flag_dialog_teks_disabled",
+      "flag_ending_global",
+      "flag_pilihan_biner_diam",
+      "flag_tanpa_rupa_recruited"
+    ]
+  }
+]

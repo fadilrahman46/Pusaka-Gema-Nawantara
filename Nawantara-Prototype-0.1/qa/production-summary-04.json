@@ -1,0 +1,30 @@
+{
+  "build": "0.4.0",
+  "date": "2026-09-19",
+  "buildSha256": "8564a0420f6dd70ff473d6f210989f908e61069af1642cbb86eec2d5e6a937ea",
+  "unitTests": {
+    "command": "npm test",
+    "passed": 43,
+    "failed": 0
+  },
+  "browserChecks": {
+    "qa/expansion-04.json": true,
+    "qa/playthrough-04-release.json": true,
+    "qa/production-browser.json": true,
+    "qa/party-browser-03.json": true,
+    "qa/permanent-choice.json": true
+  },
+  "finalMainAndExpansionHashesMatch": true,
+  "normalStatSourceRowsVerified": 33,
+  "newQuests": 5,
+  "nirwasitaActiveKits": 11,
+  "levelCap": 60,
+  "equipmentSlots": [
+    "Senjata",
+    "Jimat",
+    "Pusaka",
+    "Kitab"
+  ],
+  "fullM1Complete": false,
+  "launchReady": false
+}

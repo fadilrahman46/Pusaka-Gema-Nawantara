@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "errors": [],
+  "state": {
+    "version": 2,
+    "designRevision": "naw-2026-09-18.1",
+    "chapter": 6,
+    "position": {
+      "x": 0.2824803574622763,
+      "z": -183.81078454123792
+    },
+    "checkpoint": {
+      "x": 0,
+      "z": -183.81078454123792
+    },
+    "flags": {
+      "flag_region_resolution_nirwasita": "ADI_JOINS",
+      "flag_adi_resolution_path": "WAITED",
+      "flag_ranaya_song_stage": 4,
+      "ext_observed_compass": true,
+      "flag_compass_tutorial_seen": true,
+      "flag_nr_m01_complete": true,
+      "counter_dialog_patience": 3,
+      "flag_lampah_sinaru_recruited": true,
+      "flag_nr_m02_complete": true,
+      "flag_tandaraga_recruited": true,
+      "flag_nr_m03_complete": true,
+      "ext_adi_puzzle": true,
+      "flag_hud_compass_disabled": false,
+      "flag_adi_met": true,
+      "flag_nr_m04_complete": true,
+      "flag_fragment_sanra_ranu": true,
+      "flag_fragment_vendor": true,
+      "flag_fragment_elder": true,
+      "flag_nr_m05_complete": true,
+      "flag_nirsmara_recruited": true,
+      "flag_kalung_jalan_pulang_obtained": true,
+      "flag_nr_m06_complete": true
+    },
+    "roster": [
+      1,
+      2,
+      9
+    ],
+    "items": [
+      "Penunjuk Basah",
+      "Tongkat Perantau",
+      "Kompas Karat",
+      "Lentera Nenek Ranaya",
+      "Peta yang Tidak Pernah Selesai",
+      "Kalung Jalan Pulang"
+    ],
+    "kepeng": 340,
+    "visited": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "burials": [],
+    "fragments": [
+      "sanra",
+      "vendor",
+      "elder"
+    ],
+    "collections": {
+      "encyclopedia": [],
+      "warisan": [],
+      "serpihan": []
+    },
+    "options": {
+      "sound": true,
+      "accessible": false,
+      "reducedMotion": false
+    },
+    "elapsed": 40.033700000001126,
+    "endingInputs": {
+      "smaranaOffer": null,
+      "himagiriResolution": null
+    },
+    "decisionProvenance": {
+      "adi": {
+        "questId": "NR-S03",
+        "eventId": "nr-s03-resolution",
+        "sourceRevision": "naw-2026-09-18.1"
+      }
+    },
+    "migrationIssues": [],
+    "presentationMode": "NORMAL",
+    "finalEnding": null
+  }
+}

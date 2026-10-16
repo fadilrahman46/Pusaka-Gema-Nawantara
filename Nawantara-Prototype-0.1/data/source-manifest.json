@@ -1,0 +1,6465 @@
+[
+  {
+    "file": "COMBAT_MATH_GLOBAL.md",
+    "bytes": 21933,
+    "lines": 266,
+    "sha256": "b9d4c785b3735b3e3d1cbd43d82243fdf8fca2cdc54e2f208094aaf49b151a08",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# COMBAT MATH GLOBAL"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 15,
+        "text": "# §0 — KONTRADIKSI LEVEL CAP: DISELESAIKAN"
+      },
+      {
+        "line": 29,
+        "text": "# §1 — KURVA PERTUMBUHAN KARAKTER (DATA NYATA, BUKAN ESTIMASI)"
+      },
+      {
+        "line": 33,
+        "text": "## 1.1 — Multiplier Pertumbuhan (Konsisten di Seluruh Tier — SEKARANG 6/6 Sampel, Termasuk Rare & Ultra Rare)"
+      },
+      {
+        "line": 45,
+        "text": "## 1.2 — Baseline HP per Tier di Level 1 — SEKARANG SELURUHNYA VERIFIKASI KANON (0 interpolasi tersisa)"
+      },
+      {
+        "line": 63,
+        "text": "## 1.3 — Rumus Terapan"
+      },
+      {
+        "line": 77,
+        "text": "# §2 — PEMETAAN REGION KE LEVEL/TG — DITETAPKAN FINAL"
+      },
+      {
+        "line": 95,
+        "text": "# §3 — FORMULA HP MONSTER GENERIK (Umum/Elite/Boss Region)"
+      },
+      {
+        "line": 99,
+        "text": "## 3.1 — Rasio Monster Generik terhadap Karakter Common di Level Region yang Sama"
+      },
+      {
+        "line": 109,
+        "text": "## 3.2 — Contoh Terapan (Nirwasita, Level party ~1-15 dalam rentang S1)"
+      },
+      {
+        "line": 118,
+        "text": "# §4 — REKONSILIASI HP BATTLE REKRUTMEN KARAKTER ROSTER — METODOLOGI FINAL + AUDIT SEBAGIAN"
+      },
+      {
+        "line": 120,
+        "text": "## 4.1 — Keputusan Metodologi (Diputuskan Setelah Investigasi Lebih Dalam)"
+      },
+      {
+        "line": 128,
+        "text": "## 4.2 — Tabel Lookup Lengkap (Siap Pakai untuk Audit Mekanis)"
+      },
+      {
+        "line": 142,
+        "text": "## 4.3 — Status Audit: SEBAGIAN dikerjakan, metodologi+tabel siap untuk sisanya"
+      },
+      {
+        "line": 160,
+        "text": "# §5 — FORMULA DAMAGE ATK vs DEF — DIBUAT BARU (Tidak Ada di Kanon Manapun)"
+      },
+      {
+        "line": 164,
+        "text": "## 5.1 — Formula"
+      },
+      {
+        "line": 182,
+        "text": "## 5.2 — Implikasi untuk Estimasi \"Battle Selesai X Ronde\" di 9 Quest Script"
+      },
+      {
+        "line": 186,
+        "text": "## 5.3 — Yang Masih Perlu Playtest, Bukan Diasumsikan Final"
+      },
+      {
+        "line": 196,
+        "text": "## 5.4 — Integrasi Elemen & CRT — DIBUAT BARU"
+      },
+      {
+        "line": 200,
+        "text": "### Siklus Keunggulan Elemen (BARU)"
+      },
+      {
+        "line": 217,
+        "text": "### Formula Lengkap dengan Elemen + CRT"
+      },
+      {
+        "line": 234,
+        "text": "### Status: ✅ Dibuat baru, BELUM divalidasi lewat cara apa pun selain logika internal"
+      },
+      {
+        "line": 248,
+        "text": "# RINGKASAN — STATUS FINAL SESI INI"
+      }
+    ],
+    "placeholder_lines": [
+      10,
+      97
+    ]
+  },
+  {
+    "file": "DOKUMEN_ITEM_Pusaka_Gema_Nawantara_FINAL_v1.md",
+    "bytes": 52767,
+    "lines": 589,
+    "sha256": "038c4c428ff7ef7b9238b4da889bd1f6650de2ede5cbcf271969f9b8047d7ebf",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# DOKUMEN ITEM"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 12,
+        "text": "## RINGKASAN ISI"
+      },
+      {
+        "line": 22,
+        "text": "## CATATAN DESAIN — ANAWIL"
+      },
+      {
+        "line": 30,
+        "text": "# BAGIAN 0 — SISTEM UMUM"
+      },
+      {
+        "line": 32,
+        "text": "## 0.1 Lima Tingkat Item"
+      },
+      {
+        "line": 44,
+        "text": "## 0.2 Empat Kategori Item"
+      },
+      {
+        "line": 53,
+        "text": "## 0.3 Drop Location"
+      },
+      {
+        "line": 59,
+        "text": "# BAGIAN 1 — KATALOG ITEM UMUM PER REGION"
+      },
+      {
+        "line": 63,
+        "text": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+      },
+      {
+        "line": 73,
+        "text": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+      },
+      {
+        "line": 83,
+        "text": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+      },
+      {
+        "line": 93,
+        "text": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+      },
+      {
+        "line": 103,
+        "text": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+      },
+      {
+        "line": 113,
+        "text": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+      },
+      {
+        "line": 123,
+        "text": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+      },
+      {
+        "line": 133,
+        "text": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+      },
+      {
+        "line": 145,
+        "text": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+      },
+      {
+        "line": 159,
+        "text": "# BAGIAN 2 — SEMBILAN ITEM SPESIAL REGION (Detail Statistik)"
+      },
+      {
+        "line": 177,
+        "text": "# BAGIAN 3 — ITEM UNIK KARAKTER (100 Karakter, 1 Item per Karakter)"
+      },
+      {
+        "line": 179,
+        "text": "## 3.1 Metodologi & Aturan Kondisi"
+      },
+      {
+        "line": 202,
+        "text": "## 3.2 — 3.9 Tabel per Region"
+      },
+      {
+        "line": 204,
+        "text": "## 3.2 Nirwasita"
+      },
+      {
+        "line": 220,
+        "text": "## 3.3 Kadewan"
+      },
+      {
+        "line": 236,
+        "text": "## 3.4 Smarana"
+      },
+      {
+        "line": 252,
+        "text": "## 3.5 Wanasunya"
+      },
+      {
+        "line": 268,
+        "text": "## 3.6 Kalamrtu"
+      },
+      {
+        "line": 285,
+        "text": "## 3.7 Himagiri"
+      },
+      {
+        "line": 301,
+        "text": "## 3.8 Rajawani"
+      },
+      {
+        "line": 317,
+        "text": "## 3.9 Jaladri"
+      },
+      {
+        "line": 331,
+        "text": "## 3.10 Titah Lengkap — 31 Karakter Super Rare / Ultra Rare / Legendary"
+      },
+      {
+        "line": 335,
+        "text": "### Nirwasita"
+      },
+      {
+        "line": 357,
+        "text": "### Kadewan"
+      },
+      {
+        "line": 374,
+        "text": "### Smarana"
+      },
+      {
+        "line": 401,
+        "text": "### Wanasunya"
+      },
+      {
+        "line": 418,
+        "text": "### Kalamrtu"
+      },
+      {
+        "line": 440,
+        "text": "### Himagiri"
+      },
+      {
+        "line": 462,
+        "text": "### Rajawani"
+      },
+      {
+        "line": 484,
+        "text": "### Jaladri"
+      },
+      {
+        "line": 506,
+        "text": "## 3.11 Anjala Nirmala (#73, Jaladri) — Konfirmasi Opsi (a)"
+      },
+      {
+        "line": 510,
+        "text": "## 3.12 Anawil (11 karakter)"
+      },
+      {
+        "line": 530,
+        "text": "### Titah Lengkap — 4 Karakter Tier Tinggi Anawil"
+      },
+      {
+        "line": 554,
+        "text": "## 3.13 Item #99 & #100 sebagai Reward — Nama Bervariasi per Ending"
+      },
+      {
+        "line": 576,
+        "text": "# BAGIAN 4 — TINDAK LANJUT UNTUK MANUSIA"
+      }
+    ],
+    "placeholder_lines": []
+  },
+  {
+    "file": "GUIDE_KARAKTER_100_Nawantara_FINAL_v1_1.md",
+    "bytes": 244266,
+    "lines": 3726,
+    "sha256": "5eecd46f1ca5614dcf78cb01e2a29bf426934025e45814feb1de928e7ea9366b",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# GUIDE KARAKTER — PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 2,
+        "text": "## 100 Sukma . Lore . Skill . Progresi Level 1-60 . Level Skill Individual . Cara Mendapatkan"
+      },
+      {
+        "line": 10,
+        "text": "## CHANGELOG v2.0 -> FINAL"
+      },
+      {
+        "line": 22,
+        "text": "## CHANGELOG v1.0 -> v2.0"
+      },
+      {
+        "line": 35,
+        "text": "# SISTEM SLOKA & MANDALA"
+      },
+      {
+        "line": 46,
+        "text": "## Metodologi Penentuan Level Skill"
+      },
+      {
+        "line": 57,
+        "text": "# ATURAN SISTEM LEVEL & STAT"
+      },
+      {
+        "line": 71,
+        "text": "# BAB 1 — NIRWASITA · The Shadow Veil"
+      },
+      {
+        "line": 73,
+        "text": "### 01 · LAMPAH SINARU"
+      },
+      {
+        "line": 106,
+        "text": "### 02 · TANDARAGA"
+      },
+      {
+        "line": 139,
+        "text": "### 03 · SANRA RANU"
+      },
+      {
+        "line": 172,
+        "text": "### 04 · WATU PALINDRA"
+      },
+      {
+        "line": 205,
+        "text": "### 05 · LARE WENGI"
+      },
+      {
+        "line": 238,
+        "text": "### 06 · KAYURI SINDU"
+      },
+      {
+        "line": 271,
+        "text": "### 07 · TOBELANG"
+      },
+      {
+        "line": 304,
+        "text": "### 08 · NGGARINDU · ⭐ Wajah Region"
+      },
+      {
+        "line": 337,
+        "text": "### 09 · NIRSMARA · 👑 LEGENDARY"
+      },
+      {
+        "line": 371,
+        "text": "### 84 · WIRA SENJA"
+      },
+      {
+        "line": 405,
+        "text": "### 85 · SARAS PERTIWI"
+      },
+      {
+        "line": 417,
+        "text": "# REGION 2 — KADEWAN · *The Whispering Sanctuary*"
+      },
+      {
+        "line": 446,
+        "text": "# BAB 2 — KADEWAN · The Whispering Sanctuary"
+      },
+      {
+        "line": 448,
+        "text": "### 10 · JURU WANGSUH"
+      },
+      {
+        "line": 481,
+        "text": "### 11 · KALA SESARI"
+      },
+      {
+        "line": 514,
+        "text": "### 12 · DEDALI KESUMA"
+      },
+      {
+        "line": 547,
+        "text": "### 13 · BHARWANG KESARI"
+      },
+      {
+        "line": 580,
+        "text": "### 14 · RARWANG CELENG"
+      },
+      {
+        "line": 613,
+        "text": "### 15 · BASUMITRA"
+      },
+      {
+        "line": 646,
+        "text": "### 16 · LEMBUJAGA"
+      },
+      {
+        "line": 679,
+        "text": "### 17 · RARASUNYI · ⭐ Wajah Region"
+      },
+      {
+        "line": 712,
+        "text": "### 18 · RANDU GIRANG"
+      },
+      {
+        "line": 747,
+        "text": "### 19 · SANG WERDI · 👑 LEGENDARY"
+      },
+      {
+        "line": 781,
+        "text": "### 86 · KIDANG BELANTIK"
+      },
+      {
+        "line": 793,
+        "text": "# REGION 3 — SMARANA · *The Phantom Citadel*"
+      },
+      {
+        "line": 822,
+        "text": "# BAB 3 — SMARANA · The Phantom Citadel"
+      },
+      {
+        "line": 824,
+        "text": "### 20 · BANDAR ILUNG"
+      },
+      {
+        "line": 857,
+        "text": "### 21 · ANTUWAN MELAYANG"
+      },
+      {
+        "line": 890,
+        "text": "### 22 · WATU GAMBUT"
+      },
+      {
+        "line": 923,
+        "text": "### 23 · JATAWIRA"
+      },
+      {
+        "line": 956,
+        "text": "### 24 · WADYAN SALUNAI"
+      },
+      {
+        "line": 989,
+        "text": "### 25 · TINGGANG INTAN"
+      },
+      {
+        "line": 1022,
+        "text": "### 26 · SAGARA BUIH · ⭐ Wajah Region"
+      },
+      {
+        "line": 1055,
+        "text": "### 27 · DATU KALIMPAN"
+      },
+      {
+        "line": 1088,
+        "text": "### 28 · JURAGAN LARUNG · 👑 LEGENDARY"
+      },
+      {
+        "line": 1122,
+        "text": "### 87 · TALAPAK EMBUN"
+      },
+      {
+        "line": 1155,
+        "text": "### 88 · BANDAR TIMBANGAN"
+      },
+      {
+        "line": 1168,
+        "text": "# REGION 4 — WANASUNYA · *The Forbidden Glade*"
+      },
+      {
+        "line": 1195,
+        "text": "# BAB 4 — WANASUNYA · The Forbidden Glade"
+      },
+      {
+        "line": 1197,
+        "text": "### 29 · PUTI LENGANG"
+      },
+      {
+        "line": 1230,
+        "text": "### 30 · LASIK KUBANG"
+      },
+      {
+        "line": 1263,
+        "text": "### 31 · RANGKIANG BATU"
+      },
+      {
+        "line": 1296,
+        "text": "### 32 · SINDAKA RIMBO"
+      },
+      {
+        "line": 1329,
+        "text": "### 33 · UHANG SUNYI"
+      },
+      {
+        "line": 1362,
+        "text": "### 34 · BUNDO SARIKASO"
+      },
+      {
+        "line": 1395,
+        "text": "### 35 · NINIAK BELANG · ⭐ Wajah Region"
+      },
+      {
+        "line": 1428,
+        "text": "### 36 · SAMBILAN TALAGO"
+      },
+      {
+        "line": 1461,
+        "text": "### 37 · SANG LENGANG · 👑 LEGENDARY"
+      },
+      {
+        "line": 1495,
+        "text": "### 89 · SUARA TANWUJUD"
+      },
+      {
+        "line": 1531,
+        "text": "### 90 · TAPAK GHAIB"
+      },
+      {
+        "line": 1543,
+        "text": "# REGION 5 — KALAMRTU · *The Cursed Relic*"
+      },
+      {
+        "line": 1572,
+        "text": "# BAB 5 — KALAMRTU · The Cursed Relic"
+      },
+      {
+        "line": 1574,
+        "text": "### 38 · ANTUMUARA"
+      },
+      {
+        "line": 1607,
+        "text": "### 39 · SIDHAYATRI"
+      },
+      {
+        "line": 1640,
+        "text": "### 40 · KELASI WIRA"
+      },
+      {
+        "line": 1673,
+        "text": "### 41 · WATU SEMA"
+      },
+      {
+        "line": 1708,
+        "text": "### 42 · DAYANG RINDANG"
+      },
+      {
+        "line": 1741,
+        "text": "### 43 · NAGA WIRA"
+      },
+      {
+        "line": 1774,
+        "text": "### 44 · RAHIB KALPA"
+      },
+      {
+        "line": 1807,
+        "text": "### 45 · LIDAH WATU · ⭐ Wajah Region"
+      },
+      {
+        "line": 1840,
+        "text": "### 46 · SEKAR KEMARUNG"
+      },
+      {
+        "line": 1873,
+        "text": "### 47 · SANG WIRANATA · 👑 LEGENDARY"
+      },
+      {
+        "line": 1907,
+        "text": "### 91 · KIJANG PRASASTI"
+      },
+      {
+        "line": 1942,
+        "text": "### 92 · RAHIB ABU"
+      },
+      {
+        "line": 1955,
+        "text": "# REGION 6 — HIMAGIRI · *The Immortal Peak*"
+      },
+      {
+        "line": 1984,
+        "text": "# BAB 6 — HIMAGIRI · The Immortal Peak"
+      },
+      {
+        "line": 1986,
+        "text": "### 48 · JALAK GIRINDRA"
+      },
+      {
+        "line": 2019,
+        "text": "### 49 · PASARWENGI"
+      },
+      {
+        "line": 2052,
+        "text": "### 50 · KURAWATU"
+      },
+      {
+        "line": 2085,
+        "text": "### 51 · SABDAGUNA"
+      },
+      {
+        "line": 2118,
+        "text": "### 52 · WANASPATI GIRI"
+      },
+      {
+        "line": 2151,
+        "text": "### 53 · RATRI KEMUNING"
+      },
+      {
+        "line": 2184,
+        "text": "### 54 · GANDARWA PINUS"
+      },
+      {
+        "line": 2217,
+        "text": "### 55 · SANG GIRIPAWANA · ⭐ Wajah Region"
+      },
+      {
+        "line": 2250,
+        "text": "### 56 · WISESA GIRINATHA"
+      },
+      {
+        "line": 2286,
+        "text": "### 93 · TABUH SENJA"
+      },
+      {
+        "line": 2322,
+        "text": "### 94 · SABDA TERTUNDA"
+      },
+      {
+        "line": 2334,
+        "text": "# REGION 7 — RAJAWANI · *The Gilded Bazaar*"
+      },
+      {
+        "line": 2365,
+        "text": "# BAB 7 — RAJAWANI · The Gilded Bazaar"
+      },
+      {
+        "line": 2367,
+        "text": "### 57 · JURU CENGKIH"
+      },
+      {
+        "line": 2400,
+        "text": "### 58 · SAWANGI PALA"
+      },
+      {
+        "line": 2433,
+        "text": "### 59 · BALA KARANGKASA"
+      },
+      {
+        "line": 2466,
+        "text": "### 60 · SOWAHI BARA"
+      },
+      {
+        "line": 2499,
+        "text": "### 61 · TALAGA DIAM"
+      },
+      {
+        "line": 2534,
+        "text": "### 62 · BIKUSAGARI"
+      },
+      {
+        "line": 2567,
+        "text": "### 63 · NYAI BOKIRA · ⭐ Wajah Region"
+      },
+      {
+        "line": 2600,
+        "text": "### 64 · DATU HONGGI"
+      },
+      {
+        "line": 2633,
+        "text": "### 65 · SANG HARGA · 👑 LEGENDARY"
+      },
+      {
+        "line": 2667,
+        "text": "### 95 · SUKMA PENIMBANG"
+      },
+      {
+        "line": 2702,
+        "text": "### 96 · PENJAGA POLOS"
+      },
+      {
+        "line": 2715,
+        "text": "# REGION 8 — JALADRI · *The Tides of Many*"
+      },
+      {
+        "line": 2744,
+        "text": "# BAB 8 — JALADRI · The Tides of Many"
+      },
+      {
+        "line": 2746,
+        "text": "### 66 · SEKAR NYALU"
+      },
+      {
+        "line": 2779,
+        "text": "### 67 · PADU ROTAN"
+      },
+      {
+        "line": 2812,
+        "text": "### 68 · ABU TEMBARA"
+      },
+      {
+        "line": 2845,
+        "text": "### 69 · DAYAN NADHA"
+      },
+      {
+        "line": 2878,
+        "text": "### 70 · SAGARANAK"
+      },
+      {
+        "line": 2911,
+        "text": "### 71 · MANDARASMI · ⭐ Wajah Region"
+      },
+      {
+        "line": 2944,
+        "text": "### 72 · CUPAKA LOBA"
+      },
+      {
+        "line": 2977,
+        "text": "### 73 · ANJALA NIRMALA"
+      },
+      {
+        "line": 3010,
+        "text": "### 74 · NAGA SASRA · 👑 LEGENDARY"
+      },
+      {
+        "line": 3044,
+        "text": "### 97 · PENJAGA GELOMBANG"
+      },
+      {
+        "line": 3079,
+        "text": "### 98 · GEMA GANDA"
+      },
+      {
+        "line": 3092,
+        "text": "# REGION 9 — ANAWIL · *The Primordial Eden*"
+      },
+      {
+        "line": 3123,
+        "text": "# BAB 9 — ANAWIL · The Primordial Eden"
+      },
+      {
+        "line": 3125,
+        "text": "### 75 · KASWARI TANAHWIL"
+      },
+      {
+        "line": 3158,
+        "text": "### 76 · TAPAK NIRBAHASA"
+      },
+      {
+        "line": 3191,
+        "text": "### 77 · KARANG WAYAHAN"
+      },
+      {
+        "line": 3224,
+        "text": "### 78 · PARI LAMPUR"
+      },
+      {
+        "line": 3259,
+        "text": "### 79 · SAMPARA WENE"
+      },
+      {
+        "line": 3292,
+        "text": "### 80 · WAI CENDRA"
+      },
+      {
+        "line": 3325,
+        "text": "### 81 · NIN WAIAM"
+      },
+      {
+        "line": 3358,
+        "text": "### 82 · KALANA SAUYAN · ⭐ Wajah Region"
+      },
+      {
+        "line": 3391,
+        "text": "### 83 · GEMA PURWA"
+      },
+      {
+        "line": 3427,
+        "text": "### 99 · PENUNGGU SUNYI"
+      },
+      {
+        "line": 3463,
+        "text": "### 100 · TANPA RUPA"
+      },
+      {
+        "line": 3475,
+        "text": "# LAMPIRAN A — TABEL INDEKS 100 KARAKTER"
+      },
+      {
+        "line": 3582,
+        "text": "## Verifikasi distribusi"
+      },
+      {
+        "line": 3598,
+        "text": "# LAMPIRAN B — MATRIKS SENSITIVITAS (WAJIB DIBACA SELURUH TIM)"
+      },
+      {
+        "line": 3600,
+        "text": "## B.1 Karakter berisiko tinggi — audit tambahan wajib"
+      },
+      {
+        "line": 3617,
+        "text": "## B.0 Karakter #84–100 — Audit Risiko Ringkas"
+      },
+      {
+        "line": 3630,
+        "text": "## B.2 Aturan yang berlaku untuk seluruh 100 karakter"
+      },
+      {
+        "line": 3641,
+        "text": "# LAMPIRAN C — STATUS KEPUTUSAN (FINAL)"
+      },
+      {
+        "line": 3643,
+        "text": "## ✅ Sudah diputuskan"
+      },
+      {
+        "line": 3685,
+        "text": "# LAMPIRAN — DISTRIBUSI FINAL & INDEKS"
+      },
+      {
+        "line": 3687,
+        "text": "## Distribusi Rarity (setelah 5 SR turun ke Rare)"
+      },
+      {
+        "line": 3701,
+        "text": "## Ringkasan Level Skill"
+      },
+      {
+        "line": 3709,
+        "text": "## Tujuh Ultra Rare Baru — Cara Didapat (Ringkasan)"
+      }
+    ],
+    "placeholder_lines": []
+  },
+  {
+    "file": "KERANGKA_MISI_Pusaka_Gema_Nawantara.md",
+    "bytes": 134264,
+    "lines": 1364,
+    "sha256": "20e97025ba1d82066e421f22c919632d5ab619120c0bb2d9757d4c192e10e366",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# KERANGKA MISI"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 15,
+        "text": "## KONVENSI DOKUMEN"
+      },
+      {
+        "line": 17,
+        "text": "### Kode Misi"
+      },
+      {
+        "line": 26,
+        "text": "### Struktur Tiap Misi"
+      },
+      {
+        "line": 32,
+        "text": "### Rujukan Silang"
+      },
+      {
+        "line": 41,
+        "text": "# REGION 1 — NIRWASITA · Kota yang Bersembunyi Supaya Selamat"
+      },
+      {
+        "line": 49,
+        "text": "## Main Mission"
+      },
+      {
+        "line": 51,
+        "text": "### NR-M01 · Kabut Pertama"
+      },
+      {
+        "line": 59,
+        "text": "### NR-M02 · Suara di Balik Danau"
+      },
+      {
+        "line": 67,
+        "text": "### NR-M03 · Enam Puluh Tahun Menunggu"
+      },
+      {
+        "line": 75,
+        "text": "### NR-M04 · Adi dan Gerbang Terbuka"
+      },
+      {
+        "line": 83,
+        "text": "### NR-M05 · Lagu Perjalanan Tua"
+      },
+      {
+        "line": 91,
+        "text": "### NR-M06 · Kabut Terbuka"
+      },
+      {
+        "line": 101,
+        "text": "## Side Mission"
+      },
+      {
+        "line": 103,
+        "text": "### NR-S01 · Gudang Barang Tertinggal"
+      },
+      {
+        "line": 111,
+        "text": "### NR-S02 · Empat Ratus Bait"
+      },
+      {
+        "line": 119,
+        "text": "### NR-S03 · Misi Opsional Adi — Dunia Luar"
+      },
+      {
+        "line": 127,
+        "text": "### NR-S04 · Harga Perlindungan (Titah Nggarindu)"
+      },
+      {
+        "line": 137,
+        "text": "## Hidden Mission"
+      },
+      {
+        "line": 139,
+        "text": "### NR-H01 · Rumah Ranaya Lama"
+      },
+      {
+        "line": 147,
+        "text": "### NR-H02 · Musuh yang Sebenarnya (Titah Wira Senja)"
+      },
+      {
+        "line": 155,
+        "text": "### NR-H03 · Yang Tertanam Selamat (Titah Saras Pertiwi)"
+      },
+      {
+        "line": 165,
+        "text": "# REGION 2 — KADEWAN · Yang Masih Dipanggil, Tak Lagi Dimengerti"
+      },
+      {
+        "line": 173,
+        "text": "## Main Mission"
+      },
+      {
+        "line": 175,
+        "text": "### KD-M01 · Upacara Pagi"
+      },
+      {
+        "line": 183,
+        "text": "### KD-M02 · Dua yang Satu"
+      },
+      {
+        "line": 191,
+        "text": "### KD-M03 · Doa yang Salah Satu Barisnya Benar"
+      },
+      {
+        "line": 199,
+        "text": "### KD-M04 · Efisiensi atau Makna"
+      },
+      {
+        "line": 207,
+        "text": "### KD-M05 · Sembilan Ratus Tahun Terakhir"
+      },
+      {
+        "line": 215,
+        "text": "### KD-M06 · Rasa yang Kembali"
+      },
+      {
+        "line": 225,
+        "text": "## Side Mission"
+      },
+      {
+        "line": 227,
+        "text": "### KD-S01 · Urutan yang Diwariskan (Titah Juru Wangsuh)"
+      },
+      {
+        "line": 234,
+        "text": "### KD-S02 · Lupa Bentuk Asli (Titah Rarwang Celeng)"
+      },
+      {
+        "line": 241,
+        "text": "### KD-S03 · Sumber yang Diulang (Titah Kidang Belantik)"
+      },
+      {
+        "line": 248,
+        "text": "### KD-S04 · Penari yang Melihat Roh (Rantai Luh Sari)"
+      },
+      {
+        "line": 256,
+        "text": "### KD-S05 · Tidak Ada yang Menanggung Semuanya (Titah Lembujaga)"
+      },
+      {
+        "line": 263,
+        "text": "### KD-S06 · Titah Sembilan Ratus Tahun (Kala Sesari)"
+      },
+      {
+        "line": 273,
+        "text": "## Hidden Mission"
+      },
+      {
+        "line": 275,
+        "text": "### KD-H01 · Sanggar Luh Sari"
+      },
+      {
+        "line": 283,
+        "text": "### KD-H02 · Duka yang Tak Dirasakan (Titah Rarasunyi)"
+      },
+      {
+        "line": 290,
+        "text": "### KD-H03 · Yang Lebih Mudah Daripada Mendengarkan (Titah Randu Girang)"
+      },
+      {
+        "line": 299,
+        "text": "# REGION 3 — SMARANA · Kota yang Menjual Kelupaan"
+      },
+      {
+        "line": 307,
+        "text": "## Main Mission"
+      },
+      {
+        "line": 309,
+        "text": "### SM-M01 · Muara yang Menerima Semuanya"
+      },
+      {
+        "line": 317,
+        "text": "### SM-M02 · Harga Hari Ini"
+      },
+      {
+        "line": 325,
+        "text": "### SM-M03 · Yang Tertinggal Entah Di Mana"
+      },
+      {
+        "line": 333,
+        "text": "### SM-M04 · Gudang Tirta"
+      },
+      {
+        "line": 341,
+        "text": "### SM-M05 · Balai Lelang"
+      },
+      {
+        "line": 349,
+        "text": "### SM-M06 · Kemakmuran yang Runtuh"
+      },
+      {
+        "line": 357,
+        "text": "### SM-M07 · Penebusan (Pasca-Region)"
+      },
+      {
+        "line": 369,
+        "text": "## Side Mission"
+      },
+      {
+        "line": 371,
+        "text": "### SM-S01 · Bukan Alasanmu (Titah Sagara Buih)"
+      },
+      {
+        "line": 378,
+        "text": "### SM-S02 · Balai Lelang (Titah Datu Kalimpan)"
+      },
+      {
+        "line": 385,
+        "text": "### SM-S03 · Lentera yang Tak Padam (Titah Talapak Embun)"
+      },
+      {
+        "line": 392,
+        "text": "### SM-S04 · Harga yang Ditanggung Bersama (Titah Bandar Timbangan)"
+      },
+      {
+        "line": 399,
+        "text": "### SM-S05 · Enam Ratus Tahun di Bawah (Titah Watu Gambut)"
+      },
+      {
+        "line": 406,
+        "text": "### SM-S06 · Yang Tidak Mengucap Izin (Titah Jatawira)"
+      },
+      {
+        "line": 416,
+        "text": "## Hidden Mission"
+      },
+      {
+        "line": 418,
+        "text": "### SM-H01 · Gudang Bawah Gudang"
+      },
+      {
+        "line": 426,
+        "text": "### SM-H02 · Yang Tak Lagi Dicari (Titah Juragan Larung — tahap tersembunyi)"
+      },
+      {
+        "line": 434,
+        "text": "### SM-H03 · Yang Hafal Semua Nama"
+      },
+      {
+        "line": 442,
+        "text": "### SM-H04 · Paruh yang Terlalu Terang (Titah Tinggang Intan)"
+      },
+      {
+        "line": 451,
+        "text": "# REGION 4 — WANASUNYA · Mereka yang Memilih Pergi"
+      },
+      {
+        "line": 459,
+        "text": "## Main Mission"
+      },
+      {
+        "line": 461,
+        "text": "### WN-M01 · Ladang Terakhir"
+      },
+      {
+        "line": 469,
+        "text": "### WN-M02 · Empat Puluh Tahun"
+      },
+      {
+        "line": 477,
+        "text": "### WN-M03 · Rumah Upiak"
+      },
+      {
+        "line": 485,
+        "text": "### WN-M04 · Hutan Belang"
+      },
+      {
+        "line": 493,
+        "text": "### WN-M05 · Empat Ratus Tahun Bertanya (Titah Niniak Belang)"
+      },
+      {
+        "line": 502,
+        "text": "### WN-M06 · Belantara Menelan"
+      },
+      {
+        "line": 513,
+        "text": "## Side Mission"
+      },
+      {
+        "line": 517,
+        "text": "### WN-S01 · Yang Memilih Pergi (Titah Puti Lengang)"
+      },
+      {
+        "line": 525,
+        "text": "### WN-S02 · Genangan yang Tak Pernah Kering (Titah Lasik Kubang)"
+      },
+      {
+        "line": 533,
+        "text": "### WN-S03 · Cukup untuk Semua (Titah Rangkiang Batu)"
+      },
+      {
+        "line": 541,
+        "text": "### WN-S04 · Kesepakatan Lama (Titah Sindaka Rimbo)"
+      },
+      {
+        "line": 549,
+        "text": "### WN-S05 · Berjalan Mundur Semalaman (Titah Uhang Sunyi)"
+      },
+      {
+        "line": 557,
+        "text": "### WN-S06 · Sembilan Meter Daftar (Titah Bundo Sarikaso)"
+      },
+      {
+        "line": 565,
+        "text": "### WN-S07 · Ke Sini, Ikuti Suaraku (Titah Suara Tanwujud)"
+      },
+      {
+        "line": 573,
+        "text": "### WN-S08 · Rute yang Diulang (Titah Tapak Ghaib)"
+      },
+      {
+        "line": 583,
+        "text": "## Hidden Mission"
+      },
+      {
+        "line": 587,
+        "text": "### WN-H01 · Air Naik (Titah Sambilan Talago)"
+      },
+      {
+        "line": 594,
+        "text": "### WN-H02 · Rumah Upiak"
+      },
+      {
+        "line": 603,
+        "text": "### WN-H03 · Yang Tersisa dari Pilihan"
+      },
+      {
+        "line": 615,
+        "text": "# REGION 5–9 — POLA STRUKTURAL IDENTIK"
+      },
+      {
+        "line": 621,
+        "text": "# REGION 5 — KALAMRTU · Kerajaan yang Hilang dari Catatan"
+      },
+      {
+        "line": 648,
+        "text": "# REGION 6 — HIMAGIRI · Istana yang Menolak Mengakui Ia Sudah Runtuh"
+      },
+      {
+        "line": 673,
+        "text": "# REGION 7 — RAJAWANI · Diingat sebagai Barang, Dilupakan sebagai Bangsa"
+      },
+      {
+        "line": 698,
+        "text": "# REGION 8 — JALADRI · Yang Pecah agar Tak Menjadi Milik Siapa Pun"
+      },
+      {
+        "line": 723,
+        "text": "# REGION 9 — ANAWIL · Ingatan yang Lebih Tua daripada Bahasa"
+      },
+      {
+        "line": 746,
+        "text": "# BAGIAN PENUTUP — STATISTIK & VALIDASI SILANG"
+      },
+      {
+        "line": 748,
+        "text": "## Ringkasan Jumlah Misi"
+      },
+      {
+        "line": 763,
+        "text": "## Validasi Cakupan"
+      },
+      {
+        "line": 783,
+        "text": "## Keputusan Desain — Anawil Tier Rendah"
+      },
+      {
+        "line": 806,
+        "text": "# ANALISIS A — ESTIMASI DURASI PER MISI"
+      },
+      {
+        "line": 808,
+        "text": "## Asumsi Profil Pemain Casual"
+      },
+      {
+        "line": 819,
+        "text": "## Referensi Jam dari World Bible §II.1"
+      },
+      {
+        "line": 832,
+        "text": "## Durasi Per Misi — Tabel Lengkap 128 Misi"
+      },
+      {
+        "line": 834,
+        "text": "### Region 1 — Nirwasita (alokasi misi: ~6.5 jam)"
+      },
+      {
+        "line": 853,
+        "text": "### Region 2 — Kadewan (alokasi misi: ~6.5 jam)"
+      },
+      {
+        "line": 874,
+        "text": "### Region 3 — Smarana (alokasi misi: ~4.5 jam)"
+      },
+      {
+        "line": 899,
+        "text": "### Region 4 — Wanasunya (alokasi misi: ~4.5 jam) — **Tabel penuh, sebelumnya di tabel ringkas, sekarang detail karena Side Mission sudah lengkap 8/8**"
+      },
+      {
+        "line": 924,
+        "text": "### Region 5–9 — Estimasi Ringkas"
+      },
+      {
+        "line": 936,
+        "text": "### Rangkuman Durasi Total — ✅ FINAL setelah revisi WB §II.1"
+      },
+      {
+        "line": 960,
+        "text": "# ANALISIS B — VALIDASI DIFFICULTY CURVE"
+      },
+      {
+        "line": 962,
+        "text": "## Skala Kesulitan Puzzle (1-5)"
+      },
+      {
+        "line": 972,
+        "text": "## Skala Kesulitan Battle (1-5)"
+      },
+      {
+        "line": 982,
+        "text": "## Pemetaan Difficulty Curve per Season"
+      },
+      {
+        "line": 984,
+        "text": "### S1 — Nirwasita + Kadewan (Tutorial)"
+      },
+      {
+        "line": 1019,
+        "text": "### S2 — Smarana + Wanasunya (TG1)"
+      },
+      {
+        "line": 1033,
+        "text": "### S3 — Kalamrtu + Himagiri (TG2)"
+      },
+      {
+        "line": 1047,
+        "text": "### S4 — Rajawani + Jaladri (TG3)"
+      },
+      {
+        "line": 1059,
+        "text": "### Finale — Anawil (TG4-5)"
+      },
+      {
+        "line": 1071,
+        "text": "### Kurva Keseluruhan"
+      },
+      {
+        "line": 1089,
+        "text": "# ANALISIS C — DISTRIBUSI BATTLE BALANCE"
+      },
+      {
+        "line": 1091,
+        "text": "## Klasifikasi Battle per Misi"
+      },
+      {
+        "line": 1102,
+        "text": "## Distribusi per Region"
+      },
+      {
+        "line": 1104,
+        "text": "### Nirwasita (13 misi)"
+      },
+      {
+        "line": 1114,
+        "text": "### Kadewan (15 misi)"
+      },
+      {
+        "line": 1124,
+        "text": "### Smarana (17 misi)"
+      },
+      {
+        "line": 1134,
+        "text": "### Wanasunya (17 misi) — **Diperbarui setelah ekspansi Side Mission + restrukturisasi Opsi C (rantai Sang Lengang)**"
+      },
+      {
+        "line": 1144,
+        "text": "### Kalamrtu (18 misi) — **Diperbarui setelah 3 gap-fill (Sidhayatri, Kelasi Wira, Watu Sema)**"
+      },
+      {
+        "line": 1154,
+        "text": "### Himagiri (14 misi) — **DIPERBARUI setelah keputusan balance**"
+      },
+      {
+        "line": 1164,
+        "text": "### Rajawani (15 misi)"
+      },
+      {
+        "line": 1174,
+        "text": "### Jaladri (16 misi) — **Diperbarui setelah gap-fill Abu Tembara**"
+      },
+      {
+        "line": 1184,
+        "text": "### Anawil (12 misi) — **DIPERBARUI setelah keputusan balance**"
+      },
+      {
+        "line": 1194,
+        "text": "## Tabel Ringkasan Distribusi — **DIPERBARUI setelah 3 keputusan balance**"
+      },
+      {
+        "line": 1211,
+        "text": "## Temuan & Rekomendasi Battle Balance"
+      },
+      {
+        "line": 1213,
+        "text": "### Masalah 1 — Himagiri Zero Battle 29% ✅ DISELESAIKAN"
+      },
+      {
+        "line": 1223,
+        "text": "### Masalah 2 — Anawil Zero Heavy Battle ✅ DISELESAIKAN (sebagian)"
+      },
+      {
+        "line": 1235,
+        "text": "### Masalah 3 — S3 Internal Imbalance"
+      },
+      {
+        "line": 1241,
+        "text": "### Kurva Battle Density per Season"
+      },
+      {
+        "line": 1261,
+        "text": "# ANALISIS D — KEPUTUSAN TITAH GEMA PURWA (AW-H02)"
+      },
+      {
+        "line": 1296,
+        "text": "# BAGIAN PENUTUP"
+      },
+      {
+        "line": 1298,
+        "text": "## Item Tindak Lanjut — Diperbarui"
+      },
+      {
+        "line": 1318,
+        "text": "## Tahap Berikutnya"
+      },
+      {
+        "line": 1338,
+        "text": "# 🎉 SELURUH 9 REGION SELESAI DI-QUEST-SCRIPT"
+      },
+      {
+        "line": 1353,
+        "text": "## Tahap Berikutnya (Diperbarui — v1.5)"
+      }
+    ],
+    "placeholder_lines": [
+      521,
+      529,
+      537,
+      545,
+      553,
+      561,
+      569,
+      577,
+      1357
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R1_Nirwasita.md",
+    "bytes": 39350,
+    "lines": 610,
+    "sha256": "01c034eb18973f49f340f544276fc441baf6ea962603316279a463a733967080",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 1: NIRWASITA"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 15,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 30,
+        "text": "# NR-M01 · KABUT PERTAMA"
+      },
+      {
+        "line": 32,
+        "text": "## Trigger"
+      },
+      {
+        "line": 36,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 41,
+        "text": "## Struktur"
+      },
+      {
+        "line": 43,
+        "text": "### Beat 1 — Tiba di N1 Teluk Ranaya (0-3 menit)"
+      },
+      {
+        "line": 48,
+        "text": "### Beat 2 — Tutorial Kompas (3-13 menit)"
+      },
+      {
+        "line": 55,
+        "text": "### Beat 3 — Battle Tutorial (13-23 menit)"
+      },
+      {
+        "line": 64,
+        "text": "### Beat 4 — Reward & Transisi"
+      },
+      {
+        "line": 70,
+        "text": "## Fail State"
+      },
+      {
+        "line": 75,
+        "text": "# NR-M02 · SUARA DI BALIK DANAU"
+      },
+      {
+        "line": 77,
+        "text": "## Trigger"
+      },
+      {
+        "line": 81,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 86,
+        "text": "## Struktur"
+      },
+      {
+        "line": 88,
+        "text": "### Beat 1 — Pertemuan Pertama Nenek Ranaya"
+      },
+      {
+        "line": 96,
+        "text": "### Beat 2 — Bait Pertama & Puzzle Lokasi"
+      },
+      {
+        "line": 102,
+        "text": "### Beat 3 — Battle: Lampah Sinaru"
+      },
+      {
+        "line": 109,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 116,
+        "text": "## Fail State"
+      },
+      {
+        "line": 121,
+        "text": "# NR-M03 · ENAM PULUH TAHUN MENUNGGU"
+      },
+      {
+        "line": 123,
+        "text": "## Trigger"
+      },
+      {
+        "line": 127,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 131,
+        "text": "## Struktur"
+      },
+      {
+        "line": 133,
+        "text": "### Beat 1 — Konfrontasi Tandaraga"
+      },
+      {
+        "line": 138,
+        "text": "### Beat 2 — Battle \"Kesabaran\""
+      },
+      {
+        "line": 147,
+        "text": "### Beat 3 — Recruitment"
+      },
+      {
+        "line": 152,
+        "text": "## Fail State"
+      },
+      {
+        "line": 157,
+        "text": "# NR-M04 · ADI DAN GERBANG TERBUKA"
+      },
+      {
+        "line": 161,
+        "text": "## Trigger"
+      },
+      {
+        "line": 165,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 171,
+        "text": "## Struktur"
+      },
+      {
+        "line": 173,
+        "text": "### Beat 1 — Pertemuan Adi"
+      },
+      {
+        "line": 177,
+        "text": "### Beat 2 — Navigasi Tanpa HUD (implementasi Opsi B)"
+      },
+      {
+        "line": 188,
+        "text": "### Beat 3 — Puzzle Identifikasi Adi Palsu"
+      },
+      {
+        "line": 200,
+        "text": "### Beat 4 — Reward & Transisi"
+      },
+      {
+        "line": 207,
+        "text": "## Fail State"
+      },
+      {
+        "line": 212,
+        "text": "# NR-M05 · LAGU PERJALANAN TUA"
+      },
+      {
+        "line": 214,
+        "text": "## Trigger"
+      },
+      {
+        "line": 218,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 223,
+        "text": "## Struktur"
+      },
+      {
+        "line": 225,
+        "text": "### Beat 1 — Kumpul 3 Fragmen (paralel, tidak wajib berurutan)"
+      },
+      {
+        "line": 243,
+        "text": "### Beat 2 — Gabungkan Fragmen"
+      },
+      {
+        "line": 249,
+        "text": "### Beat 3 — Battle: Penjaga Menara"
+      },
+      {
+        "line": 258,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 263,
+        "text": "## Fail State"
+      },
+      {
+        "line": 268,
+        "text": "# NR-M06 · KABUT TERBUKA"
+      },
+      {
+        "line": 270,
+        "text": "## Trigger"
+      },
+      {
+        "line": 274,
+        "text": "## Flag yang Dipakai"
+      },
+      {
+        "line": 279,
+        "text": "## Struktur"
+      },
+      {
+        "line": 281,
+        "text": "### Beat 1 — Fase 1-2 (Battle Konvensional)"
+      },
+      {
+        "line": 291,
+        "text": "### Beat 2 — Fase 3 (Puzzle Lagu)"
+      },
+      {
+        "line": 297,
+        "text": "### Beat 3 — Recruitment & Reward"
+      },
+      {
+        "line": 305,
+        "text": "## Fail State"
+      },
+      {
+        "line": 311,
+        "text": "# NR-S01 · GUDANG BARANG TERTINGGAL"
+      },
+      {
+        "line": 313,
+        "text": "## Trigger"
+      },
+      {
+        "line": 317,
+        "text": "## Flag"
+      },
+      {
+        "line": 321,
+        "text": "## Struktur"
+      },
+      {
+        "line": 330,
+        "text": "## Fail State"
+      },
+      {
+        "line": 335,
+        "text": "# NR-S02 · EMPAT RATUS BAIT"
+      },
+      {
+        "line": 337,
+        "text": "## Trigger"
+      },
+      {
+        "line": 341,
+        "text": "## Flag"
+      },
+      {
+        "line": 345,
+        "text": "## Struktur"
+      },
+      {
+        "line": 352,
+        "text": "## Fail State"
+      },
+      {
+        "line": 357,
+        "text": "# NR-S03 · MISI OPSIONAL ADI — DUNIA LUAR"
+      },
+      {
+        "line": 361,
+        "text": "## Trigger"
+      },
+      {
+        "line": 365,
+        "text": "## Flag"
+      },
+      {
+        "line": 370,
+        "text": "## Struktur"
+      },
+      {
+        "line": 372,
+        "text": "### Beat 1 — Dialog Bercabang 3 Lapis"
+      },
+      {
+        "line": 378,
+        "text": "### Beat 2 — Titik Konflik (Gerbang N7)"
+      },
+      {
+        "line": 385,
+        "text": "### Beat 3 — Resolusi"
+      },
+      {
+        "line": 390,
+        "text": "## Fail State"
+      },
+      {
+        "line": 395,
+        "text": "# NR-S04 · HARGA PERLINDUNGAN (TITAH NGGARINDU)"
+      },
+      {
+        "line": 397,
+        "text": "## Trigger"
+      },
+      {
+        "line": 401,
+        "text": "## Flag"
+      },
+      {
+        "line": 406,
+        "text": "## Struktur"
+      },
+      {
+        "line": 408,
+        "text": "### Beat 1 — Kumpul 5 Fragmen"
+      },
+      {
+        "line": 413,
+        "text": "### Beat 2 — Altar Kabut & Puzzle \"Merelakan\""
+      },
+      {
+        "line": 419,
+        "text": "### Beat 3 — Battle 3 Fase (Manifestasi Kabut)"
+      },
+      {
+        "line": 426,
+        "text": "### Beat 4 — Recruitment"
+      },
+      {
+        "line": 430,
+        "text": "## Fail State"
+      },
+      {
+        "line": 436,
+        "text": "# NR-H01 · RUMAH RANAYA LAMA"
+      },
+      {
+        "line": 438,
+        "text": "## Trigger"
+      },
+      {
+        "line": 442,
+        "text": "## Flag"
+      },
+      {
+        "line": 447,
+        "text": "## Struktur"
+      },
+      {
+        "line": 455,
+        "text": "## Fail State"
+      },
+      {
+        "line": 460,
+        "text": "# NR-H02 · MUSUH YANG SEBENARNYA (TITAH WIRA SENJA)"
+      },
+      {
+        "line": 462,
+        "text": "## Trigger"
+      },
+      {
+        "line": 466,
+        "text": "## Flag"
+      },
+      {
+        "line": 470,
+        "text": "## Struktur"
+      },
+      {
+        "line": 472,
+        "text": "### Beat 1 — 3 Battle Terbatas"
+      },
+      {
+        "line": 478,
+        "text": "### Beat 2 — Battle Akhir: Sang Sunyi (Manifestasi)"
+      },
+      {
+        "line": 485,
+        "text": "### Beat 3 — Recruitment"
+      },
+      {
+        "line": 489,
+        "text": "## Fail State"
+      },
+      {
+        "line": 495,
+        "text": "# NR-H03 · YANG TERTANAM SELAMAT (TITAH SARAS PERTIWI)"
+      },
+      {
+        "line": 497,
+        "text": "## Trigger"
+      },
+      {
+        "line": 501,
+        "text": "## Flag"
+      },
+      {
+        "line": 506,
+        "text": "## Struktur"
+      },
+      {
+        "line": 514,
+        "text": "## Fail State"
+      },
+      {
+        "line": 519,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 1"
+      },
+      {
+        "line": 539,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 549,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      },
+      {
+        "line": 551,
+        "text": "## 1. Monster Nirwasita — ✅ SELESAI, dengan koreksi penting"
+      },
+      {
+        "line": 563,
+        "text": "## 2. Sistem Combat Math Global — 🟡 DITUNDA, status ditandai eksplisit"
+      },
+      {
+        "line": 569,
+        "text": "## 3. NR-H03 Konfirmasi UI — ✅ FINAL, wajib implementasi"
+      },
+      {
+        "line": 579,
+        "text": "## 4. Sequencing NR-S03 — ✅ FINAL"
+      },
+      {
+        "line": 583,
+        "text": "## 5. NR-S04 (Nggarindu) — Entri Ensiklopedia Bisa Dipulihkan — ✅ FINAL"
+      },
+      {
+        "line": 595,
+        "text": "# STATUS SISA — TIDAK ADA LAGI ITEM TERBUKA UNTUK REGION 1"
+      }
+    ],
+    "placeholder_lines": [
+      112,
+      324,
+      416,
+      451,
+      452,
+      565
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R2_Kadewan.md",
+    "bytes": 33507,
+    "lines": 532,
+    "sha256": "b703237f0378ca6f105a681a61f7ee850a60a9e2a94c0081dbdbbe6b2920f1ba",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 2: KADEWAN"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 18,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 24,
+        "text": "# KD-M01 · UPACARA PAGI"
+      },
+      {
+        "line": 26,
+        "text": "## Trigger"
+      },
+      {
+        "line": 29,
+        "text": "## Flag"
+      },
+      {
+        "line": 34,
+        "text": "## Struktur"
+      },
+      {
+        "line": 36,
+        "text": "### Beat 1 — Menyaksikan Upacara Pagi (0-5 menit)"
+      },
+      {
+        "line": 40,
+        "text": "### Beat 2 — Dialog \"Apa Artinya?\""
+      },
+      {
+        "line": 51,
+        "text": "### Beat 3 — Tutorial Ritual Otomatis (Battle)"
+      },
+      {
+        "line": 59,
+        "text": "### Beat 4 — Reward & Transisi"
+      },
+      {
+        "line": 64,
+        "text": "## Fail State"
+      },
+      {
+        "line": 69,
+        "text": "# KD-M02 · DUA YANG SATU"
+      },
+      {
+        "line": 71,
+        "text": "## Trigger"
+      },
+      {
+        "line": 75,
+        "text": "## Flag"
+      },
+      {
+        "line": 80,
+        "text": "## Struktur"
+      },
+      {
+        "line": 82,
+        "text": "### Beat 1 — Menyaksikan Pertarungan"
+      },
+      {
+        "line": 87,
+        "text": "### Beat 2 — Battle Bercabang 3 Jalur"
+      },
+      {
+        "line": 100,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 106,
+        "text": "## Fail State"
+      },
+      {
+        "line": 112,
+        "text": "# KD-M03 · DOA YANG SALAH SATU BARISNYA BENAR"
+      },
+      {
+        "line": 114,
+        "text": "## Trigger"
+      },
+      {
+        "line": 118,
+        "text": "## Flag"
+      },
+      {
+        "line": 123,
+        "text": "## Struktur"
+      },
+      {
+        "line": 125,
+        "text": "### Beat 1 — Investigasi 7 Baris Doa"
+      },
+      {
+        "line": 132,
+        "text": "### Beat 2 — Battle: Sesaji Berjalan"
+      },
+      {
+        "line": 139,
+        "text": "### Beat 3 — Identifikasi Baris Benar"
+      },
+      {
+        "line": 145,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 149,
+        "text": "## Fail State"
+      },
+      {
+        "line": 155,
+        "text": "# KD-M04 · EFISIENSI ATAU MAKNA"
+      },
+      {
+        "line": 159,
+        "text": "## Trigger"
+      },
+      {
+        "line": 163,
+        "text": "## Flag"
+      },
+      {
+        "line": 167,
+        "text": "## Struktur"
+      },
+      {
+        "line": 169,
+        "text": "### Beat 1 — Data Disajikan (Bukan Disembunyikan)"
+      },
+      {
+        "line": 176,
+        "text": "### Beat 2 — Dialog Bercabang 4 Lapis"
+      },
+      {
+        "line": 181,
+        "text": "### Beat 3A — Jalur MEANING (jika pilih \"Pulihkan\")"
+      },
+      {
+        "line": 189,
+        "text": "### Beat 3B — Jalur EFFICIENCY (jika pilih \"Biarkan kosong\")"
+      },
+      {
+        "line": 195,
+        "text": "### Beat 4 — Transisi"
+      },
+      {
+        "line": 199,
+        "text": "## Fail State"
+      },
+      {
+        "line": 204,
+        "text": "# KD-M05 · SEMBILAN RATUS TAHUN TERAKHIR"
+      },
+      {
+        "line": 206,
+        "text": "## Trigger"
+      },
+      {
+        "line": 210,
+        "text": "## Flag"
+      },
+      {
+        "line": 214,
+        "text": "## Struktur"
+      },
+      {
+        "line": 216,
+        "text": "### Beat 1 — Puzzle Jejak Upacara"
+      },
+      {
+        "line": 220,
+        "text": "### Beat 2 — 3 Battle Bertingkat"
+      },
+      {
+        "line": 226,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 230,
+        "text": "## Fail State"
+      },
+      {
+        "line": 235,
+        "text": "# KD-M06 · RASA YANG KEMBALI"
+      },
+      {
+        "line": 237,
+        "text": "## Trigger"
+      },
+      {
+        "line": 241,
+        "text": "## Flag"
+      },
+      {
+        "line": 246,
+        "text": "## Struktur"
+      },
+      {
+        "line": 248,
+        "text": "### Beat 1 — Battle Bercabang Berdasarkan Resolusi Region"
+      },
+      {
+        "line": 260,
+        "text": "### Beat 2 — Recruitment & Reward"
+      },
+      {
+        "line": 267,
+        "text": "## Fail State"
+      },
+      {
+        "line": 272,
+        "text": "# KD-S01 · URUTAN YANG DIWARISKAN (TITAH JURU WANGSUH)"
+      },
+      {
+        "line": 274,
+        "text": "## Trigger"
+      },
+      {
+        "line": 278,
+        "text": "## Flag"
+      },
+      {
+        "line": 282,
+        "text": "## Struktur"
+      },
+      {
+        "line": 289,
+        "text": "## Fail State"
+      },
+      {
+        "line": 294,
+        "text": "# KD-S02 · LUPA BENTUK ASLI (TITAH RARWANG CELENG)"
+      },
+      {
+        "line": 296,
+        "text": "## Trigger"
+      },
+      {
+        "line": 299,
+        "text": "## Flag"
+      },
+      {
+        "line": 302,
+        "text": "## Struktur"
+      },
+      {
+        "line": 307,
+        "text": "## Fail State"
+      },
+      {
+        "line": 312,
+        "text": "# KD-S03 · SUMBER YANG DIULANG (TITAH KIDANG BELANTIK)"
+      },
+      {
+        "line": 314,
+        "text": "## Trigger"
+      },
+      {
+        "line": 318,
+        "text": "## Flag"
+      },
+      {
+        "line": 322,
+        "text": "## Struktur"
+      },
+      {
+        "line": 328,
+        "text": "## Fail State"
+      },
+      {
+        "line": 333,
+        "text": "# KD-S04 · PENARI YANG MELIHAT ROH (RANTAI LUH SARI)"
+      },
+      {
+        "line": 335,
+        "text": "## Trigger"
+      },
+      {
+        "line": 339,
+        "text": "## Flag"
+      },
+      {
+        "line": 344,
+        "text": "## Struktur"
+      },
+      {
+        "line": 350,
+        "text": "## Fail State"
+      },
+      {
+        "line": 355,
+        "text": "# KD-S05 · TIDAK ADA YANG MENANGGUNG SEMUANYA (TITAH LEMBUJAGA)"
+      },
+      {
+        "line": 357,
+        "text": "## Trigger"
+      },
+      {
+        "line": 361,
+        "text": "## Flag"
+      },
+      {
+        "line": 365,
+        "text": "## Struktur"
+      },
+      {
+        "line": 370,
+        "text": "## Fail State"
+      },
+      {
+        "line": 375,
+        "text": "# KD-H01 · SANGGAR LUH SARI"
+      },
+      {
+        "line": 377,
+        "text": "## Trigger"
+      },
+      {
+        "line": 381,
+        "text": "## Flag"
+      },
+      {
+        "line": 385,
+        "text": "## Struktur"
+      },
+      {
+        "line": 391,
+        "text": "## Fail State"
+      },
+      {
+        "line": 396,
+        "text": "# KD-H02 · DUKA YANG TAK DIRASAKAN (TITAH RARASUNYI)"
+      },
+      {
+        "line": 398,
+        "text": "## Trigger"
+      },
+      {
+        "line": 402,
+        "text": "## Flag"
+      },
+      {
+        "line": 406,
+        "text": "## Struktur"
+      },
+      {
+        "line": 412,
+        "text": "## Fail State"
+      },
+      {
+        "line": 418,
+        "text": "# KD-H03 · YANG LEBIH MUDAH DARIPADA MENDENGARKAN (TITAH RANDU GIRANG)"
+      },
+      {
+        "line": 420,
+        "text": "## Trigger"
+      },
+      {
+        "line": 424,
+        "text": "## Flag"
+      },
+      {
+        "line": 428,
+        "text": "## Struktur"
+      },
+      {
+        "line": 434,
+        "text": "## Fail State"
+      },
+      {
+        "line": 439,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 2"
+      },
+      {
+        "line": 458,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 468,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      },
+      {
+        "line": 470,
+        "text": "## 1. KD-M04 Beat 3A/3B: Dikunci Permanen — ✅ FINAL"
+      },
+      {
+        "line": 474,
+        "text": "## 2. KD-S02 Hilang di Jalur SIDED_BHARWANG — ✅ FINAL, diterima sebagai fitur"
+      },
+      {
+        "line": 480,
+        "text": "## 3. Monster Belum Terverifikasi — 🟡 MASIH TERBUKA"
+      },
+      {
+        "line": 484,
+        "text": "## 4. Kala Sesari — ✅ SELESAI, jalur rekrutmen dibuat"
+      },
+      {
+        "line": 488,
+        "text": "### KD-S06 · Titah Sembilan Ratus Tahun (Kala Sesari)"
+      },
+      {
+        "line": 505,
+        "text": "## 5. Combat Math Placeholder — 🟡 status tetap sama"
+      },
+      {
+        "line": 509,
+        "text": "## 6. Item Reward KD-S06 — ✅ SELESAI, ternyata sudah kanon"
+      },
+      {
+        "line": 521,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — TAMBAHAN"
+      }
+    ],
+    "placeholder_lines": [
+      20,
+      285,
+      308,
+      323
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R3_Smarana.md",
+    "bytes": 39562,
+    "lines": 617,
+    "sha256": "7350b640a910346528db84e5d86f324c820c4b6a0bf522d208d9e381d01d33ab",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 3: SMARANA"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 19,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 27,
+        "text": "# SM-M01 · MUARA YANG MENERIMA SEMUANYA"
+      },
+      {
+        "line": 29,
+        "text": "## Trigger"
+      },
+      {
+        "line": 33,
+        "text": "## Flag"
+      },
+      {
+        "line": 38,
+        "text": "## Struktur"
+      },
+      {
+        "line": 40,
+        "text": "### Beat 1 — Tiba di Pelabuhan"
+      },
+      {
+        "line": 44,
+        "text": "### Beat 2 — Tutorial Neraca Dagang"
+      },
+      {
+        "line": 59,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 66,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 70,
+        "text": "## Fail State"
+      },
+      {
+        "line": 75,
+        "text": "# SM-M02 · HARGA HARI INI"
+      },
+      {
+        "line": 77,
+        "text": "## Trigger"
+      },
+      {
+        "line": 81,
+        "text": "## Flag"
+      },
+      {
+        "line": 86,
+        "text": "## Struktur"
+      },
+      {
+        "line": 88,
+        "text": "### Beat 1 — Pengenalan Bandar Ilung"
+      },
+      {
+        "line": 93,
+        "text": "### Beat 2 — Mini-Game Perdagangan"
+      },
+      {
+        "line": 98,
+        "text": "### Beat 3 — Battle: Penagih Utang Lama"
+      },
+      {
+        "line": 105,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 111,
+        "text": "## Fail State"
+      },
+      {
+        "line": 116,
+        "text": "# SM-M03 · YANG TERTINGGAL ENTAH DI MANA"
+      },
+      {
+        "line": 120,
+        "text": "## Trigger"
+      },
+      {
+        "line": 124,
+        "text": "## Flag"
+      },
+      {
+        "line": 129,
+        "text": "## Struktur"
+      },
+      {
+        "line": 131,
+        "text": "### Beat 1 — Investigasi Gudang"
+      },
+      {
+        "line": 136,
+        "text": "### Beat 2 — Mengenali Antuwan Melayang"
+      },
+      {
+        "line": 142,
+        "text": "### Beat 3 — Pilihan Jalur & Battle"
+      },
+      {
+        "line": 151,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 157,
+        "text": "## Fail State"
+      },
+      {
+        "line": 162,
+        "text": "# SM-M04 · GUDANG TIRTA"
+      },
+      {
+        "line": 164,
+        "text": "## Trigger"
+      },
+      {
+        "line": 168,
+        "text": "## Flag"
+      },
+      {
+        "line": 173,
+        "text": "## Struktur"
+      },
+      {
+        "line": 175,
+        "text": "### Beat 1 — 7 Segel"
+      },
+      {
+        "line": 180,
+        "text": "### Beat 2 — 3 Battle Bertingkat (Bawah Air)"
+      },
+      {
+        "line": 186,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 191,
+        "text": "## Fail State"
+      },
+      {
+        "line": 197,
+        "text": "# SM-M05 · BALAI LELANG"
+      },
+      {
+        "line": 199,
+        "text": "## Trigger"
+      },
+      {
+        "line": 203,
+        "text": "## Flag"
+      },
+      {
+        "line": 208,
+        "text": "## Struktur"
+      },
+      {
+        "line": 210,
+        "text": "### Beat 1 — Sistem Lelang"
+      },
+      {
+        "line": 215,
+        "text": "### Beat 2A — Jalur Menang Lelang"
+      },
+      {
+        "line": 219,
+        "text": "### Beat 2B — Jalur Tolak Membeli (opsional)"
+      },
+      {
+        "line": 223,
+        "text": "### Beat 3 — Battle: Gema Smarana"
+      },
+      {
+        "line": 229,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 233,
+        "text": "## Fail State"
+      },
+      {
+        "line": 238,
+        "text": "# SM-M06 · KEMAKMURAN YANG RUNTUH"
+      },
+      {
+        "line": 240,
+        "text": "## Trigger"
+      },
+      {
+        "line": 244,
+        "text": "## Flag"
+      },
+      {
+        "line": 250,
+        "text": "## Struktur"
+      },
+      {
+        "line": 252,
+        "text": "### Beat 1 — Konfrontasi Juragan Larung"
+      },
+      {
+        "line": 255,
+        "text": "### Beat 2 — Battle"
+      },
+      {
+        "line": 264,
+        "text": "### Beat 3 — Fase Akhir: Penawaran Terakhir"
+      },
+      {
+        "line": 271,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 278,
+        "text": "## Fail State"
+      },
+      {
+        "line": 283,
+        "text": "# SM-M07 · PENEBUSAN (PASCA-REGION)"
+      },
+      {
+        "line": 287,
+        "text": "## Trigger"
+      },
+      {
+        "line": 291,
+        "text": "## Flag"
+      },
+      {
+        "line": 295,
+        "text": "## Struktur"
+      },
+      {
+        "line": 297,
+        "text": "### Beat 1 — Cek Entri Hilang"
+      },
+      {
+        "line": 300,
+        "text": "### Beat 2 — Puzzle Per Entri"
+      },
+      {
+        "line": 304,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 308,
+        "text": "## Fail State"
+      },
+      {
+        "line": 313,
+        "text": "# SM-S01 · BUKAN ALASANMU (TITAH SAGARA BUIH)"
+      },
+      {
+        "line": 315,
+        "text": "## Trigger"
+      },
+      {
+        "line": 319,
+        "text": "## Flag"
+      },
+      {
+        "line": 323,
+        "text": "## Struktur"
+      },
+      {
+        "line": 329,
+        "text": "## Fail State"
+      },
+      {
+        "line": 334,
+        "text": "# SM-S02 · BALAI LELANG (TITAH DATU KALIMPAN)"
+      },
+      {
+        "line": 336,
+        "text": "## Trigger"
+      },
+      {
+        "line": 340,
+        "text": "## Flag"
+      },
+      {
+        "line": 344,
+        "text": "## Struktur"
+      },
+      {
+        "line": 350,
+        "text": "## Fail State"
+      },
+      {
+        "line": 355,
+        "text": "# SM-S03 · LENTERA YANG TAK PADAM (TITAH TALAPAK EMBUN)"
+      },
+      {
+        "line": 357,
+        "text": "## Trigger"
+      },
+      {
+        "line": 361,
+        "text": "## Flag"
+      },
+      {
+        "line": 364,
+        "text": "## Struktur"
+      },
+      {
+        "line": 369,
+        "text": "## Fail State"
+      },
+      {
+        "line": 374,
+        "text": "# SM-S04 · HARGA YANG DITANGGUNG BERSAMA (TITAH BANDAR TIMBANGAN)"
+      },
+      {
+        "line": 376,
+        "text": "## Trigger"
+      },
+      {
+        "line": 380,
+        "text": "## Flag"
+      },
+      {
+        "line": 384,
+        "text": "## Struktur"
+      },
+      {
+        "line": 390,
+        "text": "## Fail State"
+      },
+      {
+        "line": 396,
+        "text": "# SM-S05 · ENAM RATUS TAHUN DI BAWAH (TITAH WATU GAMBUT)"
+      },
+      {
+        "line": 398,
+        "text": "## Trigger"
+      },
+      {
+        "line": 402,
+        "text": "## Flag"
+      },
+      {
+        "line": 406,
+        "text": "## Struktur"
+      },
+      {
+        "line": 412,
+        "text": "## Fail State"
+      },
+      {
+        "line": 417,
+        "text": "# SM-S06 · YANG TIDAK MENGUCAP IZIN (TITAH JATAWIRA)"
+      },
+      {
+        "line": 421,
+        "text": "## Trigger"
+      },
+      {
+        "line": 425,
+        "text": "## Flag"
+      },
+      {
+        "line": 430,
+        "text": "## Struktur"
+      },
+      {
+        "line": 432,
+        "text": "### Beat 1 — Kumpul 3 Doa Pelayaran"
+      },
+      {
+        "line": 436,
+        "text": "### Beat 2 — Titik Keputusan (Lokasi Terpisah dari Jalur Utama S1→S2)"
+      },
+      {
+        "line": 445,
+        "text": "### Beat 3A — Battle Jinak (jalur izin lengkap)"
+      },
+      {
+        "line": 451,
+        "text": "### Beat 3B — Battle Penuh (jalur tanpa izin)"
+      },
+      {
+        "line": 457,
+        "text": "### Beat 4 — Recruitment"
+      },
+      {
+        "line": 461,
+        "text": "## Fail State"
+      },
+      {
+        "line": 467,
+        "text": "# SM-H01 · GUDANG BAWAH GUDANG"
+      },
+      {
+        "line": 469,
+        "text": "## Trigger"
+      },
+      {
+        "line": 472,
+        "text": "## Flag"
+      },
+      {
+        "line": 476,
+        "text": "## Struktur"
+      },
+      {
+        "line": 482,
+        "text": "## Fail State"
+      },
+      {
+        "line": 487,
+        "text": "# SM-H02 · YANG TAK LAGI DICARI (LANJUTAN JURAGAN LARUNG)"
+      },
+      {
+        "line": 489,
+        "text": "## Trigger"
+      },
+      {
+        "line": 493,
+        "text": "## Flag"
+      },
+      {
+        "line": 496,
+        "text": "## Struktur"
+      },
+      {
+        "line": 503,
+        "text": "## Fail State"
+      },
+      {
+        "line": 508,
+        "text": "# SM-H03 · YANG HAFAL SEMUA NAMA (TITAH WADYAN SALUNAI)"
+      },
+      {
+        "line": 510,
+        "text": "## Trigger"
+      },
+      {
+        "line": 513,
+        "text": "## Flag"
+      },
+      {
+        "line": 517,
+        "text": "## Struktur"
+      },
+      {
+        "line": 523,
+        "text": "## Fail State"
+      },
+      {
+        "line": 528,
+        "text": "# SM-H04 · PARUH YANG TERLALU TERANG (TITAH TINGGANG INTAN)"
+      },
+      {
+        "line": 530,
+        "text": "## Trigger"
+      },
+      {
+        "line": 533,
+        "text": "## Flag"
+      },
+      {
+        "line": 537,
+        "text": "## Struktur"
+      },
+      {
+        "line": 544,
+        "text": "## Fail State"
+      },
+      {
+        "line": 549,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 3"
+      },
+      {
+        "line": 572,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 582,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      },
+      {
+        "line": 584,
+        "text": "## 1. Pasif Juragan Larung — ✅ SELESAI, koreksi mendasar"
+      },
+      {
+        "line": 592,
+        "text": "## 2. SM-H01 — ✅ SELESAI, riddle ditambahkan"
+      },
+      {
+        "line": 596,
+        "text": "## 3. Penamaan \"Pasca-Tamat\" → \"Pasca-Region\" — ✅ SELESAI"
+      },
+      {
+        "line": 600,
+        "text": "## 4. Sequencing Jatawira/Antuwan Melayang — ✅ SELESAI (Jatawira), ✅ TIDAK ADA MASALAH (Antuwan Melayang)"
+      },
+      {
+        "line": 606,
+        "text": "## 5. Sinkronisasi Dokumen — ✅ SELESAI"
+      },
+      {
+        "line": 610,
+        "text": "## 6. Combat Math Placeholder — 🟡 status tetap"
+      }
+    ],
+    "placeholder_lines": [
+      21,
+      102,
+      145,
+      149,
+      182,
+      184,
+      225,
+      326,
+      347,
+      366,
+      409,
+      499,
+      541,
+      612
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R4_Wanasunya.md",
+    "bytes": 34771,
+    "lines": 571,
+    "sha256": "a1786e87e74b9f3cf7452d680054682c05b709e0571bccc4c06dd5f88b28a6f3",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 4: WANASUNYA"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 20,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 28,
+        "text": "# WN-M01 · LADANG TERAKHIR"
+      },
+      {
+        "line": 30,
+        "text": "## Trigger"
+      },
+      {
+        "line": 33,
+        "text": "## Flag"
+      },
+      {
+        "line": 38,
+        "text": "## Struktur"
+      },
+      {
+        "line": 40,
+        "text": "### Beat 1 — Tiba di Ladang Terakhir"
+      },
+      {
+        "line": 44,
+        "text": "### Beat 2 — Puzzle Navigasi & Penanda"
+      },
+      {
+        "line": 49,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 54,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 59,
+        "text": "## Fail State"
+      },
+      {
+        "line": 64,
+        "text": "# WN-M02 · EMPAT PULUH TAHUN"
+      },
+      {
+        "line": 66,
+        "text": "## Trigger"
+      },
+      {
+        "line": 70,
+        "text": "## Flag"
+      },
+      {
+        "line": 74,
+        "text": "## Struktur"
+      },
+      {
+        "line": 76,
+        "text": "### Beat 1 — Tanda-Tanda Penghuni"
+      },
+      {
+        "line": 81,
+        "text": "### Beat 2 — Battle: Rimba Bersuara"
+      },
+      {
+        "line": 88,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 93,
+        "text": "## Fail State"
+      },
+      {
+        "line": 98,
+        "text": "# WN-M03 · RUMAH UPIAK"
+      },
+      {
+        "line": 102,
+        "text": "## Trigger"
+      },
+      {
+        "line": 106,
+        "text": "## Flag"
+      },
+      {
+        "line": 112,
+        "text": "## Struktur"
+      },
+      {
+        "line": 114,
+        "text": "### Beat 1 — Pertemuan Upiak"
+      },
+      {
+        "line": 119,
+        "text": "### Beat 2 — Kumpul Bukti (Wajib Sebelum Memilih)"
+      },
+      {
+        "line": 124,
+        "text": "### Beat 3 — Pilihan Akhir"
+      },
+      {
+        "line": 129,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 135,
+        "text": "## Fail State"
+      },
+      {
+        "line": 140,
+        "text": "# WN-M04 · HUTAN BELANG"
+      },
+      {
+        "line": 142,
+        "text": "## Trigger"
+      },
+      {
+        "line": 146,
+        "text": "## Flag"
+      },
+      {
+        "line": 150,
+        "text": "## Struktur"
+      },
+      {
+        "line": 152,
+        "text": "### Beat 1 — Puzzle 7 Pohon Penanda"
+      },
+      {
+        "line": 157,
+        "text": "### Beat 2 — Battle Elite Malam"
+      },
+      {
+        "line": 164,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 169,
+        "text": "## Fail State"
+      },
+      {
+        "line": 174,
+        "text": "# WN-M05 · EMPAT RATUS TAHUN BERTANYA (TITAH NINIAK BELANG)"
+      },
+      {
+        "line": 178,
+        "text": "## Trigger"
+      },
+      {
+        "line": 182,
+        "text": "## Flag"
+      },
+      {
+        "line": 187,
+        "text": "## Struktur"
+      },
+      {
+        "line": 189,
+        "text": "### Beat 1 — Pertemuan Niniak Belang"
+      },
+      {
+        "line": 193,
+        "text": "### Beat 2 — 3 Aksi Restoratif (Bukti, Bukan Sekadar Kata) — DETAIL LENGKAP, parameter numerik ditambahkan"
+      },
+      {
+        "line": 202,
+        "text": "### Beat 3 — Battle (Bergantung Bukti)"
+      },
+      {
+        "line": 210,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 216,
+        "text": "## Fail State"
+      },
+      {
+        "line": 221,
+        "text": "# WN-M06 · BELANTARA MENELAN (SANG LENGANG, SPECTATOR)"
+      },
+      {
+        "line": 225,
+        "text": "## Trigger"
+      },
+      {
+        "line": 229,
+        "text": "## Flag"
+      },
+      {
+        "line": 234,
+        "text": "## Struktur"
+      },
+      {
+        "line": 236,
+        "text": "### Beat 1 — Pengantar"
+      },
+      {
+        "line": 240,
+        "text": "### Beat 2 — Battle Spectator: Niniak Belang vs Bayangan (SPESIFIKASI TEKNIS LENGKAP — BARU)"
+      },
+      {
+        "line": 261,
+        "text": "### Beat 3 — Sang Lengang Menampakkan Diri"
+      },
+      {
+        "line": 266,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 274,
+        "text": "## Fail State"
+      },
+      {
+        "line": 279,
+        "text": "# WN-S01 · YANG MEMILIH PERGI (TITAH PUTI LENGANG)"
+      },
+      {
+        "line": 281,
+        "text": "## Trigger"
+      },
+      {
+        "line": 285,
+        "text": "## Flag"
+      },
+      {
+        "line": 289,
+        "text": "## Struktur"
+      },
+      {
+        "line": 296,
+        "text": "## Fail State"
+      },
+      {
+        "line": 301,
+        "text": "# WN-S02 · GENANGAN YANG TAK PERNAH KERING (TITAH LASIK KUBANG)"
+      },
+      {
+        "line": 303,
+        "text": "## Trigger"
+      },
+      {
+        "line": 307,
+        "text": "## Flag"
+      },
+      {
+        "line": 311,
+        "text": "## Struktur"
+      },
+      {
+        "line": 317,
+        "text": "## Fail State"
+      },
+      {
+        "line": 322,
+        "text": "# WN-S03 · CUKUP UNTUK SEMUA (TITAH RANGKIANG BATU)"
+      },
+      {
+        "line": 324,
+        "text": "## Trigger"
+      },
+      {
+        "line": 328,
+        "text": "## Flag"
+      },
+      {
+        "line": 332,
+        "text": "## Struktur"
+      },
+      {
+        "line": 338,
+        "text": "## Fail State"
+      },
+      {
+        "line": 343,
+        "text": "# WN-S04 · KESEPAKATAN LAMA (TITAH SINDAKA RIMBO)"
+      },
+      {
+        "line": 345,
+        "text": "## Trigger"
+      },
+      {
+        "line": 349,
+        "text": "## Flag"
+      },
+      {
+        "line": 353,
+        "text": "## Struktur"
+      },
+      {
+        "line": 359,
+        "text": "## Fail State"
+      },
+      {
+        "line": 364,
+        "text": "# WN-S05 · BERJALAN MUNDUR SEMALAMAN (TITAH UHANG SUNYI)"
+      },
+      {
+        "line": 366,
+        "text": "## Trigger"
+      },
+      {
+        "line": 370,
+        "text": "## Flag"
+      },
+      {
+        "line": 374,
+        "text": "## Struktur"
+      },
+      {
+        "line": 380,
+        "text": "## Fail State"
+      },
+      {
+        "line": 385,
+        "text": "# WN-S06 · SEMBILAN METER DAFTAR (TITAH BUNDO SARIKASO)"
+      },
+      {
+        "line": 387,
+        "text": "## Trigger"
+      },
+      {
+        "line": 391,
+        "text": "## Flag"
+      },
+      {
+        "line": 395,
+        "text": "## Struktur"
+      },
+      {
+        "line": 402,
+        "text": "## Fail State"
+      },
+      {
+        "line": 407,
+        "text": "# WN-S07 · KE SINI, IKUTI SUARAKU (TITAH SUARA TANWUJUD)"
+      },
+      {
+        "line": 409,
+        "text": "## Trigger"
+      },
+      {
+        "line": 413,
+        "text": "## Flag"
+      },
+      {
+        "line": 417,
+        "text": "## Struktur"
+      },
+      {
+        "line": 423,
+        "text": "## Fail State"
+      },
+      {
+        "line": 428,
+        "text": "# WN-S08 · RUTE YANG DIULANG (TITAH TAPAK GHAIB)"
+      },
+      {
+        "line": 430,
+        "text": "## Trigger"
+      },
+      {
+        "line": 434,
+        "text": "## Flag"
+      },
+      {
+        "line": 438,
+        "text": "## Struktur"
+      },
+      {
+        "line": 444,
+        "text": "## Fail State"
+      },
+      {
+        "line": 449,
+        "text": "# WN-H01 · AIR NAIK (TITAH SAMBILAN TALAGO)"
+      },
+      {
+        "line": 451,
+        "text": "## Trigger"
+      },
+      {
+        "line": 455,
+        "text": "## Flag"
+      },
+      {
+        "line": 459,
+        "text": "## Struktur"
+      },
+      {
+        "line": 469,
+        "text": "## Fail State"
+      },
+      {
+        "line": 474,
+        "text": "# WN-H02 · RUMAH UPIAK"
+      },
+      {
+        "line": 476,
+        "text": "## Trigger"
+      },
+      {
+        "line": 480,
+        "text": "## Flag"
+      },
+      {
+        "line": 484,
+        "text": "## Struktur"
+      },
+      {
+        "line": 493,
+        "text": "## Fail State"
+      },
+      {
+        "line": 498,
+        "text": "# WN-H03 · YANG TERSISA DARI PILIHAN"
+      },
+      {
+        "line": 500,
+        "text": "## Trigger"
+      },
+      {
+        "line": 503,
+        "text": "## Flag"
+      },
+      {
+        "line": 506,
+        "text": "## Struktur"
+      },
+      {
+        "line": 508,
+        "text": "### Jalur INFORMED (Beri Tahu Keluarga)"
+      },
+      {
+        "line": 513,
+        "text": "### Jalur KEPT_SECRET (Jangan Beri Tahu)"
+      },
+      {
+        "line": 518,
+        "text": "### Reward (Kedua Jalur)"
+      },
+      {
+        "line": 524,
+        "text": "## Fail State"
+      },
+      {
+        "line": 529,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 4"
+      },
+      {
+        "line": 546,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 556,
+        "text": "# ITEM TINDAK LANJUT UNTUK MANUSIA"
+      }
+    ],
+    "placeholder_lines": [
+      22,
+      196,
+      197,
+      198,
+      200,
+      257
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R5_Kalamrtu.md",
+    "bytes": 33521,
+    "lines": 583,
+    "sha256": "6ff8505c7dc0ea405bb0fe56a836d80fc50562eb40cd37b9cf8643b0ec6e9c35",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 5: KALAMRTU"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 21,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 29,
+        "text": "# KL-M01 · MUARA WIRA"
+      },
+      {
+        "line": 31,
+        "text": "## Trigger"
+      },
+      {
+        "line": 34,
+        "text": "## Flag"
+      },
+      {
+        "line": 38,
+        "text": "## Struktur"
+      },
+      {
+        "line": 40,
+        "text": "### Beat 1 — Tiba di Muara Wira"
+      },
+      {
+        "line": 44,
+        "text": "### Beat 2 — Tutorial Mini-Game Susun Aksara"
+      },
+      {
+        "line": 48,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 53,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 57,
+        "text": "## Fail State"
+      },
+      {
+        "line": 62,
+        "text": "# KL-M02 · PULAU DUA NAMA"
+      },
+      {
+        "line": 64,
+        "text": "## Trigger"
+      },
+      {
+        "line": 68,
+        "text": "## Flag"
+      },
+      {
+        "line": 72,
+        "text": "## Struktur"
+      },
+      {
+        "line": 74,
+        "text": "### Beat 1 — Dua Nama yang Kontradiktif"
+      },
+      {
+        "line": 78,
+        "text": "### Beat 2 — Battle: Kutukan Berjalan"
+      },
+      {
+        "line": 83,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 87,
+        "text": "## Fail State"
+      },
+      {
+        "line": 92,
+        "text": "# KL-M03 · AKSARA YANG BERBICARA"
+      },
+      {
+        "line": 96,
+        "text": "## Trigger"
+      },
+      {
+        "line": 100,
+        "text": "## Flag"
+      },
+      {
+        "line": 104,
+        "text": "## Struktur"
+      },
+      {
+        "line": 106,
+        "text": "### Beat 1 — 3 Encounter Bertingkat"
+      },
+      {
+        "line": 114,
+        "text": "### Beat 2 — Membaca Prasasti"
+      },
+      {
+        "line": 118,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 123,
+        "text": "## Fail State"
+      },
+      {
+        "line": 128,
+        "text": "# KL-M04 · SISI KELAM KERAJAAN"
+      },
+      {
+        "line": 132,
+        "text": "## Trigger"
+      },
+      {
+        "line": 136,
+        "text": "## Flag"
+      },
+      {
+        "line": 140,
+        "text": "## Struktur"
+      },
+      {
+        "line": 142,
+        "text": "### Beat 1 — Investigasi Bukti Kekejaman"
+      },
+      {
+        "line": 146,
+        "text": "### Beat 2 — Pilihan Moral"
+      },
+      {
+        "line": 151,
+        "text": "### Beat 3 — Battle: Kutukan Dua Arah"
+      },
+      {
+        "line": 157,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 161,
+        "text": "## Fail State"
+      },
+      {
+        "line": 166,
+        "text": "# KL-M05 · PELABUHAN PRALAYA"
+      },
+      {
+        "line": 168,
+        "text": "## Trigger"
+      },
+      {
+        "line": 172,
+        "text": "## Flag"
+      },
+      {
+        "line": 176,
+        "text": "## Struktur"
+      },
+      {
+        "line": 178,
+        "text": "### Beat 1 — Nonaktifkan Prasasti Kutukan Terakhir"
+      },
+      {
+        "line": 181,
+        "text": "### Beat 2 — Battle: 2 Elite dengan Prasasti Aktif"
+      },
+      {
+        "line": 187,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 191,
+        "text": "## Fail State"
+      },
+      {
+        "line": 196,
+        "text": "# KL-M06 · DIHAPUS DEMI SELAMAT (TITAH SANG WIRANATA)"
+      },
+      {
+        "line": 200,
+        "text": "## Trigger"
+      },
+      {
+        "line": 204,
+        "text": "## Flag"
+      },
+      {
+        "line": 209,
+        "text": "## Struktur"
+      },
+      {
+        "line": 211,
+        "text": "### Beat 1 — Pulihkan Aksara yang Hilang"
+      },
+      {
+        "line": 214,
+        "text": "### Beat 2 — Battle Konvensional (Fase 1-2) — DIPERBARUI: HP dikonfirmasi, pasukan pendamping ditambahkan"
+      },
+      {
+        "line": 221,
+        "text": "### Beat 3 — Pilihan Moral & Fase Akhir — DIPERBARUI: konsekuensi mekanis `flag_kl_resolution_path` dikonfirmasi"
+      },
+      {
+        "line": 231,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 238,
+        "text": "## Fail State"
+      },
+      {
+        "line": 244,
+        "text": "# KL-S01 · KEBIASAAN, BUKAN NIAT (TITAH ANTUMUARA)"
+      },
+      {
+        "line": 246,
+        "text": "## Trigger"
+      },
+      {
+        "line": 250,
+        "text": "## Flag"
+      },
+      {
+        "line": 253,
+        "text": "## Struktur"
+      },
+      {
+        "line": 259,
+        "text": "## Fail State"
+      },
+      {
+        "line": 264,
+        "text": "# KL-S02 · DELAPAN RATUS TAHUN (TITAH NAGA WIRA)"
+      },
+      {
+        "line": 266,
+        "text": "## Trigger"
+      },
+      {
+        "line": 270,
+        "text": "## Flag"
+      },
+      {
+        "line": 274,
+        "text": "## Struktur"
+      },
+      {
+        "line": 280,
+        "text": "## Fail State"
+      },
+      {
+        "line": 285,
+        "text": "# KL-S03 · JURU KUTUK NEGARA (TITAH LIDAH WATU)"
+      },
+      {
+        "line": 289,
+        "text": "## Trigger"
+      },
+      {
+        "line": 293,
+        "text": "## Flag"
+      },
+      {
+        "line": 296,
+        "text": "## Struktur"
+      },
+      {
+        "line": 303,
+        "text": "## Fail State"
+      },
+      {
+        "line": 309,
+        "text": "# KL-S04 · YANG TIDAK PERNAH BERHENTI MELOMPAT (TITAH SEKAR KEMARUNG)"
+      },
+      {
+        "line": 311,
+        "text": "## Trigger"
+      },
+      {
+        "line": 315,
+        "text": "## Flag"
+      },
+      {
+        "line": 319,
+        "text": "## Struktur"
+      },
+      {
+        "line": 327,
+        "text": "## Fail State"
+      },
+      {
+        "line": 332,
+        "text": "# KL-S05 · YANG TAK BISA DITAHAN LAGI (TITAH RAHIB ABU)"
+      },
+      {
+        "line": 336,
+        "text": "## Trigger"
+      },
+      {
+        "line": 340,
+        "text": "## Flag"
+      },
+      {
+        "line": 345,
+        "text": "## Struktur"
+      },
+      {
+        "line": 347,
+        "text": "### Beat 1-4 — Telusuri 4 Prasasti Peninggalan Rahib Kalpa"
+      },
+      {
+        "line": 351,
+        "text": "### Beat 5 — Menemukan Rahib Abu & Pilihan Segel"
+      },
+      {
+        "line": 359,
+        "text": "### Beat 6 — Battle Final"
+      },
+      {
+        "line": 366,
+        "text": "### Beat 7 — Recruitment & Reward"
+      },
+      {
+        "line": 370,
+        "text": "## Fail State"
+      },
+      {
+        "line": 375,
+        "text": "# KL-S06 · SATU BARIS YANG KABUR (TITAH SIDHAYATRI)"
+      },
+      {
+        "line": 379,
+        "text": "## Trigger"
+      },
+      {
+        "line": 383,
+        "text": "## Flag"
+      },
+      {
+        "line": 387,
+        "text": "## Struktur"
+      },
+      {
+        "line": 395,
+        "text": "## Fail State"
+      },
+      {
+        "line": 400,
+        "text": "# KL-S07 · PERJALANAN YANG BELUM SELESAI (TITAH KELASI WIRA)"
+      },
+      {
+        "line": 404,
+        "text": "## Trigger"
+      },
+      {
+        "line": 408,
+        "text": "## Flag"
+      },
+      {
+        "line": 412,
+        "text": "## Struktur"
+      },
+      {
+        "line": 419,
+        "text": "## Fail State"
+      },
+      {
+        "line": 424,
+        "text": "# KL-S08 · PERNAH ADA YANG MEMULAI (TITAH WATU SEMA)"
+      },
+      {
+        "line": 428,
+        "text": "## Trigger"
+      },
+      {
+        "line": 432,
+        "text": "## Flag"
+      },
+      {
+        "line": 436,
+        "text": "## Struktur"
+      },
+      {
+        "line": 443,
+        "text": "## Fail State"
+      },
+      {
+        "line": 448,
+        "text": "# KL-H01 · PRASASTI KETUJUH"
+      },
+      {
+        "line": 450,
+        "text": "## Trigger"
+      },
+      {
+        "line": 453,
+        "text": "## Flag"
+      },
+      {
+        "line": 456,
+        "text": "## Struktur"
+      },
+      {
+        "line": 461,
+        "text": "## Fail State"
+      },
+      {
+        "line": 466,
+        "text": "# KL-H02 · ANGIN YANG TAK MEMBEDAKAN (TITAH KIJANG PRASASTI)"
+      },
+      {
+        "line": 468,
+        "text": "## Trigger"
+      },
+      {
+        "line": 472,
+        "text": "## Flag"
+      },
+      {
+        "line": 476,
+        "text": "## Struktur"
+      },
+      {
+        "line": 482,
+        "text": "## Fail State"
+      },
+      {
+        "line": 487,
+        "text": "# KL-H03 · VERSI YANG DIKUBUR (TITAH DAYANG RINDANG)"
+      },
+      {
+        "line": 489,
+        "text": "## Trigger"
+      },
+      {
+        "line": 493,
+        "text": "## Flag"
+      },
+      {
+        "line": 497,
+        "text": "## Struktur"
+      },
+      {
+        "line": 503,
+        "text": "## Fail State"
+      },
+      {
+        "line": 509,
+        "text": "# KL-H04 · MEMBUKTIKAN ILMUNYA (TITAH RAHIB KALPA)"
+      },
+      {
+        "line": 513,
+        "text": "## Trigger"
+      },
+      {
+        "line": 517,
+        "text": "## Flag"
+      },
+      {
+        "line": 521,
+        "text": "## Struktur"
+      },
+      {
+        "line": 529,
+        "text": "### Reward"
+      },
+      {
+        "line": 534,
+        "text": "## Fail State"
+      },
+      {
+        "line": 540,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 5"
+      },
+      {
+        "line": 560,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 570,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      }
+    ],
+    "placeholder_lines": [
+      23,
+      153,
+      225,
+      349,
+      458
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R6_Himagiri.md",
+    "bytes": 27911,
+    "lines": 501,
+    "sha256": "5d2aeba8c81498a6114696a895855341dab80ee9a25a39c0ca2e2b91ebdcb81a",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 6: HIMAGIRI"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 21,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 29,
+        "text": "# MEKANIK RESET — RITUAL PENYUCIAN"
+      },
+      {
+        "line": 33,
+        "text": "## Trigger"
+      },
+      {
+        "line": 37,
+        "text": "## Efek"
+      },
+      {
+        "line": 42,
+        "text": "## Flag"
+      },
+      {
+        "line": 47,
+        "text": "## Penerapan"
+      },
+      {
+        "line": 53,
+        "text": "# HM-M01 · LERENG YANG MENJAGA"
+      },
+      {
+        "line": 55,
+        "text": "## Trigger"
+      },
+      {
+        "line": 58,
+        "text": "## Flag"
+      },
+      {
+        "line": 62,
+        "text": "## Struktur"
+      },
+      {
+        "line": 64,
+        "text": "### Beat 1 — Tiba di Lereng"
+      },
+      {
+        "line": 67,
+        "text": "### Beat 2 — Tutorial Tata Krama"
+      },
+      {
+        "line": 71,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 77,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 81,
+        "text": "## Fail State"
+      },
+      {
+        "line": 86,
+        "text": "# HM-M02 · PASAR HANTU (TITAH PASARWENGI)"
+      },
+      {
+        "line": 90,
+        "text": "## Trigger"
+      },
+      {
+        "line": 94,
+        "text": "## Flag"
+      },
+      {
+        "line": 99,
+        "text": "## Struktur"
+      },
+      {
+        "line": 101,
+        "text": "### Beat 1 — Temukan Pasar Lengang"
+      },
+      {
+        "line": 104,
+        "text": "### Beat 2 — 5 Fragmen, 5 Kesempatan Tanpa Pelanggaran"
+      },
+      {
+        "line": 110,
+        "text": "### Beat 3 — Penyatuan"
+      },
+      {
+        "line": 115,
+        "text": "### Beat 4 — Battle: Upacara yang Mengeras"
+      },
+      {
+        "line": 121,
+        "text": "### Beat 5 — Recruitment & Reward"
+      },
+      {
+        "line": 126,
+        "text": "## Fail State"
+      },
+      {
+        "line": 132,
+        "text": "# HM-M03 · LIMA RATUS PAGI (TITAH SABDAGUNA)"
+      },
+      {
+        "line": 136,
+        "text": "## Trigger"
+      },
+      {
+        "line": 140,
+        "text": "## Flag"
+      },
+      {
+        "line": 145,
+        "text": "## Struktur"
+      },
+      {
+        "line": 147,
+        "text": "### Beat 1 — Puzzle Dua Kalender"
+      },
+      {
+        "line": 151,
+        "text": "### Beat 2 — 2 Encounter Bertingkat (Tata Krama Aktif)"
+      },
+      {
+        "line": 157,
+        "text": "### Beat 3 — Pagi ke-500 (Puncak Puzzle, Simbolis)"
+      },
+      {
+        "line": 165,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 171,
+        "text": "## Fail State"
+      },
+      {
+        "line": 176,
+        "text": "# HM-M04 · UPACARA TERAKHIR (TITAH WISESA GIRINATHA)"
+      },
+      {
+        "line": 180,
+        "text": "## Trigger"
+      },
+      {
+        "line": 184,
+        "text": "## Flag"
+      },
+      {
+        "line": 189,
+        "text": "## Struktur"
+      },
+      {
+        "line": 191,
+        "text": "### Beat 1-2 — Battle Fase 1-2 (Konvensional, MENYEDIHKAN Bukan Epik)"
+      },
+      {
+        "line": 198,
+        "text": "### Beat 3 — Fase 3: Pilih Tidak Menyerang"
+      },
+      {
+        "line": 204,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 210,
+        "text": "## Fail State"
+      },
+      {
+        "line": 217,
+        "text": "# HM-M05 · KERATON KOSONG (PASCA-UPACARA)"
+      },
+      {
+        "line": 219,
+        "text": "## Trigger"
+      },
+      {
+        "line": 223,
+        "text": "## Flag"
+      },
+      {
+        "line": 227,
+        "text": "## Struktur"
+      },
+      {
+        "line": 229,
+        "text": "### Beat 1 — Eksplorasi Keraton Kosong"
+      },
+      {
+        "line": 233,
+        "text": "### Beat 2 — Encounter Opsional: Kenangan Terakhir"
+      },
+      {
+        "line": 237,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 241,
+        "text": "## Fail State"
+      },
+      {
+        "line": 246,
+        "text": "# HM-S01 · MENAHAN WAKTU (TITAH SANG GIRIPAWANA)"
+      },
+      {
+        "line": 248,
+        "text": "## Trigger"
+      },
+      {
+        "line": 252,
+        "text": "## Flag"
+      },
+      {
+        "line": 256,
+        "text": "## Struktur"
+      },
+      {
+        "line": 262,
+        "text": "## Fail State"
+      },
+      {
+        "line": 267,
+        "text": "# HM-S02 · GENTA YANG TAK BERHENTI (TITAH TABUH SENJA)"
+      },
+      {
+        "line": 271,
+        "text": "## Trigger"
+      },
+      {
+        "line": 275,
+        "text": "## Flag"
+      },
+      {
+        "line": 279,
+        "text": "## Struktur"
+      },
+      {
+        "line": 281,
+        "text": "### Beat 1-4 — 4 Tahap Siklus Siang-Malam"
+      },
+      {
+        "line": 287,
+        "text": "### Beat 5 — Battle di Menara"
+      },
+      {
+        "line": 293,
+        "text": "### Beat 6 — Reward"
+      },
+      {
+        "line": 298,
+        "text": "## Fail State"
+      },
+      {
+        "line": 303,
+        "text": "# HM-S03 · MENUNGGU KESEMPATAN BERIKUTNYA (TITAH SABDA TERTUNDA)"
+      },
+      {
+        "line": 305,
+        "text": "## Trigger"
+      },
+      {
+        "line": 309,
+        "text": "## Flag"
+      },
+      {
+        "line": 313,
+        "text": "## Struktur"
+      },
+      {
+        "line": 321,
+        "text": "## Fail State"
+      },
+      {
+        "line": 326,
+        "text": "# HM-S04 · MENARI UNTUK SEMBILAN (TITAH RATRI KEMUNING)"
+      },
+      {
+        "line": 328,
+        "text": "## Trigger"
+      },
+      {
+        "line": 332,
+        "text": "## Flag"
+      },
+      {
+        "line": 336,
+        "text": "## Struktur"
+      },
+      {
+        "line": 342,
+        "text": "## Fail State"
+      },
+      {
+        "line": 348,
+        "text": "# HM-S05 · IKUTI SAJA (TITAH JALAK GIRINDRA)"
+      },
+      {
+        "line": 350,
+        "text": "## Trigger"
+      },
+      {
+        "line": 354,
+        "text": "## Flag"
+      },
+      {
+        "line": 358,
+        "text": "## Struktur"
+      },
+      {
+        "line": 364,
+        "text": "## Fail State"
+      },
+      {
+        "line": 369,
+        "text": "# HM-H01 · RUANG SEMEDI SABDAGUNA"
+      },
+      {
+        "line": 373,
+        "text": "## Trigger"
+      },
+      {
+        "line": 377,
+        "text": "## Flag"
+      },
+      {
+        "line": 380,
+        "text": "## Struktur"
+      },
+      {
+        "line": 387,
+        "text": "## Fail State"
+      },
+      {
+        "line": 392,
+        "text": "# HM-H02 · TETAP MENYALA (TITAH WANASPATI GIRI)"
+      },
+      {
+        "line": 394,
+        "text": "## Trigger"
+      },
+      {
+        "line": 398,
+        "text": "## Flag"
+      },
+      {
+        "line": 402,
+        "text": "## Struktur"
+      },
+      {
+        "line": 408,
+        "text": "## Fail State"
+      },
+      {
+        "line": 413,
+        "text": "# HM-H03 · HUTAN YANG TIDAK BERBUNYI (TITAH GANDARWA PINUS)"
+      },
+      {
+        "line": 415,
+        "text": "## Trigger"
+      },
+      {
+        "line": 420,
+        "text": "## Flag"
+      },
+      {
+        "line": 424,
+        "text": "## Struktur"
+      },
+      {
+        "line": 430,
+        "text": "## Fail State"
+      },
+      {
+        "line": 436,
+        "text": "# HM-H04 · TIDAK ADA YANG MEMBATALKAN (TITAH KURAWATU)"
+      },
+      {
+        "line": 438,
+        "text": "## Trigger"
+      },
+      {
+        "line": 442,
+        "text": "## Flag"
+      },
+      {
+        "line": 446,
+        "text": "## Struktur"
+      },
+      {
+        "line": 453,
+        "text": "## Fail State"
+      },
+      {
+        "line": 459,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 6"
+      },
+      {
+        "line": 476,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 486,
+        "text": "# ITEM TINDAK LANJUT UNTUK MANUSIA"
+      }
+    ],
+    "placeholder_lines": [
+      23,
+      35,
+      107,
+      235,
+      383,
+      492
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R7_Rajawani.md",
+    "bytes": 27596,
+    "lines": 515,
+    "sha256": "b09417e72599e4a23a67faaf35911c745e4e5efbe07834238203e8744c3a5a8d",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 7: RAJAWANI"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 22,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 30,
+        "text": "# RJ-M01 · PELABUHAN REMPAH"
+      },
+      {
+        "line": 32,
+        "text": "## Trigger"
+      },
+      {
+        "line": 35,
+        "text": "## Flag"
+      },
+      {
+        "line": 40,
+        "text": "## Struktur"
+      },
+      {
+        "line": 42,
+        "text": "### Beat 1 — Tiba di Pelabuhan Rempah"
+      },
+      {
+        "line": 45,
+        "text": "### Beat 2 — Tutorial Warisan"
+      },
+      {
+        "line": 49,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 54,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 58,
+        "text": "## Fail State"
+      },
+      {
+        "line": 63,
+        "text": "# RJ-M02 · KEBUN YANG DIPETIK HABIS"
+      },
+      {
+        "line": 65,
+        "text": "## Trigger"
+      },
+      {
+        "line": 69,
+        "text": "## Flag"
+      },
+      {
+        "line": 73,
+        "text": "## Struktur"
+      },
+      {
+        "line": 75,
+        "text": "### Beat 1 — 3 Encounter Bertingkat"
+      },
+      {
+        "line": 81,
+        "text": "### Beat 2 — Temukan & Sebarkan Warisan"
+      },
+      {
+        "line": 85,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 89,
+        "text": "## Fail State"
+      },
+      {
+        "line": 94,
+        "text": "# RJ-M03 · DANAU DIAM"
+      },
+      {
+        "line": 96,
+        "text": "## Trigger"
+      },
+      {
+        "line": 100,
+        "text": "## Flag"
+      },
+      {
+        "line": 104,
+        "text": "## Struktur"
+      },
+      {
+        "line": 106,
+        "text": "### Beat 1 — Akses Malam (WB §7.12)"
+      },
+      {
+        "line": 110,
+        "text": "### Beat 2 — Menyelam & Temukan 5 Warisan"
+      },
+      {
+        "line": 114,
+        "text": "### Beat 3 — Battle: Timbangan Serakah"
+      },
+      {
+        "line": 120,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 124,
+        "text": "## Fail State"
+      },
+      {
+        "line": 129,
+        "text": "# RJ-M04 · TUJUH RIBU CATATAN (TITAH NYAI BOKIRA)"
+      },
+      {
+        "line": 131,
+        "text": "## Trigger"
+      },
+      {
+        "line": 135,
+        "text": "## Flag"
+      },
+      {
+        "line": 139,
+        "text": "## Struktur"
+      },
+      {
+        "line": 141,
+        "text": "### Beat 1 — Investigasi Arsip"
+      },
+      {
+        "line": 145,
+        "text": "### Beat 2 — Twist: Surat Itu Tidak Ada"
+      },
+      {
+        "line": 149,
+        "text": "### Beat 3 — Battle"
+      },
+      {
+        "line": 155,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 160,
+        "text": "## Fail State"
+      },
+      {
+        "line": 165,
+        "text": "# RJ-M05 · YANG TAK BISA DITAWAR (TITAH SANG HARGA)"
+      },
+      {
+        "line": 169,
+        "text": "## Trigger"
+      },
+      {
+        "line": 173,
+        "text": "## Flag"
+      },
+      {
+        "line": 178,
+        "text": "## Struktur"
+      },
+      {
+        "line": 180,
+        "text": "### Beat 1 — Fase Otomatis Berkurang (Langkah 1-2 Kanon) — DIPERBARUI: tingkatan lengkap ditambahkan"
+      },
+      {
+        "line": 195,
+        "text": "### Beat 2 — Battle Utama"
+      },
+      {
+        "line": 203,
+        "text": "### Beat 3 — Fase Akhir: Hadapkan pada yang Tak Berharga (Langkah 3 Kanon)"
+      },
+      {
+        "line": 209,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 215,
+        "text": "## Fail State"
+      },
+      {
+        "line": 221,
+        "text": "# RJ-M06 · PARA PEMIMPIN MENCATAT"
+      },
+      {
+        "line": 223,
+        "text": "## Trigger"
+      },
+      {
+        "line": 227,
+        "text": "## Flag"
+      },
+      {
+        "line": 231,
+        "text": "## Struktur"
+      },
+      {
+        "line": 233,
+        "text": "### Beat 1 — Susun Catatan yang Benar"
+      },
+      {
+        "line": 237,
+        "text": "### Beat 2 — Reward & Resolusi"
+      },
+      {
+        "line": 243,
+        "text": "## Fail State"
+      },
+      {
+        "line": 248,
+        "text": "# RJ-S01 · TIGA PULUH TAHUN MENEBANG (TITAH DATU HONGGI)"
+      },
+      {
+        "line": 250,
+        "text": "## Trigger"
+      },
+      {
+        "line": 254,
+        "text": "## Flag"
+      },
+      {
+        "line": 257,
+        "text": "## Struktur"
+      },
+      {
+        "line": 264,
+        "text": "## Fail State"
+      },
+      {
+        "line": 269,
+        "text": "# RJ-S02 · YANG TAK BISA DIBELI (TITAH PENJAGA POLOS)"
+      },
+      {
+        "line": 273,
+        "text": "## Trigger"
+      },
+      {
+        "line": 276,
+        "text": "## Flag"
+      },
+      {
+        "line": 280,
+        "text": "## Struktur"
+      },
+      {
+        "line": 282,
+        "text": "### Beat 1-3 — 3 Gelombang, Party Hanya Menyaksikan"
+      },
+      {
+        "line": 292,
+        "text": "### Beat 4 — Recruitment & Reward"
+      },
+      {
+        "line": 298,
+        "text": "## Fail State"
+      },
+      {
+        "line": 303,
+        "text": "# RJ-S03 · KEADILAN YANG TERSISA (TITAH SUKMA PENIMBANG)"
+      },
+      {
+        "line": 305,
+        "text": "## Trigger"
+      },
+      {
+        "line": 309,
+        "text": "## Flag"
+      },
+      {
+        "line": 313,
+        "text": "## Struktur"
+      },
+      {
+        "line": 319,
+        "text": "## Fail State"
+      },
+      {
+        "line": 325,
+        "text": "# RJ-S04 · PERINGATAN TERAKHIR (TITAH SOWAHI BARA)"
+      },
+      {
+        "line": 327,
+        "text": "## Trigger"
+      },
+      {
+        "line": 331,
+        "text": "## Flag"
+      },
+      {
+        "line": 335,
+        "text": "## Struktur"
+      },
+      {
+        "line": 341,
+        "text": "## Fail State"
+      },
+      {
+        "line": 346,
+        "text": "# RJ-S05 · SETIA PADA TEMBOK (TITAH BALA KARANGKASA)"
+      },
+      {
+        "line": 348,
+        "text": "## Trigger"
+      },
+      {
+        "line": 352,
+        "text": "## Flag"
+      },
+      {
+        "line": 356,
+        "text": "## Struktur"
+      },
+      {
+        "line": 362,
+        "text": "## Fail State"
+      },
+      {
+        "line": 367,
+        "text": "# RJ-S06 · RATUSAN TAHUN MEMETIK (TITAH SAWANGI PALA)"
+      },
+      {
+        "line": 371,
+        "text": "## Trigger"
+      },
+      {
+        "line": 375,
+        "text": "## Flag"
+      },
+      {
+        "line": 379,
+        "text": "## Struktur"
+      },
+      {
+        "line": 386,
+        "text": "## Fail State"
+      },
+      {
+        "line": 391,
+        "text": "# RJ-H01 · DESA DI BAWAH DANAU DIAM"
+      },
+      {
+        "line": 393,
+        "text": "## Trigger"
+      },
+      {
+        "line": 396,
+        "text": "## Flag"
+      },
+      {
+        "line": 399,
+        "text": "## Struktur"
+      },
+      {
+        "line": 404,
+        "text": "## Fail State"
+      },
+      {
+        "line": 409,
+        "text": "# RJ-H02 · YANG PUNYA NAMA (TITAH JURU CENGKIH)"
+      },
+      {
+        "line": 411,
+        "text": "## Trigger"
+      },
+      {
+        "line": 415,
+        "text": "## Flag"
+      },
+      {
+        "line": 419,
+        "text": "## Struktur"
+      },
+      {
+        "line": 425,
+        "text": "## Fail State"
+      },
+      {
+        "line": 430,
+        "text": "# RJ-H03 · TIDAK BERIAK (TITAH TALAGA DIAM)"
+      },
+      {
+        "line": 432,
+        "text": "## Trigger"
+      },
+      {
+        "line": 436,
+        "text": "## Flag"
+      },
+      {
+        "line": 440,
+        "text": "## Struktur"
+      },
+      {
+        "line": 446,
+        "text": "## Fail State"
+      },
+      {
+        "line": 451,
+        "text": "# RJ-H04 · BAHAN BAKU (TITAH BIKUSAGARI)"
+      },
+      {
+        "line": 453,
+        "text": "## Trigger"
+      },
+      {
+        "line": 457,
+        "text": "## Flag"
+      },
+      {
+        "line": 461,
+        "text": "## Struktur"
+      },
+      {
+        "line": 467,
+        "text": "## Fail State"
+      },
+      {
+        "line": 472,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 7"
+      },
+      {
+        "line": 492,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 502,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      }
+    ],
+    "placeholder_lines": [
+      24,
+      151,
+      201,
+      286,
+      287,
+      288
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R8_Jaladri.md",
+    "bytes": 28380,
+    "lines": 508,
+    "sha256": "1d7115bfdf6b1f7b093c21e462e99d71c7d0e8c50fd652a8cebef975b5ec19c8",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 8: JALADRI"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 23,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 31,
+        "text": "# JL-M01 · PANTAI SELATAN"
+      },
+      {
+        "line": 33,
+        "text": "## Trigger"
+      },
+      {
+        "line": 36,
+        "text": "## Flag"
+      },
+      {
+        "line": 41,
+        "text": "## Struktur"
+      },
+      {
+        "line": 43,
+        "text": "### Beat 1 — Tiba di Pantai Selatan"
+      },
+      {
+        "line": 46,
+        "text": "### Beat 2 — Tutorial Kumpul Serpihan"
+      },
+      {
+        "line": 50,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 55,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 59,
+        "text": "## Fail State"
+      },
+      {
+        "line": 64,
+        "text": "# JL-M02 · SAWAH TERASERING"
+      },
+      {
+        "line": 66,
+        "text": "## Trigger"
+      },
+      {
+        "line": 70,
+        "text": "## Flag"
+      },
+      {
+        "line": 74,
+        "text": "## Struktur"
+      },
+      {
+        "line": 76,
+        "text": "### Beat 1 — 3 Encounter Bertingkat"
+      },
+      {
+        "line": 80,
+        "text": "### Beat 2 — Puzzle Identifikasi"
+      },
+      {
+        "line": 84,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 89,
+        "text": "## Fail State"
+      },
+      {
+        "line": 94,
+        "text": "# JL-M03 · LAUT SAHASRA"
+      },
+      {
+        "line": 96,
+        "text": "## Trigger"
+      },
+      {
+        "line": 100,
+        "text": "## Flag"
+      },
+      {
+        "line": 104,
+        "text": "## Struktur"
+      },
+      {
+        "line": 106,
+        "text": "### Beat 1 — Event Mingguan (WB §8.2)"
+      },
+      {
+        "line": 109,
+        "text": "### Beat 2 — Puzzle Navigasi Cahaya Biologis"
+      },
+      {
+        "line": 113,
+        "text": "### Beat 3 — Battle: Ombak Tak Bertuan"
+      },
+      {
+        "line": 118,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 122,
+        "text": "## Fail State"
+      },
+      {
+        "line": 127,
+        "text": "# JL-M04 · PADANG ABU"
+      },
+      {
+        "line": 129,
+        "text": "## Trigger"
+      },
+      {
+        "line": 133,
+        "text": "## Flag"
+      },
+      {
+        "line": 138,
+        "text": "## Struktur"
+      },
+      {
+        "line": 140,
+        "text": "### Beat 1 — Zona yang Menghapus Peta"
+      },
+      {
+        "line": 144,
+        "text": "### Beat 2 — 2 Encounter Berat"
+      },
+      {
+        "line": 147,
+        "text": "### Beat 3 — Reward"
+      },
+      {
+        "line": 152,
+        "text": "## Fail State"
+      },
+      {
+        "line": 157,
+        "text": "# JL-M05 · KERAJAAN TERKUBUR"
+      },
+      {
+        "line": 161,
+        "text": "## Trigger"
+      },
+      {
+        "line": 165,
+        "text": "## Flag"
+      },
+      {
+        "line": 169,
+        "text": "## Struktur"
+      },
+      {
+        "line": 171,
+        "text": "### Beat 1 — Puzzle Dialog 3 Cabang"
+      },
+      {
+        "line": 175,
+        "text": "### Beat 2 — Pilihan Biner Permanen"
+      },
+      {
+        "line": 181,
+        "text": "### Beat 3 — Battle Awal (Sebelum Percabangan Penuh)"
+      },
+      {
+        "line": 186,
+        "text": "### Beat 4 — Reward Sementara"
+      },
+      {
+        "line": 190,
+        "text": "## Fail State"
+      },
+      {
+        "line": 195,
+        "text": "# JL-M06 · SERIBU JADI SATU ATAU SERIBU TETAP SERIBU"
+      },
+      {
+        "line": 199,
+        "text": "## Trigger"
+      },
+      {
+        "line": 203,
+        "text": "## Flag"
+      },
+      {
+        "line": 209,
+        "text": "## Struktur"
+      },
+      {
+        "line": 211,
+        "text": "### Beat 1A — Jalur UNIFIED (Satukan)"
+      },
+      {
+        "line": 217,
+        "text": "### Beat 1B — Jalur SCATTERED (Biarkan Tersebar)"
+      },
+      {
+        "line": 225,
+        "text": "### Beat 2 — Recruitment & Reward (Kedua Jalur)"
+      },
+      {
+        "line": 231,
+        "text": "## Fail State"
+      },
+      {
+        "line": 237,
+        "text": "# JL-S01 · SERIBU BAGIAN (TITAH MANDARASMI)"
+      },
+      {
+        "line": 239,
+        "text": "## Trigger"
+      },
+      {
+        "line": 243,
+        "text": "## Flag"
+      },
+      {
+        "line": 247,
+        "text": "## Struktur"
+      },
+      {
+        "line": 254,
+        "text": "## Fail State"
+      },
+      {
+        "line": 259,
+        "text": "# JL-S02 · SERIBU ORANG MENAHAN SATU OMBAK (TITAH PENJAGA GELOMBANG)"
+      },
+      {
+        "line": 261,
+        "text": "## Trigger"
+      },
+      {
+        "line": 265,
+        "text": "## Flag"
+      },
+      {
+        "line": 269,
+        "text": "## Struktur"
+      },
+      {
+        "line": 276,
+        "text": "## Fail State"
+      },
+      {
+        "line": 282,
+        "text": "# JL-S03 · SERIBU MENYAHUT SATU (TITAH GEMA GANDA)"
+      },
+      {
+        "line": 286,
+        "text": "## Trigger"
+      },
+      {
+        "line": 289,
+        "text": "## Flag"
+      },
+      {
+        "line": 293,
+        "text": "## Struktur"
+      },
+      {
+        "line": 295,
+        "text": "### Beat 1-5 — 5 Titik Pantulan Suara"
+      },
+      {
+        "line": 300,
+        "text": "### Beat 6 — Penyatuan di Titik Terakhir"
+      },
+      {
+        "line": 308,
+        "text": "### Beat 7 — Recruitment & Reward"
+      },
+      {
+        "line": 312,
+        "text": "## Fail State"
+      },
+      {
+        "line": 317,
+        "text": "# JL-S04 · SATU BATU UNTUK IBU (TITAH DAYAN NADHA)"
+      },
+      {
+        "line": 319,
+        "text": "## Trigger"
+      },
+      {
+        "line": 323,
+        "text": "## Flag"
+      },
+      {
+        "line": 327,
+        "text": "## Struktur"
+      },
+      {
+        "line": 333,
+        "text": "## Fail State"
+      },
+      {
+        "line": 338,
+        "text": "# JL-S05 · BAGIAN YANG TAK DIINGINKAN (TITAH CUPAKA LOBA)"
+      },
+      {
+        "line": 340,
+        "text": "## Trigger"
+      },
+      {
+        "line": 344,
+        "text": "## Flag"
+      },
+      {
+        "line": 348,
+        "text": "## Struktur"
+      },
+      {
+        "line": 354,
+        "text": "## Fail State"
+      },
+      {
+        "line": 359,
+        "text": "# JL-S06 · SATU MALAM (TITAH ABU TEMBARA)"
+      },
+      {
+        "line": 363,
+        "text": "## Trigger"
+      },
+      {
+        "line": 366,
+        "text": "## Flag"
+      },
+      {
+        "line": 370,
+        "text": "## Struktur"
+      },
+      {
+        "line": 378,
+        "text": "## Fail State"
+      },
+      {
+        "line": 383,
+        "text": "# JL-H01 · KARANG KAPTEN NDIRU"
+      },
+      {
+        "line": 385,
+        "text": "## Trigger"
+      },
+      {
+        "line": 388,
+        "text": "## Flag"
+      },
+      {
+        "line": 392,
+        "text": "## Struktur"
+      },
+      {
+        "line": 397,
+        "text": "## Fail State"
+      },
+      {
+        "line": 402,
+        "text": "# JL-H02 · EMPAT RATUS JABAT TANGAN (TITAH PADU ROTAN)"
+      },
+      {
+        "line": 404,
+        "text": "## Trigger"
+      },
+      {
+        "line": 408,
+        "text": "## Flag"
+      },
+      {
+        "line": 412,
+        "text": "## Struktur"
+      },
+      {
+        "line": 419,
+        "text": "## Fail State"
+      },
+      {
+        "line": 424,
+        "text": "# JL-H03 · SEJUTA EKOR (TITAH SEKAR NYALU)"
+      },
+      {
+        "line": 426,
+        "text": "## Trigger"
+      },
+      {
+        "line": 430,
+        "text": "## Flag"
+      },
+      {
+        "line": 434,
+        "text": "## Struktur"
+      },
+      {
+        "line": 440,
+        "text": "## Fail State"
+      },
+      {
+        "line": 446,
+        "text": "# JL-H04 · DINDING YANG MENUTUP (TITAH SAGARANAK)"
+      },
+      {
+        "line": 448,
+        "text": "## Trigger"
+      },
+      {
+        "line": 452,
+        "text": "## Flag"
+      },
+      {
+        "line": 456,
+        "text": "## Struktur"
+      },
+      {
+        "line": 462,
+        "text": "## Fail State"
+      },
+      {
+        "line": 467,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 8"
+      },
+      {
+        "line": 485,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 495,
+        "text": "# ITEM TINDAK LANJUT — STATUS SETELAH KEPUTUSAN"
+      }
+    ],
+    "placeholder_lines": [
+      25,
+      184
+    ]
+  },
+  {
+    "file": "QUEST_SCRIPT_R9_Anawil.md",
+    "bytes": 35291,
+    "lines": 525,
+    "sha256": "105700569df54be0769dfcfac9ccf27a14d176e6b153b7c572f06fccf81f6bcc",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# QUEST SCRIPT — REGION 9: ANAWIL"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 24,
+        "text": "## KONVENSI SCRIPT"
+      },
+      {
+        "line": 38,
+        "text": "# AW-M01 · KARST WARANA (SUB-OBJECTIVE: TAPAK NIRBAHASA)"
+      },
+      {
+        "line": 42,
+        "text": "## Trigger"
+      },
+      {
+        "line": 45,
+        "text": "## Flag"
+      },
+      {
+        "line": 51,
+        "text": "## Struktur"
+      },
+      {
+        "line": 53,
+        "text": "### Beat 1 — Tiba di Anawil"
+      },
+      {
+        "line": 57,
+        "text": "### Beat 2 — Tutorial Fase 1 + Sub-objective: Tapak Nirbahasa"
+      },
+      {
+        "line": 62,
+        "text": "### Beat 3 — Battle Tutorial"
+      },
+      {
+        "line": 68,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 72,
+        "text": "## Fail State"
+      },
+      {
+        "line": 77,
+        "text": "# AW-M02 · HUTAN PURBA (SUB-OBJECTIVE: KASWARI TANAHWIL, PARI LAMPUR)"
+      },
+      {
+        "line": 81,
+        "text": "## Trigger"
+      },
+      {
+        "line": 85,
+        "text": "## Flag"
+      },
+      {
+        "line": 90,
+        "text": "## Struktur"
+      },
+      {
+        "line": 92,
+        "text": "### Beat 1 — Sub-objective: Kaswari Tanahwil (3 Aksi Restoratif — BARU, detail lengkap)"
+      },
+      {
+        "line": 101,
+        "text": "### Beat 2 — 2 Encounter Beast Purba"
+      },
+      {
+        "line": 104,
+        "text": "### Beat 3 — Sub-objective: Pari Lampur"
+      },
+      {
+        "line": 109,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 115,
+        "text": "## Fail State"
+      },
+      {
+        "line": 120,
+        "text": "# AW-M03 · LAGUNA TENANG (SUB-OBJECTIVE: KARANG WAYAHAN)"
+      },
+      {
+        "line": 122,
+        "text": "## Trigger"
+      },
+      {
+        "line": 126,
+        "text": "## Flag"
+      },
+      {
+        "line": 131,
+        "text": "## Struktur"
+      },
+      {
+        "line": 133,
+        "text": "### Beat 1 — Transisi: Dialog Teks Mulai Menghilang"
+      },
+      {
+        "line": 137,
+        "text": "### Beat 2 — Sub-objective: Karang Wayahan"
+      },
+      {
+        "line": 140,
+        "text": "### Beat 3 — Battle: Suara Sebelum Kata"
+      },
+      {
+        "line": 146,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 151,
+        "text": "## Fail State"
+      },
+      {
+        "line": 156,
+        "text": "# AW-M04 · DINDING TELAPAK (SUB-OBJECTIVE: SAMPARA WENE)"
+      },
+      {
+        "line": 160,
+        "text": "## Trigger"
+      },
+      {
+        "line": 164,
+        "text": "## Flag"
+      },
+      {
+        "line": 170,
+        "text": "## Struktur"
+      },
+      {
+        "line": 172,
+        "text": "### Beat 1 — Transisi: UI Battle Kehilangan Teks"
+      },
+      {
+        "line": 177,
+        "text": "### Beat 2 — Sub-objective: Sampara Wene"
+      },
+      {
+        "line": 181,
+        "text": "### Beat 3 — 2 Encounter Tanpa Informasi Teks"
+      },
+      {
+        "line": 187,
+        "text": "### Beat 4 — Reward"
+      },
+      {
+        "line": 193,
+        "text": "## Fail State"
+      },
+      {
+        "line": 198,
+        "text": "# AW-M05 · TELAPAK PERTAMA — GEMA PURBA"
+      },
+      {
+        "line": 202,
+        "text": "## Trigger"
+      },
+      {
+        "line": 206,
+        "text": "## Flag"
+      },
+      {
+        "line": 212,
+        "text": "## Struktur"
+      },
+      {
+        "line": 214,
+        "text": "### Beat 1 — HUD Hilang Total"
+      },
+      {
+        "line": 218,
+        "text": "### Beat 2 — Mendengar Gema 8 Region"
+      },
+      {
+        "line": 222,
+        "text": "### Beat 3 — 3 Ending Global Ditentukan (FORMULA LENGKAP — BARU)"
+      },
+      {
+        "line": 254,
+        "text": "### Beat 3.5 — Pilihan Final (BARU — hanya relevan jika syarat C selain \"pilihan final\" sudah terpenuhi)"
+      },
+      {
+        "line": 261,
+        "text": "### Beat 4 — Reward & Closure"
+      },
+      {
+        "line": 268,
+        "text": "## Fail State"
+      },
+      {
+        "line": 273,
+        "text": "# AW-S01 · EMPAT PULUH TAHUN TANPA KATA (TITAH KALANA SAUYAN)"
+      },
+      {
+        "line": 275,
+        "text": "## Trigger"
+      },
+      {
+        "line": 278,
+        "text": "## Flag"
+      },
+      {
+        "line": 282,
+        "text": "## Struktur"
+      },
+      {
+        "line": 290,
+        "text": "## Fail State"
+      },
+      {
+        "line": 296,
+        "text": "# AW-S02 · TANPA BERNIAT MEMILIKI (TITAH NIN WAIAM)"
+      },
+      {
+        "line": 298,
+        "text": "## Trigger"
+      },
+      {
+        "line": 301,
+        "text": "## Flag"
+      },
+      {
+        "line": 305,
+        "text": "## Struktur"
+      },
+      {
+        "line": 312,
+        "text": "## Fail State"
+      },
+      {
+        "line": 318,
+        "text": "# AW-S03 · YANG TIDAK PERNAH DIAJARKAN (TITAH WAI CENDRA)"
+      },
+      {
+        "line": 320,
+        "text": "## Trigger"
+      },
+      {
+        "line": 323,
+        "text": "## Flag"
+      },
+      {
+        "line": 327,
+        "text": "## Struktur"
+      },
+      {
+        "line": 333,
+        "text": "## Fail State"
+      },
+      {
+        "line": 339,
+        "text": "# AW-H01 · TELAPAK KEDELAPAN"
+      },
+      {
+        "line": 341,
+        "text": "## Trigger"
+      },
+      {
+        "line": 344,
+        "text": "## Flag"
+      },
+      {
+        "line": 347,
+        "text": "## Struktur"
+      },
+      {
+        "line": 353,
+        "text": "## Fail State"
+      },
+      {
+        "line": 358,
+        "text": "# AW-H02 · GEMA YANG MENUNGGU DIKETUK (TITAH GEMA PURWA)"
+      },
+      {
+        "line": 362,
+        "text": "## Trigger"
+      },
+      {
+        "line": 367,
+        "text": "## Flag"
+      },
+      {
+        "line": 371,
+        "text": "## Struktur"
+      },
+      {
+        "line": 373,
+        "text": "### Beat 1 — Temukan Ceruk"
+      },
+      {
+        "line": 376,
+        "text": "### Beat 2 — Sekuens Interaktif \"Diam Bersama\" (DIKONFIRMASI: cutscene interaktif, BUKAN battle state)"
+      },
+      {
+        "line": 386,
+        "text": "### Beat 3 — Recruitment"
+      },
+      {
+        "line": 392,
+        "text": "## Fail State"
+      },
+      {
+        "line": 397,
+        "text": "# AW-H03 · TITAH PENUNGGU SUNYI (#99)"
+      },
+      {
+        "line": 399,
+        "text": "## Trigger"
+      },
+      {
+        "line": 402,
+        "text": "## Flag"
+      },
+      {
+        "line": 407,
+        "text": "## Struktur"
+      },
+      {
+        "line": 409,
+        "text": "### Beat 1-3 — 3 Gelombang Tanpa Dialog Bantuan"
+      },
+      {
+        "line": 415,
+        "text": "### Beat 4 — Recruitment"
+      },
+      {
+        "line": 422,
+        "text": "## Fail State"
+      },
+      {
+        "line": 427,
+        "text": "# AW-H04 · TITAH TANPA RUPA (#100)"
+      },
+      {
+        "line": 429,
+        "text": "## Trigger"
+      },
+      {
+        "line": 432,
+        "text": "## Flag"
+      },
+      {
+        "line": 437,
+        "text": "## Struktur"
+      },
+      {
+        "line": 439,
+        "text": "### Beat 1 — Observasi Jejak Kaki"
+      },
+      {
+        "line": 442,
+        "text": "### Beat 2 — Pilihan Biner: Pilih untuk Tidak Memilih"
+      },
+      {
+        "line": 447,
+        "text": "### Beat 3 — Recruitment"
+      },
+      {
+        "line": 453,
+        "text": "## Fail State"
+      },
+      {
+        "line": 458,
+        "text": "# RINGKASAN DEPENDENCY GRAPH — REGION 9"
+      },
+      {
+        "line": 474,
+        "text": "## Titik Kritis Dependency"
+      },
+      {
+        "line": 484,
+        "text": "# ITEM TINDAK LANJUT UNTUK MANUSIA"
+      },
+      {
+        "line": 503,
+        "text": "# 🎉 CATATAN PENUTUP — SELURUH 9 REGION SELESAI DI-QUEST-SCRIPT"
+      }
+    ],
+    "placeholder_lines": [
+      26,
+      285,
+      381,
+      412
+    ]
+  },
+  {
+    "file": "SKEMA_FLAG_COUNTER_GLOBAL.md",
+    "bytes": 18157,
+    "lines": 227,
+    "sha256": "18a9d87612b4b68bf0e2de0f2074716b045cc67aab8493f46f616bed2359e0b4",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# SKEMA FLAG & COUNTER GLOBAL"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 10,
+        "text": "# RINGKASAN EKSEKUTIF"
+      },
+      {
+        "line": 23,
+        "text": "# §1 — VARIABEL PER REGION (341 Total)"
+      },
+      {
+        "line": 27,
+        "text": "## 1.1 — Nirwasita (42 variabel)"
+      },
+      {
+        "line": 43,
+        "text": "## 1.2 — Kadewan (40 variabel)"
+      },
+      {
+        "line": 59,
+        "text": "## 1.3 — Smarana (45 variabel — TERBANYAK, konsisten dengan region berdurasi terpanjang)"
+      },
+      {
+        "line": 75,
+        "text": "## 1.4 — Wanasunya (41 variabel)"
+      },
+      {
+        "line": 93,
+        "text": "## 1.5 — Kalamrtu (40 variabel)"
+      },
+      {
+        "line": 111,
+        "text": "## 1.6 — Himagiri (36 variabel)"
+      },
+      {
+        "line": 127,
+        "text": "## 1.7 — Rajawani (33 variabel)"
+      },
+      {
+        "line": 141,
+        "text": "## 1.8 — Jaladri (37 variabel)"
+      },
+      {
+        "line": 159,
+        "text": "## 1.9 — Anawil (49 variabel — TERBANYAK, konsisten sebagai finale dengan formula ending kompleks)"
+      },
+      {
+        "line": 179,
+        "text": "# §2 — ANALISIS REFERENSI LINTAS-REGION (Bukan Bentrok, Tapi Butuh Perhatian Arsitektur)"
+      },
+      {
+        "line": 181,
+        "text": "## 2.1 — Kategori 1: Flag Prasyarat Season (7 flag, PALING SERING dirujuk)"
+      },
+      {
+        "line": 187,
+        "text": "## 2.2 — Kategori 2: Flag Resolusi Region (Input Formula Ending)"
+      },
+      {
+        "line": 193,
+        "text": "## 2.3 — Kategori 3: Kemiripan Nama TANPA Referensi Silang (Bukan Bentrok, Tapi Berisiko Bingung)"
+      },
+      {
+        "line": 199,
+        "text": "# §3 — REKOMENDASI KONVENSI PENAMAAN UNTUK PRODUKSI"
+      },
+      {
+        "line": 212,
+        "text": "# §4 — IMPLIKASI TIPE DATA UNTUK SAVE-FILE"
+      }
+    ],
+    "placeholder_lines": []
+  },
+  {
+    "file": "UI_UX_SYSTEM_REQUIREMENTS.md",
+    "bytes": 16224,
+    "lines": 219,
+    "sha256": "3f70af0b489c7d08bec716ea0f800ff96dd5e7fc94e782a4d7eb933ed6e63e19",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# UI/UX SYSTEM REQUIREMENTS"
+      },
+      {
+        "line": 2,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 11,
+        "text": "# CARA MEMBACA DOKUMEN INI"
+      },
+      {
+        "line": 21,
+        "text": "# 1 — NIRWASITA: Kompas Berputar"
+      },
+      {
+        "line": 23,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 28,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 31,
+        "text": "## Kompleksitas Relatif: **Sedang**"
+      },
+      {
+        "line": 34,
+        "text": "## Dependency"
+      },
+      {
+        "line": 39,
+        "text": "# 2 — KADEWAN: Ritual Otomatis (Buff/Debuff Acak)"
+      },
+      {
+        "line": 41,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 46,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 49,
+        "text": "## Kompleksitas Relatif: **Rendah-Sedang**"
+      },
+      {
+        "line": 52,
+        "text": "## Dependency"
+      },
+      {
+        "line": 57,
+        "text": "# 3 — SMARANA: Neraca Dagang (Transaksi Permanen)"
+      },
+      {
+        "line": 59,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 66,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 69,
+        "text": "## Kompleksitas Relatif: **Tinggi**"
+      },
+      {
+        "line": 72,
+        "text": "## Dependency"
+      },
+      {
+        "line": 77,
+        "text": "# 4 — WANASUNYA: Jejak yang Menutup (Peta Sementara)"
+      },
+      {
+        "line": 79,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 84,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 87,
+        "text": "## Kompleksitas Relatif: **Sedang-Tinggi**"
+      },
+      {
+        "line": 90,
+        "text": "## Dependency"
+      },
+      {
+        "line": 95,
+        "text": "# 5 — KALAMRTU: Aksara Kutukan (Mini-Game Susun Simbol)"
+      },
+      {
+        "line": 97,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 102,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 105,
+        "text": "## Kompleksitas Relatif: **Tinggi**"
+      },
+      {
+        "line": 108,
+        "text": "## Dependency"
+      },
+      {
+        "line": 113,
+        "text": "# 6 — HIMAGIRI: Tata Krama (Meter Reputasi + Ritual Reset)"
+      },
+      {
+        "line": 115,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 121,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 124,
+        "text": "## Kompleksitas Relatif: **Sangat Tinggi**"
+      },
+      {
+        "line": 127,
+        "text": "## Dependency"
+      },
+      {
+        "line": 132,
+        "text": "# 7 — RAJAWANI: Yang Tak Terjual (Warisan)"
+      },
+      {
+        "line": 134,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 139,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 142,
+        "text": "## Kompleksitas Relatif: **Rendah-Sedang**"
+      },
+      {
+        "line": 145,
+        "text": "## Dependency"
+      },
+      {
+        "line": 150,
+        "text": "# 8 — JALADRI: Yang Tersebar (Serpihan Avatar)"
+      },
+      {
+        "line": 152,
+        "text": "## Komponen UI Inti"
+      },
+      {
+        "line": 158,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 162,
+        "text": "## Kompleksitas Relatif: **Tinggi**"
+      },
+      {
+        "line": 165,
+        "text": "## Dependency"
+      },
+      {
+        "line": 170,
+        "text": "# 9 — ANAWIL: Tanpa Kata (Degradasi HUD Progresif)"
+      },
+      {
+        "line": 172,
+        "text": "## Komponen UI Inti — PALING KOMPLEKS DARI SELURUH GAME"
+      },
+      {
+        "line": 184,
+        "text": "## Komponen yang Bisa Dipakai Ulang"
+      },
+      {
+        "line": 188,
+        "text": "## Kompleksitas Relatif: **SANGAT TINGGI — TERTINGGI DARI SELURUH GAME**"
+      },
+      {
+        "line": 191,
+        "text": "## Dependency"
+      },
+      {
+        "line": 196,
+        "text": "# RINGKASAN — PERBANDINGAN KOMPLEKSITAS 9 MEKANIK"
+      },
+      {
+        "line": 210,
+        "text": "## Rekomendasi Arsitektur Paling Penting (2 Poin)"
+      }
+    ],
+    "placeholder_lines": []
+  },
+  {
+    "file": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md",
+    "bytes": 92619,
+    "lines": 1492,
+    "sha256": "2fab457f125c16198b00ecdea1314c751e2edfb46d55c1698c75bcacb08c6755",
+    "headings": [
+      {
+        "line": 1,
+        "text": "# WORLD BIBLE"
+      },
+      {
+        "line": 3,
+        "text": "# PUSAKA: GEMA NAWANTARA"
+      },
+      {
+        "line": 5,
+        "text": "## Rekapitulasi Lengkap — Worldmap Guidebook"
+      },
+      {
+        "line": 9,
+        "text": "## Catatan Rekapitulasi"
+      },
+      {
+        "line": 49,
+        "text": "## Riwayat Revisi (Ringkas — Detail Penuh per Versi)"
+      },
+      {
+        "line": 84,
+        "text": "# BAGIAN 0 — TEMUAN REVIEW"
+      },
+      {
+        "line": 86,
+        "text": "## 0.1 Yang Diperbaiki (bukan ditambah, tapi dikoreksi)"
+      },
+      {
+        "line": 103,
+        "text": "## 0.2 Yang Ditemukan Saat Audit Zona (belum pernah ditandai sebelumnya)"
+      },
+      {
+        "line": 107,
+        "text": "# BAGIAN I — ARSITEKTUR NARATIF"
+      },
+      {
+        "line": 109,
+        "text": "## I.1 Sembilan Wajah Kelupaan — Lengkap 9 Region"
+      },
+      {
+        "line": 123,
+        "text": "## I.2 Meta-Arc — Tidak Berubah"
+      },
+      {
+        "line": 127,
+        "text": "# BAGIAN II — SEASON & PROGRESI"
+      },
+      {
+        "line": 129,
+        "text": "## II.1 Pembagian Season — Direvisi Setelah Quest Script 9 Region Selesai (September 2026)"
+      },
+      {
+        "line": 152,
+        "text": "## II.2 Sistem Tingkat Gema — Tidak Berubah"
+      },
+      {
+        "line": 156,
+        "text": "## II.3 Model Akuisisi Karakter — DITETAPKAN (September 2026)"
+      },
+      {
+        "line": 171,
+        "text": "# BAB 1 — NIRWASITA · Kota yang Bersembunyi Supaya Selamat"
+      },
+      {
+        "line": 175,
+        "text": "## 1.1 Storyline"
+      },
+      {
+        "line": 189,
+        "text": "## 1.2 Mekanik Signature: JALAN YANG MENUTUP KEMBALI"
+      },
+      {
+        "line": 195,
+        "text": "## 1.3 Zona"
+      },
+      {
+        "line": 209,
+        "text": "## 1.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 227,
+        "text": "## 1.5 Item (Arah Desain)"
+      },
+      {
+        "line": 237,
+        "text": "## 1.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 247,
+        "text": "## 1.7 NPC Mission"
+      },
+      {
+        "line": 254,
+        "text": "## 1.8 NPC Monster"
+      },
+      {
+        "line": 263,
+        "text": "## 1.9 Item Spesial"
+      },
+      {
+        "line": 267,
+        "text": "## 1.10 Resolusi Region"
+      },
+      {
+        "line": 274,
+        "text": "## 1.11 Elemen Budaya"
+      },
+      {
+        "line": 280,
+        "text": "## 1.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 296,
+        "text": "# BAB 2 — KADEWAN · Yang Masih Dipanggil, Tak Lagi Dimengerti"
+      },
+      {
+        "line": 300,
+        "text": "## 2.1 Storyline"
+      },
+      {
+        "line": 308,
+        "text": "## 2.2 Mekanik Signature: RITUAL OTOMATIS"
+      },
+      {
+        "line": 314,
+        "text": "## 2.3 Zona"
+      },
+      {
+        "line": 328,
+        "text": "## 2.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 346,
+        "text": "## 2.5 Item (Arah Desain)"
+      },
+      {
+        "line": 354,
+        "text": "## 2.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 364,
+        "text": "## 2.7 NPC Mission"
+      },
+      {
+        "line": 371,
+        "text": "## 2.8 NPC Monster"
+      },
+      {
+        "line": 379,
+        "text": "## 2.9 Item Spesial"
+      },
+      {
+        "line": 383,
+        "text": "## 2.10 Resolusi Region"
+      },
+      {
+        "line": 390,
+        "text": "## 2.11 Elemen Budaya"
+      },
+      {
+        "line": 396,
+        "text": "## 2.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 412,
+        "text": "# BAB 3 — SMARANA · Kota yang Menjual Kelupaan"
+      },
+      {
+        "line": 416,
+        "text": "## 3.1 Storyline"
+      },
+      {
+        "line": 432,
+        "text": "## 3.2 Mekanik Signature: **NERACA DAGANG**"
+      },
+      {
+        "line": 438,
+        "text": "## 3.3 Zona"
+      },
+      {
+        "line": 452,
+        "text": "## 3.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 470,
+        "text": "## 3.5 Item (Arah Desain)"
+      },
+      {
+        "line": 476,
+        "text": "## 3.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 484,
+        "text": "## 3.7 NPC Mission"
+      },
+      {
+        "line": 491,
+        "text": "## 3.8 NPC Monster"
+      },
+      {
+        "line": 499,
+        "text": "## 3.9 Item Spesial"
+      },
+      {
+        "line": 503,
+        "text": "## 3.10 Resolusi Region"
+      },
+      {
+        "line": 510,
+        "text": "## 3.11 Elemen Budaya"
+      },
+      {
+        "line": 516,
+        "text": "## 3.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 542,
+        "text": "# BAB 4 — WANASUNYA · Mereka yang Memilih Pergi"
+      },
+      {
+        "line": 546,
+        "text": "## 4.1 Storyline"
+      },
+      {
+        "line": 560,
+        "text": "## 4.2 Mekanik Signature: **JEJAK YANG MENUTUP**"
+      },
+      {
+        "line": 566,
+        "text": "## 4.3 Zona"
+      },
+      {
+        "line": 575,
+        "text": "## 4.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 593,
+        "text": "## 4.5 Item (Arah Desain)"
+      },
+      {
+        "line": 597,
+        "text": "## 4.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 601,
+        "text": "## 4.7 NPC Mission"
+      },
+      {
+        "line": 607,
+        "text": "## 4.8 NPC Monster"
+      },
+      {
+        "line": 615,
+        "text": "## 4.9 Item Spesial"
+      },
+      {
+        "line": 619,
+        "text": "## 4.10 Resolusi Region"
+      },
+      {
+        "line": 626,
+        "text": "## 4.11 Elemen Budaya"
+      },
+      {
+        "line": 632,
+        "text": "## 4.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 658,
+        "text": "# BAB 5 — KALAMRTU · Kerajaan yang Hilang dari Catatan, Bukan dari Tanah"
+      },
+      {
+        "line": 662,
+        "text": "## 5.1 Storyline"
+      },
+      {
+        "line": 676,
+        "text": "## 5.2 Mekanik Signature: **AKSARA KUTUKAN**"
+      },
+      {
+        "line": 680,
+        "text": "## 5.3 Zona"
+      },
+      {
+        "line": 691,
+        "text": "## 5.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 710,
+        "text": "## 5.5 Item (Arah Desain)"
+      },
+      {
+        "line": 714,
+        "text": "## 5.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 718,
+        "text": "## 5.7 NPC Mission"
+      },
+      {
+        "line": 724,
+        "text": "## 5.8 NPC Monster"
+      },
+      {
+        "line": 732,
+        "text": "## 5.9 Item Spesial"
+      },
+      {
+        "line": 736,
+        "text": "## 5.10 Resolusi Region"
+      },
+      {
+        "line": 743,
+        "text": "## 5.11 Elemen Budaya"
+      },
+      {
+        "line": 749,
+        "text": "## 5.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 775,
+        "text": "# BAB 6 — HIMAGIRI · Istana yang Menolak Mengakui Ia Sudah Runtuh"
+      },
+      {
+        "line": 779,
+        "text": "## 6.1 Storyline"
+      },
+      {
+        "line": 793,
+        "text": "## 6.2 Mekanik Signature: **TATA KRAMA**"
+      },
+      {
+        "line": 799,
+        "text": "## 6.3 Zona"
+      },
+      {
+        "line": 806,
+        "text": "## 6.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 824,
+        "text": "## 6.5 Item (Arah Desain)"
+      },
+      {
+        "line": 828,
+        "text": "## 6.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 832,
+        "text": "## 6.7 NPC Mission"
+      },
+      {
+        "line": 838,
+        "text": "## 6.8 NPC Monster"
+      },
+      {
+        "line": 846,
+        "text": "## 6.9 Item Spesial"
+      },
+      {
+        "line": 850,
+        "text": "## 6.10 Resolusi Region"
+      },
+      {
+        "line": 854,
+        "text": "## 6.11 Elemen Budaya"
+      },
+      {
+        "line": 860,
+        "text": "## 6.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 886,
+        "text": "# BAB 7 — RAJAWANI · Diingat sebagai Barang, Dilupakan sebagai Bangsa"
+      },
+      {
+        "line": 890,
+        "text": "## 7.1 Storyline"
+      },
+      {
+        "line": 904,
+        "text": "## 7.2 Mekanik Signature: **YANG TAK TERJUAL**"
+      },
+      {
+        "line": 908,
+        "text": "## 7.3 Zona"
+      },
+      {
+        "line": 918,
+        "text": "## 7.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 936,
+        "text": "## 7.5 Item (Arah Desain)"
+      },
+      {
+        "line": 940,
+        "text": "## 7.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 944,
+        "text": "## 7.7 NPC Mission"
+      },
+      {
+        "line": 950,
+        "text": "## 7.8 NPC Monster"
+      },
+      {
+        "line": 958,
+        "text": "## 7.9 Item Spesial"
+      },
+      {
+        "line": 962,
+        "text": "## 7.10 Resolusi Region"
+      },
+      {
+        "line": 966,
+        "text": "## 7.11 Elemen Budaya"
+      },
+      {
+        "line": 972,
+        "text": "## 7.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 998,
+        "text": "# BAB 8 — JALADRI · Yang Pecah agar Tak Menjadi Milik Siapa Pun"
+      },
+      {
+        "line": 1002,
+        "text": "## 8.1 Storyline"
+      },
+      {
+        "line": 1020,
+        "text": "## 8.2 Mekanik Signature: **YANG TERSEBAR**"
+      },
+      {
+        "line": 1026,
+        "text": "## 8.3 Zona"
+      },
+      {
+        "line": 1035,
+        "text": "## 8.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 1053,
+        "text": "## 8.5 Item (Arah Desain)"
+      },
+      {
+        "line": 1057,
+        "text": "## 8.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 1061,
+        "text": "## 8.7 NPC Mission"
+      },
+      {
+        "line": 1067,
+        "text": "## 8.8 NPC Monster"
+      },
+      {
+        "line": 1075,
+        "text": "## 8.9 Item Spesial"
+      },
+      {
+        "line": 1079,
+        "text": "## 8.10 Resolusi Region"
+      },
+      {
+        "line": 1083,
+        "text": "## 8.11 Elemen Budaya"
+      },
+      {
+        "line": 1089,
+        "text": "## 8.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 1115,
+        "text": "# BAB 9 — ANAWIL · Ingatan yang Lebih Tua daripada Bahasa"
+      },
+      {
+        "line": 1119,
+        "text": "## 9.0 ⛔ Prasyarat Khusus Region Ini"
+      },
+      {
+        "line": 1131,
+        "text": "### Status Prasyarat — Diperbarui"
+      },
+      {
+        "line": 1139,
+        "text": "## 9.1 Storyline"
+      },
+      {
+        "line": 1149,
+        "text": "## 9.2 Mekanik Signature: **TANPA KATA**"
+      },
+      {
+        "line": 1155,
+        "text": "## 9.3 Zona"
+      },
+      {
+        "line": 1159,
+        "text": "## 9.4 Roster (Rujukan ke Panduan Karakter)"
+      },
+      {
+        "line": 1177,
+        "text": "## 9.5 Item (Arah Desain)"
+      },
+      {
+        "line": 1181,
+        "text": "## 9.6 Misi (Arah Desain)"
+      },
+      {
+        "line": 1185,
+        "text": "## 9.7 NPC Mission"
+      },
+      {
+        "line": 1191,
+        "text": "## 9.8 NPC Monster"
+      },
+      {
+        "line": 1199,
+        "text": "## 9.9 Item Spesial"
+      },
+      {
+        "line": 1203,
+        "text": "## 9.10 Resolusi Region"
+      },
+      {
+        "line": 1209,
+        "text": "## 9.11 Elemen Budaya"
+      },
+      {
+        "line": 1217,
+        "text": "## 9.12 Elemen Standar Worldmap"
+      },
+      {
+        "line": 1243,
+        "text": "# BAGIAN IX-B — PETA & KONEKTIVITAS DUNIA"
+      },
+      {
+        "line": 1245,
+        "text": "## IX-B.1 Jalur & Waktu Tempuh Antar Region"
+      },
+      {
+        "line": 1313,
+        "text": "## IX-B.2 Legenda Simbol Peta"
+      },
+      {
+        "line": 1330,
+        "text": "# BAGIAN IX-C — KALENDER DUNIA (TARIKH LARAS)"
+      },
+      {
+        "line": 1332,
+        "text": "## IX-C.1 Prinsip Dasar"
+      },
+      {
+        "line": 1345,
+        "text": "## IX-C.2 Kalender yang Tidak Sinkron — Detail yang Disengaja"
+      },
+      {
+        "line": 1357,
+        "text": "## IX-C.3 Struktur Tahun — 5 Musim, Mengikuti Panca Maha Bhuta"
+      },
+      {
+        "line": 1375,
+        "text": "## IX-C.4 Minggu — 5 Hari, Juga Mengikuti Panca Maha Bhuta"
+      },
+      {
+        "line": 1387,
+        "text": "## IX-C.5 Tanggal-Tanggal Penting"
+      },
+      {
+        "line": 1398,
+        "text": "## IX-C.6 Menjawab Pertanyaan Terbuka v4.0 #3"
+      },
+      {
+        "line": 1402,
+        "text": "# BAGIAN X — VALIDASI LINTAS-REGION"
+      },
+      {
+        "line": 1404,
+        "text": "## X.1 Pembuktian: 9 Mekanik Signature Semuanya Berbeda"
+      },
+      {
+        "line": 1420,
+        "text": "## X.2 Pembuktian: Representasi Lore Konsisten dengan Mekanik"
+      },
+      {
+        "line": 1436,
+        "text": "## X.3 Validasi Ending — Diperluas ke Kondisi Pemain Per Region"
+      },
+      {
+        "line": 1454,
+        "text": "# BAGIAN XI — STATUS ELEMEN STANDAR WORLD MAP RPG"
+      },
+      {
+        "line": 1472,
+        "text": "## Catatan Desain: Pengecualian yang Disengaja"
+      },
+      {
+        "line": 1480,
+        "text": "# PERTANYAAN YANG PERLU DIJAWAB"
+      }
+    ],
+    "placeholder_lines": []
+  }
+]

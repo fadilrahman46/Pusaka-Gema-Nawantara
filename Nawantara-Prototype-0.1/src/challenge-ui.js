@@ -1,0 +1,12 @@
+import {CHALLENGES,UNIQUE_ITEMS,challengeFlag,challengeError,finishChallenge} from './challenges.js';
+import {characterStats} from './progression.js';
+export function createChallengeUI({getState,open,close,paragraph,start,commit,toast,nirsmara}){
+ function menu(){const s=getState();open('Rekrutmen & Titah Nirwasita',paragraph('Tempat pertemuan: Kuta Wisata, setelah M05. Tantangan tambahan ini adalah uji desain sementara. Tidak memberi XP atau Serpihan Sukma.')+paragraph('Rekrutmen memakai party pinjaman Lv20; party milikmu dipulihkan setelah battle. Titah item memakai pemilik item bersama party aktif. Guard memberi 1 Prana; Pamungkas membutuhkan 4.')+paragraph('Titah Nirsmara tersedia di Altar Kesepakatan setelah M06: Lv55 dan 15 entri yang masih dimiliki.'),[...Object.entries(CHALLENGES).map(([key,c])=>[(s.flags[challengeFlag(key)]?'✓ ':c.type==='recruit'&&s.roster.includes(c.id)?'Dimiliki · ':'')+c.title,()=>detail(key)]),['Titah Nirsmara',nirsmara],['Kembali',close]]);}
+ function detail(key){const s=getState(),c=CHALLENGES[key],item=UNIQUE_ITEMS[c.id],error=challengeError(s,key);open(c.title,paragraph('Uji desain sementara · '+characterStats(c.id).name)+paragraph(c.goal)+paragraph(c.type==='recruit'?'Reward: karakter bergabung sekali. Jika party penuh, karakter masuk roster.':item.name+' · Lv'+item.level+' · '+item.description)+paragraph(error||'Siap dimulai. Keluar atau gagal tidak memberi reward dan boleh dicoba lagi.'),[...(!error?[['Mulai tantangan',()=>start(key)]]:[]),['Kembali ke daftar',menu]]);}
+ function finish(b){const c=CHALLENGES[b.challenge.key];
+  if(!b.challenge.achieved){open('Syarat tantangan belum terpenuhi',paragraph(c.goal)+paragraph('Kemenangan battle saja belum cukup. Tidak ada reward diberikan.'),[['Coba lagi',()=>start(b.challenge.key)],['Kembali ke daftar',menu]]);return;}
+  function claim(){if(commit(s=>finishChallenge(s,b))){toast(c.type==='recruit'?'Karakter bergabung. Party asli tetap tersimpan.':'Titah selesai. Item unik masuk inventaris.');open('Tantangan selesai',paragraph(c.type==='recruit'?characterStats(c.id).name+' direkrut. Atur susunan party melalui Ensiklopedia.':UNIQUE_ITEMS[c.id].name+' diperoleh. Pasang melalui Perkembangan & equipment.'),[['Kembali ke daftar',menu],['Lanjut menjelajah',close]]);}else open('Hasil belum tersimpan',paragraph('Reward belum diterapkan. Periksa penyimpanan lalu coba simpan kembali.'),[['Simpan hasil',claim],['Kembali ke daftar',menu]]);}
+  claim();
+ }
+ return {menu,finish};
+}

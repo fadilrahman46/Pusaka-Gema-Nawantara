@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "buildSha256": "b610cf054200e4319b8a64381ce6d51e4c7a2652d970814e793724d5e4567462",
+  "checks": [
+    "M01 extraction requires traversal; pending persists across reload; reward only at exit",
+    "M02 trail discovery, legacy song state, encounter and chapter epilogue survive reload",
+    "Lare clue profiles, wrong-match battle, remaining matches and reward",
+    "Kayuri full text, shuffled recall, two reactive lines, reload before survival and post-quest flavor",
+    "Five visual murals at 640px, wrong order retry and three lore rewards",
+    "Tower wrong line heals 15%, song review, correct line removes exactly one seal",
+    "Nirsmara four song choices at 640px, wrong retry, correct finish and forced-path epilogue"
+  ],
+  "errors": []
+}

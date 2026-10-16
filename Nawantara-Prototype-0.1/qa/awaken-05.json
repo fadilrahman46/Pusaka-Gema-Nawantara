@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": [
+    "Awaken level40 UI, source skill descriptions, no duplicate activation, reload, active battle passive, 640px skill modal"
+  ],
+  "errors": []
+}

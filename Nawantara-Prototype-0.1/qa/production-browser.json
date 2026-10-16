@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Movement and R checkpoint recovery",
+    "Modal focus trapped/restored; world input suspended",
+    "640px responsive menu stays in viewport",
+    "Invalid import leaves stored save unchanged",
+    "Continue migrates legacy save and preserves exact original backup",
+    "Corrupt continue shows recovery and never resets the save silently"
+  ],
+  "errors": []
+}

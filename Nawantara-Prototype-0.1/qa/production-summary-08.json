@@ -1,0 +1,28 @@
+{
+  "version": "0.8.0",
+  "date": "2026-09-22",
+  "buildSha256": "587bdfac7acfb6ee42debcb7a154229adad6a59b6e547ba033baf0da0bbd76a5",
+  "domainTests": {
+    "passed": 70,
+    "failed": 0
+  },
+  "build": "PASS",
+  "browser": {
+    "economy-08.json": {
+      "passed": true,
+      "buildSha256": "587bdfac7acfb6ee42debcb7a154229adad6a59b6e547ba033baf0da0bbd76a5"
+    },
+    "playthrough-08.json": {
+      "passed": true,
+      "buildSha256": "587bdfac7acfb6ee42debcb7a154229adad6a59b6e547ba033baf0da0bbd76a5"
+    }
+  },
+  "sourceDecisionVerification": "PASS",
+  "fullM1Closed": false,
+  "launchGateClosed": false,
+  "limitations": [
+    "Economy balance baseline requires user playtest",
+    "Watu browser fixture imported through save UI; recruitment path remains backlog",
+    "Not a complete browser matrix for all 13 quests"
+  ]
+}

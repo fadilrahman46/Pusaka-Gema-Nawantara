@@ -1,0 +1,46 @@
+{
+  "build": "0.2.0",
+  "designRevision": "naw-2026-09-18.1",
+  "unitTests": 18,
+  "consecutivePlaythroughs": [
+    {
+      "run": 1,
+      "passed": true,
+      "chapter": 6
+    },
+    {
+      "run": 2,
+      "passed": true,
+      "chapter": 6
+    },
+    {
+      "run": 3,
+      "passed": true,
+      "chapter": 6
+    }
+  ],
+  "buildSHA256": "53c52ed6f1907a7ce8b035a6260370e2e76ab37ce07b43354d93c45b54c77d8f",
+  "production-browser": {
+    "passed": true,
+    "checks": [
+      "Movement and R checkpoint recovery",
+      "Modal focus trapped/restored; world input suspended",
+      "640px responsive menu stays in viewport",
+      "Invalid import leaves stored save unchanged",
+      "Continue migrates legacy save and preserves exact original backup",
+      "Corrupt continue shows recovery and never resets the save silently"
+    ],
+    "errors": []
+  },
+  "permanent-choice": {
+    "passed": true,
+    "checks": [
+      "valid save import",
+      "cancel leaves state unchanged",
+      "confirm locks quest",
+      "reload retains lock",
+      "invalid import retains state"
+    ],
+    "fixture": "fresh state chapter 6 imported through UI"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.9.0",
+  "date": "2026-09-22",
+  "buildSha256": "f30f814f74c36f10269bafe0da63baaa9cb2c163a8862445da4cd44bc0298c52",
+  "domainTests": {
+    "passed": 77,
+    "failed": 0,
+    "artifact": "domain-09.tap"
+  },
+  "build": "PASS",
+  "browser": {
+    "challenges-09.json": {
+      "passed": true,
+      "buildSha256": "f30f814f74c36f10269bafe0da63baaa9cb2c163a8862445da4cd44bc0298c52"
+    },
+    "playthrough-09.json": {
+      "passed": true,
+      "buildSha256": "f30f814f74c36f10269bafe0da63baaa9cb2c163a8862445da4cd44bc0298c52"
+    }
+  },
+  "sourceDecisionVerification": "PASS",
+  "completed": [
+    "Three recruitment challenges: Sanra/Watu/Tobelang",
+    "Five simple Titah and item effects: Lampah/Tandaraga/Sanra/Watu/Tobelang"
+  ],
+  "fullM1Closed": false,
+  "launchGateClosed": false,
+  "remaining": [
+    "Nirsmara item requires 15 meaningful entries and item sacrifice content",
+    "Sloka/Mandala",
+    "Progression balancing and full region QA",
+    "Final animation and 3D via Unity/Blender"
+  ],
+  "testLimitations": [
+    "Challenge tests import chapter5 and minimum levels through save UI; do not certify grind pace",
+    "Not a complete matrix of all 13 region quests on this hash"
+  ]
+}

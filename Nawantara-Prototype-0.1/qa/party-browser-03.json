@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "0.2 import, four-slot edit, source SPD order",
+    "Saras target healing/shield and independent Prana",
+    "640px party controls fit and remain operable",
+    "Training does not grant quest reward; party survives reload"
+  ],
+  "errors": []
+}

@@ -1,0 +1,180 @@
+{
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "checks": [
+    "15 source-backed cards collected via UI; altar confirmation cancel; one permanent sacrifice and item; lost card stays unavailable after reload",
+    "Mandala cancel/pay, insufficient Sloka, real basic and special upgrades, exact spending and Common ultimate cap",
+    "Movement earns active character Sloka; menu pauses accrual",
+    "Boss win grants two Sloka, upgraded ultimate reaches combat after reload, flee grants none"
+  ],
+  "errors": [],
+  "state": {
+    "version": 2,
+    "designRevision": "naw-2026-09-18.1",
+    "chapter": 6,
+    "position": {
+      "x": 0.9623947283420987,
+      "z": -184.65317248885444
+    },
+    "checkpoint": {
+      "x": 0,
+      "z": 7
+    },
+    "flags": {
+      "flag_region_resolution_nirwasita": "NEUTRAL",
+      "flag_adi_resolution_path": null,
+      "flag_ranaya_song_stage": 0
+    },
+    "roster": [
+      1,
+      2,
+      9,
+      4
+    ],
+    "party": [
+      1
+    ],
+    "progression": {
+      "0": {
+        "level": 1,
+        "xp": 0
+      },
+      "1": {
+        "level": 20,
+        "xp": 0
+      },
+      "2": {
+        "level": 1,
+        "xp": 0
+      },
+      "4": {
+        "level": 40,
+        "xp": 0
+      },
+      "9": {
+        "level": 55,
+        "xp": 0
+      }
+    },
+    "equipment": {
+      "9": {
+        "Pusaka": "Pusaka Dilupakan Demi Selamat"
+      }
+    },
+    "lostEntries": [],
+    "items": [
+      "Pusaka Dilupakan Demi Selamat"
+    ],
+    "kepeng": 60,
+    "sukma": 0,
+    "sukmaClaims": [],
+    "visited": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "burials": [],
+    "fragments": [],
+    "collections": {
+      "encyclopedia": [
+        "NR-Z02",
+        "NR-Z03",
+        "NR-Z04",
+        "NR-Z05",
+        "NR-Z06",
+        "NR-Z07",
+        "NR-M01",
+        "NR-M02",
+        "NR-M03",
+        "NR-M04",
+        "NR-M05",
+        "NR-M06",
+        "NR-C01",
+        "NR-C02"
+      ],
+      "warisan": [],
+      "serpihan": []
+    },
+    "options": {
+      "sound": true,
+      "accessible": false,
+      "reducedMotion": false
+    },
+    "elapsed": 1.1795000000000009,
+    "endingInputs": {
+      "smaranaOffer": null,
+      "himagiriResolution": null
+    },
+    "decisionProvenance": {
+      "nirsmaraItem": {
+        "eventId": "permanent-entry-sacrifice",
+        "sourceRevision": "preview-0.10"
+      }
+    },
+    "migrationIssues": [],
+    "presentationMode": "NORMAL",
+    "finalEnding": null,
+    "sloka": {
+      "stock": {
+        "1": {
+          "umum": 2,
+          "misi": 3,
+          "seconds": 0.6915000000000053
+        },
+        "2": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        },
+        "3": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        },
+        "4": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0.38180000000000025
+        },
+        "7": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        },
+        "9": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        }
+      },
+      "levels": {
+        "1": {
+          "strike": 2,
+          "skill": 2,
+          "ultimate": 1
+        },
+        "4": {
+          "strike": 1,
+          "skill": 1,
+          "ultimate": 2
+        }
+      },
+      "claims": [
+        "NR-M02",
+        "NR-M03",
+        "NR-M05",
+        "NR-M06"
+      ],
+      "boss": 3
+    },
+    "nirsmaraSacrifice": {
+      "entry": "NR-Z01",
+      "source": "TITAH-NIRSMARA",
+      "permanent": true
+    }
+  }
+}

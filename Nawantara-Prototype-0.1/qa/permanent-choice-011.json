@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "checks": [
+    "valid save import",
+    "cancel leaves state unchanged",
+    "confirm locks quest",
+    "reload retains lock",
+    "invalid import retains state",
+    "three graves respected via traversal; Saras and item persist after reload"
+  ],
+  "fixture": "fresh state chapter 6 imported through UI"
+}

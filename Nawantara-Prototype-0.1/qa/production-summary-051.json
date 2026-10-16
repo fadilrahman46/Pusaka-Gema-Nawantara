@@ -1,0 +1,10 @@
+{
+  "version": "0.5.1",
+  "domainTestsPassed": 60,
+  "buildSha256": "0cbf1c89230714187650752f0960245e2dbe994d049923b476b2da2ec2fc8dd9",
+  "p1Browser": true,
+  "mainRouteM01M06": true,
+  "saveReload": true,
+  "fullM1": false,
+  "launchReady": false
+}

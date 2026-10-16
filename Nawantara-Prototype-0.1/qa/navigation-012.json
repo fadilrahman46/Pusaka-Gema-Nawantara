@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "buildSha256": "b610cf054200e4319b8a64381ce6d51e4c7a2652d970814e793724d5e4567462",
+  "checks": [
+    "Idle pauses inside skill details; exactly one extra tutorial enemy appears after timeout",
+    "M04 physical landmarks, mid-route reload, wrong Adi safely retries, correct Adi starts encounter"
+  ],
+  "errors": []
+}

@@ -1,0 +1,29 @@
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+import assert from 'node:assert/strict';import {writeFileSync,readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+import {fresh} from '../src/state.js';import {ensureProgression} from '../src/progression.js';import {CHALLENGES,UNIQUE_ITEMS,challengeFlag} from '../src/challenges.js';
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH,headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:960,height:720}}),errors=[],checks=[];page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(12000);
+const inspect=()=>page.evaluate(()=>Nawantara.inspect()),press=name=>page.getByRole('button',{name,exact:true}).click();
+async function load(s){await page.click('#menuBtn');await page.locator('#importSave').setInputFiles({name:'challenge.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(s))});await page.waitForFunction(chapter=>Nawantara.inspect().state.chapter===chapter,s.chapter);await page.waitForTimeout(100);}
+async function journal(){await page.click('#journalBtn');await press('Rekrutmen & Titah');}
+async function start(key){await press(CHALLENGES[key].title);await press('Mulai tantangan');}
+async function fight(objective=true){for(let i=0;i<500;i++){
+ const b=(await inspect()).combat;if(!b)return;const c=b.challenge,u=b.allies.find(a=>a.id===b.activeId);let action='guard';
+ if(!objective)action='strike';else if(!c.achieved&&u.characterId===c.id){action=c.type==='recruit'?'skill':'ultimate';if(u.prana<(action==='skill'?2:4)||u.cooldowns[action]>0)action='guard';}else if(c.achieved)action='strike';
+ if(action==='skill'&&c.id===3)await page.selectOption('#allyTarget',b.allies.find(a=>a.characterId!==3&&a.hp>0).id);
+ await page.click('#'+({ultimate:'heal'}[action]||action));
+ }throw Error('Challenge did not finish');}
+try{
+ await page.goto(new URL('../dist/Nawantara-3D.html',import.meta.url).href);await page.click('#newGame');await journal();await press(CHALLENGES.recruit3.title);assert.ok((await page.locator('#modalBody').textContent()).includes('M05'));assert.equal(await page.getByRole('button',{name:'Mulai tantangan',exact:true}).count(),0);await page.click('#modalClose');
+ const s=fresh();s.chapter=5;s.roster=[1,2,5];s.party=[0,1,2,5];s.position={x:0,z:-158};ensureProgression(s);await load(s);await page.waitForFunction(()=>Nawantara.inspect().nearest==='challenges');await page.keyboard.press('KeyE');await page.screenshot({path:'qa/challenge-hub-09.png'});
+ await start('recruit3');await page.click('#flee');assert.ok(!(await inspect()).state.roster.includes(3));await journal();await start('recruit3');await fight(false);assert.equal(await page.locator('#modalTitle').textContent(),'Syarat tantangan belum terpenuhi');assert.ok(!(await inspect()).state.roster.includes(3));await press('Coba lagi');await fight();assert.ok((await inspect()).state.roster.includes(3));assert.deepEqual((await inspect()).state.party,[0,1,2,5]);await press('Kembali ke daftar');checks.push('World hub and M05 gate; flee and wrong-objective win grant nothing; retry recruits Sanra with full party intact');
+ for(const key of ['recruit4','recruit7']){await start(key);await fight();assert.ok((await inspect()).state.roster.includes(CHALLENGES[key].id));await press('Kembali ke daftar');}checks.push('Watu three protected rounds and Tobelang first-target skill recruit through real battle');
+ await press(CHALLENGES.item3.title);assert.ok((await page.locator('#modalBody').textContent()).includes('Memerlukan level 20'));assert.equal(await page.getByRole('button',{name:'Mulai tantangan',exact:true}).count(),0);await page.click('#modalClose');
+ const leveled=(await inspect()).state;for(const [id,item] of Object.entries(UNIQUE_ITEMS))leveled.progression[id]={level:item.level,xp:0};leveled.party=[0];await load(leveled);await journal();
+ for(const key of ['item1','item2','item3','item4','item7']){await start(key);await fight();assert.equal(await page.locator('#modalTitle').textContent(),'Tantangan selesai',key);assert.ok((await inspect()).state.items.includes(UNIQUE_ITEMS[CHALLENGES[key].id].name));await press('Kembali ke daftar');}
+ await press('✓ '+CHALLENGES.item7.title);assert.equal(await page.getByRole('button',{name:'Mulai tantangan',exact:true}).count(),0);await page.click('#modalClose');
+ for(const [id,item] of Object.entries(UNIQUE_ITEMS)){await page.click('#bagBtn');await press('Perkembangan & equipment');await press('Pilih karakter');const names={1:'Lampah Sinaru',2:'Tandaraga',3:'Sanra Ranu',4:'Watu Palindra',7:'Tobelang'};await press(names[id]+' · Lv'+item.level);await press(item.slot);await press('Pasang '+item.name);assert.equal((await inspect()).state.equipment[id][item.slot],item.name);await page.click('#modalClose');}
+ await page.setViewportSize({width:640,height:640});await journal();await page.screenshot({path:'qa/challenge-completed-09.png'});await page.click('#modalClose');await page.reload();await page.click('#continueGame');const final=(await inspect()).state;
+ for(const key of Object.keys(CHALLENGES))assert.equal(final.flags[challengeFlag(key)],true);assert.equal(final.items.length,5);assert.equal(final.sukma,0);assert.deepEqual(errors,[]);checks.push('Five level-gated Titah completed, rewards once, all equipment fitted, completion and gear persist after reload');
+ writeFileSync('qa/challenges'+(process.env.QA_RUN?'-'+process.env.QA_RUN:'-09')+'.json',JSON.stringify({passed:true,buildSha256:createHash('sha256').update(readFileSync('dist/Nawantara-3D.html')).digest('hex'),checks,errors,state:final},null,2));console.log(checks.join('\n'));
+}catch(e){await page.screenshot({path:'qa/challenges-failure.png'});console.error((await inspect()).combat?.challenge);throw e;}finally{await browser.close();}

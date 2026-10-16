@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "buildSha256": "88f419b69efdefba422dc2ab628724a1c700712f9aebf5044131aa543197a32d",
+  "checks": [
+    "World hub and M05 gate; flee and wrong-objective win grant nothing; retry recruits Sanra with full party intact",
+    "Watu three protected rounds and Tobelang first-target skill recruit through real battle",
+    "Five level-gated Titah completed, rewards once, all equipment fitted, completion and gear persist after reload"
+  ],
+  "errors": [],
+  "state": {
+    "version": 2,
+    "designRevision": "naw-2026-09-18.1",
+    "chapter": 5,
+    "position": {
+      "x": 0,
+      "z": -158
+    },
+    "checkpoint": {
+      "x": 0,
+      "z": 7
+    },
+    "flags": {
+      "flag_region_resolution_nirwasita": "NEUTRAL",
+      "flag_adi_resolution_path": null,
+      "flag_ranaya_song_stage": 0,
+      "ext_challenge_recruit3_complete": true,
+      "flag_sanra_ranu_recruited": true,
+      "ext_challenge_recruit4_complete": true,
+      "flag_watu_palindra_recruited": true,
+      "ext_challenge_recruit7_complete": true,
+      "flag_tobelang_recruited": true,
+      "ext_challenge_item1_complete": true,
+      "ext_challenge_item2_complete": true,
+      "ext_challenge_item3_complete": true,
+      "ext_challenge_item4_complete": true,
+      "ext_challenge_item7_complete": true
+    },
+    "sloka": {
+      "stock": {},
+      "levels": {},
+      "claims": [],
+      "boss": 0
+    },
+    "roster": [
+      1,
+      2,
+      5,
+      3,
+      4,
+      7
+    ],
+    "party": [
+      0
+    ],
+    "progression": {
+      "0": {
+        "level": 1,
+        "xp": 0
+      },
+      "1": {
+        "level": 20,
+        "xp": 0
+      },
+      "2": {
+        "level": 20,
+        "xp": 0
+      },
+      "3": {
+        "level": 20,
+        "xp": 0
+      },
+      "4": {
+        "level": 25,
+        "xp": 0
+      },
+      "5": {
+        "level": 1,
+        "xp": 0
+      },
+      "7": {
+        "level": 35,
+        "xp": 0
+      }
+    },
+    "equipment": {
+      "1": {
+        "Jimat": "Jimat Rombongan yang Tak Sampai"
+      },
+      "2": {
+        "Senjata": "Senjata Perang yang Tak Datang"
+      },
+      "3": {
+        "Jimat": "Jimat Yang Masih Hafal"
+      },
+      "4": {
+        "Pusaka": "Pusaka Sampai Sini Saja"
+      },
+      "7": {
+        "Senjata": "Senjata Yang Tak Bisa Digambarkan"
+      }
+    },
+    "lostEntries": [],
+    "items": [
+      "Jimat Rombongan yang Tak Sampai",
+      "Senjata Perang yang Tak Datang",
+      "Jimat Yang Masih Hafal",
+      "Pusaka Sampai Sini Saja",
+      "Senjata Yang Tak Bisa Digambarkan"
+    ],
+    "kepeng": 120,
+    "sukma": 0,
+    "sukmaClaims": [],
+    "visited": [
+      0,
+      5
+    ],
+    "burials": [],
+    "fragments": [],
+    "collections": {
+      "encyclopedia": [],
+      "warisan": [],
+      "serpihan": []
+    },
+    "options": {
+      "sound": true,
+      "accessible": false,
+      "reducedMotion": false
+    },
+    "elapsed": 0.6803000000000023,
+    "endingInputs": {
+      "smaranaOffer": null,
+      "himagiriResolution": null
+    },
+    "decisionProvenance": {
+      "recruit3": {
+        "eventId": "recruit3",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "recruit4": {
+        "eventId": "recruit4",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "recruit7": {
+        "eventId": "recruit7",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "item1": {
+        "eventId": "item1",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "item2": {
+        "eventId": "item2",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "item3": {
+        "eventId": "item3",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "item4": {
+        "eventId": "item4",
+        "sourceRevision": "preview-challenges-0.9"
+      },
+      "item7": {
+        "eventId": "item7",
+        "sourceRevision": "preview-challenges-0.9"
+      }
+    },
+    "migrationIssues": [],
+    "presentationMode": "NORMAL",
+    "finalEnding": null
+  }
+}

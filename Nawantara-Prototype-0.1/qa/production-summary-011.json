@@ -1,0 +1,122 @@
+{
+  "version": "0.11.0",
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "domainTests": 91,
+  "reports": [
+    {
+      "path": "qa/journal-economy-011.json",
+      "passed": true,
+      "checks": [
+        "13 quest guidance rows at 640px",
+        "zero Kepeng recovers through three real wins",
+        "per-character XP",
+        "reload preserves currency",
+        "refusal price paid and journal updates"
+      ]
+    },
+    {
+      "path": "qa/balance-011.json",
+      "passed": true
+    },
+    {
+      "path": "qa/playthrough-011.json",
+      "passed": true
+    },
+    {
+      "path": "qa/expansion-011.json",
+      "passed": true,
+      "checks": [
+        "Completed 0.3 save migrates at L1 without retroactive XP",
+        "NR-S01 five matching choices recruit Lare and grant unique item",
+        "NR-S02 ten baits, two tones, four full survival rounds",
+        "NR-H01 murals, encyclopedia and optional permanent buff",
+        "NR-S04 timed window, five fragments, persisted sacrifice and three-phase skill absorption",
+        "NR-H02 three restricted battles with guest Wira and peaceful finale",
+        "XP leveling, equipment, responsive UI and reload preserve all new progress"
+      ]
+    },
+    {
+      "path": "qa/economy-011.json",
+      "passed": true,
+      "checks": [
+        "Insufficient funds unchanged; real training win grants one shard; cancel preserves balance; Awaken spends 15 once; reload and Watu passive active"
+      ]
+    },
+    {
+      "path": "qa/lore-skills-011.json",
+      "passed": true,
+      "checks": [
+        "15 source-backed cards collected via UI; altar confirmation cancel; one permanent sacrifice and item; lost card stays unavailable after reload",
+        "Mandala cancel/pay, insufficient Sloka, real basic and special upgrades, exact spending and Common ultimate cap",
+        "Movement earns active character Sloka; menu pauses accrual",
+        "Boss win grants two Sloka, upgraded ultimate reaches combat after reload, flee grants none"
+      ]
+    },
+    {
+      "path": "qa/challenges-011.json",
+      "passed": true,
+      "checks": [
+        "World hub and M05 gate; flee and wrong-objective win grant nothing; retry recruits Sanra with full party intact",
+        "Watu three protected rounds and Tobelang first-target skill recruit through real battle",
+        "Five level-gated Titah completed, rewards once, all equipment fitted, completion and gear persist after reload"
+      ]
+    },
+    {
+      "path": "qa/song-011.json",
+      "passed": true,
+      "checks": [
+        "Vendor dismiss vs explicit refusal, repricing/reload, atomic purchase, tower locked until Ranaya reunion",
+        "Wrong branches return to last intersection without losing milestones; final branch and audio scheduling run without errors"
+      ]
+    },
+    {
+      "path": "qa/adi-011.json",
+      "passed": true,
+      "checks": [
+        "WAITED: dialogue/reload, pending/reload, physical traversal, resolution/reload, no rewards",
+        "FORCED_PAST: dialogue/reload, pending/reload, physical traversal, resolution/reload, no rewards"
+      ]
+    },
+    {
+      "path": "qa/navigation-011.json",
+      "passed": true,
+      "checks": [
+        "Idle pauses inside skill details; exactly one extra tutorial enemy appears after timeout",
+        "M04 physical landmarks, mid-route reload, wrong Adi safely retries, correct Adi starts encounter"
+      ]
+    },
+    {
+      "path": "qa/production-browser-011.json",
+      "passed": true,
+      "checks": [
+        "Movement and R checkpoint recovery",
+        "Modal focus trapped/restored; world input suspended",
+        "640px responsive menu stays in viewport",
+        "Invalid import leaves stored save unchanged",
+        "Continue migrates legacy save and preserves exact original backup",
+        "Corrupt continue shows recovery and never resets the save silently"
+      ]
+    },
+    {
+      "path": "qa/permanent-choice-011.json",
+      "passed": true,
+      "checks": [
+        "valid save import",
+        "cancel leaves state unchanged",
+        "confirm locks quest",
+        "reload retains lock",
+        "invalid import retains state",
+        "three graves respected via traversal; Saras and item persist after reload"
+      ]
+    }
+  ],
+  "coverage": "13 Nirwasita quests across new-game main route and separate imported branch fixtures; not one uninterrupted all-quest run.",
+  "limits": [
+    "User balance playtest pending",
+    "Hardware/performance not certified",
+    "Narrative/presentation completeness and full M1 remain open",
+    "Unity/Blender animation and final art deferred",
+    "Launch gate remains open"
+  ]
+}

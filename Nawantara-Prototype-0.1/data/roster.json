@@ -1,0 +1,1902 @@
+[
+  {
+    "id": 1,
+    "name": "Lampah Sinaru",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Bayu",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1070.0,
+      "atk": 535.0,
+      "def": 535.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 73
+  },
+  {
+    "id": 2,
+    "name": "Tandaraga",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 106
+  },
+  {
+    "id": 3,
+    "name": "Sanra Ranu",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Apah",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 139
+  },
+  {
+    "id": 4,
+    "name": "Watu Palindra",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 172
+  },
+  {
+    "id": 5,
+    "name": "Lare Wengi",
+    "rarity": "Uncommon",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1605.0,
+      "atk": 802.0,
+      "def": 802.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 205
+  },
+  {
+    "id": 6,
+    "name": "Kayuri Sindu",
+    "rarity": "Rare",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 238
+  },
+  {
+    "id": 7,
+    "name": "Tobelang",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 271
+  },
+  {
+    "id": 8,
+    "name": "Nggarindu · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Spirit",
+    "element": "Bayu",
+    "role": "Tank",
+    "stats": {
+      "hp": 2750.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 304
+  },
+  {
+    "id": 9,
+    "name": "Nirsmara · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Tank",
+    "stats": {
+      "hp": 5500.0,
+      "atk": 2500.0,
+      "def": 2750.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 337
+  },
+  {
+    "id": 84,
+    "name": "Wira Senja",
+    "rarity": "Ultra Rare",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1650.0,
+      "def": 1500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 371
+  },
+  {
+    "id": 85,
+    "name": "Saras Pertiwi",
+    "rarity": "Super Rare",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Support",
+    "stats": {
+      "hp": 2500.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 405
+  },
+  {
+    "id": 10,
+    "name": "Juru Wangsuh",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Apah",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 448
+  },
+  {
+    "id": 11,
+    "name": "Kala Sesari",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1070.0,
+      "atk": 535.0,
+      "def": 535.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 481
+  },
+  {
+    "id": 12,
+    "name": "Dedali Kesuma",
+    "rarity": "Common",
+    "type": "Spirit",
+    "element": "Akasa",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 514
+  },
+  {
+    "id": 13,
+    "name": "Bharwang Kesari",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Teja",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 547
+  },
+  {
+    "id": 14,
+    "name": "Rarwang Celeng",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 825.0,
+      "def": 750.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 580
+  },
+  {
+    "id": 15,
+    "name": "Basumitra",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 2200.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 613
+  },
+  {
+    "id": 16,
+    "name": "Lembujaga",
+    "rarity": "Rare",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 646
+  },
+  {
+    "id": 17,
+    "name": "Rarasunyi · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 679
+  },
+  {
+    "id": 18,
+    "name": "Randu Girang",
+    "rarity": "Ultra Rare",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 3210.0,
+      "atk": 1605.0,
+      "def": 1605.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 712
+  },
+  {
+    "id": 19,
+    "name": "Sang Werdi · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Spirit",
+    "element": "Teja",
+    "role": "Support",
+    "stats": {
+      "hp": 5000.0,
+      "atk": 2500.0,
+      "def": 2750.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 747
+  },
+  {
+    "id": 86,
+    "name": "Kidang Belantik",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 781
+  },
+  {
+    "id": 20,
+    "name": "Bandar Ilung",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 824
+  },
+  {
+    "id": 21,
+    "name": "Antuwan Melayang",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 857
+  },
+  {
+    "id": 22,
+    "name": "Watu Gambut",
+    "rarity": "Common",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 890
+  },
+  {
+    "id": 23,
+    "name": "Jatawira",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 923
+  },
+  {
+    "id": 24,
+    "name": "Wadyan Salunai",
+    "rarity": "Uncommon",
+    "type": "Human",
+    "element": "Akasa",
+    "role": "Support",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 956
+  },
+  {
+    "id": 25,
+    "name": "Tinggang Intan",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 989
+  },
+  {
+    "id": 26,
+    "name": "Sagara Buih · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Spirit",
+    "element": "Apah",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1022
+  },
+  {
+    "id": 27,
+    "name": "Datu Kalimpan",
+    "rarity": "Ultra Rare",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 3210.0,
+      "atk": 1605.0,
+      "def": 1605.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1055
+  },
+  {
+    "id": 28,
+    "name": "Juragan Larung · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Human",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 5000.0,
+      "atk": 2750.0,
+      "def": 2500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1088
+  },
+  {
+    "id": 87,
+    "name": "Talapak Embun",
+    "rarity": "Super Rare *(tanpa lencana)*",
+    "type": "Beast",
+    "element": "Teja",
+    "role": "Support",
+    "stats": {
+      "hp": 2500.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1122
+  },
+  {
+    "id": 88,
+    "name": "Bandar Timbangan",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 3300.0,
+      "atk": 1500.0,
+      "def": 1650.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1155
+  },
+  {
+    "id": 29,
+    "name": "Puti Lengang",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1197
+  },
+  {
+    "id": 30,
+    "name": "Lasik Kubang",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Apah",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1230
+  },
+  {
+    "id": 31,
+    "name": "Rangkiang Batu",
+    "rarity": "Common",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1263
+  },
+  {
+    "id": 32,
+    "name": "Sindaka Rimbo",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 825.0,
+      "def": 750.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1296
+  },
+  {
+    "id": 33,
+    "name": "Uhang Sunyi",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1605.0,
+      "atk": 802.0,
+      "def": 802.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1329
+  },
+  {
+    "id": 34,
+    "name": "Bundo Sarikaso",
+    "rarity": "Rare",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1362
+  },
+  {
+    "id": 35,
+    "name": "Niniak Belang · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 2750.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1395
+  },
+  {
+    "id": 36,
+    "name": "Sambilan Talago",
+    "rarity": "Ultra Rare",
+    "type": "Spirit",
+    "element": "Apah",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 3210.0,
+      "atk": 1605.0,
+      "def": 1605.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1428
+  },
+  {
+    "id": 37,
+    "name": "Sang Lengang · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 5350.0,
+      "atk": 2675.0,
+      "def": 2675.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1461
+  },
+  {
+    "id": 89,
+    "name": "Suara Tanwujud",
+    "rarity": "Rare",
+    "type": "Ghost",
+    "element": "Pertiwi",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1495
+  },
+  {
+    "id": 90,
+    "name": "Tapak Ghaib",
+    "rarity": "Rare",
+    "type": "Spirit",
+    "element": "Apah",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1531
+  },
+  {
+    "id": 38,
+    "name": "Antumuara",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Apah",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1070.0,
+      "atk": 535.0,
+      "def": 535.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1574
+  },
+  {
+    "id": 39,
+    "name": "Sidhayatri",
+    "rarity": "Common",
+    "type": "Spirit",
+    "element": "Akasa",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1607
+  },
+  {
+    "id": 40,
+    "name": "Kelasi Wira",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1640
+  },
+  {
+    "id": 41,
+    "name": "Watu Sema",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1673
+  },
+  {
+    "id": 42,
+    "name": "Dayang Rindang",
+    "rarity": "Uncommon",
+    "type": "Human",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1605.0,
+      "atk": 802.0,
+      "def": 802.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1708
+  },
+  {
+    "id": 43,
+    "name": "Naga Wira",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 2200.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1741
+  },
+  {
+    "id": 44,
+    "name": "Rahib Kalpa",
+    "rarity": "Rare",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1774
+  },
+  {
+    "id": 45,
+    "name": "Lidah Watu · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 1807
+  },
+  {
+    "id": 46,
+    "name": "Sekar Kemarung",
+    "rarity": "Ultra Rare",
+    "type": "Ghost",
+    "element": "Apah",
+    "role": "Support",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1500.0,
+      "def": 1650.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1840
+  },
+  {
+    "id": 47,
+    "name": "Sang Wiranata · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Human",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 5500.0,
+      "atk": 2500.0,
+      "def": 2750.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1873
+  },
+  {
+    "id": 91,
+    "name": "Kijang Prasasti",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1907
+  },
+  {
+    "id": 92,
+    "name": "Rahib Abu",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Spirit",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1650.0,
+      "def": 1500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 1942
+  },
+  {
+    "id": 48,
+    "name": "Jalak Girindra",
+    "rarity": "Common",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 1986
+  },
+  {
+    "id": 49,
+    "name": "Pasarwengi",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1070.0,
+      "atk": 535.0,
+      "def": 535.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2019
+  },
+  {
+    "id": 50,
+    "name": "Kurawatu",
+    "rarity": "Common",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2052
+  },
+  {
+    "id": 51,
+    "name": "Sabdaguna",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Support",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2085
+  },
+  {
+    "id": 52,
+    "name": "Wanaspati Giri",
+    "rarity": "Uncommon",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 825.0,
+      "def": 750.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2118
+  },
+  {
+    "id": 53,
+    "name": "Ratri Kemuning",
+    "rarity": "Rare",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2151
+  },
+  {
+    "id": 54,
+    "name": "Gandarwa Pinus",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Tank",
+    "stats": {
+      "hp": 2200.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2184
+  },
+  {
+    "id": 55,
+    "name": "Sang Giripawana · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Spirit",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2217
+  },
+  {
+    "id": 56,
+    "name": "Wisesa Girinatha",
+    "rarity": "Legendary",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Tank",
+    "stats": {
+      "hp": 5500.0,
+      "atk": 2500.0,
+      "def": 2750.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2250
+  },
+  {
+    "id": 93,
+    "name": "Tabuh Senja",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Spirit",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1650.0,
+      "def": 1500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2286
+  },
+  {
+    "id": 94,
+    "name": "Sabda Tertunda",
+    "rarity": "Super Rare *(tanpa lencana)*",
+    "type": "Ghost",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 2500.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2322
+  },
+  {
+    "id": 57,
+    "name": "Juru Cengkih",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2367
+  },
+  {
+    "id": 58,
+    "name": "Sawangi Pala",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Bayu",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1070.0,
+      "atk": 535.0,
+      "def": 535.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2400
+  },
+  {
+    "id": 59,
+    "name": "Bala Karangkasa",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Teja",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2433
+  },
+  {
+    "id": 60,
+    "name": "Sowahi Bara",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Teja",
+    "role": "Support",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2466
+  },
+  {
+    "id": 61,
+    "name": "Talaga Diam",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Apah",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1605.0,
+      "atk": 802.0,
+      "def": 802.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2499
+  },
+  {
+    "id": 62,
+    "name": "Bikusagari",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 2200.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2534
+  },
+  {
+    "id": 63,
+    "name": "Nyai Bokira · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2500.0,
+      "atk": 1375.0,
+      "def": 1250.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2567
+  },
+  {
+    "id": 64,
+    "name": "Datu Honggi",
+    "rarity": "Ultra Rare",
+    "type": "Human",
+    "element": "Akasa",
+    "role": "Attacker",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1650.0,
+      "def": 1500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2600
+  },
+  {
+    "id": 65,
+    "name": "Sang Harga · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 5350.0,
+      "atk": 2675.0,
+      "def": 2675.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2633
+  },
+  {
+    "id": 95,
+    "name": "Sukma Penimbang",
+    "rarity": "Rare",
+    "type": "Spirit",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2667
+  },
+  {
+    "id": 96,
+    "name": "Penjaga Polos",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 3300.0,
+      "atk": 1500.0,
+      "def": 1650.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2702
+  },
+  {
+    "id": 66,
+    "name": "Sekar Nyalu",
+    "rarity": "Common",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2746
+  },
+  {
+    "id": 67,
+    "name": "Padu Rotan",
+    "rarity": "Common",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2779
+  },
+  {
+    "id": 68,
+    "name": "Abu Tembara",
+    "rarity": "Common",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 550.0,
+      "def": 500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2812
+  },
+  {
+    "id": 69,
+    "name": "Dayan Nadha",
+    "rarity": "Uncommon",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 825.0,
+      "def": 750.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2845
+  },
+  {
+    "id": 70,
+    "name": "Sagaranak",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 2878
+  },
+  {
+    "id": 71,
+    "name": "Mandarasmi · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Spirit",
+    "element": "Bayu",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2911
+  },
+  {
+    "id": 72,
+    "name": "Cupaka Loba",
+    "rarity": "Rare",
+    "type": "Ghost",
+    "element": "Akasa",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2140.0,
+      "atk": 1070.0,
+      "def": 1070.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 2944
+  },
+  {
+    "id": 73,
+    "name": "Anjala Nirmala",
+    "rarity": "Ultra Rare",
+    "type": "Spirit",
+    "element": "Bayu",
+    "role": "Support",
+    "stats": {
+      "hp": 3000.0,
+      "atk": 1500.0,
+      "def": 1650.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 2977
+  },
+  {
+    "id": 74,
+    "name": "Naga Sasra · 👑 Legendary",
+    "rarity": "Legendary",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 5000.0,
+      "atk": 2750.0,
+      "def": 2500.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3010
+  },
+  {
+    "id": 97,
+    "name": "Penjaga Gelombang",
+    "rarity": "Super Rare *(tanpa lencana)*",
+    "type": "Human",
+    "element": "Apah",
+    "role": "Tank",
+    "stats": {
+      "hp": 2750.0,
+      "atk": 1250.0,
+      "def": 1375.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3044
+  },
+  {
+    "id": 98,
+    "name": "Gema Ganda",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 3210.0,
+      "atk": 1605.0,
+      "def": 1605.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 3079
+  },
+  {
+    "id": 75,
+    "name": "Kaswari Tanahwil",
+    "rarity": "Common",
+    "type": "Beast",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1100.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3125
+  },
+  {
+    "id": 76,
+    "name": "Tapak Nirbahasa",
+    "rarity": "Common",
+    "type": "Spirit",
+    "element": "Teja",
+    "role": "Support",
+    "stats": {
+      "hp": 1000.0,
+      "atk": 500.0,
+      "def": 550.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 3158
+  },
+  {
+    "id": 77,
+    "name": "Karang Wayahan",
+    "rarity": "Uncommon",
+    "type": "Spirit",
+    "element": "Pertiwi",
+    "role": "Tank",
+    "stats": {
+      "hp": 1650.0,
+      "atk": 750.0,
+      "def": 825.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3191
+  },
+  {
+    "id": 78,
+    "name": "Pari Lampur",
+    "rarity": "Uncommon",
+    "type": "Beast",
+    "element": "Apah",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 1605.0,
+      "atk": 802.0,
+      "def": 802.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 3224
+  },
+  {
+    "id": 79,
+    "name": "Sampara Wene",
+    "rarity": "Uncommon",
+    "type": "Ghost",
+    "element": "Teja",
+    "role": "Attacker",
+    "stats": {
+      "hp": 1500.0,
+      "atk": 825.0,
+      "def": 750.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3259
+  },
+  {
+    "id": 80,
+    "name": "Wai Cendra",
+    "rarity": "Rare",
+    "type": "Beast",
+    "element": "Bayu",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1100.0,
+      "def": 1000.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3292
+  },
+  {
+    "id": 81,
+    "name": "Nin Waiam",
+    "rarity": "Rare",
+    "type": "Human",
+    "element": "Akasa",
+    "role": "Support",
+    "stats": {
+      "hp": 2000.0,
+      "atk": 1000.0,
+      "def": 1100.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 3325
+  },
+  {
+    "id": 82,
+    "name": "Kalana Sauyan · ⭐ Wajah Region",
+    "rarity": "Super Rare",
+    "type": "Human",
+    "element": "Apah",
+    "role": "Attacker",
+    "stats": {
+      "hp": 2500.0,
+      "atk": 1375.0,
+      "def": 1250.0,
+      "spd": 101.0,
+      "crit": 16.5,
+      "critDamage": 55.0,
+      "res": 0.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3358
+  },
+  {
+    "id": 83,
+    "name": "Gema Purwa",
+    "rarity": "Legendary",
+    "type": "Spirit",
+    "element": "Akasa",
+    "role": "Support",
+    "stats": {
+      "hp": 5000.0,
+      "atk": 2500.0,
+      "def": 2750.0,
+      "spd": 111.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 0.0,
+      "acc": 10.0
+    },
+    "sourceLine": 3391
+  },
+  {
+    "id": 99,
+    "name": "Penunggu Sunyi",
+    "rarity": "Ultra Rare *(tanpa lencana)*",
+    "type": "Ghost",
+    "element": "Bayu",
+    "role": "Tank",
+    "stats": {
+      "hp": 3300.0,
+      "atk": 1500.0,
+      "def": 1650.0,
+      "spd": 101.0,
+      "crit": 15.0,
+      "critDamage": 50.0,
+      "res": 10.0,
+      "acc": 0.0
+    },
+    "sourceLine": 3427
+  },
+  {
+    "id": 100,
+    "name": "Tanpa Rupa",
+    "rarity": "Super Rare *(tanpa lencana)*",
+    "type": "Human",
+    "element": "Pertiwi",
+    "role": "Crowd Control",
+    "stats": {
+      "hp": 2675.0,
+      "atk": 1338.0,
+      "def": 1338.0,
+      "spd": 108.0,
+      "crit": 16.1,
+      "critDamage": 53.5,
+      "res": 7.0,
+      "acc": 7.0
+    },
+    "sourceLine": 3463
+  }
+]

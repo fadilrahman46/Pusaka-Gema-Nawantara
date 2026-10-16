@@ -1,0 +1,10 @@
+{
+  "version": "0.7.0",
+  "domainTestsPassed": 64,
+  "buildSha256": "4328d96797d34e48d0d0c212da3a133987b98bda2c13bb9cece126f7541b5fe5",
+  "songAndBranchesBrowser": true,
+  "mainRouteM01M06": true,
+  "recruitmentEconomyProposalOnly": true,
+  "fullM1": false,
+  "launchReady": false
+}

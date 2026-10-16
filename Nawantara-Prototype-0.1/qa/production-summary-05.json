@@ -1,0 +1,24 @@
+{
+  "version": "0.5.0",
+  "domainTestsPassed": 57,
+  "buildSha256": "c457be44d4caefbc34b25e15c7eb3a8bab6ff618ce0f5641ef63941bd37a8208",
+  "browserAwaken": {
+    "passed": true,
+    "checks": [
+      "Awaken level40 UI, source skill descriptions, no duplicate activation, reload, active battle passive, 640px skill modal"
+    ],
+    "errors": []
+  },
+  "browserParty": {
+    "passed": true,
+    "checks": [
+      "0.2 import, four-slot edit, source SPD order",
+      "Saras target healing/shield and independent Prana",
+      "640px party controls fit and remain operable",
+      "Training does not grant quest reward; party survives reload"
+    ],
+    "errors": []
+  },
+  "fullM1": false,
+  "launchReady": false
+}

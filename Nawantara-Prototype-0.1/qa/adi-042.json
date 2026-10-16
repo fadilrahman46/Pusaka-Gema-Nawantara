@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "buildSha256": "72763665db3d4a3c09df7b6079253bfd956eac7271ad3ec1e4ba9b049e2ebd0d",
+  "checks": [
+    "WAITED: dialogue/reload, pending/reload, physical traversal, resolution/reload, no rewards",
+    "FORCED_PAST: dialogue/reload, pending/reload, physical traversal, resolution/reload, no rewards"
+  ],
+  "errors": []
+}

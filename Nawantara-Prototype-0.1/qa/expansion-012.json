@@ -1,0 +1,290 @@
+{
+  "passed": true,
+  "buildSha256": "b610cf054200e4319b8a64381ce6d51e4c7a2652d970814e793724d5e4567462",
+  "checks": [
+    "Completed 0.3 save migrates at L1 without retroactive XP",
+    "NR-S01 five matching choices recruit Lare and grant unique item",
+    "NR-S02 ten baits, two tones, four full survival rounds",
+    "NR-H01 murals, encyclopedia and optional permanent buff",
+    "NR-S04 timed window, five fragments, persisted sacrifice and three-phase skill absorption",
+    "NR-H02 three restricted battles with guest Wira and peaceful finale",
+    "XP leveling, equipment, responsive UI and reload preserve all new progress"
+  ],
+  "errors": [],
+  "state": {
+    "version": 2,
+    "designRevision": "naw-2026-09-18.1",
+    "chapter": 6,
+    "position": {
+      "x": 2.5255145623676856,
+      "z": -163.25249238084155
+    },
+    "checkpoint": {
+      "x": 0,
+      "z": 7
+    },
+    "flags": {
+      "flag_region_resolution_nirwasita": "NEUTRAL",
+      "flag_adi_resolution_path": null,
+      "flag_ranaya_song_stage": 4,
+      "array_warehouse_attempts": [
+        {
+          "owner": "Lila",
+          "correct": true
+        },
+        {
+          "owner": "Ranu",
+          "correct": true
+        },
+        {
+          "owner": "Banyu",
+          "correct": true
+        },
+        {
+          "owner": "Sari",
+          "correct": true
+        },
+        {
+          "owner": "Jati",
+          "correct": true
+        }
+      ],
+      "counter_gudang_correct_matches": 5,
+      "ext_warehouse_pending": false,
+      "flag_nr_s01_complete": true,
+      "flag_lare_wengi_recruited": true,
+      "array_memorized_baits": [
+        "Air",
+        "Batu",
+        "Daun",
+        "Akar",
+        "Jalan",
+        "Jembatan",
+        "Cahaya",
+        "Gerbang",
+        "Rumah",
+        "Pulang"
+      ],
+      "array_kayuri_tones": [
+        "Perlindungan",
+        "Keberanian"
+      ],
+      "flag_kayuri_dialogue_tone": "Perlindungan / Keberanian",
+      "flag_nr_s02_complete": true,
+      "flag_kayuri_sindu_recruited": true,
+      "array_mural_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "flag_rumah_ranaya_lama_unlocked": true,
+      "flag_nr_h01_complete": true,
+      "flag_sanra_ranu_buff_permanent": true,
+      "array_nggarindu_fragments": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "counter_nggarindu_fragments": 5,
+      "flag_ensiklopedia_sacrificed_nggarindu": "NR-M01",
+      "flag_nr_s04_complete": true,
+      "flag_nggarindu_recruited": true,
+      "counter_restricted_battles": 3,
+      "flag_nr_h02_complete": true,
+      "flag_wira_senja_recruited": true,
+      "ext_lantern_zone": 6
+    },
+    "sloka": {
+      "stock": {
+        "5": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 37.867000000001035
+        },
+        "6": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 33.17250000000143
+        },
+        "8": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        },
+        "9": {
+          "umum": 0,
+          "misi": 0,
+          "seconds": 47.95680000000033
+        },
+        "84": {
+          "umum": 0,
+          "misi": 4,
+          "seconds": 0
+        }
+      },
+      "levels": {},
+      "claims": [
+        "NR-S01",
+        "NR-S02",
+        "NR-S04",
+        "NR-H02"
+      ],
+      "boss": 1
+    },
+    "roster": [
+      1,
+      2,
+      9,
+      85,
+      5,
+      6,
+      8,
+      84
+    ],
+    "party": [
+      0,
+      9,
+      5,
+      6
+    ],
+    "items": [
+      "Tongkat Perantau",
+      "Kalung Jalan Pulang",
+      "Lentera Nenek Ranaya",
+      "Jimat Gudang Barang Tertinggal",
+      "Jimat Empat Ratus Bait",
+      "Pusaka Harga Perlindungan",
+      "Senjata Musuh yang Sebenarnya"
+    ],
+    "kepeng": 120,
+    "sukma": 5,
+    "sukmaClaims": [
+      "NR-S01",
+      "NR-S02",
+      "NR-H01",
+      "NR-S04",
+      "NR-H02"
+    ],
+    "visited": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "burials": [],
+    "fragments": [],
+    "collections": {
+      "encyclopedia": [
+        "NR-M02",
+        "NR-M03",
+        "NR-M04",
+        "NR-M05",
+        "NR-M06",
+        "NR-H01:kesepakatan",
+        "NR-H01:kabut",
+        "NR-H01:rumah"
+      ],
+      "warisan": [],
+      "serpihan": []
+    },
+    "options": {
+      "sound": true,
+      "accessible": true,
+      "reducedMotion": false
+    },
+    "elapsed": 58.94209999999943,
+    "endingInputs": {
+      "smaranaOffer": null,
+      "himagiriResolution": null
+    },
+    "decisionProvenance": {
+      "NR-S01": {
+        "questId": "NR-S01",
+        "eventId": "completed",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-S02": {
+        "questId": "NR-S02",
+        "eventId": "completed",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-H01": {
+        "questId": "NR-H01",
+        "eventId": "completed",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-S04": {
+        "questId": "NR-S04",
+        "eventId": "completed",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-H02": {
+        "questId": "NR-H02",
+        "eventId": "completed",
+        "sourceRevision": "naw-2026-09-18.1"
+      }
+    },
+    "migrationIssues": [],
+    "presentationMode": "NORMAL",
+    "finalEnding": null,
+    "progression": {
+      "0": {
+        "level": 9,
+        "xp": 150
+      },
+      "1": {
+        "level": 1,
+        "xp": 0
+      },
+      "2": {
+        "level": 1,
+        "xp": 0
+      },
+      "5": {
+        "level": 9,
+        "xp": 150
+      },
+      "6": {
+        "level": 8,
+        "xp": 125
+      },
+      "8": {
+        "level": 1,
+        "xp": 0
+      },
+      "9": {
+        "level": 9,
+        "xp": 150
+      },
+      "84": {
+        "level": 1,
+        "xp": 0
+      },
+      "85": {
+        "level": 1,
+        "xp": 0
+      }
+    },
+    "equipment": {
+      "0": {
+        "Jimat": "Kalung Jalan Pulang",
+        "Senjata": "Tongkat Perantau",
+        "Pusaka": "Lentera Nenek Ranaya"
+      }
+    },
+    "lostEntries": [
+      {
+        "entry": "NR-M01",
+        "source": "NR-S04",
+        "status": "LOST"
+      }
+    ]
+  }
+}

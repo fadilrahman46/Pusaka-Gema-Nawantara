@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "buildSha256": "b610cf054200e4319b8a64381ce6d51e4c7a2652d970814e793724d5e4567462",
+  "checks": [
+    "Movement and R checkpoint recovery",
+    "Modal focus trapped/restored; world input suspended",
+    "640px responsive menu stays in viewport",
+    "Invalid import leaves stored save unchanged",
+    "Continue migrates legacy save and preserves exact original backup",
+    "Corrupt continue shows recovery and never resets the save silently"
+  ],
+  "errors": []
+}

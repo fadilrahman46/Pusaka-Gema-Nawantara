@@ -1,0 +1,84 @@
+{
+  "version": "0.12.0",
+  "passed": true,
+  "buildSha256": "b610cf054200e4319b8a64381ce6d51e4c7a2652d970814e793724d5e4567462",
+  "domainTests": 98,
+  "browserSuites": 7,
+  "reports": [
+    {
+      "path": "qa/story-012.json",
+      "passed": true,
+      "checks": [
+        "M01 extraction requires traversal; pending persists across reload; reward only at exit",
+        "M02 trail discovery, legacy song state, encounter and chapter epilogue survive reload",
+        "Lare clue profiles, wrong-match battle, remaining matches and reward",
+        "Kayuri full text, shuffled recall, two reactive lines, reload before survival and post-quest flavor",
+        "Five visual murals at 640px, wrong order retry and three lore rewards",
+        "Tower wrong line heals 15%, song review, correct line removes exactly one seal",
+        "Nirsmara four song choices at 640px, wrong retry, correct finish and forced-path epilogue"
+      ]
+    },
+    {
+      "path": "qa/playthrough-012.json",
+      "passed": true
+    },
+    {
+      "path": "qa/expansion-012.json",
+      "passed": true,
+      "checks": [
+        "Completed 0.3 save migrates at L1 without retroactive XP",
+        "NR-S01 five matching choices recruit Lare and grant unique item",
+        "NR-S02 ten baits, two tones, four full survival rounds",
+        "NR-H01 murals, encyclopedia and optional permanent buff",
+        "NR-S04 timed window, five fragments, persisted sacrifice and three-phase skill absorption",
+        "NR-H02 three restricted battles with guest Wira and peaceful finale",
+        "XP leveling, equipment, responsive UI and reload preserve all new progress"
+      ]
+    },
+    {
+      "path": "qa/navigation-012.json",
+      "passed": true,
+      "checks": [
+        "Idle pauses inside skill details; exactly one extra tutorial enemy appears after timeout",
+        "M04 physical landmarks, mid-route reload, wrong Adi safely retries, correct Adi starts encounter"
+      ]
+    },
+    {
+      "path": "qa/song-012.json",
+      "passed": true,
+      "checks": [
+        "Vendor dismiss vs explicit refusal, repricing/reload, atomic purchase, tower locked until Ranaya reunion",
+        "Wrong branches return to last intersection without losing milestones; final branch and audio scheduling run without errors"
+      ]
+    },
+    {
+      "path": "qa/production-browser-012.json",
+      "passed": true,
+      "checks": [
+        "Movement and R checkpoint recovery",
+        "Modal focus trapped/restored; world input suspended",
+        "640px responsive menu stays in viewport",
+        "Invalid import leaves stored save unchanged",
+        "Continue migrates legacy save and preserves exact original backup",
+        "Corrupt continue shows recovery and never resets the save silently"
+      ]
+    },
+    {
+      "path": "qa/lore-skills-012.json",
+      "passed": true,
+      "checks": [
+        "15 source-backed cards collected via UI; altar confirmation cancel; one permanent sacrifice and item; lost card stays unavailable after reload",
+        "Mandala cancel/pay, insufficient Sloka, real basic and special upgrades, exact spending and Common ultimate cap",
+        "Movement earns active character Sloka; menu pauses accrual",
+        "Boss win grants two Sloka, upgraded ultimate reaches combat after reload, flee grants none"
+      ]
+    }
+  ],
+  "scope": "Priorities 1–4 from review: Lare clues, Kayuri reactions, song/mural puzzles, main quest story/traversal and M04 prototype cues.",
+  "limits": [
+    "Text without verbatim source dialogue is documented authored adaptation",
+    "Main route is fresh; branch tests import fixtures through UI",
+    "Visuals remain prototypes; Unity/Blender assets deferred",
+    "Not all script beats, balance, hardware, M1 or launch certified"
+  ]
+}

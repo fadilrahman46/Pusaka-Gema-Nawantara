@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "checks": [
+    "13 quest guidance rows at 640px",
+    "zero Kepeng recovers through three real wins",
+    "per-character XP",
+    "reload preserves currency",
+    "refusal price paid and journal updates"
+  ],
+  "errors": []
+}

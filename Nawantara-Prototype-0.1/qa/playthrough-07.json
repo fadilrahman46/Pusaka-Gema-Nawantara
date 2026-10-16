@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "buildSha256": "4328d96797d34e48d0d0c212da3a133987b98bda2c13bb9cece126f7541b5fe5",
+  "errors": [],
+  "state": {
+    "version": 2,
+    "designRevision": "naw-2026-09-18.1",
+    "chapter": 6,
+    "position": {
+      "x": -0.6372743282591217,
+      "z": -183.96518799653109
+    },
+    "checkpoint": {
+      "x": 0,
+      "z": -183.96518799653109
+    },
+    "flags": {
+      "flag_region_resolution_nirwasita": "ADI_JOINS",
+      "flag_adi_resolution_path": "WAITED",
+      "flag_ranaya_song_stage": 4,
+      "ext_observed_compass": true,
+      "flag_compass_tutorial_seen": true,
+      "flag_nr_m01_complete": true,
+      "counter_dialog_patience": 3,
+      "flag_lampah_sinaru_recruited": true,
+      "flag_nr_m02_complete": true,
+      "flag_tandaraga_recruited": true,
+      "flag_nr_m03_complete": true,
+      "flag_hud_compass_disabled": false,
+      "counter_adi_landmarks": 3,
+      "ext_adi_puzzle": true,
+      "flag_adi_met": true,
+      "flag_nr_m04_complete": true,
+      "flag_fragment_sanra_ranu": true,
+      "flag_fragment_vendor": true,
+      "flag_fragment_elder": true,
+      "flag_ranaya_song_reunited": true,
+      "ext_lantern_origin": 6,
+      "flag_nr_m05_complete": true,
+      "flag_adi_dialogue_choice": "MIXED",
+      "flag_nirsmara_recruited": true,
+      "flag_kalung_jalan_pulang_obtained": true,
+      "flag_nr_m06_complete": true
+    },
+    "roster": [
+      1,
+      2,
+      9
+    ],
+    "party": [
+      0,
+      1,
+      2,
+      9
+    ],
+    "progression": {
+      "0": {
+        "level": 10,
+        "xp": 300
+      },
+      "1": {
+        "level": 9,
+        "xp": 250
+      },
+      "2": {
+        "level": 8,
+        "xp": 175
+      },
+      "9": {
+        "level": 3,
+        "xp": 125
+      }
+    },
+    "equipment": {},
+    "lostEntries": [],
+    "items": [
+      "Penunjuk Basah",
+      "Tongkat Perantau",
+      "Kompas Karat",
+      "Lentera Nenek Ranaya",
+      "Peta yang Tidak Pernah Selesai",
+      "Kalung Jalan Pulang"
+    ],
+    "kepeng": 340,
+    "visited": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "burials": [],
+    "fragments": [
+      "sanra",
+      "vendor",
+      "elder"
+    ],
+    "collections": {
+      "encyclopedia": [
+        "NR-M01",
+        "NR-M02",
+        "NR-M03",
+        "NR-M04",
+        "NR-M05",
+        "NR-M06"
+      ],
+      "warisan": [],
+      "serpihan": []
+    },
+    "options": {
+      "sound": true,
+      "accessible": false,
+      "reducedMotion": false
+    },
+    "elapsed": 70.26210000000101,
+    "endingInputs": {
+      "smaranaOffer": null,
+      "himagiriResolution": null
+    },
+    "decisionProvenance": {
+      "NR-M01": {
+        "questId": "NR-M01",
+        "eventId": "tutorial-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-M02": {
+        "questId": "NR-M02",
+        "eventId": "lampah-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-M03": {
+        "questId": "NR-M03",
+        "eventId": "tandaraga-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-M04": {
+        "questId": "NR-M04",
+        "eventId": "mist-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-M05": {
+        "questId": "NR-M05",
+        "eventId": "tower-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "adi": {
+        "questId": "NR-S03",
+        "eventId": "nr-s03-resolution",
+        "sourceRevision": "naw-2026-09-18.1"
+      },
+      "NR-M06": {
+        "questId": "NR-M06",
+        "eventId": "nirsmara-resolved",
+        "sourceRevision": "naw-2026-09-18.1"
+      }
+    },
+    "migrationIssues": [],
+    "presentationMode": "NORMAL",
+    "finalEnding": null,
+    "adi": {
+      "answers": [
+        "HOPEFUL",
+        "MIXED"
+      ],
+      "concluded": true,
+      "pending": null
+    }
+  }
+}

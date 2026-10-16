@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "name": "Nirwasita",
+    "zones": [
+      {
+        "code": "N1",
+        "name": "Teluk Ranaya"
+      },
+      {
+        "code": "N2",
+        "name": "Wana Sanu"
+      },
+      {
+        "code": "N3",
+        "name": "Danu Sanu"
+      },
+      {
+        "code": "N4",
+        "name": "Lembah Diam"
+      },
+      {
+        "code": "N5",
+        "name": "Kabut Kelambu"
+      },
+      {
+        "code": "N6",
+        "name": "Kuta Wisata"
+      },
+      {
+        "code": "N7",
+        "name": "Menara Pandu"
+      }
+    ],
+    "playable": true,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 2,
+    "name": "Kadewan",
+    "zones": [
+      {
+        "code": "D1",
+        "name": "Sawah Laras"
+      },
+      {
+        "code": "D2",
+        "name": "Wana Wanara"
+      },
+      {
+        "code": "D3",
+        "name": "Bale Ombak"
+      },
+      {
+        "code": "D4",
+        "name": "Kawah Bara"
+      },
+      {
+        "code": "D5",
+        "name": "Griya Sunya"
+      },
+      {
+        "code": "D6",
+        "name": "Nusa Gersang"
+      },
+      {
+        "code": "D7",
+        "name": "Puncak Laras"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 3,
+    "name": "Smarana",
+    "zones": [
+      {
+        "code": "S1",
+        "name": "Muara Larung"
+      },
+      {
+        "code": "S2",
+        "name": "Rawa Kelam"
+      },
+      {
+        "code": "S3",
+        "name": "Wana Sunya"
+      },
+      {
+        "code": "S4",
+        "name": "Pasar Tanhana"
+      },
+      {
+        "code": "S5",
+        "name": "Gudang Tirta"
+      },
+      {
+        "code": "S6",
+        "name": "Kuta Manik"
+      },
+      {
+        "code": "S7",
+        "name": "Bale Adol"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 4,
+    "name": "Wanasunya",
+    "zones": [
+      {
+        "code": "W1",
+        "name": "Ladang Terakhir"
+      },
+      {
+        "code": "W2",
+        "name": "Rimba Batas"
+      },
+      {
+        "code": "W3",
+        "name": "Danau Bening"
+      },
+      {
+        "code": "W4",
+        "name": "Lembah Musna"
+      },
+      {
+        "code": "W5",
+        "name": "Kampung Lengang"
+      },
+      {
+        "code": "W6",
+        "name": "Hutan Belang"
+      },
+      {
+        "code": "W7",
+        "name": "Puncak Lengang"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 5,
+    "name": "Kalamrtu",
+    "zones": [
+      {
+        "code": "K1",
+        "name": "Muara Wira"
+      },
+      {
+        "code": "K2",
+        "name": "Pulau Dwinama"
+      },
+      {
+        "code": "K3",
+        "name": "Rawa Purwa"
+      },
+      {
+        "code": "K4",
+        "name": "Bukit Sunggara"
+      },
+      {
+        "code": "K5",
+        "name": "Ladang Prasasti"
+      },
+      {
+        "code": "K6",
+        "name": "Pelabuhan Pralaya"
+      },
+      {
+        "code": "K7",
+        "name": "Balai Kedatuan"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 6,
+    "name": "Himagiri",
+    "zones": [
+      {
+        "code": "H1",
+        "name": "Lereng Kabut"
+      },
+      {
+        "code": "H2",
+        "name": "Wana Bisu"
+      },
+      {
+        "code": "H3",
+        "name": "Candi Bertingkat"
+      },
+      {
+        "code": "H4",
+        "name": "Pasar Lengang"
+      },
+      {
+        "code": "H5",
+        "name": "Sendang Tujuh"
+      },
+      {
+        "code": "H6",
+        "name": "Gerbang Puncak"
+      },
+      {
+        "code": "H7",
+        "name": "Keraton Himagiri"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 7,
+    "name": "Rajawani",
+    "zones": [
+      {
+        "code": "R1",
+        "name": "Pelabuhan Rempah"
+      },
+      {
+        "code": "R2",
+        "name": "Kebun Tua"
+      },
+      {
+        "code": "R3",
+        "name": "Benteng Karang"
+      },
+      {
+        "code": "R4",
+        "name": "Lereng Dahana"
+      },
+      {
+        "code": "R5",
+        "name": "Danau Diam"
+      },
+      {
+        "code": "R6",
+        "name": "Puncak Warima"
+      },
+      {
+        "code": "R7",
+        "name": "Bale Caturnata"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 8,
+    "name": "Jaladri",
+    "zones": [
+      {
+        "code": "J1",
+        "name": "Pantai Selatan"
+      },
+      {
+        "code": "J2",
+        "name": "Sawah Terasering"
+      },
+      {
+        "code": "J3",
+        "name": "Hutan Gunung"
+      },
+      {
+        "code": "J4",
+        "name": "Danau Dalam"
+      },
+      {
+        "code": "J5",
+        "name": "Laut Sahasra"
+      },
+      {
+        "code": "J6",
+        "name": "Padang Abu"
+      },
+      {
+        "code": "J7",
+        "name": "Kerajaan Terkubur"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  },
+  {
+    "id": 9,
+    "name": "Anawil",
+    "zones": [
+      {
+        "code": "A1",
+        "name": "Karst Warana"
+      },
+      {
+        "code": "A2",
+        "name": "Hutan Purba"
+      },
+      {
+        "code": "A3",
+        "name": "Laguna Tenang"
+      },
+      {
+        "code": "A4",
+        "name": "Dinding Telapak"
+      },
+      {
+        "code": "A5",
+        "name": "Palung Purwa"
+      },
+      {
+        "code": "A6",
+        "name": "Pulau Ketujuh"
+      },
+      {
+        "code": "A7",
+        "name": "Telapak Pertama"
+      }
+    ],
+    "playable": false,
+    "source": "World_Bible_Pusaka_Gema_Nawantara_v5.3.md"
+  }
+]

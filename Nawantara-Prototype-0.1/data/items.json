@@ -1,0 +1,1017 @@
+[
+  {
+    "kind": "regional",
+    "name": "Penunjuk Basah",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "N1-N2",
+    "section": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+  },
+  {
+    "kind": "regional",
+    "name": "Tongkat Perantau",
+    "rarity": "Uncommon",
+    "category": "Senjata",
+    "zones": "N3",
+    "section": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+  },
+  {
+    "kind": "regional",
+    "name": "Kompas Karat",
+    "rarity": "Rare",
+    "category": "Jimat",
+    "zones": "N4-N5",
+    "section": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+  },
+  {
+    "kind": "regional",
+    "name": "Lentera Nenek Ranaya",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "N6",
+    "section": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+  },
+  {
+    "kind": "regional",
+    "name": "Peta yang Tidak Pernah Selesai",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "N7",
+    "section": "## 1.1 Nirwasita — tema \"navigasi dipersulit, kesabaran, kompas\""
+  },
+  {
+    "kind": "regional",
+    "name": "Lembar Doa Usang",
+    "rarity": "Common",
+    "category": "Kitab",
+    "zones": "D1",
+    "section": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+  },
+  {
+    "kind": "regional",
+    "name": "Mantra yang Dilupakan Artinya",
+    "rarity": "Uncommon",
+    "category": "Kitab",
+    "zones": "D2-D3",
+    "section": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+  },
+  {
+    "kind": "regional",
+    "name": "Genta Tanpa Suara",
+    "rarity": "Rare",
+    "category": "Pusaka",
+    "zones": "D4",
+    "section": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+  },
+  {
+    "kind": "regional",
+    "name": "Kitab Seribu Ulangan",
+    "rarity": "Super Rare",
+    "category": "Kitab",
+    "zones": "D5",
+    "section": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+  },
+  {
+    "kind": "regional",
+    "name": "Restu yang Menguat dalam Diam",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "D6-D7",
+    "section": "## 1.2 Kadewan — tema \"bentuk tanpa makna, ritual, kitab dibaca tanpa dipahami\""
+  },
+  {
+    "kind": "regional",
+    "name": "Kalung Gadai",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "S1",
+    "section": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Pisau Penaksir",
+    "rarity": "Uncommon",
+    "category": "Senjata",
+    "zones": "S2-S3",
+    "section": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Neraca Kecil",
+    "rarity": "Rare",
+    "category": "Pusaka",
+    "zones": "S4",
+    "section": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Timbangan Juragan Ananta",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "S5",
+    "section": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Segel Balai Lelang",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "S6-S7",
+    "section": "## 1.3 Smarana — tema \"harga, nilai tukar, menjual bukan menyimpan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serat Daun Sunyi",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "W1-W2",
+    "section": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+  },
+  {
+    "kind": "regional",
+    "name": "Cakar Tersembunyi",
+    "rarity": "Uncommon",
+    "category": "Senjata",
+    "zones": "W3",
+    "section": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+  },
+  {
+    "kind": "regional",
+    "name": "Topeng Rimbo",
+    "rarity": "Rare",
+    "category": "Jimat",
+    "zones": "W4",
+    "section": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+  },
+  {
+    "kind": "regional",
+    "name": "Jejak yang Tak Pernah Ada",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "W5-W6",
+    "section": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+  },
+  {
+    "kind": "regional",
+    "name": "Gerbang Kaum Lengang",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "W7",
+    "section": "## 1.4 Wanasunya — tema \"menghilang, tidak terlacak, penyamaran\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serpihan Prasasti",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "K1-K2",
+    "section": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+  },
+  {
+    "kind": "regional",
+    "name": "Catatan Juru Laklak",
+    "rarity": "Uncommon",
+    "category": "Kitab",
+    "zones": "K3",
+    "section": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+  },
+  {
+    "kind": "regional",
+    "name": "Batu Penahan Kutuk",
+    "rarity": "Rare",
+    "category": "Jimat",
+    "zones": "K4-K5",
+    "section": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+  },
+  {
+    "kind": "regional",
+    "name": "Kitab Aksara yang Hilang",
+    "rarity": "Super Rare",
+    "category": "Kitab",
+    "zones": "K6",
+    "section": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+  },
+  {
+    "kind": "regional",
+    "name": "Mahkota Sang Wiranata",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "K7",
+    "section": "## 1.5 Kalamrtu — tema \"membaca/menahan kutukan, prasasti\""
+  },
+  {
+    "kind": "regional",
+    "name": "Untaian Waktu Tertunda",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "H1-H2",
+    "section": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+  },
+  {
+    "kind": "regional",
+    "name": "Keris Pengulang",
+    "rarity": "Uncommon",
+    "category": "Senjata",
+    "zones": "H3",
+    "section": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+  },
+  {
+    "kind": "regional",
+    "name": "Segel Pembeku Kecil",
+    "rarity": "Rare",
+    "category": "Jimat",
+    "zones": "H4-H5",
+    "section": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+  },
+  {
+    "kind": "regional",
+    "name": "Payung Kerajaan yang Tak Pernah Dilipat",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "H6",
+    "section": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+  },
+  {
+    "kind": "regional",
+    "name": "Regalia Upacara Terakhir",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "H7",
+    "section": "## 1.6 Himagiri — tema \"penundaan, pembekuan, mengulang\""
+  },
+  {
+    "kind": "regional",
+    "name": "Pita Timbangan",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "R1-R2",
+    "section": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+  },
+  {
+    "kind": "regional",
+    "name": "Parang Pedagang",
+    "rarity": "Uncommon",
+    "category": "Senjata",
+    "zones": "R3",
+    "section": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+  },
+  {
+    "kind": "regional",
+    "name": "Kalung Rempah Palsu",
+    "rarity": "Rare",
+    "category": "Pusaka",
+    "zones": "R4",
+    "section": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+  },
+  {
+    "kind": "regional",
+    "name": "Neraca Sang Harga",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "R5-R6",
+    "section": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+  },
+  {
+    "kind": "regional",
+    "name": "Warisan Momola",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "R7",
+    "section": "## 1.7 Rajawani — tema \"nilai/harga, barang bukan cerita\""
+  },
+  {
+    "kind": "regional",
+    "name": "Pecahan Karang",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "J1-J2",
+    "section": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serpihan Anjala (Fragmen Kecil)",
+    "rarity": "Uncommon",
+    "category": "Pusaka",
+    "zones": "J3",
+    "section": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serpihan Anjala (Fragmen Sedang)",
+    "rarity": "Rare",
+    "category": "Pusaka",
+    "zones": "J4-J5",
+    "section": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serpihan Anjala (Fragmen Besar)",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "J6",
+    "section": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serpihan Anjala Nirmala (Utuh Sebagian)",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "J7",
+    "section": "## 1.8 Jaladri — tema \"pecahan, serpihan\""
+  },
+  {
+    "kind": "regional",
+    "name": "Jejak Kasuari",
+    "rarity": "Common",
+    "category": "Jimat",
+    "zones": "Karst Warana",
+    "section": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+  },
+  {
+    "kind": "regional",
+    "name": "Serat Anyaman Tanpa Pengrajin",
+    "rarity": "Uncommon",
+    "category": "Jimat",
+    "zones": "Hutan Purba",
+    "section": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+  },
+  {
+    "kind": "regional",
+    "name": "Cadik yang Tahu Arahnya Sendiri",
+    "rarity": "Rare",
+    "category": "Senjata",
+    "zones": "Laguna Tenang",
+    "section": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+  },
+  {
+    "kind": "regional",
+    "name": "Pigmen Tangan Pertama",
+    "rarity": "Super Rare",
+    "category": "Pusaka",
+    "zones": "Dinding Telapak",
+    "section": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+  },
+  {
+    "kind": "regional",
+    "name": "Gema yang Tak Pernah Direkam",
+    "rarity": "Ultra Rare",
+    "category": "Pusaka",
+    "zones": "Palung Purwa",
+    "section": "## 1.9 Anawil — tema \"ingatan sebelum bahasa, jejak tanpa niat, komunikasi tanpa kata\""
+  },
+  {
+    "kind": "special",
+    "name": "Kalung Jalan Pulang",
+    "region": "Nirwasita",
+    "category": "Jimat"
+  },
+  {
+    "kind": "special",
+    "name": "Genta Makna",
+    "region": "Kadewan",
+    "category": "Kitab/Pusaka"
+  },
+  {
+    "kind": "special",
+    "name": "Timbangan Terakhir",
+    "region": "Smarana",
+    "category": "Pusaka"
+  },
+  {
+    "kind": "special",
+    "name": "Penanda Terakhir",
+    "region": "Wanasunya",
+    "category": "Jimat"
+  },
+  {
+    "kind": "special",
+    "name": "Aksara yang Tersisa",
+    "region": "Kalamrtu",
+    "category": "Kitab"
+  },
+  {
+    "kind": "special",
+    "name": "Regalia Terakhir",
+    "region": "Himagiri",
+    "category": "Pusaka"
+  },
+  {
+    "kind": "special",
+    "name": "Warisan yang Tak Ternilai",
+    "region": "Rajawani",
+    "category": "Pusaka"
+  },
+  {
+    "kind": "special",
+    "name": "Serpihan Terakhir",
+    "region": "Jaladri",
+    "category": "Pusaka"
+  },
+  {
+    "kind": "special",
+    "name": "Telapak Keenam",
+    "region": "Anawil",
+    "category": "Pusaka"
+  },
+  {
+    "kind": "unique",
+    "characterId": 1,
+    "name": "Jimat Rombongan yang Tak Sampai",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 2,
+    "name": "Senjata Perang yang Tak Datang",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 3,
+    "name": "Jimat Yang Masih Hafal",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 4,
+    "name": "Pusaka Sampai Sini Saja",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 5,
+    "name": "Jimat Gudang Barang Tertinggal",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 6,
+    "name": "Jimat Empat Ratus Bait",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 7,
+    "name": "Senjata Yang Tak Bisa Digambarkan",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 8,
+    "name": "Pusaka Harga Perlindungan",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 9,
+    "name": "Pusaka Dilupakan Demi Selamat",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 84,
+    "name": "Senjata Musuh yang Sebenarnya",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 85,
+    "name": "Jimat Yang Tertanam Selamat",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 10,
+    "name": "Kitab Urutan yang Diwariskan",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 11,
+    "name": "Kitab Sembilan Ratus Tahun",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 12,
+    "name": "Senjata Tidak Ada yang Pulang",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 13,
+    "name": "Pusaka Dua yang Satu",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 14,
+    "name": "Senjata Lupa Bentuk Asli",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 15,
+    "name": "Pusaka Seribu Petak",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 16,
+    "name": "Kitab Tidak Ada yang Menanggung Semuanya",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 17,
+    "name": "Kitab Duka yang Tak Dirasakan",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 18,
+    "name": "Kitab Yang Lebih Mudah Daripada Mendengarkan",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 19,
+    "name": "Kitab Rasa yang Kembali",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 86,
+    "name": "Senjata Sumber yang Diulang",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 20,
+    "name": "Jimat Harga Hari Ini",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 21,
+    "name": "Senjata Yang Tertinggal Entah Di Mana",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 22,
+    "name": "Pusaka Enam Ratus Tahun di Bawah",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 23,
+    "name": "Pusaka Yang Tidak Mengucap Izin",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 24,
+    "name": "Jimat Yang Hafal Semua Nama",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 25,
+    "name": "Senjata Paruh yang Terlalu Terang",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 26,
+    "name": "Jimat Bukan Alasanmu",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 27,
+    "name": "Jimat Balai Lelang",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 28,
+    "name": "Senjata Yang Tak Lagi Dicari",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 87,
+    "name": "Jimat Lentera yang Tak Padam",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 88,
+    "name": "Pusaka Harga yang Ditanggung Bersama",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 29,
+    "name": "Jimat Yang Memilih Pergi",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 30,
+    "name": "Senjata Genangan yang Tak Pernah Kering",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 31,
+    "name": "Pusaka Cukup untuk Semua",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 32,
+    "name": "Senjata Kesepakatan Lama",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 33,
+    "name": "Jimat Berjalan Mundur Semalaman",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 34,
+    "name": "Jimat Sembilan Meter Daftar",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 35,
+    "name": "Pusaka Empat Ratus Tahun Bertanya",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 36,
+    "name": "Jimat Air Naik",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 37,
+    "name": "Jimat Belantara Menelan",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 89,
+    "name": "Jimat Ke Sini, Ikuti Suaraku",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 90,
+    "name": "Senjata Rute yang Diulang",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 38,
+    "name": "Kitab Kebiasaan, Bukan Niat",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 39,
+    "name": "Kitab Satu Baris yang Kabur",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 40,
+    "name": "Senjata Perjalanan yang Belum Selesai",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 41,
+    "name": "Pusaka Pernah Ada yang Memulai",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 42,
+    "name": "Kitab Versi yang Dikubur",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 43,
+    "name": "Pusaka Delapan Ratus Tahun",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 44,
+    "name": "Senjata Membuktikan Ilmunya",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 45,
+    "name": "Kitab Juru Kutuk Negara",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 46,
+    "name": "Kitab Yang Tidak Pernah Berhenti Melompat",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 47,
+    "name": "Pusaka Dihapus Demi Selamat",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 91,
+    "name": "Senjata Angin yang Tak Membedakan",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 92,
+    "name": "Senjata Yang Tak Bisa Ditahan Lagi",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 48,
+    "name": "Jimat Ikuti Saja",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 49,
+    "name": "Jimat Menunggu Pengumuman",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 50,
+    "name": "Pusaka Tidak Ada yang Membatalkan",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 51,
+    "name": "Jimat Lima Ratus Pagi",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 52,
+    "name": "Senjata Tetap Menyala",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 53,
+    "name": "Senjata Menari untuk Sembilan",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 54,
+    "name": "Pusaka Hutan yang Tidak Berbunyi",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 55,
+    "name": "Jimat Menahan Waktu",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 56,
+    "name": "Pusaka Upacara Penutup",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 93,
+    "name": "Senjata Genta yang Tak Berhenti",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 94,
+    "name": "Jimat Menunggu Kesempatan Berikutnya",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 57,
+    "name": "Jimat Yang Punya Nama",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 58,
+    "name": "Jimat Ratusan Tahun Memetik",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 59,
+    "name": "Pusaka Setia pada Tembok",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 60,
+    "name": "Jimat Peringatan Terakhir",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 61,
+    "name": "Jimat Tidak Beriak",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 62,
+    "name": "Pusaka Bahan Baku",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 63,
+    "name": "Senjata Tujuh Ribu Catatan",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 64,
+    "name": "Senjata Tiga Puluh Tahun Menebang",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 65,
+    "name": "Jimat Yang Tak Bisa Ditawar",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 95,
+    "name": "Jimat Keadilan yang Tersisa",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 96,
+    "name": "Pusaka Yang Tak Bisa Dibeli",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 66,
+    "name": "Jimat Sejuta Ekor",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 67,
+    "name": "Pusaka Empat Ratus Jabat Tangan",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 68,
+    "name": "Senjata Satu Malam",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 69,
+    "name": "Senjata Satu Batu untuk Ibu",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 70,
+    "name": "Pusaka Dinding yang Menutup",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 71,
+    "name": "Jimat Seribu Bagian",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 72,
+    "name": "Jimat Bagian yang Tak Diinginkan",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 74,
+    "name": "Senjata Seribu Jadi Satu",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 97,
+    "name": "Pusaka Seribu Orang Menahan Satu Ombak",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 98,
+    "name": "Jimat Seribu Menyahut Satu",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 75,
+    "name": "Pusaka Yang Ditinggalkan Tanpa Niat",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 76,
+    "name": "Jimat Kalimat Pertama",
+    "levelGate": "Lv20"
+  },
+  {
+    "kind": "unique",
+    "characterId": 77,
+    "name": "Pusaka Tanpa Perancang",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 78,
+    "name": "Jimat Migrasi Tanpa Peta",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 79,
+    "name": "Senjata Celah Antara Dua Waktu",
+    "levelGate": "Lv25"
+  },
+  {
+    "kind": "unique",
+    "characterId": 80,
+    "name": "Senjata Yang Tidak Pernah Diajarkan",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 81,
+    "name": "Jimat Tanpa Berniat Memiliki",
+    "levelGate": "Lv35"
+  },
+  {
+    "kind": "unique",
+    "characterId": 82,
+    "name": "Senjata Empat Puluh Tahun Tanpa Kata",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "unique",
+    "characterId": 83,
+    "name": "Pusaka Yang Tersisa Ketika Semua Gagal *(kunci akun, bukan gear — lihat catatan di atas)*",
+    "levelGate": "Lv55"
+  },
+  {
+    "kind": "unique",
+    "characterId": 99,
+    "name": "Pusaka reward — nama bervariasi per ending, lihat §3.13",
+    "levelGate": "Lv50"
+  },
+  {
+    "kind": "unique",
+    "characterId": 100,
+    "name": "Jimat reward — nama bervariasi per ending, lihat §3.13",
+    "levelGate": "Lv45"
+  },
+  {
+    "kind": "character-special-reference",
+    "characterId": 73,
+    "name": "Serpihan Terakhir",
+    "sourceSection": "3.11",
+    "note": "Tidak ada item unik individual; memakai Item Spesial Jaladri."
+  }
+]

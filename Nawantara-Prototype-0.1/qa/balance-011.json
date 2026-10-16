@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "model": "Analytical baseline; excludes quest XP and simultaneous active Sloka. Does not measure fun or battle duration.",
+  "vendorRecoveryWins": {
+    "normal": 2,
+    "refused": 3
+  },
+  "level40TrainingWins": 27,
+  "level60TrainingWins": 38,
+  "rows": [
+    {
+      "id": 1,
+      "name": "Lampah Sinaru",
+      "caps": {
+        "strike": 8,
+        "skill": 2,
+        "ultimate": 1
+      },
+      "umum": 74,
+      "misi": 1,
+      "boss": 0,
+      "activeMinutesIfNoMandala": 74,
+      "mandalaKepengIfNoActiveSloka": 500,
+      "trainingWinsToFundFromZero": 50
+    },
+    {
+      "id": 2,
+      "name": "Tandaraga",
+      "caps": {
+        "strike": 8,
+        "skill": 2,
+        "ultimate": 1
+      },
+      "umum": 74,
+      "misi": 1,
+      "boss": 0,
+      "activeMinutesIfNoMandala": 74,
+      "mandalaKepengIfNoActiveSloka": 500,
+      "trainingWinsToFundFromZero": 50
+    },
+    {
+      "id": 3,
+      "name": "Sanra Ranu",
+      "caps": {
+        "strike": 8,
+        "skill": 2,
+        "ultimate": 1
+      },
+      "umum": 74,
+      "misi": 1,
+      "boss": 0,
+      "activeMinutesIfNoMandala": 74,
+      "mandalaKepengIfNoActiveSloka": 500,
+      "trainingWinsToFundFromZero": 50
+    },
+    {
+      "id": 4,
+      "name": "Watu Palindra",
+      "caps": {
+        "strike": 6,
+        "skill": 3,
+        "ultimate": 2
+      },
+      "umum": 50,
+      "misi": 2,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 50,
+      "mandalaKepengIfNoActiveSloka": 340,
+      "trainingWinsToFundFromZero": 34
+    },
+    {
+      "id": 5,
+      "name": "Lare Wengi",
+      "caps": {
+        "strike": 6,
+        "skill": 3,
+        "ultimate": 2
+      },
+      "umum": 50,
+      "misi": 2,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 50,
+      "mandalaKepengIfNoActiveSloka": 340,
+      "trainingWinsToFundFromZero": 34
+    },
+    {
+      "id": 6,
+      "name": "Kayuri Sindu",
+      "caps": {
+        "strike": 9,
+        "skill": 3,
+        "ultimate": 2
+      },
+      "umum": 98,
+      "misi": 2,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 98,
+      "mandalaKepengIfNoActiveSloka": 660,
+      "trainingWinsToFundFromZero": 66
+    },
+    {
+      "id": 7,
+      "name": "Tobelang",
+      "caps": {
+        "strike": 9,
+        "skill": 3,
+        "ultimate": 2
+      },
+      "umum": 98,
+      "misi": 2,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 98,
+      "mandalaKepengIfNoActiveSloka": 660,
+      "trainingWinsToFundFromZero": 66
+    },
+    {
+      "id": 8,
+      "name": "Nggarindu",
+      "caps": {
+        "strike": 9,
+        "skill": 4,
+        "ultimate": 2
+      },
+      "umum": 106,
+      "misi": 3,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 106,
+      "mandalaKepengIfNoActiveSloka": 720,
+      "trainingWinsToFundFromZero": 72
+    },
+    {
+      "id": 9,
+      "name": "Nirsmara",
+      "caps": {
+        "strike": 10,
+        "skill": 5,
+        "ultimate": 1
+      },
+      "umum": 136,
+      "misi": 4,
+      "boss": 0,
+      "activeMinutesIfNoMandala": 136,
+      "mandalaKepengIfNoActiveSloka": 920,
+      "trainingWinsToFundFromZero": 92
+    },
+    {
+      "id": 84,
+      "name": "Wira Senja",
+      "caps": {
+        "strike": 10,
+        "skill": 4,
+        "ultimate": 1
+      },
+      "umum": 126,
+      "misi": 3,
+      "boss": 0,
+      "activeMinutesIfNoMandala": 126,
+      "mandalaKepengIfNoActiveSloka": 840,
+      "trainingWinsToFundFromZero": 84
+    },
+    {
+      "id": 85,
+      "name": "Saras Pertiwi",
+      "caps": {
+        "strike": 9,
+        "skill": 4,
+        "ultimate": 2
+      },
+      "umum": 106,
+      "misi": 3,
+      "boss": 2,
+      "activeMinutesIfNoMandala": 106,
+      "mandalaKepengIfNoActiveSloka": 720,
+      "trainingWinsToFundFromZero": 72
+    }
+  ]
+}

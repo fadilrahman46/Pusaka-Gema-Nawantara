@@ -1,0 +1,9 @@
+{
+  "version": "0.6.0",
+  "domainTestsPassed": 62,
+  "buildSha256": "2792efe022515cd7682bbe0d222b6176f10c7af715a264db62db46f2056055d3",
+  "navigationBrowser": true,
+  "mainRouteM01M06": true,
+  "fullM1": false,
+  "launchReady": false
+}

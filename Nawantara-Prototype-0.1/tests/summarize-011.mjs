@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict';import {readFileSync,writeFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+const html=readFileSync('dist/Nawantara-3D.html'),hash=createHash('sha256').update(html).digest('hex');assert.deepEqual(html,readFileSync('dist/index.html'));
+const names=['journal-economy','balance','playthrough','expansion','economy','lore-skills','challenges','song','adi','navigation','production-browser','permanent-choice'];
+const reports=names.map(name=>{const path=`qa/${name}-011.json`,r=JSON.parse(readFileSync(path));assert.equal(r.passed,true,path);assert.equal(r.buildSha256,hash,path);return {path,passed:true,checks:r.checks};});
+const tap=readFileSync('qa/domain-011.tap','utf8');assert.match(tap,/# pass 91\r?\n# fail 0/);
+writeFileSync('qa/production-summary-011.json',JSON.stringify({version:'0.11.0',passed:true,buildSha256:hash,domainTests:91,reports,coverage:'13 Nirwasita quests across new-game main route and separate imported branch fixtures; not one uninterrupted all-quest run.',limits:['User balance playtest pending','Hardware/performance not certified','Narrative/presentation completeness and full M1 remain open','Unity/Blender animation and final art deferred','Launch gate remains open']},null,2));console.log('PASS: 91 domain tests and all 12 reports match final HTML '+hash);

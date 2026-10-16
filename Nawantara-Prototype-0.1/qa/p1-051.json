@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "buildSha256": "0cbf1c89230714187650752f0960245e2dbe994d049923b476b2da2ec2fc8dd9",
+  "checks": [
+    "Elder third failure awards once after reload; final song progression remains valid",
+    "Partial Adi blocks boss, can resolve safely, then boss unlocks"
+  ],
+  "errors": []
+}

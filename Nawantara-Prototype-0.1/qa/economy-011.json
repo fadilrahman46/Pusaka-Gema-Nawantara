@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "buildSha256": "f5724ab130d41697840975dea53829f22ad06e31c32b8906bb83c767c1abfa9c",
+  "checks": [
+    "Insufficient funds unchanged; real training win grants one shard; cancel preserves balance; Awaken spends 15 once; reload and Watu passive active"
+  ],
+  "errors": []
+}

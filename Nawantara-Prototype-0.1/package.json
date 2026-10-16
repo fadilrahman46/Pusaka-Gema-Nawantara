@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "esbuild": "0.25.12",
+    "three": "0.186.0"
+  },
+  "name": "pusaka-gema-nawantara",
+  "version": "0.12.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/core.test.mjs tests/state.test.mjs tests/combat.test.mjs tests/quest-graph.test.mjs tests/progression.test.mjs tests/side-quests.test.mjs tests/source-anchors.test.mjs tests/adi.test.mjs tests/awaken.test.mjs tests/song.test.mjs tests/economy.test.mjs tests/challenges.test.mjs tests/lore-skills.test.mjs tests/journal-economy.test.mjs tests/story.test.mjs"
+  }
+}

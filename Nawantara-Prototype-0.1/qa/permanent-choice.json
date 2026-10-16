@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "valid save import",
+    "cancel leaves state unchanged",
+    "confirm locks quest",
+    "reload retains lock",
+    "invalid import retains state"
+  ],
+  "fixture": "fresh state chapter 6 imported through UI"
+}

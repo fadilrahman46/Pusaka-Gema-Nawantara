@@ -1,0 +1,472 @@
+TAP version 13
+# Subtest: Adi dialogue preserves both answers, ties are MIXED, conclusion is a separate beat
+ok 1 - Adi dialogue preserves both answers, ties are MIXED, conclusion is a separate beat
+  ---
+  duration_ms: 5.8311
+  type: 'test'
+  ...
+# Subtest: Adi path requires dialogue and chapter 5, persists pending, and grants no items or XP
+ok 2 - Adi path requires dialogue and chapter 5, persists pending, and grants no items or XP
+  ---
+  duration_ms: 0.8119
+  type: 'test'
+  ...
+# Subtest: legacy resolved and skipped saves remain intact; malformed Adi progress rejects
+ok 3 - legacy resolved and skipped saves remain intact; malformed Adi progress rejects
+  ---
+  duration_ms: 0.9093
+  type: 'test'
+  ...
+# Subtest: 22 Awaken anchors match source and apply once at 40/60; intermediate growth uses delta40
+ok 4 - 22 Awaken anchors match source and apply once at 40/60; intermediate growth uses delta40
+  ---
+  duration_ms: 4.5625
+  type: 'test'
+  ...
+# Subtest: Awaken requires ownership/level, locks in battle, persists and rejects malformed saves
+ok 5 - Awaken requires ownership/level, locks in battle, persists and rejects malformed saves
+  ---
+  duration_ms: 1.6015
+  type: 'test'
+  ...
+# Subtest: Lare odd living count changes accuracy and round-snapshot speed without stacking
+ok 6 - Lare odd living count changes accuracy and round-snapshot speed without stacking
+  ---
+  duration_ms: 2.0373
+  type: 'test'
+  ...
+# Subtest: Kayuri heals living team on ultimate; Wira starts with one Prana and caps passive grants
+ok 7 - Kayuri heals living team on ultimate; Wira starts with one Prana and caps passive grants
+  ---
+  duration_ms: 1.2176
+  type: 'test'
+  ...
+# Subtest: Nirsmara passive rejects repeat debuffs and cleanses exactly one at round start
+ok 8 - Nirsmara passive rejects repeat debuffs and cleanses exactly one at round start
+  ---
+  duration_ms: 0.5638
+  type: 'test'
+  ...
+# Subtest: Saras transfers duration once, cannot recurse and leaves at least one full round
+ok 9 - Saras transfers duration once, cannot recurse and leaves at least one full round
+  ---
+  duration_ms: 11.9151
+  type: 'test'
+  ...
+# Subtest: Nggarindu death stacks cap at three and team ATK buff does not compound
+ok 10 - Nggarindu death stacks cap at three and team ATK buff does not compound
+  ---
+  duration_ms: 0.7915
+  type: 'test'
+  ...
+# Subtest: Tobelang resistance rotates on attacks through four elements
+ok 11 - Tobelang resistance rotates on attacks through four elements
+  ---
+  duration_ms: 0.3479
+  type: 'test'
+  ...
+# Subtest: Titis Ulang triggers once on lethal, coexists with Nggarindu, and survives Sanra revive without stacking
+ok 12 - Titis Ulang triggers once on lethal, coexists with Nggarindu, and survives Sanra revive without stacking
+  ---
+  duration_ms: 1.2093
+  type: 'test'
+  ...
+# Subtest: shield and immunity prevent Titis trigger; unawakened Watu cannot trigger it
+ok 13 - shield and immunity prevent Titis trigger; unawakened Watu cannot trigger it
+  ---
+  duration_ms: 0.5065
+  type: 'test'
+  ...
+# Subtest: three recruit challenges use actual actions, preserve party and reward exactly once
+ok 14 - three recruit challenges use actual actions, preserve party and reward exactly once
+  ---
+  duration_ms: 3.0582
+  type: 'test'
+  ...
+# Subtest: full party stays unchanged; failed objective, loss and exit grant nothing; retry is fresh
+ok 15 - full party stays unchanged; failed objective, loss and exit grant nothing; retry is fresh
+  ---
+  duration_ms: 1.0017
+  type: 'test'
+  ...
+# Subtest: all five Titah enforce chapter, ownership, level and completion; reward/equip/reload
+ok 16 - all five Titah enforce chapter, ownership, level and completion; reward/equip/reload
+  ---
+  duration_ms: 3.4486
+  type: 'test'
+  ...
+# Subtest: Watu requires Menarik Batas through three protected rounds, not just survival
+ok 17 - Watu requires Menarik Batas through three protected rounds, not just survival
+  ---
+  duration_ms: 0.5804
+  type: 'test'
+  ...
+# Subtest: new completion flags validate; old saves remain valid; failed storage leaves live reward unchanged
+ok 18 - new completion flags validate; old saves remain valid; failed storage leaves live reward unchanged
+  ---
+  duration_ms: 1.1473
+  type: 'test'
+  ...
+# Subtest: five item bonuses affect real ultimates; Sanra revive unchanged; Watu bonus is once per battle
+ok 19 - five item bonuses affect real ultimates; Sanra revive unchanged; Watu bonus is once per battle
+  ---
+  duration_ms: 1.565
+  type: 'test'
+  ...
+# Subtest: Watu item DEF remains after immunity and combines with actual Titis death without overwrite
+ok 20 - Watu item DEF remains after immunity and combines with actual Titis death without overwrite
+  ---
+  duration_ms: 0.4457
+  type: 'test'
+  ...
+# Subtest: idle interval pauses for reading, resumes on movement and tutorial spawns only once
+ok 21 - idle interval pauses for reading, resumes on movement and tutorial spawns only once
+  ---
+  duration_ms: 0.5792
+  type: 'test'
+  ...
+# Subtest: Lampah uses slow skill and idle applies stronger one-round penalty only during interval
+ok 22 - Lampah uses slow skill and idle applies stronger one-round penalty only during interval
+  ---
+  duration_ms: 0.2634
+  type: 'test'
+  ...
+# Subtest: SPD snapshot, stable ties, independent Prana and HP
+ok 23 - SPD snapshot, stable ties, independent Prana and HP
+  ---
+  duration_ms: 0.1882
+  type: 'test'
+  ...
+# Subtest: invalid target, cost and action leave entire battle unchanged
+ok 24 - invalid target, cost and action leave entire battle unchanged
+  ---
+  duration_ms: 0.1462
+  type: 'test'
+  ...
+# Subtest: special blocks two following owner turns, guard caps Prana at five
+ok 25 - special blocks two following owner turns, guard caps Prana at five
+  ---
+  duration_ms: 0.2162
+  type: 'test'
+  ...
+# Subtest: status keeps application round plus N full round ends; refresh does not stack
+ok 26 - status keeps application round plus N full round ends; refresh does not stack
+  ---
+  duration_ms: 0.1392
+  type: 'test'
+  ...
+# Subtest: guard halves damage and damage floors only after all factors
+ok 27 - guard halves damage and damage floors only after all factors
+  ---
+  duration_ms: 0.2331
+  type: 'test'
+  ...
+# Subtest: Tandaraga counts complete party rounds, damage attempts reset patience
+ok 28 - Tandaraga counts complete party rounds, damage attempts reset patience
+  ---
+  duration_ms: 0.2996
+  type: 'test'
+  ...
+# Subtest: tower requires separate even rounds for seals; Nirsmara needs song
+ok 29 - tower requires separate even rounds for seals; Nirsmara needs song
+  ---
+  duration_ms: 0.274
+  type: 'test'
+  ...
+# Subtest: seed replay identical, dead units cannot act or be healed, no Common passive
+ok 30 - seed replay identical, dead units cannot act or be healed, no Common passive
+  ---
+  duration_ms: 0.4573
+  type: 'test'
+  ...
+# Subtest: Saras healing, shielding, Nirsmara shelter and immunity effects
+ok 31 - Saras healing, shielding, Nirsmara shelter and immunity effects
+  ---
+  duration_ms: 0.5432
+  type: 'test'
+  ...
+# Subtest: Nirsmara encounter prevents repeat debuff, incomplete song requires two solutions
+ok 32 - Nirsmara encounter prevents repeat debuff, incomplete song requires two solutions
+  ---
+  duration_ms: 0.6464
+  type: 'test'
+  ...
+# Subtest: playable character L1 stats match extracted source registry
+ok 33 - playable character L1 stats match extracted source registry
+  ---
+  duration_ms: 1.566
+  type: 'test'
+  ...
+# Subtest: Nirwasita encounter identities match World Bible and tower seals reduce 33 percent each
+ok 34 - Nirwasita encounter identities match World Bible and tower seals reduce 33 percent each
+  ---
+  duration_ms: 0.6325
+  type: 'test'
+  ...
+# Subtest: rejected Lare debuff cannot reset cooldown through immunity or Nirsmara repeat protection
+ok 35 - rejected Lare debuff cannot reset cooldown through immunity or Nirsmara repeat protection
+  ---
+  duration_ms: 0.4808
+  type: 'test'
+  ...
+# Subtest: immunity rejection does not consume Nirsmara first successful debuff application
+ok 36 - immunity rejection does not consume Nirsmara first successful debuff application
+  ---
+  duration_ms: 0.1529
+  type: 'test'
+  ...
+# Subtest: Kayuri fear immunity blocks fear, expires normally, and general cleanse removes fear
+ok 37 - Kayuri fear immunity blocks fear, expires normally, and general cleanse removes fear
+  ---
+  duration_ms: 0.259
+  type: 'test'
+  ...
+# Subtest: canonical damage and element cycle
+ok 38 - canonical damage and element cycle
+  ---
+  duration_ms: 0.1593
+  type: 'test'
+  ...
+# Subtest: growth uses floor once and honors per-character anchors
+ok 39 - growth uses floor once and honors per-character anchors
+  ---
+  duration_ms: 0.1458
+  type: 'test'
+  ...
+# Subtest: save round trip and rejected corruption
+ok 40 - save round trip and rejected corruption
+  ---
+  duration_ms: 0.1867
+  type: 'test'
+  ...
+# Subtest: quest order and idempotent recruitment / item
+ok 41 - quest order and idempotent recruitment / item
+  ---
+  duration_ms: 0.1438
+  type: 'test'
+  ...
+# Subtest: burial confirmation, irrevocable lock, all three safe
+ok 42 - burial confirmation, irrevocable lock, all three safe
+  ---
+  duration_ms: 0.135
+  type: 'test'
+  ...
+# Subtest: idle ticks at five then eight seconds and motion resets
+ok 43 - idle ticks at five then eight seconds and motion resets
+  ---
+  duration_ms: 0.1248
+  type: 'test'
+  ...
+# Subtest: ending uses accepted explicit branch schema
+ok 44 - ending uses accepted explicit branch schema
+  ---
+  duration_ms: 0.2292
+  type: 'test'
+  ...
+# Subtest: all tiers charge exact cost once; insufficient balance and battle lock leave state unchanged
+ok 45 - all tiers charge exact cost once; insufficient balance and battle lock leave state unchanged
+  ---
+  duration_ms: 0.2756
+  type: 'test'
+  ...
+# Subtest: quest rewards are one-time; Adi and Saras are included; training requires a real non-guest win
+ok 46 - quest rewards are one-time; Adi and Saras are included; training requires a real non-guest win
+  ---
+  duration_ms: 0.6102
+  type: 'test'
+  ...
+# Subtest: legacy migration keeps Awaken, backfills only claims, rejects malformed balances and preserves original backup
+ok 47 - legacy migration keeps Awaken, backfills only claims, rejects malformed balances and preserves original backup
+  ---
+  duration_ms: 1.2194
+  type: 'test'
+  ...
+# Subtest: failed save cannot spend shards from live state
+ok 48 - failed save cannot spend shards from live state
+  ---
+  duration_ms: 0.461
+  type: 'test'
+  ...
+# Subtest: all 11 character anchors exact, growth between anchors and cap60
+ok 49 - all 11 character anchors exact, growth between anchors and cap60
+  ---
+  duration_ms: 0.4881
+  type: 'test'
+  ...
+# Subtest: XP carries multiple levels, caps without overflow and persists through save
+ok 50 - XP carries multiple levels, caps without overflow and persists through save
+  ---
+  duration_ms: 0.5908
+  type: 'test'
+  ...
+# Subtest: 0.3 migration preserves progress, initializes L1 and equips existing compass once
+ok 51 - 0.3 migration preserves progress, initializes L1 and equips existing compass once
+  ---
+  duration_ms: 0.8796
+  type: 'test'
+  ...
+# Subtest: equipment ownership, category, unique instance, level/quest gates and battle lock
+ok 52 - equipment ownership, category, unique instance, level/quest gates and battle lock
+  ---
+  duration_ms: 0.3248
+  type: 'test'
+  ...
+# Subtest: levels and unique equipment affect real battle stats/cooldown
+ok 53 - levels and unique equipment affect real battle stats/cooldown
+  ---
+  duration_ms: 0.2424
+  type: 'test'
+  ...
+# Subtest: 0.3 original backup survives subsequent 0.4 autosaves and malformed additions reject
+ok 54 - 0.3 original backup survives subsequent 0.4 autosaves and malformed additions reject
+  ---
+  duration_ms: 1.0088
+  type: 'test'
+  ...
+# Subtest: completed legacy Saras quest receives its newly implemented reward exactly once
+ok 55 - completed legacy Saras quest receives its newly implemented reward exactly once
+  ---
+  duration_ms: 0.3383
+  type: 'test'
+  ...
+# Subtest: graph validates prerequisites and rejects duplicate rewards
+ok 56 - graph validates prerequisites and rejects duplicate rewards
+  ---
+  duration_ms: 0.4798
+  type: 'test'
+  ...
+# Subtest: 0.2 save imports party without retroactive reward; invalid parties rejected
+ok 57 - 0.2 save imports party without retroactive reward; invalid parties rejected
+  ---
+  duration_ms: 0.279
+  type: 'test'
+  ...
+# Subtest: side-quest journal reflects permanent decisions and missed branch
+ok 58 - side-quest journal reflects permanent decisions and missed branch
+  ---
+  duration_ms: 0.0868
+  type: 'test'
+  ...
+# Subtest: partial Adi dialogue blocks boss entry and completion, while untouched and resolved paths remain legal
+ok 59 - partial Adi dialogue blocks boss entry and completion, while untouched and resolved paths remain legal
+  ---
+  duration_ms: 0.2623
+  type: 'test'
+  ...
+# Subtest: elder third failed attempt awards once, persists earlier failures, and normal success remains available
+ok 60 - elder third failed attempt awards once, persists earlier failures, and normal success remains available
+  ---
+  duration_ms: 0.5876
+  type: 'test'
+  ...
+# Subtest: warehouse all-wrong path succeeds after five encounters, no duplicate reward
+ok 61 - warehouse all-wrong path succeeds after five encounters, no duplicate reward
+  ---
+  duration_ms: 0.4941
+  type: 'test'
+  ...
+# Subtest: Kayuri sequence and tones persist across retry, survival four rounds
+ok 62 - Kayuri sequence and tones persist across retry, survival four rounds
+  ---
+  duration_ms: 0.6111
+  type: 'test'
+  ...
+# Subtest: Nggarindu sacrifice is typed recoverable loss, persists on retry and unique fragments
+ok 63 - Nggarindu sacrifice is typed recoverable loss, persists on retry and unique fragments
+  ---
+  duration_ms: 1.3165
+  type: 'test'
+  ...
+# Subtest: mural unique entries and Wira restricted/retry/silent finale
+ok 64 - mural unique entries and Wira restricted/retry/silent finale
+  ---
+  duration_ms: 0.5351
+  type: 'test'
+  ...
+# Subtest: new kits: revival once, cleanse, immunity/rest, haste, skill reset, max HP sacrifice
+ok 65 - new kits: revival once, cleanse, immunity/rest, haste, skill reset, max HP sacrifice
+  ---
+  duration_ms: 0.5624
+  type: 'test'
+  ...
+# Subtest: fragment windows are three seconds per idle cycle, accessible mode bypasses timing
+ok 66 - fragment windows are three seconds per idle cycle, accessible mode bypasses timing
+  ---
+  duration_ms: 0.2214
+  type: 'test'
+  ...
+# Subtest: vendor remembers explicit refusal after reload; purchase is atomic and idempotent
+ok 67 - vendor remembers explicit refusal after reload; purchase is atomic and idempotent
+  ---
+  duration_ms: 0.2791
+  type: 'test'
+  ...
+# Subtest: all fragment permutations require Ranaya reunion before tower; old complete songs preserved
+ok 68 - all fragment permutations require Ranaya reunion before tower; old complete songs preserved
+  ---
+  duration_ms: 1.8839
+  type: 'test'
+  ...
+# Subtest: generated registry matches 33 normal stat rows in original Guide Markdown
+ok 69 - generated registry matches 33 normal stat rows in original Guide Markdown
+  ---
+  duration_ms: 2.2835
+  type: 'test'
+  ...
+# Subtest: legacy Adi migration preserves originals and distinguishes skipped choice
+ok 70 - legacy Adi migration preserves originals and distinguishes skipped choice
+  ---
+  duration_ms: 1.2049
+  type: 'test'
+  ...
+# Subtest: save writes retain original legacy and recoverable backup
+ok 71 - save writes retain original legacy and recoverable backup
+  ---
+  duration_ms: 0.6519
+  type: 'test'
+  ...
+# Subtest: schema rejects corrupted enums, typed flags, duplicate roster and prototype keys
+ok 72 - schema rejects corrupted enums, typed flags, duplicate roster and prototype keys
+  ---
+  duration_ms: 0.5554
+  type: 'test'
+  ...
+# Subtest: unknown legacy branch never silently becomes final score zero
+ok 73 - unknown legacy branch never silently becomes final score zero
+  ---
+  duration_ms: 0.3466
+  type: 'test'
+  ...
+# Subtest: Adi decision is irrevocable and isolated from completion state
+ok 74 - Adi decision is irrevocable and isolated from completion state
+  ---
+  duration_ms: 0.1529
+  type: 'test'
+  ...
+# Subtest: backup storage failure aborts the save replacement
+ok 75 - backup storage failure aborts the save replacement
+  ---
+  duration_ms: 0.3843
+  type: 'test'
+  ...
+# Subtest: ending boundary matrix, branch conjunction, and committed ending preservation
+ok 76 - ending boundary matrix, branch conjunction, and committed ending preservation
+  ---
+  duration_ms: 0.3196
+  type: 'test'
+  ...
+# Subtest: presentation migration and policies preserve numerical state
+ok 77 - presentation migration and policies preserve numerical state
+  ---
+  duration_ms: 0.2643
+  type: 'test'
+  ...
+1..77
+# tests 77
+# suites 0
+# pass 77
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 157.7888

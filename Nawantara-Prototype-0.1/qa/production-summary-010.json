@@ -1,0 +1,44 @@
+{
+  "version": "0.10.0",
+  "date": "2026-09-23",
+  "buildSha256": "88f419b69efdefba422dc2ab628724a1c700712f9aebf5044131aa543197a32d",
+  "build": "PASS",
+  "domainTests": {
+    "passed": 87,
+    "failed": 0,
+    "artifact": "domain-010.tap"
+  },
+  "browser": {
+    "lore-skills-010.json": {
+      "passed": true,
+      "buildSha256": "88f419b69efdefba422dc2ab628724a1c700712f9aebf5044131aa543197a32d"
+    },
+    "challenges-010.json": {
+      "passed": true,
+      "buildSha256": "88f419b69efdefba422dc2ab628724a1c700712f9aebf5044131aa543197a32d"
+    },
+    "playthrough-010.json": {
+      "passed": true,
+      "buildSha256": "88f419b69efdefba422dc2ab628724a1c700712f9aebf5044131aa543197a32d"
+    }
+  },
+  "sourceDecisionVerification": "PASS",
+  "completed": [
+    "Nirsmara item: 27 lore cards, 15-entry gate, permanent sacrifice, equipment effect",
+    "Sloka/Mandala: 33 skill caps, acquisition, upgrade transactions, combat integration, legacy migration"
+  ],
+  "fullM1Closed": false,
+  "launchGateClosed": false,
+  "remaining": [
+    "Economy/skill balance playtest",
+    "Quest beat and journal refinements",
+    "Full region acceptance matrix and target hardware",
+    "Final animation and 3D via Unity/Blender"
+  ],
+  "limits": [
+    "Lore/skill browser test imports chapter6 and character levels through save UI; not a grind-duration test",
+    "Source provides caps/material types; prices, gains and upgrade-effect scaling are preview baseline",
+    "Not all 13 quests and every branch certified in one end-to-end run"
+  ],
+  "diffCheck": "Trailing blank lines reported in template/distribution and legacy playthrough script; no gameplay impact"
+}

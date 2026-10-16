@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "buildSha256": "4328d96797d34e48d0d0c212da3a133987b98bda2c13bb9cece126f7541b5fe5",
+  "checks": [
+    "Vendor dismiss vs explicit refusal, repricing/reload, atomic purchase, tower locked until Ranaya reunion",
+    "Wrong branches return to last intersection without losing milestones; final branch and audio scheduling run without errors"
+  ],
+  "errors": []
+}
